@@ -2,7 +2,7 @@
 
 ## Overview
 
-MyPSE.ie is a web application, designed to support pupils with special educational needs (SEN), during educational transitions.  
+MyPSE.ie is a full stack web application, designed to support pupils with special educational needs (SEN), during educational transitions.  
 
 <img src="#">
 
@@ -12,9 +12,14 @@ For SEN pupils, parents and school staff, periods of transition between learning
 
 The National Council for Special Education (NCSE) reccommends that during these periods pupil, carry with them a document that will allow new teachers and support workers access to vital information about ther care needs, learning supports, communication difficulties and more.  
 
-Commonly reffered to as 'passports' within the Irish education system. These documents can make an immesurable difference into the understanding and provision care for SEN pupils during periods of transition.
+Commonly reffered to as 'passports' within the Irish education system. These documents can make an immesurable difference into understanding and providing care for SEN pupils during periods of transition.
 
-Users can 
+MyPSE.ie allows authenticated and authorised pupils and parents to design, view and update passports reflecting not only each individual pupil's special educational needs, but also a nuanced overview of their personality and style. Teachers can then view the passports that have been assigned to them by entering their unique registration number issued by the Irish Teaching Council.
+
+Because of the highly personal and sensitive nature of the data stored within the site, protection of this data is paramount which is why MyPSE will only allow passports to be created for pupils who have been added to a separate database table by their school administration.
+
+Utilising the power of coding frameworks like Django and Bootstrap, MyPSE.ie has been rapidly and thoughtfully designed to 
+provide users with an enjoyable and meaningful experience as they securely access, create and organise SEN passports.
 
 <br>
 

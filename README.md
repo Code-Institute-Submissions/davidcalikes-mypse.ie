@@ -10,7 +10,7 @@ MyPSE.ie is a full stack web application, designed to support pupils with specia
 
 For SEN pupils, parents and school staff, periods of transition between learning environments can be extremely challenging.
 
-The National Council for Special Education (NCSE) reccommends that during these periods pupil, carry with them a document that will allow new teachers and support workers access to vital information about ther care needs, learning supports, communication difficulties and more.  
+The National Council for Special Education (NCSE) reccommends that during these periods, SEN pupils carry with them a document that will allow new teachers and support workers access to vital information about ther care needs, learning supports, communication difficulties and more.  
 
 Commonly reffered to as 'passports' within the Irish education system. These documents can make an immesurable difference into understanding and providing care for SEN pupils during periods of transition.
 

@@ -1,4 +1,4 @@
-## MyPSE.ie (My Passport for Special Education)
+# MyPSE.ie (My Passport for Special Education)
 
 ## Overview
 
@@ -24,3 +24,13 @@ provide users with an enjoyable and meaningful experience as they securely acces
 <br>
 
 [Live project:](https://mypse.herokuapp.com/)
+
+
+# Deployment
+
+## Deployment errors and issues
+
+### Security Key.
+
+Whilst setting up the development environment for this project I made the error of accidentally pushing to Github (ergo exposing) the SECURITY_KEY variable within the settings.py file. This variable was part of the code institute's student project template which I used in order to expidiate the initial setup phase of project. I imediately changed this variable and concealed it within the env.py file which was then subsequently added to .gitignore. The CI's variable was never at any point used as a functioning key during the development or deployment of the app.  
+

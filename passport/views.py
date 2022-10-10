@@ -6,5 +6,4 @@ class HomePage(generic.TemplateView):
     """
     Displays instructional video and links on landing page
     """
-
     template_name = 'index.html'

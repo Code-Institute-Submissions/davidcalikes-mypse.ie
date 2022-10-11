@@ -28,14 +28,17 @@ provide users with an enjoyable and meaningful experience as they securely acces
 <br>
 
 
-## Planning & Research
+# Planning & Research
 
-
-### USER STORIES
-
+## User Experience Design
 <br>
 
-#### General User Stories: Role -- Parent
+
+### User Stories
+<br>
+
+#### __General User Stories__: *Role -- Parent*
+<br>
 
 * As a User, I would like the app to be intuitive and easy to navigate in order to access information efficiently.
 
@@ -45,7 +48,8 @@ provide users with an enjoyable and meaningful experience as they securely acces
 
 <br>
 
-#### User Stories: Role -- School Admin
+#### __User Stories__: *Role -- School Admin*
+<br>
 
 * As a School Administrator, I would like to create pupil records in order to facilitate the use of myPSE.ie  passports.
 
@@ -57,7 +61,8 @@ provide users with an enjoyable and meaningful experience as they securely acces
 
 <br>
 
-#### User Stories: Role -- Parent
+#### __User Stories__: *Role -- Parent*
+<br>
 
 * As a Parent, I would like to create a ‘passport’ for my SEN child to support them during educational transitions.
 
@@ -74,7 +79,9 @@ provide users with an enjoyable and meaningful experience as they securely acces
 * As a Parent, I would like the option to print a ‘printer friendly’ version of my child’s passport in order to provide people outwith the education system with information that will help during a non-educational transition. (Respite facilities, youth clubs, sports teams etc.)
 
 <br>
-#### User Stories: Role -- SEN Pupil
+
+#### __User Stories__: *Role -- SEN Pupil*
+<br>
 
 * As an SEN Pupil I would like to create a passport to help others understand my needs, personality, tastes and abilities so they are better informed and equipped to assist me as I transition between Special Educational environments.
 
@@ -92,7 +99,8 @@ provide users with an enjoyable and meaningful experience as they securely acces
 
 <br>
 
-#### User Stories: Role -- Teacher
+#### __User Stories__: *Role -- Teacher*
+<br>
 
 
 * As an Teacher, I would like to securely login and out of the application in order to prevent unauthorised access to pupil data.
@@ -108,7 +116,8 @@ provide users with an enjoyable and meaningful experience as they securely acces
 
 <br>
 
-#### User Stories:Site Owner
+#### __User Stories__: *Site Owner*
+<br>
 
 
 * As a Site Owner, I would like to prevent the ability to create a passport unless a pupils details have been registered by their school in order to prevent misuse of the site.

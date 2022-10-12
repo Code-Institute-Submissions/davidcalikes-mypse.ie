@@ -10,7 +10,7 @@ MyPSE.ie is a full stack web application, designed to support pupils with specia
 
 For SEN pupils, parents and school staff, periods of transition between learning environments can be extremely challenging.
 
-The National Council for Special Education (NCSE) reccommends that during these periods, SEN pupils carry with them a document that will allow new teachers and support workers access to vital information about ther care needs, learning supports, communication difficulties and more.  
+The National Council for Special Education (NCSE) recommends that during these periods, SEN pupils carry with them a document that will allow new teachers and support workers access to vital information about ther care needs, learning supports, communication difficulties and more.  
 
 Commonly reffered to as 'passports' within the Irish education system. These documents can make an immesurable difference into understanding and providing care for SEN pupils during periods of transition.
 
@@ -37,14 +37,34 @@ provide users with an enjoyable and meaningful experience as they securely acces
 ### User Stories
 <br>
 
-#### __General User Stories__: *Role -- Parent*
+#### __General User Stories__
 <br>
 
 * As a User, I would like the app to be intuitive and easy to navigate in order to access information efficiently.
 
 * As a User I want to be Informed when I have submitted a task or action within the app so I can be confident it has been successfully completed.
 
-* As a User I want the app to be easy to read and pleasing to the eye so I will have a positive user experience.
+* As a User I want the app to be easy to read, consistent in design and pleasing to the eye so I will have a positive user experience.
+
+* As a User I would like to access an About page in order to learn more about myPSE.ie
+
+<br>
+
+#### __User Stories__: *Site Owner*
+<br>
+
+
+* As a Site Owner, I would like to prevent the ability to create a passport unless a pupils details have been registered by their school in order to prevent misuse of the site.
+
+* As a Site Owner, I would like to limit the number of passports to one passport per pupil in order to prevent misuse of the site and prevent misidentification of the pupil.
+
+* As a Site Owner, I would like to restrict access to passports to authorised and authenticated users only in order to protect pupil data. 
+
+* As a Site Owner, I would like to restrict access to passports based on user role in order to protect pupil data.
+
+* As a Site Owner I would like to automate the transfer of passport teacher permissions in order to protect user data.
+
+* As a Site Owner I would like to automatically delete passports when pupil is no longer enrolled in school in order to protect user data.
 
 <br>
 
@@ -115,23 +135,6 @@ provide users with an enjoyable and meaningful experience as they securely acces
 
 
 <br>
-
-#### __User Stories__: *Site Owner*
-<br>
-
-
-* As a Site Owner, I would like to prevent the ability to create a passport unless a pupils details have been registered by their school in order to prevent misuse of the site.
-
-* As a Site Owner, I would like to limit the number of passports to one passport per pupil in order to prevent misuse of the site and prevent misidentification of the pupil.
-
-* As a Site Owner, I would like to restrict access to passports to authorised and authenticated users only in order to protect pupil data. 
-
-* As a Site Owner, I would like to restrict access to passports based on user role in order to protect pupil data.
-
-* As a Site Owner I would like to automate the transfer of passport teacher permissions in order to protect user data.
-
-* As a Site Owner I would like to automatically delete passports when pupil is no longer enrolled in school in order to protect user data.
-
 
 # Deployment
 

@@ -44,8 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'allauth',
     'allauth.account',
-    'cloudinary_storage',
     'allauth.socialaccount',
+    'cloudinary_storage',
     'cloudinary',
     'user',
     'passport',
@@ -152,5 +152,5 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'user.CustomUser'
 ACCOUNT_FORMS = {'signup': 'passport.forms.CoreSignupForm'}
-
+ACCOUNT_ADAPTER = 'passport.adapter.MyAccountAdapter'
 ACCOUNT_EMAIL_VERIFICATION = 'none'

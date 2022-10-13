@@ -4,7 +4,7 @@
 
 I utilised the Agile planning methodology during the development of MyPSE.ie.   
 
-<img src="../docs/readme_images/mockup_placeholder.png">
+<img src="../docs/agile_images/mockup_placeholder.png">
 
 <br>
 
@@ -20,11 +20,13 @@ As a result of this confusion I made a lot of planning errors while developing m
 
 For example, when I began creating my KANBAN boards, I had already organised most of the development environment and installed some of the project dependencies before I realised I should have included that work as part of the Agile process, breaking down each developer task into individual increments of work. 
 
+It is however, one of the priciples of Agile to "respond to change rather than stick to a plan" so I resolved the issues and adapted my approach by reorganising the layout of my boards and cards accordingly.
+
 I also initially felt that my Epics could have been better organised and that I had too may user stories per Epic, but in retrospect the project was completed successfully and they served their purpose in providing me an overview of the relationships between smaller units of work.
 
 <br>
 
-<img src="../docs/readme_images/agile_4_epics.png">
+<img src="../docs/agile_images/agile_4_epics.png">
 
 <br>
 
@@ -34,7 +36,7 @@ I also initially felt that my Epics could have been better organised and that I 
 
 As I moved through the initial stages of the project, I began to recognise the real benefits of Agile.
 
-<img src="../docs/readme_images/agile_collab.png">
+<img src="../docs/agile_images/agile_2_collab.png">
 
 
 <br>
@@ -51,9 +53,9 @@ Using agile also helped me focus on one task at a time and I genuinely believe t
 
 ## MoSCoW
 
-<img src="../docs/readme_images/agile_3_moscow.png">
+<img src="../docs/agile_images/agile_3_moscow.png">
 
-When utilising the moscow prioritisation I felt I had a good mix of Would Have, Could Have, Should Have and Wont Have This Time cards. I realise now however that I had far too many must have labels and it is something I will be wary of when prioritising work units in future projects.
+When utilising MoSCow prioritisation I felt I had a good mix of 'Would Have', 'Could Have', 'Should Have' and 'Wont Have This Time' cards. I realise now however that I had far too many must have labels and it is something I will be wary of when prioritising work units in future projects.
 
 
 

@@ -1,0 +1,24 @@
+.navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/vertical-waves.png"),
+    linear-gradient(to right, #ffffff, #ffffff, #23BBBB);
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+.logo-text {
+    color: #23BBBB;
+}
+
+.pse-logo {
+    color: #f5f5f5;
+    background-color: #23BBBB;
+    border-radius: 50%;
+    padding: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}

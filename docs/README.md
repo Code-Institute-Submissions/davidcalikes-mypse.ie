@@ -42,6 +42,8 @@ provide users with an enjoyable and meaningful experience as they securely acces
 
 * As a User, I would like the app to be intuitive and easy to navigate in order to access information efficiently.
 
+* As a User I would like to login/logout easily depending on my user role in order to easily access information.
+
 * As a User I want to be Informed when I have submitted a task or action within the app so I can be confident it has been successfully completed.
 
 * As a User I want the app to be easy to read, consistent in design and pleasing to the eye so I will have a positive user experience.

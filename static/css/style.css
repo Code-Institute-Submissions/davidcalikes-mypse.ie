@@ -22,3 +22,15 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
+.main-bg {
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/vertical-waves.png"),
+    linear-gradient(to right, #ffffff, #ffffff, #23BBBB);
+}
+
+#hero {
+    height: 30rem;
+    width: 100%;
+    text-align: center;
+    background: url("https://res.cloudinary.com/djck2eqxo/image/upload/v1665696014/passport-background-greyscale_h5oiln.png") no-repeat center center; 
+}

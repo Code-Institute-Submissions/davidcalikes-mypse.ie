@@ -14,7 +14,7 @@ class HomePage(generic.TemplateView):
 
 class AddEnrolledPupil(LoginRequiredMixin, generic.CreateView):
     """
-    User with role of School Admin can add an enrolled pupil to database.
+    User with role of 'school' (admin) can add an enrolled pupil to database.
     """
     model = EnrolledPupil
     form_class = EnrolledPupilForm
@@ -27,3 +27,17 @@ class AddEnrolledPupil(LoginRequiredMixin, generic.CreateView):
         """
         form.instance.created_by = self.request.user
         return super(AddEnrolledPupil, self).form_valid(form)
+
+
+class EnrolledPupilList(LoginRequiredMixin, generic.ListView):
+    """
+    Displays page that lists pupil records created by logged in user
+    """
+    model = EnrolledPupil
+    template_name = 'enrolled_pupil_list.html'
+    context_object_name = 'enrolled_pupil_list'
+
+    def get_queryset(self):
+        return EnrolledPupil.objects.filter(
+            created_by=self.request.user
+        )

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row"> {{ user.username }}
+        {% if user.is_authenticated and user.role == "school" %}
+        <div>
+            <h3 class="nav-item">Enrolled Pupil Form</h3>
+            <hr>
+            <form method="POST" enctype='multipart/form-data'>
+                {% csrf_token %}
+                {{ form | crispy }}
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <a href="{% url 'home' %}"><h4>Cancel without saving</h4></a>
+        {% else %}
+        <h3>
+            Warning! 
+            You are unauthorised to view this page! 
+            If you cannot find the page you are looking for please email MyPSE.ie support
+            or visit the about page for more information about how to use this site.
+        </h3>
+        {% endif %}
+    {% endblock %}

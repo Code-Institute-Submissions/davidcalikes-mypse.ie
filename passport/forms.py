@@ -1,4 +1,5 @@
 from django import forms
+from .models import EnrolledPupil
 from allauth.account.forms import SignupForm
 
 

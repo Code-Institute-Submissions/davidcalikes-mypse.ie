@@ -1,17 +1,30 @@
 .navbar {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 0.5rem;
-    background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/vertical-waves.png"),
-    linear-gradient(to right, #ffffff, #ffffff, #23BBBB);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: linear-gradient(to right, #ffffff, #ffffff, #23BBBB);
 }
 
 .navbar-brand {
     font-size: 2rem;
 }
 
+.footer {
+    background: linear-gradient(to right, #ffffff, #ffffff, #23BBBB); 
+}
+
 .logo-text {
     color: #23BBBB;
+}
+
+.link-text{
+    color: #23BBBB;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    padding: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .pse-logo {
@@ -23,14 +36,16 @@
     padding-bottom: 1rem;
 }
 
+
 .main-bg {
     background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/vertical-waves.png"),
     linear-gradient(to right, #ffffff, #ffffff, #23BBBB);
 }
 
 #hero {
-    height: 30rem;
-    width: 100%;
-    text-align: center;
-    background: url("https://res.cloudinary.com/djck2eqxo/image/upload/v1665696014/passport-background-greyscale_h5oiln.png") no-repeat center center; 
+    background: url("https://res.cloudinary.com/djck2eqxo/image/upload/v1665697218/nav_eaxd79.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
 }

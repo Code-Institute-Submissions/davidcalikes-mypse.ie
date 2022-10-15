@@ -41,3 +41,13 @@ class EnrolledPupilList(LoginRequiredMixin, generic.ListView):
         return EnrolledPupil.objects.filter(
             created_by=self.request.user
         )
+
+
+def LoginSuccess(request):
+    """
+    Redirects users based on user role
+    """
+    if request.user.user_type == "school":
+        return redirect('enrolled_pupil_list')
+    else:
+        return redirect('home')

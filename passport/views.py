@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views import generic
 from .models import EnrolledPupil
 from .forms import EnrolledPupilForm
@@ -47,7 +47,7 @@ def LoginSuccess(request):
     """
     Redirects users based on user role
     """
-    if request.user.user_type == "school":
+    if request.user.role == "school":
         return redirect('enrolled_pupil_list')
     else:
         return redirect('home')

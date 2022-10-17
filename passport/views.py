@@ -85,6 +85,26 @@ class DeletePupilRecord(LoginRequiredMixin, generic.DeleteView):
         return super(DeletePupilRecord, self).delete(request, *args, **kwargs)
 
 
+class PassportDetail(LoginRequiredMixin, View):
+    """
+    Displays pupil passport selected by authenticated and authorised user
+    """
+    def get(self, request, slug, *args, **kwargs):
+        """
+        Gets selected pupil record
+        """
+        queryset = Passport.objects.all()
+        passport = get_object_or_404(queryset, slug=slug)
+
+        return render(
+            request,
+            'passport_detail.html',
+            {
+                "passport": passport,
+            },
+        )
+
+
 def LoginSuccess(request):
     """
     Redirects users based on user role

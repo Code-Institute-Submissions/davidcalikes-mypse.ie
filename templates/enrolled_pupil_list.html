@@ -13,7 +13,7 @@
             {% for enrolled_pupil in enrolled_pupil_list %}
                 {% if enrolled_pupil.created_by|stringformat:'s' == user|stringformat:'s' %}
                 <div>
-                    <a href="{% url 'enrolled_pupil_list' %}">
+                    <a href="{% url 'enrolled_pupil_record' enrolled_pupil.pupil_id  %}">
                         <h4>Pupil Name : {{ enrolled_pupil.pupil_last_name }} {{ enrolled_pupil.pupil_first_name}}</h4>
                         <h4>ID:{{ enrolled_pupil.pupil_id}} </h4>
                     </a>

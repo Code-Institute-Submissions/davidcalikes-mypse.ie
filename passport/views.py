@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic, View
 from .models import EnrolledPupil
 from .forms import EnrolledPupilForm
@@ -56,7 +56,7 @@ class EnrolledPupilRecord(LoginRequiredMixin, View):
 
         return render(
             request,
-            'pupil_record.html',
+            'enrolled_pupil_record.html',
             {
                 "record": record,
             },

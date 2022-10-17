@@ -15,6 +15,7 @@
             <h3>Last Update:        {{ record.last_updated }}</h3>
             <br>
             <a href="{% url 'update_pupil_record' record.id %}"><h4>Edit Pupil Data</h4></a>
+            <a href="{% url 'delete_pupil_record' record.id %}"><h4>Delete Pupil Record</h4></a>
         {% else %}
         <h1>
             Unauthorised user go back!

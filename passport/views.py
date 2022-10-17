@@ -43,6 +43,26 @@ class EnrolledPupilList(LoginRequiredMixin, generic.ListView):
         )
 
 
+class EnrolledPupilRecord(LoginRequiredMixin, View):
+    """
+    Displays pupil record selected by authenticated user
+    """
+    def get(self, request, pupil_id, *args, **kwargs):
+        """
+        Gets selected pupil record
+        """
+        queryset = EnrolledPupil.objects.all()
+        record = get_object_or_404(queryset, pupil_id=pupil_id)
+
+        return render(
+            request,
+            'pupil_record.html',
+            {
+                "record": record,
+            },
+        )
+
+
 def LoginSuccess(request):
     """
     Redirects users based on user role

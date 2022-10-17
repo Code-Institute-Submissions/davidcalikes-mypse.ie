@@ -7,4 +7,5 @@ urlpatterns = [
     path('add_enrolled_pupil/', views.AddEnrolledPupil.as_view(), name='add_enrolled_pupil'),
     path('enrolled_pupil_list/', views.EnrolledPupilList.as_view(), name='enrolled_pupil_list'),
     path('<int:pupil_id>/', views.EnrolledPupilRecord.as_view(), name='enrolled_pupil_record'),
+    path('update/<int:pk>', views.UpdatePupilRecord.as_view(), name='update_pupil_record'),
 ]

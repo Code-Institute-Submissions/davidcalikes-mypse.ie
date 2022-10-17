@@ -40,10 +40,10 @@
 .main-bg {
     background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/vertical-waves.png"),
     linear-gradient(to right, #ffffff, #ffffff, #23BBBB);
+    display: contents;
 }
 
 #hero {
-    background: url("https://res.cloudinary.com/djck2eqxo/image/upload/v1665697218/nav_eaxd79.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

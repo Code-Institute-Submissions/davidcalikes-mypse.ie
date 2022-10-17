@@ -74,6 +74,17 @@ class UpdatePupilRecord(LoginRequiredMixin, generic.edit.UpdateView):
     success_url = reverse_lazy('enrolled_pupil_list')
 
 
+class DeletePupilRecord(LoginRequiredMixin, generic.DeleteView):
+    """
+    User with role of School Admin can delete existing pupil record
+    """
+    model = EnrolledPupil
+    success_url = reverse_lazy('enrolled_pupil_list')
+
+    def delete(self, request, *args, **kwargs):
+        return super(DeletePupilRecord, self).delete(request, *args, **kwargs)
+
+
 def LoginSuccess(request):
     """
     Redirects users based on user role

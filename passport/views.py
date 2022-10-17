@@ -63,6 +63,16 @@ class EnrolledPupilRecord(LoginRequiredMixin, View):
         )
 
 
+class UpdatePupilRecord(LoginRequiredMixin, generic.edit.UpdateView):
+    """
+    User with role of School Admin can update enrolled existing pupil record
+    """
+    model = EnrolledPupil
+    form_class = EnrolledPupilForm
+    template_name = 'enrolled_pupil_form.html'
+    success_url = reverse_lazy('enrolled_pupil_list')
+
+
 def LoginSuccess(request):
     """
     Redirects users based on user role

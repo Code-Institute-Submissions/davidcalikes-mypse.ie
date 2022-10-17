@@ -18,7 +18,10 @@
             <a href="{% url 'delete_pupil_record' record.id %}"><h4>Delete Pupil Record</h4></a>
         {% else %}
         <h1>
-            Unauthorised user go back!
+            Warning! 
+            You are unauthorised to view this page! 
+            If you cannot find the page you are looking for please email MyPSE.ie support
+            or visit the about page for more information about how to use this site.
         </h1>
         {% endif %}
     {% endblock %}

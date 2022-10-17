@@ -8,19 +8,24 @@
         </title>
     </head>
     <body>
-        <div>
-            
-            <div>
-                <form method="POST" action="">
-                    {% csrf_token %}
-                    <h3>***WARNING***</h3>
-                    <br>
-                    <p>You are about to delete this record </p>
-                    <input type="submit" value="Delete" class="btn btn-lg btn-danger">
-                    <a href="{% url 'enrolled_pupil_list' %}" class="btn btn-lg btn-success">Go Back</a>
-                </form>
+        <div class="container-fluid callout-container"></div>
+            <div class="opaque-overlay">&nbsp;
+                <div class="row">
+                    <div class="col-12">
+                        <section class="callout jumbotron text-center">
+                            <h1 class="jumbotron-header">***WARNING***</h1>
+                            <hr class="block-divider">
+                            <form method="POST" action="">
+                                {% csrf_token %}
+                                <br>
+                                <p>You are about to delete this record </p>
+                                <input type="submit" value="Delete" class="btn btn-lg btn-danger">
+                                <a href="{% url 'enrolled_pupil_list' %}" class="btn btn-lg btn-success">Go Back</a>
+                            </form>
+                        </section>
+                    </div>
+                </div>
             </div>
-
         </div>
     </body>
 </html>

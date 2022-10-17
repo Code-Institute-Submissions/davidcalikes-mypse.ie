@@ -8,4 +8,5 @@ urlpatterns = [
     path('enrolled_pupil_list/', views.EnrolledPupilList.as_view(), name='enrolled_pupil_list'),
     path('<int:pupil_id>/', views.EnrolledPupilRecord.as_view(), name='enrolled_pupil_record'),
     path('update/<int:pk>', views.UpdatePupilRecord.as_view(), name='update_pupil_record'),
+    path('delete/<int:pk>', views.DeletePupilRecord.as_view(), name='delete_pupil_record'),
 ]

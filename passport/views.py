@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from django.views import generic
+from django.views import generic, View
 from .models import EnrolledPupil
 from .forms import EnrolledPupilForm
 from django.contrib.auth.mixins import LoginRequiredMixin

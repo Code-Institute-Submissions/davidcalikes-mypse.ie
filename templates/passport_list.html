@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        {% if user.is_authenticated and user.role == "parent" %}
+        <div>
+            <h2>Here are the passports you have created:
+                <h3>You can view, edit or delete passports from this page.</h3>
+                <h3>Add a new passport via the link below if you have a valid PUPIL ID (read more)</h3>
+
+                <hr>
+        </div>
+        {% for passport in passport_list %}
+        <div>
+            <a href="{% url 'passport_detail' passport.slug %}">
+                <h4>Pupil Name : {{ passport.my_name }} </h4>
+                <h4>DOB:{{ passport.my_date_of_birth}} </h4>
+            </a>
+        </div>
+        {% endfor %}
+
+        <h1><a href="#!">Add Another Passport +</a></h1>
+
+        {% else %}
+        <h1>
+            Warning! 
+            You are unauthorised to view this page! 
+            If you cannot find the page you are looking for please email MyPSE.ie support
+            or visit the about page for more information about how to use this site.
+        </h1>
+        {% endif %}
+        {% endblock %}

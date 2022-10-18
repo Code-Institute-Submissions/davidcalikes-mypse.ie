@@ -1,7 +1,7 @@
 from django import forms
 from .models import EnrolledPupil, Passport
 from allauth.account.forms import SignupForm
-
+from django_summernote.widgets import SummernoteWidget
 
 TYPE_CHOICES = (
                     ("pupil", "pupil"),

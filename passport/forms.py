@@ -52,6 +52,6 @@ class PupilPassportForm(forms.ModelForm):
                   'my_family', 'my_likes', 'my_dislikes', 'my_strengths',
                   'my_difficulties', 'my_supports', 'my_calming_measures',
                   'my_communication_skills', 'my_other_info',
-                  'teacher_id', 'pupil_id', 'my_family_image', 
+                  'teacher_id', 'pupil_id', 'my_family_image',
                   'my_favorite_image', 'my_hobby_image',
                   )

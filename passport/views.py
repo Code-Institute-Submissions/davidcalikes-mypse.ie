@@ -125,5 +125,7 @@ def LoginSuccess(request):
     """
     if request.user.role == "school":
         return redirect('enrolled_pupil_list')
+    elif request.user.role == "parent":
+        return redirect('passport_list')
     else:
         return redirect('home')

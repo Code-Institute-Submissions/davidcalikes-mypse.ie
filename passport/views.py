@@ -85,6 +85,20 @@ class DeletePupilRecord(LoginRequiredMixin, generic.DeleteView):
         return super(DeletePupilRecord, self).delete(request, *args, **kwargs)
 
 
+class PassportList(LoginRequiredMixin, generic.ListView):
+    """
+    Displays page that lists any passports created by logged in user (parent)
+    """
+    model = Passport
+    template_name = 'passport_list.html'
+    context_object_name = 'passport_list'
+
+    def get_queryset(self):
+        return Passport.objects.filter(
+            created_by=self.request.user
+        )
+
+
 class PassportDetail(LoginRequiredMixin, View):
     """
     Displays pupil passport selected by authenticated and authorised user

@@ -29,7 +29,7 @@ class EnrolledPupil(models.Model):
 class Passport(models.Model):
     my_full_name = models.CharField(
         max_length=200,)
-    passport_image = CloudinaryField('image', default='placeholder')
+    my_passport_image = CloudinaryField('image', default='placeholder')
     my_emergency_contact_one_name = models.CharField(
         max_length=200, default='')
     my_emergency_contact_one_number = models.PositiveIntegerField(
@@ -41,7 +41,7 @@ class Passport(models.Model):
     my_emergency_contact_two_number = models.PositiveIntegerField(
         default=0,)
     my_date_of_birth = models.DateField(
-        default='DD/MM/YY')
+        default='DD/MM/YY', blank=False)
     my_biography = models.TextField(
         max_length=600, blank=False)
     my_family = models.TextField(
@@ -73,6 +73,10 @@ class Passport(models.Model):
     my_family_image = CloudinaryField('image', default='placeholder')
     my_favorite_image = CloudinaryField('image', default='placeholder')
     my_hobby_image = CloudinaryField('image', default='placeholder')
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.pupil_id)
+        super(Passport, self).save(*args, **kwargs)
 
     def __str__(self):
         return self.my_full_name

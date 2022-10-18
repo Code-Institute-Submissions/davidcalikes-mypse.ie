@@ -43,7 +43,7 @@ class PupilPassportForm(forms.ModelForm):
         """
         model = Passport
         fields = ('my_full_name',
-                  'passport_image',
+                  'my_passport_image',
                   'my_emergency_contact_one_name',
                   'my_emergency_contact_one_number',
                   'my_emergency_contact_two_name',

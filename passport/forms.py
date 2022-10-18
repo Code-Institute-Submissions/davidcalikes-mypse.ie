@@ -1,5 +1,5 @@
 from django import forms
-from .models import EnrolledPupil
+from .models import EnrolledPupil, Passport
 from allauth.account.forms import SignupForm
 
 
@@ -31,3 +31,27 @@ class EnrolledPupilForm(forms.ModelForm):
         fields = ('pupil_first_name', 'pupil_last_name',
                   'school_name', 'teacher_name', 'school_roll_no',
                   'pupil_id', 'school_email', )
+
+
+class PupilPassportForm(forms.ModelForm):
+    """
+    Form for creating a pupil passport
+    """
+    class Meta:
+        """
+        Form has all required fields from Passport model
+        """
+        model = Passport
+        fields = ('my_full_name',
+                  'passport_image',
+                  'my_emergency_contact_one_name',
+                  'my_emergency_contact_one_number',
+                  'my_emergency_contact_two_name',
+                  'my_emergency_contact_two_number',
+                  'slug', 'my_date_of_birth', 'my_biography',
+                  'my_family', 'my_likes', 'my_dislikes', 'my_strengths',
+                  'my_difficulties', 'my_supports', 'my_calming_measures',
+                  'my_communication_skills', 'my_other_info',
+                  'teacher_id', 'pupil_id', 'my_family_image', 
+                  'my_favorite_image', 'my_hobby_image',
+                  )

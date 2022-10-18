@@ -15,7 +15,7 @@
         {% for passport in passport_list %}
         <div>
             <a href="{% url 'passport_detail' passport.slug %}">
-                <h4>Pupil Name : {{ passport.my_name }} </h4>
+                <h4>Pupil Name : {{ passport.my_full_name }} </h4>
                 <h4>DOB:{{ passport.my_date_of_birth}} </h4>
             </a>
         </div>

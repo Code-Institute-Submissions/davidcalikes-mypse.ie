@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic, View
 from .models import EnrolledPupil, Passport
-from .forms import EnrolledPupilForm
+from .forms import EnrolledPupilForm, AddPassport
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 
@@ -83,6 +83,23 @@ class DeletePupilRecord(LoginRequiredMixin, generic.DeleteView):
 
     def delete(self, request, *args, **kwargs):
         return super(DeletePupilRecord, self).delete(request, *args, **kwargs)
+
+
+class AddPassport(LoginRequiredMixin, generic.CreateView):
+    """
+    User with role of parent and a valid pupil ID number can create a passport
+    """
+    model = Passport
+    form_class = PassportForm
+    template_name = 'passport_form.html'
+    success_url = '/'
+
+    def form_valid(self, form):
+        """
+        Auto applies foreign key and auto generated settings.
+        """
+        form.instance.created_by = self.request.user
+        return super(AddPassport, self).form_valid(form)
 
 
 class PassportList(LoginRequiredMixin, generic.ListView):

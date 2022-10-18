@@ -33,7 +33,7 @@ class EnrolledPupilForm(forms.ModelForm):
                   'pupil_id', 'school_email', )
 
 
-class PupilPassportForm(forms.ModelForm):
+class PassportForm(forms.ModelForm):
     """
     Form for creating a pupil passport
     """

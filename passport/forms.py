@@ -55,3 +55,7 @@ class PassportForm(forms.ModelForm):
                   'teacher_id', 'pupil_id', 'my_family_image',
                   'my_favorite_image', 'my_hobby_image',
                   )
+
+        widgets = {
+            'my_family': SummernoteWidget(),
+        }

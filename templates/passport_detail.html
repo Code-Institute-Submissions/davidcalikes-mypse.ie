@@ -17,7 +17,7 @@
             <h3>Name:                           {{ passport.my_full_name }}</h3> 
             <h3>D.O.B:                          {{ passport.my_date_of_birth }}</h3>
             <h3>Bio:                            {{ passport.my_biography}}</h3>
-            <h3>Family:                         {{ passport.my_family }}</h3>
+            <h3>Family:                         {{ passport.my_family | safe }}</h3>
             <h3>Likes:                          {{ passport.my_likes }}</h3>
             <h3>Dislikes:                       {{ passport.my_dislikes }}</h3>
             <h3>Strengths:                      {{ passport.my_strengths }}</h3>

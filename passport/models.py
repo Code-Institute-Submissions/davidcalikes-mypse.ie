@@ -1,6 +1,7 @@
 from django.db import models
 from user.models import CustomUser
 from cloudinary.models import CloudinaryField
+from django.utils.text import slugify
 
 
 class EnrolledPupil(models.Model):

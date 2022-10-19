@@ -153,6 +153,16 @@ class PassportDetail(LoginRequiredMixin, View):
         )
 
 
+class UpdatePassport(LoginRequiredMixin, generic.edit.UpdateView):
+    """
+    User with role of School Admin can update enrolled existing pupil record
+    """
+    model = Passport
+    form_class = PassportForm
+    template_name = 'passport_form.html'
+    success_url = reverse_lazy('passport_list')
+
+
 def LoginSuccess(request):
     """
     Redirects users based on user role

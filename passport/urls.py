@@ -13,4 +13,5 @@ urlpatterns = [
     path('add_passport/', views.AddPassport.as_view(), name='add_passport'),
     path('passport_list/', views.PassportList.as_view(), name='passport_list'),
     path('passport_detail/<slug:slug>/', views.PassportDetail.as_view(), name='passport_detail'),
+    path('update_passport/<int:pk>', views.UpdatePassport.as_view(), name='update_passport'),
 ]

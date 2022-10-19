@@ -23,7 +23,7 @@
             <h3>Strengths:                      {{ passport.my_strengths }}</h3>
             <h3>My Communications Skills:       {{passport.my_communication_skills }}</h3>
             <br>
-            <a href="#"><h4>Edit Passport</h4></a><span> </span><a href="#"><h4>Delete This Passport</h4></a>
+            <a href="{% url 'update_passport' passport.id %}"><h4>Edit Passport</h4></a><span> </span><a href="#"><h4>Delete This Passport</h4></a>
             {% else %}
             <h1>
                 Warning! 

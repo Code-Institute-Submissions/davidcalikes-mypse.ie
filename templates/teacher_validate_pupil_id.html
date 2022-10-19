@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        {% if user.is_authenticated and user.role == "teacher" %}
+        <div>
+            <h3>For security purposes, please type {{passport.my_full_name}}'s PUPIL ID Number (Tell me more)</h3>
+            <form method='GET'>
+                <input type='text' name='pupil_id' value='{{ request.GET.pupil_id}}'>
+                <input class="button" type='submit' value="Verify Pupil ID">
+              </form>
+            <hr>
+        </div>
+
+            {% for pupil in object_list %}
+                <div>
+                        <h3>Pupil Id Confirmed!</h3>
+                        <h4>Pupil Name : {{ pupil.pupil_id }}</h4>
+                        <h4>DOB:{{ pupil.pupil_id}} </h4>
+                        <h3><a href="#">Click to get started!</a></h3>
+                </div>
+            {% endfor %} 
+        {% else %}
+        <h3>
+            Warning! 
+            You are unauthorised to view this page! 
+            If you cannot find the page you are looking for please email MyPSE.ie support
+            or visit the about page for more information about how to use this site.
+        </h3>
+        {% endif %}
+ {% endblock %}

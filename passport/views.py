@@ -155,12 +155,23 @@ class PassportDetail(LoginRequiredMixin, View):
 
 class UpdatePassport(LoginRequiredMixin, generic.edit.UpdateView):
     """
-    User with role of School Admin can update enrolled existing pupil record
+    Authenticated user with authorisation can update passport information
     """
     model = Passport
     form_class = PassportForm
     template_name = 'passport_form.html'
     success_url = reverse_lazy('passport_list')
+
+
+class DeletePassport(LoginRequiredMixin, generic.DeleteView):
+    """
+    Authenticated user with authorisation can delete a passport
+    """
+    model = Passport
+    success_url = reverse_lazy('passport_list')
+
+    def delete(self, request, *args, **kwargs):
+        return super(DeletePassport, self).delete(request, *args, **kwargs)
 
 
 def LoginSuccess(request):

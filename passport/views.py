@@ -190,6 +190,23 @@ class TeacherPassportList(generic.ListView):
         return object_list
 
 
+class TeacherValidatePupilId(generic.ListView):
+    """
+    Ensures Pupil is enrolled in system before a passport can be created
+    """
+    template_name = 'teacher_validate_pupil_id.html'
+    model = Passport
+
+    def get_queryset(self):
+        print(self.request.GET)
+        query = self.request.GET.get('pupil_id')
+        if query:
+            object_list = self.model.objects.filter(pupil_id__icontains=query)
+        else:
+            object_list = self.model.objects.none()
+        return object_list
+
+
 def LoginSuccess(request):
     """
     Redirects users based on user role

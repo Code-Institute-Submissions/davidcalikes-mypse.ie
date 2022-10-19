@@ -16,4 +16,5 @@ urlpatterns = [
     path('update_passport/<int:pk>', views.UpdatePassport.as_view(), name='update_passport'),
     path('delete_passport/<int:pk>', views.DeletePassport.as_view(), name='delete_passport'),
     path('teacher_passport_list/', views.TeacherPassportList.as_view(), name='teacher_passport_list'),
+    path('teacher_validate_pupil_id/', views.TeacherValidatePupilId.as_view(), name='teacher_validate_pupil_id'),
 ]

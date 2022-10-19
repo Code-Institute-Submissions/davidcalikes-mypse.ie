@@ -40,6 +40,7 @@
                         <li class="nav-item"><a class="nav-link" href="#!">Logged in as pupil: {{ user.username }}</a></li>
                         {% elif user.is_authenticated and user.role == "parent" %}
                         <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}">Logout</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'passport_list' %}">My Passports</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Logged in as parent: {{ user.username }}</a></li>
                         {% elif user.is_authenticated and user.role == "teacher" %}
                         <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}">Logout</a></li>

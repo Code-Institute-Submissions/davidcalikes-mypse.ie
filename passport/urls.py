@@ -14,4 +14,5 @@ urlpatterns = [
     path('passport_list/', views.PassportList.as_view(), name='passport_list'),
     path('passport_detail/<slug:slug>/', views.PassportDetail.as_view(), name='passport_detail'),
     path('update_passport/<int:pk>', views.UpdatePassport.as_view(), name='update_passport'),
+    path('delete_passport/<int:pk>', views.DeletePassport.as_view(), name='delete_passport'),
 ]

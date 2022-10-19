@@ -85,6 +85,23 @@ class DeletePupilRecord(LoginRequiredMixin, generic.DeleteView):
         return super(DeletePupilRecord, self).delete(request, *args, **kwargs)
 
 
+class ValidatePupilId(generic.ListView):
+    """
+    Ensures Pupil is enrolled in system before a passport can be created
+    """
+    template_name = 'validate_pupil_id.html'
+    model = EnrolledPupil
+
+    def get_queryset(self):
+        print(self.request.GET)
+        query = self.request.GET.get('pupil_id')
+        if query:
+            object_list = self.model.objects.filter(pupil_id__icontains=query)
+        else:
+            object_list = self.model.objects.none()
+        return object_list
+
+
 class AddPassport(LoginRequiredMixin, generic.CreateView):
     """
     User with role of parent and a valid pupil ID number can create a passport

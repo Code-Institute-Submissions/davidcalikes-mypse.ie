@@ -174,6 +174,22 @@ class DeletePassport(LoginRequiredMixin, generic.DeleteView):
         return super(DeletePassport, self).delete(request, *args, **kwargs)
 
 
+class TeacherPassportList(generic.ListView):
+    """
+    Displays list of pupil passports when corresponding teacher id is typed
+    """
+    model = Passport
+    template_name = 'teacher_passport_list.html'
+
+    def get_queryset(self):
+        query = self.request.GET.get('teacher_id')
+        if query:
+            object_list = self.model.objects.filter(teacher_id__icontains=query)
+        else:
+            object_list = self.model.objects.none()
+        return object_list
+
+
 def LoginSuccess(request):
     """
     Redirects users based on user role

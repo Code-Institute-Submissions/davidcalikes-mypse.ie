@@ -207,6 +207,26 @@ class TeacherValidatePupilId(generic.ListView):
         return object_list
 
 
+class TeacherPassportDetail(LoginRequiredMixin, View):
+    """
+    Displays selected passport to teacher user
+    """
+    def get(self, request, pupil_id, *args, **kwargs):
+        """
+        Gets selected pupil record
+        """
+        queryset = Passport.objects.all()
+        passport = get_object_or_404(queryset, pupil_id=pupil_id)
+
+        return render(
+            request,
+            'teacher_passport_detail.html',
+            {
+                "passport": passport,
+            },
+        )
+
+
 def LoginSuccess(request):
     """
     Redirects users based on user role

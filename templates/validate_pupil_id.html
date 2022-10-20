@@ -4,9 +4,9 @@
 
 <div class="container-fluid">
     <div class="row">
-        {% if user.is_authenticated and user.role == "parent" %}
+        {% if user.is_authenticated and user.role == "parent" or "pupil" %}
         <div>
-            <h3>For security purposes, please type your child's PUPIL ID Number (Tell me more)</h3>
+            <h3>For security purposes, please type your valid PUPIL ID Number to proceed (Tell me more)</h3>
             <form method='GET'>
                 <input type='text' name='pupil_id' value='{{ request.GET.pupil_id}}'>
                 <input class="button" type='submit' value="Verify Pupil ID">

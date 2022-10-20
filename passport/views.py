@@ -209,14 +209,14 @@ class TeacherValidatePupilId(generic.ListView):
 
 class TeacherPassportDetail(LoginRequiredMixin, View):
     """
-    Displays selected passport to teacher user
+    Displays passport selected by authenticated and authorised teacher
     """
-    def get(self, request, pupil_id, *args, **kwargs):
+    def get(self, request, slug, *args, **kwargs):
         """
         Gets selected pupil record
         """
         queryset = Passport.objects.all()
-        passport = get_object_or_404(queryset, pupil_id=pupil_id)
+        passport = get_object_or_404(queryset, slug=slug)
 
         return render(
             request,

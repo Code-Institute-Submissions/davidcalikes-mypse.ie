@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        {% if user.is_authenticated and user.role == "pupil" %}
+        <div>
+            <h2>Welcome! Here you can see the passport you have created:
+            <h3>You can read, edit or delete this passport</h3>
+            <h3>If you do not have a passport click the link below to create one</h3>
+            <hr>
+        </div>
+            {% for passport in pupil_check %}
+            <div>
+                <a href="{% url 'passport_detail' passport.slug %}">
+                    <h4>Pupil Name : {{ passport.my_full_name }} </h4>
+                </a>
+            </div>
+            
+            {% endfor %}
+            {% if not pupil_check %} 
+            <h1><a href="{% url 'validate_pupil_id' %}">Create Your Passport!</a></h1>
+            {% else %}
+            <h3>********</h3>
+            {% endif %}
+
+        {% else %}
+        <h3>
+            Warning! 
+            You are unauthorised to view this page! 
+            If you cannot find the page you are looking for please email MyPSE.ie support
+            or visit the about page for more information about how to use this site.
+        </h3>
+        {% endif %}
+        {% endblock %}

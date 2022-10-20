@@ -192,7 +192,7 @@ class TeacherPassportList(generic.ListView):
 
 class TeacherValidatePupilId(generic.ListView):
     """
-    Ensures Pupil is enrolled in system before a passport can be created
+    Ensures Teacher has access to Pupil ID  before a passport can be viewed
     """
     template_name = 'teacher_validate_pupil_id.html'
     model = Passport

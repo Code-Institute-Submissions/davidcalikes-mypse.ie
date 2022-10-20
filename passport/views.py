@@ -227,6 +227,20 @@ class TeacherPassportDetail(LoginRequiredMixin, View):
         )
 
 
+class PupilCheck(LoginRequiredMixin, generic.ListView):
+    """
+    Displays page that lists pupil records created by logged in user
+    """
+    model = Passport
+    template_name = 'pupil_check.html'
+    context_object_name = 'pupil_check'
+
+    def get_queryset(self):
+        return Passport.objects.filter(
+            created_by=self.request.user
+        )
+
+
 def LoginSuccess(request):
     """
     Redirects users based on user role

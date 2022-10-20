@@ -251,5 +251,7 @@ def LoginSuccess(request):
         return redirect('passport_list')
     elif request.user.role == "teacher":
         return redirect("teacher_passport_list")
+    elif request.user.role == "pupil":
+        return redirect("pupil_check")
     else:
         return redirect("home")

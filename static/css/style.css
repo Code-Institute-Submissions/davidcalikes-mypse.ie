@@ -3,7 +3,7 @@
     padding-bottom: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    background: linear-gradient(to right, #ffffff, #ffffff, #0ca9a9);
+    background: linear-gradient(to right, #ffffff, #ffffff, #ffffff, #0ca9a9, #0ca9a9, #0ca9a9,#0ca9a9);
 }
 
 .navbar-brand {
@@ -11,7 +11,7 @@
 }
 
 .footer {
-    background: linear-gradient(to right, #ffffff, #ffffff, #0ca9a9); 
+    background: linear-gradient(to right, #ffffff, #ffffff, #ffffff, #0ca9a9, #0ca9a9, #0ca9a9,#0ca9a9);
 }
 
 .logo-text {
@@ -44,6 +44,8 @@
 }
 
 #hero {
+    background-image: url("https://res.cloudinary.com/djck2eqxo/image/upload/v1666382151/nav_mono_edit_lrptv9.png");
+    width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

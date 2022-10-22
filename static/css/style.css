@@ -3,17 +3,17 @@
     padding-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    background: linear-gradient(to right, #ffffff, #ffffff, #ffffff, #0ca9a9, #0ca9a9, #0ca9a9,#0ca9a9);
+    background: linear-gradient(to right, #ffffff, #ffffff, #0ca9a9,#0ca9a9);
 }
-
 
 .navbar-brand {
     font-size: 2rem;
 }
 
+
 .footer {
     color: white;
-    background: linear-gradient(to right, #ffffff, #ffffff, #ffffff, #0ca9a9, #0ca9a9, #0ca9a9,#0ca9a9);
+    background: linear-gradient(to right, #ffffff, #ffffff, #0ca9a9,#0ca9a9);
 }
 
 .logo-text {
@@ -22,10 +22,10 @@
 }
 
 .nav-link{
-    color: #0ca9a9;
     background-color:white;
     margin-right: 10px;
     border-radius: 25px;
+    border: solid 2px #0ca9a9;
 }
 
 .pse-logo {
@@ -38,6 +38,11 @@
     font-size: 1.8rem;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: #0ca9a9;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
 
 .home-heading {
         margin-top: 2rem;

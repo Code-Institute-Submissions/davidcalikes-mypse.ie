@@ -1,10 +1,11 @@
 .navbar {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
     background: linear-gradient(to right, #ffffff, #ffffff, #ffffff, #0ca9a9, #0ca9a9, #0ca9a9,#0ca9a9);
 }
+
 
 .navbar-brand {
     font-size: 2rem;
@@ -16,7 +17,8 @@
 }
 
 .logo-text {
-    color: #23BBBB;
+    color: #0ca9a9;
+    font-size: x-large;
 }
 
 .nav-link{
@@ -33,13 +35,62 @@
     padding: 0.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    font-size: 1.8rem;
 }
 
+
+.home-heading {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        padding: 0.5rem;
+        text-align: center;
+        width: 80%;
+        color: white;
+        background: #0ca9a9;
+        border: solid 2px white;
+        border-radius: 15px;
+        margin-left: 10%;
+        box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
+}
 
 .main-bg {
     background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/vertical-waves.png"),
     linear-gradient(to right, #ffffff, #ffffff, #23BBBB);
-    display: contents;
+    padding-bottom: 4.5rem;
+}
+
+.card-item {
+    width: 90%;
+    height: 90%;
+    background: #0ca9a9;
+    border: solid 2px white;
+    border-radius: 15px;
+    margin-top: 1rem;
+    margin-left: 5%;
+    padding-bottom: 20%;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
+}
+
+.card-img-top {
+    width: 90%;
+    border: solid 2px white;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.card-body {
+    width: 90%;
+    background: white;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border-radius: 15px;
+}
+
+.hero-image {
+    height: 500px;
+    width: min-content;
+    margin-left: 10%;
 }
 
 #hero {

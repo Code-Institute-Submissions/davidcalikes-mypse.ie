@@ -61,7 +61,6 @@
 .main-bg {
     background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/vertical-waves.png"),
     linear-gradient(to right, #ffffff, #ffffff, #23BBBB);
-    padding-bottom: 4.5rem;
 }
 
 .card-item {

@@ -44,6 +44,35 @@
     padding-left: 1rem;
 }
 
+#home-hero {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    background: #0ca9a9;
+    border: solid 2px white;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
+    position: relative;
+}
+
+#hero-text, #hero-text h2 {
+    color: #fff;
+}
+
+#hero-text {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    background-color: #0ca9a9;
+    bottom: 30%;
+    position: absolute;
+}
+
 .home-heading {
         margin-top: 2rem;
         margin-bottom: 1.5rem;
@@ -92,19 +121,11 @@
 }
 
 .hero-image {
-    height: 500px;
-    width: min-content;
-    margin-left: 10%;
+    border: solid 2px white;
+    border-radius: 15px;
+    width: 100%;
 }
 
-#hero {
-    background-image: url("https://res.cloudinary.com/djck2eqxo/image/upload/v1666382151/nav_mono_edit_lrptv9.png");
-    width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; 
-}
 
 .callout-container {
     height: 100vh;    

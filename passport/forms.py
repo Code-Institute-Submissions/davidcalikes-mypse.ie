@@ -28,8 +28,7 @@ class EnrolledPupilForm(forms.ModelForm):
         Form has all required fields from EnrolledPupil model
         """
         model = EnrolledPupil
-        fields = ('pupil_first_name', 'pupil_last_name',
-                  'school_name', 'teacher_name', 'school_roll_no',
+        fields = ('pupil_full_name', 'school_name',
                   'pupil_id', 'school_email', )
 
 
@@ -42,20 +41,29 @@ class PassportForm(forms.ModelForm):
         Form has all required fields from Passport model
         """
         model = Passport
-        fields = ('my_full_name',
+        fields = ('pupil_id',
+                  'teacher_id',
+                  'my_full_name',
                   'my_passport_image',
-                  'my_emergency_contact_one_name',
-                  'my_emergency_contact_one_number',
-                  'my_emergency_contact_two_name',
-                  'my_emergency_contact_two_number',
+                  'my_emergency_contact_name',
+                  'my_emergency_contact_number',
                   'my_date_of_birth', 'my_biography',
-                  'my_family', 'my_likes', 'my_dislikes', 'my_strengths',
-                  'my_difficulties', 'my_supports', 'my_calming_measures',
+                  'my_family', 'my_likes', 'my_dislikes',
+                  'my_strengths', 'my_difficulties',
+                  'my_supports', 'my_calming_measures',
                   'my_communication_skills', 'my_other_info',
-                  'teacher_id', 'pupil_id', 'my_family_image',
-                  'my_favorite_image', 'my_hobby_image',
                   )
 
         widgets = {
+            'my_biography': SummernoteWidget(),
             'my_family': SummernoteWidget(),
+            'my_likes': SummernoteWidget(),
+            'my_dislikes': SummernoteWidget(),
+            'my_strengths': SummernoteWidget(),
+            'my_difficulties': SummernoteWidget(),
+            'my_supports': SummernoteWidget(),
+            'my_calming_measures': SummernoteWidget(),
+            'my_communication_skills': SummernoteWidget(),
+            'my_other_info': SummernoteWidget(),
+
         }

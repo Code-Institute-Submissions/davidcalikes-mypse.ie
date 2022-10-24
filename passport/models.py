@@ -5,18 +5,12 @@ from django.utils.text import slugify
 
 
 class EnrolledPupil(models.Model):
-    pupil_last_name = models.CharField(
-        max_length=200, default='')
-    pupil_first_name = models.CharField(
-        max_length=200, default='')
-    school_name = models.CharField(
-        max_length=200, default='')
-    teacher_name = models.CharField(
-        max_length=200, default='')
-    school_roll_no = models.CharField(
+    pupil_full_name = models.CharField(
         max_length=200, default='')
     pupil_id = models.PositiveIntegerField(
         default=0, unique=True)
+    school_name = models.CharField(
+        max_length=200, default='')
     school_email = models.EmailField(max_length=200)
     created_by = models.ForeignKey(CustomUser,
                                    on_delete=models.CASCADE,
@@ -28,21 +22,21 @@ class EnrolledPupil(models.Model):
 
 
 class Passport(models.Model):
+    pupil_id = pupil_id = models.CharField(
+        max_length=6, unique=True)
+    teacher_id = models.CharField(
+        max_length=6, default='')
+    slug = models.SlugField(
+        max_length=200, unique=True, default='')
     my_full_name = models.CharField(
         max_length=200,)
     my_passport_image = CloudinaryField('image', default='placeholder')
-    my_emergency_contact_one_name = models.CharField(
+    my_emergency_contact_name = models.CharField(
         max_length=200, default='')
-    my_emergency_contact_one_number = models.PositiveIntegerField(
-        default=0,)
-    slug = models.SlugField(
-        max_length=200, unique=True, default='')
-    my_emergency_contact_two_name = models.CharField(
-        max_length=200, default='')
-    my_emergency_contact_two_number = models.PositiveIntegerField(
+    my_emergency_contact_number = models.PositiveIntegerField(
         default=0,)
     my_date_of_birth = models.DateField(
-        default='DD/MM/YY', blank=False)
+        default='YYYY-MM-DD', blank=False)
     my_biography = models.TextField(
         max_length=600, blank=False)
     my_family = models.TextField(
@@ -63,17 +57,10 @@ class Passport(models.Model):
         max_length=600, blank=False)
     my_other_info = models.TextField(
         max_length=600, blank=False)
-    teacher_id = models.CharField(
-        max_length=50, default='')
-    pupil_id = pupil_id = models.PositiveIntegerField(
-        default=0, unique=True)
     last_updated = models.DateTimeField(auto_now=True)
     created_by = models.ForeignKey(CustomUser,
                                    on_delete=models.CASCADE,
                                    related_name='creator')
-    my_family_image = CloudinaryField('image', default='placeholder')
-    my_favorite_image = CloudinaryField('image', default='placeholder')
-    my_hobby_image = CloudinaryField('image', default='placeholder')
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.pupil_id)

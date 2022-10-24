@@ -116,6 +116,27 @@
     box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
 }
 
+.text-container {
+    width: 80%;
+    background: #0ca9a9;
+    border: solid 2px white;
+    border-radius: 15px;
+    margin-top: 1rem;
+    margin-left: 10%;
+    padding-bottom: 1rem;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
+}
+
+.block-text {
+    background: white;
+    text-align: center;
+    width: 95%;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 2.5%;
+    border-radius: 15px;
+}
+
 .card-img-top {
     width: 90%;
     border: solid 2px white;
@@ -140,6 +161,12 @@
 
 .block-text {
     background: white;
+    text-align: center;
+    width: 95%;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 2.5%;
+    border-radius: 15px;
 }
 
 

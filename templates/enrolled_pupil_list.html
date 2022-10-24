@@ -5,25 +5,29 @@
 <div class="container-fluid">
     <div class="row">
         {% if user.is_authenticated and user.role == "school" %}
-        <div class="block-text">
+        <div>
             <h2 class="heading"> School Admin Page </h2>
-
-            <h5>Welcome {{ user.username }}. This is the school admin page for your school</h5> 
-            <p>Here you can access, and add enrollment records for your pupils.
-            For security reasons, pupils must be enrolled in the MyPSE.ie database before they can create a passport.
-            Choose an option below to view or edit a record or add a new pupil to the database</p>
-        </div>
-            {% for enrolled_pupil in enrolled_pupil_list %}
-                {% if enrolled_pupil.created_by|stringformat:'s' == user|stringformat:'s' %}
-                <div>
-                    <a href="{% url 'enrolled_pupil_record' enrolled_pupil.pupil_id  %}">
-                        <h4>Pupil Name : {{ enrolled_pupil.pupil_last_name }} {{ enrolled_pupil.pupil_first_name}}</h4>
-                        <h4>ID:{{ enrolled_pupil.pupil_id}} </h4>
-                    </a>
+            <div class="text-container">
+                <div class="block-text">
+                    <h5>Welcome {{ user.username }}. This is the school admin page for your school</h5> 
+                    <p>Here you can access, and add enrollment records for your pupils.
+                    For security reasons, pupils must be enrolled in the MyPSE.ie database before they can create a passport.
+                    Choose an option below to view or edit a record or add a new pupil to the database</p>
                 </div>
-                {% endif %}
-            {% endfor %}
-            <h5><a href="{% url 'add_enrolled_pupil' %}">Add Pupil Record +</a></h5>
+            </div>
+        </div>
+                {% for enrolled_pupil in enrolled_pupil_list %}
+                    {% if enrolled_pupil.created_by|stringformat:'s' == user|stringformat:'s' %}
+                    <div>
+                        <a href="{% url 'enrolled_pupil_record' enrolled_pupil.pupil_id  %}">
+                            <h4>Pupil Name : {{ enrolled_pupil.pupil_last_name }} {{ enrolled_pupil.pupil_first_name}}</h4>
+                            <h4>ID:{{ enrolled_pupil.pupil_id}} </h4>
+                        </a>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+                <h5><a href="{% url 'add_enrolled_pupil' %}">Add Pupil Record +</a></h5>
+        </div>
         {% else %}
         <h3>
             Warning! 

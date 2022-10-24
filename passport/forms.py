@@ -16,7 +16,7 @@ class CoreSignupForm(SignupForm):
     def __init__(self, *args, **kwargs):
         super(CoreSignupForm, self).__init__(*args, **kwargs)
         self.fields['role'] = forms.ChoiceField(choices=TYPE_CHOICES,
-                                                label='role')
+                                                label='Role')
 
 
 class EnrolledPupilForm(forms.ModelForm):

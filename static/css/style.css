@@ -104,6 +104,18 @@
     box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
 }
 
+.form-container {
+    width: 70%;
+    background: #0ca9a9;
+    border: solid 2px white;
+    border-radius: 15px;
+    margin-top: 1rem;
+    margin-left: 15%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
+}
+
 .card-img-top {
     width: 90%;
     border: solid 2px white;

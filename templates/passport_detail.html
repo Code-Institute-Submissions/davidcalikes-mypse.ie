@@ -16,12 +16,12 @@
             </div>
             <h3>Name:                           {{ passport.my_full_name }}</h3> 
             <h3>D.O.B:                          {{ passport.my_date_of_birth }}</h3>
-            <h3>Bio:                            {{ passport.my_biography}}</h3>
+            <h3>Bio:                            {{ passport.my_biography | safe}}</h3>
             <h3>Family:                         {{ passport.my_family | safe }}</h3>
-            <h3>Likes:                          {{ passport.my_likes }}</h3>
-            <h3>Dislikes:                       {{ passport.my_dislikes }}</h3>
-            <h3>Strengths:                      {{ passport.my_strengths }}</h3>
-            <h3>My Communications Skills:       {{passport.my_communication_skills }}</h3>
+            <h3>Likes:                          {{ passport.my_likes | safe }}</h3>
+            <h3>Dislikes:                       {{ passport.my_dislikes | safe }}</h3>
+            <h3>Strengths:                      {{ passport.my_strengths | safe }}</h3>
+            <h3>My Communications Skills:       {{passport.my_communication_skills | safe }}</h3>
             <br>
             <a href="{% url 'update_passport' passport.id %}"><h4>Edit Passport</h4></a><span> </span><a href="{% url 'delete_passport' passport.id %}"><h4>Delete This Passport</h4></a>
             {% else %}

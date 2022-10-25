@@ -80,8 +80,9 @@ footer a {
     position: relative;
 }
 
-h1 {
-    font-size: x-large;
+h1, h2 {
+    color: white;
+    text-align: center;
 }
 
 #hero-text {
@@ -89,6 +90,10 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 5px;
     padding-top: 20px;
+}
+
+#hero-text h1 {
+    font-size: x-large;
 }
 
 #hero-strap-text {
@@ -194,6 +199,41 @@ h1 {
     width: 100%;
 }
 
+.passport-container {
+    width: 90%;
+    background-image: url("https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png");
+    background-color:#0ca9a9;
+    border: solid 2px white;
+    border-radius: 15px;
+    margin-top: 7rem;
+    margin-left: 5%;
+    margin-bottom: 2rem;
+    padding: 4rem;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
+}
+
+.passport-separator-rule {
+    color: white;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.passport-item {
+    width: 100%;
+    border: solid 2px white;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.passport-title {
+    font-size: 5rem;
+}
+
+.passport-text-item {
+    color: white;
+}
+
 .block-text {
     background: white;
     text-align: center;
@@ -203,7 +243,6 @@ h1 {
     margin-left: 2.5%;
     border-radius: 15px;
 }
-
 
 .callout-container {
     height: 100vh;    

@@ -216,6 +216,7 @@ h1, h2 {
     color: white;
     width: 50%;
     margin-left: 25%;
+    margin-top: 2rem;
 }
 
 .passport-item {
@@ -244,10 +245,34 @@ h1, h2 {
     margin-top: 1rem;
 }
 
-.passport-text-item {
-    color: white;
-    text-align: center;
+.passport-text-row {
+    width: 100%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 25px;
+    border: solid 2px #0B5657;
+    margin-top: 1rem;
 }
+
+
+.passport-text-item {
+    font-size: 2vw;
+    color: #0B5657;
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+
+.passport-info-text {
+    width: 50%;
+    display: inline;
+}
+
+.passport-info-data {
+    display: inline;
+    width: 50%;
+    color: #9500a0
+}
+
 
 .passport-cloudinary-item {
     width: 100%;

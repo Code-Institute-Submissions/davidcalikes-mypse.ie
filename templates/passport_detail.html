@@ -23,11 +23,38 @@
                         <h2 class="passport-title">{{ passport.my_full_name }}</h2>
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <h4 class="passport-text-item">Personal Details:</h4>
-                        <h5 class="passport-text-item">Date of Birth: {{ passport.my_date_of_birth }} </h5>
-                        <h5 class="passport-text-item">Emergency Contact: {{ passport.my_emergency_contact_name }} Tel: {{ passport.my_emergency_contact_number}}</h5>
+
+                    <hr class="passport-separator-rule">
+
+                    <div class="passport-text-row">
+                        <div class="col-md-7">
+                            <div class="passport-text-item">
+                                <h4>My Personal Details:</h4>
+                                <br>
+                                <div></div>
+                                
+                                <div>
+                                    <h5 class="passport-info-text"><i class="fa fa-calendar" aria-hidden="true"></i><span></span>
+                                    My Date of Birth:</h5> <h4 class="passport-info-data">{{ passport.my_date_of_birth }}</h4>
+                                </div>
+                                <div>
+                                    <h5 class="passport-info-text"><i class="fa fa-user" aria-hidden="true"></i><span></span>
+                                    My Emergency Contact Person:</h5> <h4 class="passport-info-data"> {{ passport.my_emergency_contact_name }}</h4>
+                                </div>
+                                <div>
+                                    <h5 class="passport-info-text"><i class="fa fa-phone fa-flip-horizontal" aria-hidden="true"></i><span></span>
+                                    My Emergency Contact Number:</h5> <h4 class="passport-info-data">{{ passport.my_emergency_contact_number}}</h4>
+                                    </div>
+                            </div>
+                            <div class="col-md-5 passport-logo">
+                                <img src="" alt="">
+                            </div>
+                        </div>
                     </div>
+                   
+                    <hr class="passport-separator-rule">
+
+
                     
                     <div class="col-md-6">
                         <h3>Family: {{ passport.my_family | safe }}</h3>

@@ -41,8 +41,10 @@ class Passport(models.Model):
         max_length=600, blank=False)
     my_family = models.TextField(
         max_length=600, blank=False)
+    my_family_image = CloudinaryField('image', default='placeholder')
     my_likes = models.TextField(
         max_length=600, blank=False)
+    my_likes_image = CloudinaryField('image', default='placeholder')
     my_dislikes = models.TextField(
         max_length=600, blank=False)
     my_strengths = models.TextField(
@@ -51,10 +53,12 @@ class Passport(models.Model):
         max_length=600, blank=False)
     my_supports = models.TextField(
         max_length=600, blank=False)
+    my_supports_image = CloudinaryField('image', default='placeholder')
     my_calming_measures = models.TextField(
         max_length=600, blank=False)
     my_communication_skills = models.TextField(
         max_length=600, blank=False)
+    my_communication_skills_image = CloudinaryField('image', default='placeholder')
     my_other_info = models.TextField(
         max_length=600, blank=False)
     last_updated = models.DateTimeField(auto_now=True)

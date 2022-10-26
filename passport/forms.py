@@ -52,6 +52,8 @@ class PassportForm(forms.ModelForm):
                   'my_strengths', 'my_difficulties',
                   'my_supports', 'my_calming_measures',
                   'my_communication_skills', 'my_other_info',
+                  'my_communication_skills_image', 'my_likes_image',
+                  'my_supports_image', 'my_family_image',
                   )
 
         widgets = {

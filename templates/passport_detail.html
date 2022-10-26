@@ -10,39 +10,58 @@
 <body>
     <div class="container-fluid passport-container">
         <div class="row">
-            {% if user.is_authenticated and user.role == "parent" or "pupil" %}
-                {% if passport.created_by|stringformat:'s' == user|stringformat:'s' %}  
-                <h1>My Passport</h1>
-                <hr class="passport-separator-rule">
-                <div class="col-md-5">
-                    <img class="passport-item" src=" {{ passport.my_passport_image.url }}" width="100%">
-                </div>
-                <div class="col-md-7">
-                    <h2 class="passport-title">{{ passport.my_full_name }}</h2>
-                </div>
+            {% if "/add_passport" or "/update_passport" in request.META.HTTP_REFERER %}
+                {% if user.is_authenticated and user.role == "parent" or "pupil" %}
+                    {% if passport.created_by|stringformat:'s' == user|stringformat:'s' %}  
+                    <h1>My Passport</h1>
+                    <hr class="passport-separator-rule">
+                    <div class="col-md-5">
+                        <img class="passport-item" src=" {{ passport.my_passport_image.url }}">
+                    </div>
+                    <div class="col-md-7">
+                        <h2 class="passport-title">{{ passport.my_full_name }}</h2>
+                        
+                    </div>
+                    <div class="col-md-12">
+                        <h4 class="passport-text-item">Personal Details:</h4>
+                        <h5 class="passport-text-item">Date of Birth: {{ passport.my_date_of_birth }} </h5>
+                        <h5 class="passport-text-item">Emergency Contact: {{ passport.my_emergency_contact_name }} Tel: {{ passport.my_emergency_contact_number}}</h5>
+                    </div>
+                    
+                    <div class="col-md-6 passport-item">
+                        <div class="passport-cloudinary-item" >
+                            <h3 class="passport-cloudinary-item">Bio: {{ passport.my_biography | safe}}</h3>
+                        </div>
+                    </div>
+                    
+                    <h3>Family: {{ passport.my_family | safe }}</h3>
+                    
+                    
                 
-                
-                <h3>D.O.B:                          {{ passport.my_date_of_birth }}</h3>
-                <h3>Emergency Contact Details</h3>
-                <h3>Contact Name</h3>
-                <h3>Contact Number</h3>
-                <h3>Difficulties</h3>
-                <h3>Supports</h3>
-                <h3>Calming Measures</h3>
-                <h3>Other Info</h3>
-                <h3>Bio:                            {{ passport.my_biography | safe}}</h3>
-                <h3>Family:                         {{ passport.my_family | safe }}</h3>
-                <h3>Likes:                          {{ passport.my_likes | safe }}</h3>
-                <h3>Dislikes:                       {{ passport.my_dislikes | safe }}</h3>
-                <h3>Strengths:                      {{ passport.my_strengths | safe }}</h3>
-                <h3>Communication:                  {{ passport.my_communication_skills | safe }}</h3>
-                <h3></h3>
-                <h3></h3>
-                <h3></h3>
+                    <h3>Difficulties</h3>
+                    <h3>Supports</h3>
+                    <h3>Calming Measures</h3>
+                    <h3>Other Info</h3>
+                    
+                    <h3>Likes:                          {{ passport.my_likes | safe }}</h3>
+                    <h3>Dislikes:                       {{ passport.my_dislikes | safe }}</h3>
+                    <h3>Strengths:                      {{ passport.my_strengths | safe }}</h3>
+                    <h3>Communication:                  {{ passport.my_communication_skills | safe }}</h3>
+                    <h3></h3>
+                    <h3></h3>
+                    <h3></h3>
 
-                
-                <br>
-                <a href="{% url 'update_passport' passport.id %}"><h4>Edit Passport</h4></a><span> </span><a href="{% url 'delete_passport' passport.id %}"><h4>Delete This Passport</h4></a>
+                    
+                    <br>
+                    <a href="{% url 'update_passport' passport.id %}"><h4>Edit Passport</h4></a><span> </span><a href="{% url 'delete_passport' passport.id %}"><h4>Delete This Passport</h4></a>
+                    {% else %}
+                    <h3>
+                        Warning! 
+                        You are unauthorised to view this page! 
+                        If you cannot find the page you are looking for please email MyPSE.ie support
+                        or visit the about page for more information about how to use this site.
+                    </h3>
+                    {% endif %}
                 {% else %}
                 <h3>
                     Warning! 
@@ -59,7 +78,7 @@
                 or visit the about page for more information about how to use this site.
             </h3>
             {% endif %}
-        {% endblock %}
+    {% endblock %}
  
        
         

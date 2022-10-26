@@ -232,6 +232,11 @@ h1, h2 {
 
 .passport-text-item {
     color: white;
+    text-align: center;
+}
+
+.passport-cloudinary-item {
+    width: 100%;
 }
 
 .block-text {

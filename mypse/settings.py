@@ -60,6 +60,16 @@ LOGOUT_REDIRECT_URL = '/'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
+SUMMERNOTE_CONFIG = {
+    'summernote': {
+        # As an example, using Summernote Air-mode
+        'airMode': False,
+        'width': '100%',
+        'height': '480',
+        'toolbar': ['bold', 'italic', 'underline', 'style', 'fontsize', 'color', 'link', ],
+        },
+    }
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

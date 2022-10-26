@@ -200,16 +200,16 @@ h1, h2 {
 }
 
 .passport-container {
-    width: 90%;
-    background-image: url("https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png");
-    background-color:#0ca9a9;
-    border: solid 2px white;
-    border-radius: 15px;
-    margin-top: 7rem;
-    margin-left: 5%;
-    margin-bottom: 2rem;
-    padding: 4rem;
-    box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
+        width: 92%;
+        background-image: url(https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png);
+        background-color: #0ca9a9;
+        border: solid 2px white;
+        border-radius: 15px;
+        margin-top: 7rem;
+        margin-left: 4%;
+        margin-bottom: 2rem;
+        padding: 3vw;
+        box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
 }
 
 .passport-separator-rule {
@@ -219,15 +219,29 @@ h1, h2 {
 }
 
 .passport-item {
-    width: 100%;
+    width: 90%;
     border: solid 2px white;
     border-radius: 15px;
-    margin-left: 5%;
     margin-top: 5%;
 }
 
 .passport-title {
-    font-size: 5rem;
+    font-size: 5vw;
+    color: #0B5657
+}
+
+.vert-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.passport-title-row {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 25px;
+    border: solid 2px #0B5657;
+    margin-top: 1rem;
 }
 
 .passport-text-item {

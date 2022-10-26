@@ -15,12 +15,13 @@
                     {% if passport.created_by|stringformat:'s' == user|stringformat:'s' %}  
                     <h1>My Passport</h1>
                     <hr class="passport-separator-rule">
-                    <div class="col-md-5">
+                    <div class="col-md-5 vert-center">
                         <img class="passport-item" src=" {{ passport.my_passport_image.url }}">
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-7 vert-center">
+                        <div class="row passport-title-row">
                         <h2 class="passport-title">{{ passport.my_full_name }}</h2>
-                        
+                        </div>
                     </div>
                     <div class="col-md-12">
                         <h4 class="passport-text-item">Personal Details:</h4>
@@ -28,13 +29,19 @@
                         <h5 class="passport-text-item">Emergency Contact: {{ passport.my_emergency_contact_name }} Tel: {{ passport.my_emergency_contact_number}}</h5>
                     </div>
                     
-                    <div class="col-md-6 passport-item">
-                        <div class="passport-cloudinary-item" >
-                            <h3 class="passport-cloudinary-item">Bio: {{ passport.my_biography | safe}}</h3>
-                        </div>
+                    <div class="col-md-6">
+                        <h3>Family: {{ passport.my_family | safe }}</h3>
+                    </div>
+
+                    <div class="col-md-6">
+                        <img class="passport-item" src=" {{ passport.my_family_image.url }}">
                     </div>
                     
-                    <h3>Family: {{ passport.my_family | safe }}</h3>
+                    
+                    <div class="col-md-6 passport-item">
+                        <h3>Bio: {{ passport.my_biography | safe}}</h3>
+                    </div>
+                    
                     
                     
                 

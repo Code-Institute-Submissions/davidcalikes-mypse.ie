@@ -66,7 +66,8 @@ SUMMERNOTE_CONFIG = {
         'airMode': False,
         'width': '100%',
         'height': '480',
-        'toolbar': ['bold', 'italic', 'underline', 'style', 'fontsize', 'color', 'link', ],
+        'toolbar': ['bold', 'italic', 'underline', 'style', 
+                    'fontsize', 'fontname', 'color', 'link', ],
         },
     }
 

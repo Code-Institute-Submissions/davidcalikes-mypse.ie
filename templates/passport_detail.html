@@ -51,6 +51,24 @@
                             <img src="https://res.cloudinary.com/djck2eqxo/image/upload/v1666825821/Screen_Shot_2022-10-27_at_00.09.34_wpciy2.png" alt="">
                         </div>
                     </div>
+
+                    <hr class="passport-separator-rule">
+
+                    <div class="col-md-6 vert-center">
+                        <div class="passport-card">
+                            <h4 class="passport-card-text-heading">My Biography </h4>
+                            <h4 class="passport-underscore"> ------------------- </h4>
+                            <p>{{ passport.my_biography | safe }}</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 vert-center">
+                        <div class="passport-card">
+                            <h4 class="passport-card-text-heading">My Strengths </h4>
+                            <h4 class="passport-underscore"> ------------------- </h4>
+                            <p>{{ passport.my_strengths | safe }}</p>
+                        </div>
+                    </div>
                    
                     <hr class="passport-separator-rule">
 
@@ -62,34 +80,101 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 vert-center">
                         <img class="passport-item" src=" {{ passport.my_family_image.url }}">
                     </div>
                     
+                    <hr class="passport-separator-rule">
+
+                    <div class="col-md-6 vert-center">
+                        <img class="passport-item" src=" {{ passport.my_likes_image.url }}">
+                    </div>
                     
-                    <div class="col-md-6 passport-item">
-                        <h3>Bio: {{ passport.my_biography | safe}}</h3>
+                    <div class="col-md-6 vert-center">
+                        <div class="passport-card">
+                            <h4 class="passport-card-text-heading">My Likes </h4>
+                            <h4 class="passport-underscore"> ------------------- </h4>
+                            <p>{{ passport.my_likes | safe }}</p>
+                        </div>
                     </div>
                     
                     
-                    
-                
-                    <h3>Difficulties</h3>
-                    <h3>Supports</h3>
-                    <h3>Calming Measures</h3>
-                    <h3>Other Info</h3>
-                    
-                    <h3>Likes:                          {{ passport.my_likes | safe }}</h3>
-                    <h3>Dislikes:                       {{ passport.my_dislikes | safe }}</h3>
-                    <h3>Strengths:                      {{ passport.my_strengths | safe }}</h3>
-                    <h3>Communication:                  {{ passport.my_communication_skills | safe }}</h3>
-                    <h3></h3>
-                    <h3></h3>
-                    <h3></h3>
 
+                    <hr class="passport-separator-rule">
+
+                    <div class="col-md-6 vert-center">
+                        <div class="passport-card">
+                            <h4 class="passport-card-text-heading">My Dislikes </h4>
+                            <h4 class="passport-underscore"> ------------------- </h4>
+                            <p>{{ passport.my_dislikes | safe }}</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 vert-center">
+                        <div class="passport-card">
+                            <h4 class="passport-card-text-heading">My Difficulties </h4>
+                            <h4 class="passport-underscore"> ------------------- </h4>
+                            <p>{{ passport.my_difficulties | safe }}</p>
+                        </div>
+                    </div>
+
+                    <hr class="passport-separator-rule">
+
+                    <div class="col-md-6 vert-center">
+                        <img class="passport-item" src=" {{ passport.my_supports_image.url }}">
+                    </div>
+
+                    <div class="col-md-6 vert-center">
+                        <div class="passport-card">
+                            <h4 class="passport-card-text-heading">My Supports</h4>
+                            <h4 class="passport-underscore"> ------------------- </h4>
+                            <p>{{ passport.my_supports | safe }}</p>
+                        </div>
+                    </div>
+
+                    <hr class="passport-separator-rule">
+
+                    <div class="col-md-6 vert-center">
+                        <div class="passport-card">
+                            <h4 class="passport-card-text-heading">My Communication Skills</h4>
+                            <h4 class="passport-underscore"> ------------------- </h4>
+                            <p>{{ passport.my_communication_skills | safe }}</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 vert-center">
+                        <img class="passport-item" src=" {{ passport.my_communication_skills_image.url }}">
+                    </div>
+
+                    <hr class="passport-separator-rule">
+
+                    <div class="col-md-6 vert-center">
+                        <div class="passport-card">
+                            <h4 class="passport-card-text-heading">My Calming Measures </h4>
+                            <h4 class="passport-underscore"> ------------------- </h4>
+                            <p>{{ passport.my_calming_measure | safe }}</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 vert-center">
+                        <div class="passport-card">
+                            <h4 class="passport-card-text-heading">My Other Info </h4>
+                            <h4 class="passport-underscore"> ------------------- </h4>
+                            <p>{{ passport.my_other_info | safe }}</p>
+                        </div>
+                    </div>
+
+                    <hr class="passport-separator-rule">
+
+                    <div class="col-md-6 vert-center">
+                            <a href="{% url 'delete_passport' passport.id %}"><h4>Delete This Passport</h4></a>
+                    </div>
+                    
+                    <div class="col-md-6 vert-center">
+                            <a href="{% url 'update_passport' passport.id %}"><h4>Edit Passport</h4></a>
+                    </div>
                     
                     <br>
-                    <a href="{% url 'update_passport' passport.id %}"><h4>Edit Passport</h4></a><span> </span><a href="{% url 'delete_passport' passport.id %}"><h4>Delete This Passport</h4></a>
                     {% else %}
                     <h3>
                         Warning! 

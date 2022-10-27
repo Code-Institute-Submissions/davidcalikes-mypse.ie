@@ -228,7 +228,8 @@ h1, h2 {
 
 .passport-title {
     font-size: 5vw;
-    color: #0B5657
+    color: #0B5657;
+    margin-top: 1vh;
 }
 
 .vert-center {
@@ -252,6 +253,7 @@ h1, h2 {
     border-radius: 25px;
     border: solid 2px #0B5657;
     margin-top: 1rem;
+    margin-left: unset;
 }
 
 
@@ -260,6 +262,11 @@ h1, h2 {
     color: #0B5657;
     margin-left: 2vw;
     margin-top: 1vw;
+}
+
+.passport-info-item-box{
+    width: auto;
+    margin-bottom: 0.5rem;
 }
 
 .passport-info-text {

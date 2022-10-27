@@ -7,6 +7,7 @@
        Passport
     </title>
 </head>
+
 <body>
     <div class="container-fluid passport-container">
         <div class="row">
@@ -29,9 +30,8 @@
                     <div class="row passport-text-row">
                         <div class="col-md-7">
                             <div class="passport-text-item">
-                                <h4>My Personal Details:</h4>
-                                <h4> ------------------
-                                </h4>
+                                <h4>My Personal Details</h4>
+                                <h4> ------------------- </h4>
                             
                                 <div class="passport-info-item-box">
                                     <h5 class="passport-info-text"><i class="fa fa-calendar" aria-hidden="true"></i><span></span>
@@ -54,8 +54,12 @@
                    
                     <hr class="passport-separator-rule">
 
-                    <div class="col-md-6">
-                        <h3>Family: {{ passport.my_family | safe }}</h3>
+                    <div class="col-md-6 vert-center">
+                        <div class="passport-card">
+                            <h4 class="passport-card-text-heading">My Family </h4>
+                            <h4 class="passport-underscore"> ------------------- </h4>
+                            <p>{{ passport.my_family | safe }}</p>
+                        </div>
                     </div>
 
                     <div class="col-md-6">

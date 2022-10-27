@@ -224,6 +224,19 @@ h1, h2 {
     border: solid 2px white;
     border-radius: 15px;
     margin-top: 5%;
+    margin-left: 5%;
+}
+
+.passport-card {
+        width: 90%;
+        padding: 0.5rem;
+        background-color: white;
+        border: solid 2px #0B5657;
+        border-radius: 15px;
+        margin-top: 1rem;
+        margin-left: 5%;
+        padding-bottom: 20%;
+        box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
 }
 
 .passport-title {
@@ -256,7 +269,6 @@ h1, h2 {
     margin-left: unset;
 }
 
-
 .passport-text-item {
     font-size: 2vw;
     color: #0B5657;
@@ -280,9 +292,21 @@ h1, h2 {
     color: #9500a0
 }
 
-
 .passport-cloudinary-item {
     width: 100%;
+}
+
+.passport-card-text-heading {
+    text-align: center;
+    color: #0B5657;
+    border-radius: 25px;
+    background: white;
+    padding-top: 0.5rem;
+}
+
+.passport-underscore {
+    text-align: center;
+    color: #0B5657;
 }
 
 .block-text {

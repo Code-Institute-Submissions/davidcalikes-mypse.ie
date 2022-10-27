@@ -6,7 +6,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     background-image: url("https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png"),
-    linear-gradient(to right,  #ffffff, #ffffff, #0ca9a9, #0ca9a9, #0ca9a9, #0ca9a9);
+        linear-gradient(to right, #ffffff, #ffffff, #0ca9a9, #0ca9a9, #0ca9a9, #0ca9a9);
     box-shadow: 10px 10px 15px rgb(0 0 0 / 15%);
 
 }
@@ -20,7 +20,7 @@
     font-family: Helvetica, sans-serif;
     color: #0f8787;
     background-image: url("https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png"),
-    linear-gradient(to right,  #ffffff, #ffffff, #0ca9a9, #0ca9a9, #0ca9a9, #0ca9a9);
+        linear-gradient(to right, #ffffff, #ffffff, #0ca9a9, #0ca9a9, #0ca9a9, #0ca9a9);
 }
 
 footer a {
@@ -41,8 +41,8 @@ footer a {
     font-size: x-large;
 }
 
-.nav-link{
-    background-color:white;
+.nav-link {
+    background-color: white;
     margin-right: 10px;
     border-radius: 25px;
     border: solid 2px #0f8787;
@@ -73,14 +73,15 @@ footer a {
     text-align: center;
     color: white;
     background-image: url("https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png");
-    background-color:#0ca9a9;
+    background-color: #0ca9a9;
     border: solid 2px white;
     border-radius: 15px;
     box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
     position: relative;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: white;
     text-align: center;
 }
@@ -102,30 +103,30 @@ h1, h2 {
 }
 
 .heading {
-        margin-top: 1rem;
-        margin-bottom: 1.5rem;
-        padding: 0.5rem;
-        text-align: center;
-        width: 80%;
-        color: white;
-        background-image: url("https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png");
-        background-color:#0ca9a9;
-        border: solid 2px white;
-        border-radius: 15px;
-        margin-left: 10%;
-        box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    width: 80%;
+    color: white;
+    background-image: url("https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png");
+    background-color: #0ca9a9;
+    border: solid 2px white;
+    border-radius: 15px;
+    margin-left: 10%;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
 }
 
 .main-bg {
     background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/vertical-waves.png"),
-    linear-gradient(to right, #ffffff, #ffffff, #23BBBB);
+        linear-gradient(to right, #ffffff, #ffffff, #23BBBB);
 }
 
 .card-item {
     width: 90%;
     height: 90%;
     background-image: url("https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png");
-    background-color:#0ca9a9;
+    background-color: #0ca9a9;
     border: solid 2px white;
     border-radius: 15px;
     margin-top: 1rem;
@@ -137,7 +138,7 @@ h1, h2 {
 .form-container {
     width: 70%;
     background-image: url("https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png");
-    background-color:#0ca9a9;
+    background-color: #0ca9a9;
     border: solid 2px white;
     border-radius: 15px;
     margin-top: 7rem;
@@ -200,16 +201,16 @@ h1, h2 {
 }
 
 .passport-container {
-        width: 92%;
-        background-image: url(https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png);
-        background-color: #0ca9a9;
-        border: solid 2px white;
-        border-radius: 15px;
-        margin-top: 7rem;
-        margin-left: 4%;
-        margin-bottom: 2rem;
-        padding: 3vw;
-        box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
+    width: 92%;
+    background-image: url(https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png);
+    background-color: #0ca9a9;
+    border: solid 2px white;
+    border-radius: 15px;
+    margin-top: 7rem;
+    margin-left: 4%;
+    margin-bottom: 2rem;
+    padding: 3vw;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
 }
 
 .passport-separator-rule {
@@ -220,21 +221,21 @@ h1, h2 {
 }
 
 .passport-item {
-    width: 90%;
-    border: solid 2px white;
-    border-radius: 15px;
-    margin-top: 5%;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 25px;
 }
 
 .passport-card {
-        width: 90%;
-        padding: 0.5rem;
-        background-color: white;
-        border: solid 2px #0B5657;
-        border-radius: 15px;
-        margin-top: 1rem;
-        padding-bottom: 20%;
-        box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
+    width: 90%;
+    padding: 1.5rem;
+    background-color: white;
+    border: solid 2px #0B5657;
+    border-radius: 15px;
+    margin-top: 1rem;
+    padding-bottom: 20%;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
 }
 
 .passport-title {
@@ -258,13 +259,13 @@ h1, h2 {
 }
 
 .passport-text-row {
-    width: 100%;
+    width: 94%;
     background-color: white;
     padding: 1rem;
     border-radius: 25px;
     border: solid 2px #0B5657;
     margin-top: 1rem;
-    margin-left: unset;
+    margin-left: 3%;
 }
 
 .passport-text-item {
@@ -274,19 +275,23 @@ h1, h2 {
     margin-top: 1vw;
 }
 
-.passport-info-item-box{
+#stamp-logo {
+    width: 100%;
+}
+
+.passport-info-item-box {
     width: auto;
     margin-bottom: 0.5rem;
 }
 
 .passport-info-text {
-    width: 50%;
-    display: inline;
+    width: 75%;
+    display: inline-block;
 }
 
 .passport-info-data {
-    display: inline;
-    width: 50%;
+    width: 75%;
+    display: inline-block;
     color: #9500a0
 }
 
@@ -318,7 +323,7 @@ h1, h2 {
 }
 
 .callout-container {
-    height: 100vh;    
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -16,19 +16,19 @@
                     {% if passport.created_by|stringformat:'s' == user|stringformat:'s' %}  
                     <h1>My Passport</h1>
                     <hr class="passport-separator-rule">
-                    <div class="col-md-5 vert-center">
-                        <img class="passport-item" src=" {{ passport.my_passport_image.url }}">
-                    </div>
-                    <div class="col-md-7 vert-center">
+                    <div class="col-md-12 vert-center">
                         <div class="row passport-title-row">
                         <h2 class="passport-title">{{ passport.my_full_name }}</h2>
-                        </div>
                     </div>
-
+                    </div>  
                     <hr class="passport-separator-rule">
 
-                    <div class="row passport-text-row">
-                        <div class="col-md-7">
+                    <div class="row flex-row-reverse passport-text-row">
+                        <div class="col-md-6 vert-center">
+                            <img class="passport-item" src=" {{ passport.my_passport_image.url }}">
+                        </div>
+
+                        <div class="col-md-6">
                             <div class="passport-text-item">
                                 <h4>My Personal Details</h4>
                                 <h4> ------------------- </h4>
@@ -42,13 +42,10 @@
                                     My Emergency Contact Person:</h5> <h4 class="passport-info-data"> {{ passport.my_emergency_contact_name }}</h4>
                                 </div>
                                 <div class="passport-info-item-box">
-                                    <h5 class="passport-info-text"><i class="fa fa-phone fa-flip-horizontal" aria-hidden="true"></i><span></span>
+                                    <h5 class="passport-info-text"><i class="fa fa-phone-square fa-flip-horizontal" aria-hidden="true"></i><span></span>
                                     My Emergency Contact Number:</h5> <h4 class="passport-info-data">{{ passport.my_emergency_contact_number}}</h4>
                                     </div>
                             </div>
-                        </div>
-                        <div class="col-md-5 passport-logo">
-                            <img src="https://res.cloudinary.com/djck2eqxo/image/upload/v1666825821/Screen_Shot_2022-10-27_at_00.09.34_wpciy2.png" alt="">
                         </div>
                     </div>
 

@@ -22,8 +22,8 @@ class EnrolledPupil(models.Model):
 
 
 class Passport(models.Model):
-    pupil_id = pupil_id = models.CharField('Pupil ID (Must match assigned ID!)',
-        max_length=6, unique=True)
+    pupil_id = pupil_id = models.CharField(
+        'Pupil ID (Must match assigned ID!)', max_length=6, unique=True)
     teacher_id = models.CharField(
         max_length=6, default='')
     slug = models.SlugField(

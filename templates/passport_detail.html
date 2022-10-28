@@ -29,7 +29,7 @@
                         <div class="col-md-6">
                             <div class="passport-text-item">
                                 <h4>My Personal Details</h4>
-                                <h4> ------------------- </h4>
+                                <h4 class="passport-details-underscore"> ------------------- </h4>
                             
                                 <div class="passport-info-item-box">
                                     <h5 class="passport-info-text"><i class="fa fa-calendar" aria-hidden="true"></i><span></span>
@@ -172,11 +172,11 @@
                     <hr class="passport-separator-rule">
 
                     <div class="col-md-6 vert-center">
-                            <a href="{% url 'delete_passport' passport.id %}"><h4>Delete This Passport</h4></a>
+                        <a class="passport-options" href="{% url 'update_passport' passport.id %}"><h4>Edit Passport</h4></a>
                     </div>
-                    
+
                     <div class="col-md-6 vert-center">
-                            <a href="{% url 'update_passport' passport.id %}"><h4>Edit Passport</h4></a>
+                            <a class="passport-options" href="{% url 'delete_passport' passport.id %}"><h4>Delete Passport</h4></a>
                     </div>
                     
                     <br>

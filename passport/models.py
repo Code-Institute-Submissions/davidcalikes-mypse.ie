@@ -22,7 +22,7 @@ class EnrolledPupil(models.Model):
 
 
 class Passport(models.Model):
-    pupil_id = pupil_id = models.CharField(
+    pupil_id = pupil_id = models.CharField('Pupil ID (Must match assigned ID!)',
         max_length=6, unique=True)
     teacher_id = models.CharField(
         max_length=6, default='')
@@ -30,7 +30,7 @@ class Passport(models.Model):
         max_length=200, unique=True, default='')
     my_full_name = models.CharField(
         max_length=200,)
-    my_passport_image = CloudinaryField('image', default='placeholder')
+    my_passport_image = CloudinaryField('My Passport Photo', default='placeholder')
     my_emergency_contact_name = models.CharField(
         max_length=200, default='')
     my_emergency_contact_number = models.PositiveIntegerField(
@@ -41,10 +41,10 @@ class Passport(models.Model):
         max_length=600, blank=False)
     my_family = models.TextField(
         max_length=600, blank=False)
-    my_family_image = CloudinaryField('image', default='placeholder')
+    my_family_image = CloudinaryField('My Family Photo', default='placeholder')
     my_likes = models.TextField(
         max_length=600, blank=False)
-    my_likes_image = CloudinaryField('image', default='placeholder')
+    my_likes_image = CloudinaryField('My Likes Photo', default='placeholder')
     my_dislikes = models.TextField(
         max_length=600, blank=False)
     my_strengths = models.TextField(
@@ -53,12 +53,12 @@ class Passport(models.Model):
         max_length=600, blank=False)
     my_supports = models.TextField(
         max_length=600, blank=False)
-    my_supports_image = CloudinaryField('image', default='placeholder')
+    my_supports_image = CloudinaryField('My Supports Photo', default='placeholder')
     my_calming_measures = models.TextField(
         max_length=600, blank=False)
     my_communication_skills = models.TextField(
         max_length=600, blank=False)
-    my_communication_skills_image = CloudinaryField('image', default='placeholder')
+    my_communication_skills_image = CloudinaryField('My Communication Skills Photo', default='placeholder')
     my_other_info = models.TextField(
         max_length=600, blank=False)
     last_updated = models.DateTimeField(auto_now=True)

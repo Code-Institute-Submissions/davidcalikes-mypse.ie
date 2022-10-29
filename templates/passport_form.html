@@ -9,9 +9,9 @@
         <div>
             <h3 class="nav-item">Pupil Passport Form</h3>
             <hr>
-            <form method="POST" enctype='multipart/form-data'>
+            <form name="form"  enctype='multipart/form-data' onsubmit='return validateForm()' method="POST">
                 {% csrf_token %}
-                {{ form | crispy }}
+                {{ form | crispy }} 
                 <input type="submit" value="Submit">
             </form>
         </div>

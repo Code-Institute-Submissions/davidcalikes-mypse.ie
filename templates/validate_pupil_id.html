@@ -20,7 +20,7 @@
                             <h3>Pupil Id Confirmed!</h3>
                             <h4>Pupil Name : {{ pupil.pupil_full_name}}</h4>
                             <h4 id="valid-pupil-id">{{ pupil.pupil_id}}</h4> 
-                            <h3><a onclick="setId()" href="{% url 'add_passport' %}">Click to get started!</a></h3>
+                            <h3><a onclick="setValidatePupilId()" href="{% url 'add_passport' %}">Click to get started!</a></h3>
                     </div>
                 {% endfor %} 
             {% else %}

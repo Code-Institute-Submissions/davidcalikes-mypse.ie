@@ -1,5 +1,15 @@
-function setId() {
+function setValidPupilCheckId() {
+    let pupilId= document.getElementById("valid-pupil-check-id").innerHTML
+    localStorage.setItem("id", pupilId);
+}
+
+function setValidatePupilId() {
     let pupilId= document.getElementById("valid-pupil-id").innerHTML
+    localStorage.setItem("id", pupilId);
+}
+
+function setPassportListValidPupilId() {
+    let pupilId= document.getElementById("set-passport-list-valid-pupil-id").innerHTML
     localStorage.setItem("id", pupilId);
 }
 

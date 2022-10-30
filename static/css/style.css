@@ -15,7 +15,6 @@
     font-size: 2rem;
 }
 
-
 .footer {
     font-family: Helvetica, sans-serif;
     color: #0B5657;
@@ -71,7 +70,6 @@ footer a {
 #home-hero {
     margin-top: 7rem;
     margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
     text-align: center;
@@ -135,6 +133,10 @@ footer a {
     width: 50%;
     margin-left: 25%;
     margin-top: 1rem;
+}
+
+.pupil-id-text {
+    display: none;
 }
 
 .link-row {

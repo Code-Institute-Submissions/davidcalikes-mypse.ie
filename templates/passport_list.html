@@ -2,20 +2,20 @@
 {% load static %}
 {% block content %}
 
-    <div id="list-heading">
-        <div class="col-md-12 vert-center">
-            <div class="row">
-                <h2 class="passport-title">My Passports</h2>
-            </div>
+<div id="list-heading">
+    <div class="col-md-12 vert-center">
+        <div class="row">
+            <h2 class="passport-title">My Passports</h2>
         </div>
+    </div>
 
-        <div class="row passport-text-row">
-            <p class="list-text">Click on a passport below to access, update or delete information <br>
-                You can add add a new passport via the link below
-                if you have a valid pupil id. (read more)</p>
-        </div>
-        
-    </div>    
+    <div class="row passport-text-row">
+        <p class="list-text">Click on a passport below to access, update or delete information <br>
+            You can add add a new passport via the link below
+            if you have a valid pupil id. (read more)</p>
+    </div>
+</div>    
+    
     <hr class="list-separator-rule"> 
         {% if "/add_passport" or "/update_passport" in request.META.HTTP_REFERER %}
             {% if user.is_authenticated and user.role == "parent" %}
@@ -29,7 +29,7 @@
                                 <img class="card-img-top" src="{{ passport.my_passport_image.url }}" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">{{ passport.my_full_name }}</h5>
-                                    <h6 id="set-passport-list-valid-pupil-id" class="card-subtitle mb-2 text-muted">{{ passport.pupil_id}}</h6>
+                                    <h6 id="set-passport-list-valid-pupil-id" class="pupil-id-text">{{ passport.pupil_id}}</h6>
                                     <p class="card-text"> Read, and update your passport! </p>
                                 </div>
                             

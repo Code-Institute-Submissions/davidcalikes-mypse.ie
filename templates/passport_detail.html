@@ -15,9 +15,9 @@
                 {% if user.is_authenticated and user.role == "parent" or "pupil" %}
                     {% if passport.created_by|stringformat:'s' == user|stringformat:'s' %}  
                     <div class="col-md-12 vert-center">
-                        <div class="row passport-title-row">
-                        <h2 class="passport-title">{{ passport.my_full_name }}</h2>
-                    </div>
+                        <div class="row">
+                            <h2 class="passport-title">{{ passport.my_full_name }}</h2>
+                        </div>
                     </div>  
                     <hr class="passport-separator-rule">
 
@@ -47,8 +47,6 @@
                         </div>
                     </div>
 
-                    <hr class="passport-separator-rule">
-
                     <div class="col-md-6 vert-center">
                         <div class="passport-card">
                             <h4 class="passport-card-text-heading"><i class="fa fa-id-card" aria-hidden="true"></i></h4>
@@ -66,8 +64,6 @@
                             <p>{{ passport.my_strengths | safe }}</p>
                         </div>
                     </div>
-                   
-                    <hr class="passport-separator-rule">
 
                     <div class="col-md-6 vert-center">
                         <div class="passport-card">
@@ -84,8 +80,6 @@
                             <h5>My Family Photo</h5>
                         </div>
                     </div>
-                    
-                    <hr class="passport-separator-rule">
 
                     <div class="col-md-6 vert-center">
                         <div class="passport-card">
@@ -102,8 +96,6 @@
                             <p>{{ passport.my_likes | safe }}</p>
                         </div>
                     </div>
-                    
-                    <hr class="passport-separator-rule">
 
                     <div class="col-md-6 vert-center">
                         <div class="passport-card">
@@ -123,8 +115,6 @@
                         </div>
                     </div>
 
-                    <hr class="passport-separator-rule">
-
                     <div class="col-md-6 vert-center">
                         <div class="passport-card">
                             <img class="passport-item" src=" {{ passport.my_supports_image.url }}">
@@ -141,8 +131,6 @@
                         </div>
                     </div>
 
-                    <hr class="passport-separator-rule">
-
                     <div class="col-md-6 vert-center">
                         <div class="passport-card">
                             <h4 class="passport-card-text-heading"><i class="fa fa-comments" aria-hidden="true"></i></h4>
@@ -158,8 +146,6 @@
                             <h5>My Communication Photo</h5>
                         </div>
                     </div>
-
-                    <hr class="passport-separator-rule">
 
                     <div class="col-md-6 vert-center">
                         <div class="passport-card">

@@ -13,6 +13,6 @@ TYPE_CHOICES = (
 class CustomUser(AbstractUser):
     """
     Adds extra 'role' field to user model that helps assign specific
-    priveliges to different types of user 
+    priveliges to different types of user
     """
     role = models.CharField(choices=TYPE_CHOICES, max_length=20)

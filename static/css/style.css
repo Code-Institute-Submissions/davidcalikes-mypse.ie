@@ -81,7 +81,64 @@ footer a {
     border: solid 2px white;
     border-radius: 15px;
     box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
-    position: relative;
+}
+
+.list-title-row {
+    background-color: white;
+    padding: 1rem;
+    width: 50%;
+    border-radius: 25px;
+    border: solid 2px #0B5657;
+    margin-top: 1rem;
+    margin-left: 25%;
+}
+
+#list-heading {
+    margin-top: 7rem;
+    margin-bottom: 1.5rem;
+    width: 92%;
+    margin-left: 4%;
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+    background-image: url(https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png);
+    background-color: #0ca9a9;
+    border: solid 2px white;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
+}
+
+.footer-container {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 0.5rem;
+    text-align: center;
+    color: white;
+    background-image: url(https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png);
+    background-color: #0ca9a9;
+    border: solid 2px white;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
+}
+
+.list-text {
+    font-size: large;
+    color: black;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.801);
+}
+
+.list-separator-rule {
+    color: #0B5657;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 1rem;
+}
+
+.link-row {
+    text-align: center;
 }
 
 h1,
@@ -136,6 +193,7 @@ h2 {
 .card-item {
     width: 90%;
     height: 90%;
+    color: black;
     background-image: url("https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png");
     background-color: #0ca9a9;
     border: solid 2px white;
@@ -147,16 +205,16 @@ h2 {
 }
 
 .form-container {
-    width: 70%;
-    background-image: url("https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png");
+    width: 90%;
+    background-image: url(https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png);
     background-color: #0ca9a9;
     border: solid 2px white;
     border-radius: 15px;
     margin-top: 7rem;
-    margin-left: 15%;
     margin-bottom: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    margin-right: 5.5%;
     box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
 }
 
@@ -228,7 +286,7 @@ h2 {
     color: white;
     width: 50%;
     margin-left: 25%;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .passport-item {
@@ -244,15 +302,18 @@ h2 {
     background-color: white;
     border: solid 2px #0B5657;
     border-radius: 15px;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     padding-bottom: 20%;
     box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
 }
 
 .passport-title {
-    font-size: 5vw;
-    color: #0B5657;
-    margin-top: 1vh;
+    font-size: x-large;
+    background: #0B5657;
+    border-radius: 10px;
+    padding: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 .vert-center {
@@ -275,7 +336,7 @@ h2 {
     padding: 1rem;
     border-radius: 25px;
     border: solid 2px #0B5657;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-left: 3%;
 }
 
@@ -329,7 +390,8 @@ h2 {
 
 .passport-options {
     background-color: white;
-    width: 280px;
+    width: 220px;
+    margin-top: 1rem;
     border-radius: 50px;
     padding: 0.5rem;
     border: 2px solid #0B5657;

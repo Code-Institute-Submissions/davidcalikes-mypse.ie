@@ -13,7 +13,7 @@
         </div>
             {% for passport in pupil_check %}
             <div>
-                <h4 id="valid-pupil-check-id"> {{ passport.pupil_id }}</h4>
+                <h4 id="valid-pupil-check-id">{{ passport.pupil_id }}</h4>
                 <a onclick="setValidPupilCheckId()" href="{% url 'passport_detail' passport.slug %}"><h4>Pupil Name : {{ passport.my_full_name }} </h4></a>
             </div>
             

@@ -2,14 +2,15 @@
 {% load static %}
 {% block content %}
 
-<div class="container-fluid form-container">
+<div class="container form-container">
     <div class="row form-row">
         
         {% if user.is_authenticated and user.role == "school" %}
-        <div>
-            <h2 class="heading"> School Admin Page </h2>
-            <div class="text-container">
-                <div class="block-text">
+        <div class="col-md-8 mt-3 offset-md-2">
+            <h2 class="passport-title"> School Admin Page </h2>
+        </div>
+            <div class="row passport-text-row">
+                <div class="list-text">
                     <h5>Welcome {{ user.username }}. This is the school admin page for your school</h5> 
                     <p>Here you can access, and add enrollment records for your pupils.
                     For security reasons, pupils must be enrolled in the MyPSE.ie database before they can create a passport.
@@ -19,13 +20,14 @@
                     {% if enrolled_pupil.created_by|stringformat:'s' == user|stringformat:'s' %}
                     <div>
                         <a href="{% url 'enrolled_pupil_record' enrolled_pupil.pupil_id  %}">
-                            <h4>Pupil Name : {{ enrolled_pupil.pupil_last_name }} {{ enrolled_pupil.pupil_first_name}}</h4>
-                            <h4>ID:{{ enrolled_pupil.pupil_id}} </h4>
+                            <h5>Pupil Name : {{ enrolled_pupil.pupil_full_name}} ---- ID:{{ enrolled_pupil.pupil_id}}</h4>
                         </a>
                     </div>
                     {% endif %}
                 {% endfor %}
-                <h5><a href="{% url 'add_enrolled_pupil' %}">Add Pupil Record +</a></h5>
+            </div>
+            <div class="col-md-8 mt-3 offset-md-2"> 
+                <h5><a class="passport-options" href="{% url 'add_enrolled_pupil' %}">Add Pupil Record +</a></h5>
             </div>
         </div>
         {% else %}

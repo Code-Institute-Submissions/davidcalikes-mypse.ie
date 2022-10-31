@@ -27,13 +27,13 @@
                                 <img class="card-img-top" src="{{ passport.my_passport_image.url }}" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">{{ passport.my_full_name }}</h5>
-                                    <h6 class id="valid-pupil-check-id" class="card-subtitle mb-2 text-muted">{{ passport.pupil_id}}</h6>
+                                    <h6 class="pupil-id-text" id="valid-pupil-check-id" class="card-subtitle mb-2 text-muted">{{ passport.pupil_id}}</h6>
                                     <p class="card-text"> Read, and update your passport! </p>
                                 </div>
                             
                                 <div class="col-md-12 vert-center">
                                     <h4>
-                                        <a class="passport-options" onclick="setValidPupilCheckId()" href="{% url 'passport_detail' passport.slug %}"><h4>View My Passport</h4></a>
+                                        <a onclick="setValidPupilCheckId()" href="{% url 'passport_detail' passport.slug %}"><h4 class="passport-options">View My Passport</h4></a>
                                     </h4>
                                 </div>
                         </div>

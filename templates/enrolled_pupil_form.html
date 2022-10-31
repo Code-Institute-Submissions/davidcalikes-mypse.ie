@@ -13,7 +13,11 @@
                 {{ form | crispy }}
                 <input class="passport-options" type="submit" value="Submit">
             </form>
-            <a  href="{% url 'home' %}"><h5 class="passport-options">Cancel without saving</h5></a>
+            <div row form-row>
+                <div class="card-buttons">
+                    <a href="{% url 'home' %}"><h6 class="passport-options">Cancel without saving</h6></a>
+                </div>
+            </div>
         </div>
         {% else %}
         <h3>

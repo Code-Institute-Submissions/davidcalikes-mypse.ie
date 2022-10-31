@@ -5,66 +5,75 @@ from django.utils.text import slugify
 
 
 class EnrolledPupil(models.Model):
+
     pupil_full_name = models.CharField(
-        max_length=200, default='')
-    pupil_id = models.PositiveIntegerField(
-        default=0, unique=True)
+        "Pupil's Full Name", max_length=200, default="")
+    pupil_id = models.CharField(
+        "Pupil ID Number", max_length=8, default="")
     school_name = models.CharField(
-        max_length=200, default='')
-    school_email = models.EmailField(max_length=200)
+       "School Name", max_length=200, default="")
+    school_roll_number = models.CharField(
+        "School Roll No", max_length=200, default="")
+    school_email = models.EmailField(
+        "School Email Address", max_length=300)
     created_by = models.ForeignKey(CustomUser,
                                    on_delete=models.CASCADE,
-                                   related_name='created_by')
-    last_updated = models.DateTimeField(auto_now=True)
+                                   related_name="created_by")
 
     def __int__(self):
         return self.pupil_id
 
 
 class Passport(models.Model):
-    pupil_id = pupil_id = models.CharField(
-        'Pupil ID (Must match assigned ID!)', max_length=6, unique=True)
+
+    pupil_id = models.CharField(
+        "Pupil ID Number", max_length=8, unique=True)
     teacher_id = models.CharField(
-        max_length=6, default='')
+        "Teacher ID Number", max_length=6, default="")
     slug = models.SlugField(
-        max_length=200, unique=True, default='')
+        max_length=200, unique=True, default="")
     my_full_name = models.CharField(
-        max_length=200,)
-    my_passport_image = CloudinaryField('My Passport Photo', default='placeholder')
+        "Pupil's Full Name", max_length=200,)
+    my_passport_image = CloudinaryField(
+        "Passport Photo", default="placeholder")
     my_emergency_contact_name = models.CharField(
-        max_length=200, default='')
-    my_emergency_contact_number = models.PositiveIntegerField(
-        default=0,)
+        "Emergency Contact Name", max_length=200, default='')
+    my_emergency_contact_number = models.CharField(
+        "Emergency Contact Number", max_length=100, default='')
     my_date_of_birth = models.DateField(
-        default='YYYY-MM-DD', blank=False)
+        "Pupil's Date Of Birth", default="YYYY-MM-DD", blank=False)
     my_biography = models.TextField(
-        max_length=600, blank=False)
+       "Biography", max_length=600, blank=False)
     my_family = models.TextField(
-        max_length=600, blank=False)
-    my_family_image = CloudinaryField('My Family Photo', default='placeholder')
+        "Family", max_length=600, blank=False)
+    my_family_image = CloudinaryField(
+        "Family Photo", default="placeholder")
     my_likes = models.TextField(
-        max_length=600, blank=False)
-    my_likes_image = CloudinaryField('My Likes Photo', default='placeholder')
+       "Likes", max_length=600, blank=False)
+    my_likes_image = CloudinaryField(
+        "Likes Photo", default="placeholder")
     my_dislikes = models.TextField(
-        max_length=600, blank=False)
+        "Dislikes", max_length=600, blank=False)
     my_strengths = models.TextField(
-        max_length=600, blank=False)
+       "Strengths", max_length=600, blank=False)
     my_difficulties = models.TextField(
-        max_length=600, blank=False)
+        "Difficulties", max_length=600, blank=False)
     my_supports = models.TextField(
-        max_length=600, blank=False)
-    my_supports_image = CloudinaryField('My Supports Photo', default='placeholder')
+        "Supports", max_length=600, blank=False)
+    my_supports_image = CloudinaryField(
+        "Supports Photo", default="placeholder")
     my_calming_measures = models.TextField(
-        max_length=600, blank=False)
+       "Calming Measures", max_length=600, blank=False)
     my_communication_skills = models.TextField(
         max_length=600, blank=False)
-    my_communication_skills_image = CloudinaryField('My Communication Skills Photo', default='placeholder')
+    my_communication_skills_image = CloudinaryField(
+        "Communication Skills Photo", default='placeholder')
     my_other_info = models.TextField(
-        max_length=600, blank=False)
+       "Other Info", max_length=600, blank=False)
     last_updated = models.DateTimeField(auto_now=True)
     created_by = models.ForeignKey(CustomUser,
                                    on_delete=models.CASCADE,
-                                   related_name='creator')
+                                   related_name="creator")
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.pupil_id)

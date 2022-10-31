@@ -6,10 +6,10 @@ from .models import EnrolledPupil, Passport
 class EnrolledPupilAdmin(admin.ModelAdmin):
     list_display = ('pupil_full_name',
                     'school_name', 'pupil_id', 'school_email',
-                    'created_by', 'last_updated')
+                    'created_by')
     search_fields = ('pupil_full_name',
                      'school_name', 'pupil_id', 'school_email',
-                     'created_by', 'last_updated')
+                     'created_by')
 
 
 @admin.register(Passport)

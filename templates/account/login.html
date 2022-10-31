@@ -10,23 +10,24 @@
 <div class="container form-container">
     <div class="row form-row">
         <div class="col-md-8 mt-3 offset-md-2">
-            <h3>{% trans "Sign In" %}</h3>
-
-            <p>{% blocktrans %}Welcome back to MyPSE.ie. Please log in to see your passports or pupil records.
+            <h2 class="passport-title">{% trans "Sign In" %}</h2>
+        </div>
+        <div class="row passport-text-row">
+            <p class="list-text">{% blocktrans %}Welcome back to MyPSE.ie. Please log in to see your passports or pupil records.
                 You will not be able to access passports or pupil records unless you 
                 <a class="link" href="{{ signup_url }}">sign up</a>
                 first.{% endblocktrans %}</p>
         </div>
     </div>
     <div class="row form-row">
-        <div class="col-md-8 mt-3 offset-md-2">
+        <div class="col-md-8 mt-3 offset-md-2 center-align">
             <form class="login" method="POST" action="{% url 'account_login' %}">
                 {% csrf_token %}
                 {{ form.as_p }}
                 {% if redirect_field_value %}
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                 {% endif %}
-                <button class="btn btn-signup right" type="submit">{% trans "Sign In" %}</button>
+                <button class="btn btn-signup right passport-options" type="submit">{% trans "Sign In" %}</button>
             </form>
         </div>
     </div>

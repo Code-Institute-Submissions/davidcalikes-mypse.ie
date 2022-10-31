@@ -28,8 +28,8 @@ class EnrolledPupilForm(forms.ModelForm):
         Form has all required fields from EnrolledPupil model
         """
         model = EnrolledPupil
-        fields = ('pupil_full_name', 'school_name',
-                  'pupil_id', 'school_email', )
+        fields = ('pupil_full_name', 'pupil_id', 'school_name',
+                  'school_roll_number', 'school_email', )
 
 
 class PassportForm(forms.ModelForm):
@@ -67,5 +67,4 @@ class PassportForm(forms.ModelForm):
             'my_calming_measures': SummernoteWidget(),
             'my_communication_skills': SummernoteWidget(),
             'my_other_info': SummernoteWidget(),
-
         }

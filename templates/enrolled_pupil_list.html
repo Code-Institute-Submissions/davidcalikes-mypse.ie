@@ -11,10 +11,8 @@
         </div>
             <div class="row passport-text-row">
                 <div class="list-text">
-                    <h5>Welcome {{ user.username }}. This is the school admin page for your school</h5> 
-                    <p>Here you can access, and add enrollment records for your pupils.
-                    For security reasons, pupils must be enrolled in the MyPSE.ie database before they can create a passport.
-                    Choose an option below to view or edit a record or add a new pupil to the database</p>
+                    <h5>Welcome {{ user.username }}</h5> 
+                    <p>Here are the records you have created. Click the button below to add a new record</p>
                 </div>
                 {% for enrolled_pupil in enrolled_pupil_list %}
                     {% if enrolled_pupil.created_by|stringformat:'s' == user|stringformat:'s' %}

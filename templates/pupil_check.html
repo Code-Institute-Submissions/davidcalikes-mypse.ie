@@ -17,9 +17,7 @@
     </div>    
     
     <hr class="list-separator-rule"> 
-        {% if "/add_passport" or "/update_passport" in request.META.HTTP_REFERER %}
             {% if user.is_authenticated and user.role == "pupil" %}
-
             {% for passport in pupil_check %}
             <div class="row">
                 <div class="container"> 
@@ -34,9 +32,9 @@
                                 </div>
                             
                                 <div class="col-md-12 vert-center">
-                                        <h4>
-                                            <a class="passport-options" onclick="setValidPupilCheckId()" href="{% url 'passport_detail' passport.slug %}"><h4>View My Passport</h4></a>
-                                        </h4>
+                                    <h4>
+                                        <a class="passport-options" onclick="setValidPupilCheckId()" href="{% url 'passport_detail' passport.slug %}"><h4>View My Passport</h4></a>
+                                    </h4>
                                 </div>
                         </div>
                     </div>
@@ -59,12 +57,4 @@
             or visit the about page for more information about how to use this site.
         </h3>
         {% endif %}
-    {% else %}
-    <h3>
-        Warning! 
-        You are unauthorised to view this page! 
-        If you cannot find the page you are looking for please email MyPSE.ie support
-        or visit the about page for more information about how to use this site.
-    </h3>
-    {% endif %}
 {% endblock %}

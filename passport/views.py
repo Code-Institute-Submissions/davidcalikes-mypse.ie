@@ -3,6 +3,7 @@ from django.views import generic, View
 from .models import EnrolledPupil, Passport
 from .forms import EnrolledPupilForm, PassportForm
 from django.urls import reverse_lazy
+from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 
@@ -13,14 +14,16 @@ class HomePage(generic.TemplateView):
     template_name = 'index.html'
 
 
-class AddEnrolledPupil(LoginRequiredMixin, generic.CreateView):
+class AddEnrolledPupil(LoginRequiredMixin, SuccessMessageMixin,
+                       generic.CreateView):
     """
     User with role of 'school' (admin) can add an enrolled pupil to database.
     """
     model = EnrolledPupil
     form_class = EnrolledPupilForm
     template_name = 'enrolled_pupil_form.html'
-    success_url = '/'
+    success_url = reverse_lazy('enrolled_pupil_list')
+    success_message = "Pupil record added successfully!"
 
     def form_valid(self, form):
         """

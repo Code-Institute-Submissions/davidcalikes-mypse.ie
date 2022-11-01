@@ -9,7 +9,7 @@ class EnrolledPupil(models.Model):
     pupil_full_name = models.CharField(
         "Pupil's Full Name", max_length=200, default="")
     pupil_id = models.CharField(
-        "Pupil ID Number", max_length=8, default="")
+        "Pupil ID Number", max_length=8, default="", unique=True)
     school_name = models.CharField(
        "School Name", max_length=200, default="")
     school_roll_number = models.CharField(

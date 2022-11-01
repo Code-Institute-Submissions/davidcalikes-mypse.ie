@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lato&display=swap');
 
+.body-pad {
+    padding-top: 94px;
+}
+
 .navbar {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -65,7 +69,12 @@ footer a {
     border: 2px solid #0B5657;
 }
 
-.logo-text {
+.logo-text-1 {
+    color: #0B5657;
+    font-size: x-large;
+}
+
+.logo-text-2 {
     color: #0B5657;
     font-size: x-large;
 }
@@ -110,7 +119,6 @@ footer a {
 }
 
 #home-hero {
-    margin-top: 6rem;
     margin-bottom: 1.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -134,7 +142,6 @@ footer a {
 }
 
 #list-heading {
-    margin-top: 7rem;
     margin-bottom: 1.5rem;
     width: 92%;
     margin-left: 4%;
@@ -240,7 +247,6 @@ h2 {
     background-color: #0ca9a9;
     border: solid 2px white;
     border-radius: 15px;
-    margin-top: 6rem;
     margin-bottom: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -304,7 +310,6 @@ h2 {
     background-color: #0ca9a9;
     border: solid 2px white;
     border-radius: 15px;
-    margin-top: 7rem;
     margin-left: 4%;
     margin-bottom: 2rem;
     padding: 3vw;

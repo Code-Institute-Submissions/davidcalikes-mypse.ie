@@ -2,8 +2,8 @@
 {% load static %}
 {% block content %}
 
-<div class="container-fluid">
-    <div class="row">
+<div class="container-fluid form-container">
+    <div class="row form-row">
         {% if user.is_authenticated and user.role == "teacher" %}
         <div>
             <h3>For security purposes, please type PUPIL ID Number (Tell me more)</h3>
@@ -18,7 +18,7 @@
                 <div>
                         <h3>Pupil Id Confirmed!</h3>
                         <h4>Pupil Name : {{ passport.my_full_name }}</h4>
-                        <h4>{{ passport.slug }}</h4>
+                        <h4>{{ passport.teacher_id }}</h4>
                         
                         <h3><a href="{% url 'teacher_passport_detail' passport.slug %}">Click here to view Passport</a></h3>
                 </div>

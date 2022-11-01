@@ -2,8 +2,8 @@
 {% load static %}
 {% block content %}
 
-<div class="container-fluid">
-    <div class="row">
+<div class="container-fluid form-container">
+    <div class="row form-row">
         {% if user.is_authenticated and user.role == "teacher" %}
         <div>
             <h2>Welcome Teacher</h2>
@@ -17,9 +17,9 @@
         </div>
             {% for passport in passport_list %}
                 <div>
-                    <a href="{% url 'teacher_validate_pupil_id' %}">
-                        <h4>Pupil Name : {{ passport.my_full_name }} </h4>
-                    </a>
+                    <h4>Pupil Name : {{ passport.my_full_name }} </h4>
+                    <h4 id="set-teacher-id" >{{ passport.teacher_id }}</h4>
+                    <a  onclick="setTeacherId();"  href="{% url 'teacher_validate_pupil_id' %}"> Click Here To Continue</a>
                 </div>
             {% endfor %} 
         {% else %}

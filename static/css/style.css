@@ -30,6 +30,10 @@ a {
     text-decoration: none;
 }
 
+#passport-blur {
+    filter: blur(10px);
+}
+
 a:hover {
     color:#9500a0;
     text-decoration: none;

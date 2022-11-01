@@ -2,25 +2,194 @@
 {% load static %}
 {% block content %}
 
-<div class="container-fluid">
-    <div class="row">
-        
-        {% if user.is_authenticated and user.role == "teacher" %}  
-            <h3>Name                        {{ passport.my_full_name }}</h3> 
-            <h3>D.O.B                       {{ passport.my_date_of_birth }}</h3>
-            <h3>Bio                         {{ passport.my_biography}}</h3>
-            <h3>Family                      {{ passport.my_family | safe }}</h3>
-            <h3>Likes                       {{ passport.my_likes }}</h3>
-            <h3>Dislikes                    {{ passport.my_dislikes }}</h3>
-            <h3>Strengths                   {{ passport.my_strengths }}</h3>
-            <h3>My Communications Skills    {{ passport.my_communication_skills }}</h3>
-            <br>
+<head>
+    <title>
+    Passport
+    </title>
+</head>
+
+<body onload="validateTeacher();">
+    <div id="passport-blur" class="container-fluid passport-container">
+        <div class="row">
+        {% if "teacher_validate_pupil_id" in request.META.HTTP_REFERER %}
+            {% if user.is_authenticated and user.role == "teacher" %} 
+                <p class="pupil-id-text" id="set-edit-pupil-id">{{ passport.pupil_id  }}</p>
+                <p class="pupil-id-text" id="passport-teacher-id">{{ passport.teacher_id  }}</p>
+                <div  class="col-md-12 vert-center">
+                    <div class="row">
+                        <h2 class="passport-title">{{ passport.my_full_name }}</h2>
+                    </div>
+                </div>  
+                <hr class="passport-separator-rule">
+
+                <div class="row flex-row-reverse passport-text-row">
+                    <div class="col-md-6 vert-center">
+                        <img class="passport-item" src=" {{ passport.my_passport_image.url }}">
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="passport-text-item">
+                            <h4>My Personal Details</h4>
+                            <h4 class="passport-details-underscore"> ------------------- </h4>
+                        
+                            <div class="passport-info-item-box">
+                                <h5 class="passport-info-text"><i class="fa fa-calendar" aria-hidden="true"></i><span></span>
+                                My Date of Birth:</h5> <h4 class="passport-info-data">{{ passport.my_date_of_birth }}</h4>
+                            </div>
+                            <div class="passport-info-item-box">
+                                <h5 class="passport-info-text"><i class="fa fa-user" aria-hidden="true"></i><span></span>
+                                My Emergency Contact Person:</h5> <h4 class="passport-info-data"> {{ passport.my_emergency_contact_name }}</h4>
+                            </div>
+                            <div class="passport-info-item-box">
+                                <h5 class="passport-info-text"><i class="fa fa-phone-square fa-flip-horizontal" aria-hidden="true"></i><span></span>
+                                My Emergency Contact Number:</h5> <h4 class="passport-info-data">{{ passport.my_emergency_contact_number}}</h4>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 vert-center">
+                    <div class="passport-card">
+                        <h4 class="passport-card-text-heading"><i class="fa fa-id-card" aria-hidden="true"></i></h4>
+                        <h4 class="passport-card-text-heading">My Biography</h4>
+                        <h4 class="passport-underscore"> --------------- </h4>
+                        <p>{{ passport.my_biography | safe }}</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 vert-center">
+                    <div class="passport-card">
+                        <h4 class="passport-card-text-heading"><i class="fa fa-hand-rock" aria-hidden="true"></i></h4>
+                        <h4 class="passport-card-text-heading">My Strengths</h4>
+                        <h4 class="passport-underscore"> --------------- </h4>
+                        <p>{{ passport.my_strengths | safe }}</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 vert-center">
+                    <div class="passport-card">
+                        <h4 class="passport-card-text-heading"><i class="fa fa-users" aria-hidden="true"></i></h4>
+                        <h4 class="passport-card-text-heading">My Family</h4>
+                        <h4 class="passport-underscore"> --------------- </h4>
+                        <p>{{ passport.my_family | safe }}</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 vert-center">
+                    <div class="passport-card">
+                        <img class="passport-item" src=" {{ passport.my_family_image.url }}">
+                        <h5>My Family Photo</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-6 vert-center">
+                    <div class="passport-card">
+                        <img class="passport-item" src=" {{ passport.my_likes_image.url }}">
+                        <h5>My Likes Photo</h5>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 vert-center">
+                    <div class="passport-card">
+                        <h4 class="passport-card-text-heading"><i class="fa fa-thumbs-up" aria-hidden="true"></i></h4>
+                        <h4 class="passport-card-text-heading">My Likes</h4>
+                        <h4 class="passport-underscore"> --------------- </h4>
+                        <p>{{ passport.my_likes | safe }}</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 vert-center">
+                    <div class="passport-card">
+                        <h4 class="passport-card-text-heading"><i class="fa fa-thumbs-down" aria-hidden="true"></i></h4>
+                        <h4 class="passport-card-text-heading">My Dislikes</h4>
+                        <h4 class="passport-underscore"> --------------- </h4>
+                        <p>{{ passport.my_dislikes | safe }}</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 vert-center">
+                    <div class="passport-card">
+                        <h4 class="passport-card-text-heading"><i class="fa fa-ban" aria-hidden="true"></i></h4>
+                        <h4 class="passport-card-text-heading">My Difficulties</h4>
+                        <h4 class="passport-underscore"> --------------- </h4>
+                        <p>{{ passport.my_difficulties | safe }}</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 vert-center">
+                    <div class="passport-card">
+                        <img class="passport-item" src=" {{ passport.my_supports_image.url }}">
+                        <h5>My supports photo</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-6 vert-center">
+                    <div class="passport-card">
+                        <h4 class="passport-card-text-heading"><i class="fa fa-life-ring" aria-hidden="true"></i></h4>
+                        <h4 class="passport-card-text-heading">My Supports</h4>
+                        <h4 class="passport-underscore"> --------------- </h4>
+                        <p>{{ passport.my_supports | safe }}</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 vert-center">
+                    <div class="passport-card">
+                        <h4 class="passport-card-text-heading"><i class="fa fa-comments" aria-hidden="true"></i></h4>
+                        <h4 class="passport-card-text-heading">My Communication Skills</h4>
+                        <h4 class="passport-underscore"> --------------- </h4>
+                        <p>{{ passport.my_communication_skills | safe }}</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 vert-center">
+                    <div class="passport-card">
+                        <img class="passport-item" src=" {{ passport.my_communication_skills_image.url }}">
+                        <h5>My Communication Photo</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-6 vert-center">
+                    <div class="passport-card">
+                        <h4 class="passport-card-text-heading"><i class="fa fa-hand-peace" aria-hidden="true"></i></h4>
+                        <h4 class="passport-card-text-heading">My Calming Measures</h4>
+                        <h4 class="passport-underscore"> --------------- </h4>
+                        <p>{{ passport.my_calming_measure | safe }}</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 vert-center">
+                    <div class="passport-card">
+                        <h4 class="passport-card-text-heading"><i class="fa fa-question-circle" aria-hidden="true"></i></h4>
+                        <h4 class="passport-card-text-heading">My Other Info</h4>
+                        <h4 class="passport-underscore"> --------------- </h4>
+                        <p>{{ passport.my_other_info | safe }}</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <hr class="passport-separator-rule">
+
+                    <div class="col-md-12 vert-center">
+                        <a class="passport-options" href="{% url 'teacher_passport_list' %}"><h4>Back To Passport List</h4></a>
+                    </div>
+
+                <hr class="passport-separator-rule">
+
+                
+            {% else %}
+            <h3>
+                Warning! 
+                You are unauthorised to view this page! 
+                If you cannot find the page you are looking for please email MyPSE.ie support
+                or visit the about page for more information about how to use this site.
+            </h3>
+            {% endif %}
         {% else %}
         <h3>
             Warning! 
             You are unauthorised to view this page! 
-            If you cannot find the page you are looking for please email MyPSE.ie support
-            or visit the about page for more information about how to use this site.
+            You have not navigated to this page from your list of approved passports.
         </h3>
         {% endif %}
-    {% endblock %}
+{% endblock %}

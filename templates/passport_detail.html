@@ -8,13 +8,14 @@
     </title>
 </head>
 
-<body>
+<body onload="applyId();">
     <div class="container-fluid passport-container">
         <div class="row">
-            {% if "/add_passport" or "/update_passport" in request.META.HTTP_REFERER %}
+            {% if "passport_list" in request.META.HTTP_REFERER %}
                 {% if user.is_authenticated and user.role == "parent" or "pupil" %}
                     {% if passport.created_by|stringformat:'s' == user|stringformat:'s' %}  
-                    <div class="col-md-12 vert-center">
+                    <p class="pupil-id-text" id="set-edit-pupil-id">{{ passport.pupil_id  }}</p>
+                    <div  class="col-md-12 vert-center">
                         <div class="row">
                             <h2 class="passport-title">{{ passport.my_full_name }}</h2>
                         </div>

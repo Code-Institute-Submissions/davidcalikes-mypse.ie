@@ -17,7 +17,6 @@
 </div>    
     
     <hr class="list-separator-rule"> 
-        {% if "/add_passport" or "/update_passport" in request.META.HTTP_REFERER %}
             {% if user.is_authenticated and user.role == "parent" %}
             
             {% for passport in passport_list %}
@@ -29,19 +28,20 @@
                                 <img class="card-img-top" src="{{ passport.my_passport_image.url }}" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">{{ passport.my_full_name }}</h5>
-                                    <h6 id="set-passport-list-valid-pupil-id" class="pupil-id-text">{{ passport.pupil_id}}</h6>
+                                    <h6 class="pupil-id-text"  class="card-subtitle mb-2 text-muted">{{ passport.pupil_id}}</h6>
                                     <p class="card-text"> Read, and update your passport! </p>
                                 </div>
                             
                                 <div class="col-md-12 vert-center">
                                         <h4>
-                                            <a class="passport-options" onclick="setPassportListValidPupilId()" href="{% url 'passport_detail' passport.slug %}">View Passport</a>
+                                            <a href="{% url 'passport_detail' passport.slug %}"><h4 class="passport-options">View Passport</h4></a>
                                         </h4>
                                 </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
 
             <hr class="list-separator-rule">
             
@@ -68,19 +68,20 @@
                                 <img class="card-img-top" src="{{ passport.my_passport_image.url }}" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">{{ passport.my_full_name }}</h5>
-                                    <h6 class="pupil-id-text" id="set-passport-list-valid-pupil-id" class="card-subtitle mb-2 text-muted">{{ passport.pupil_id}}</h6>
+                                    <h6 class="pupil-id-text" class="card-subtitle mb-2 text-muted">{{ passport.pupil_id}}</h6>
                                     <p class="card-text"> Read, and update your passport! </p>
                                 </div>
                             
                                 <div class="col-md-12 vert-center">
                                         <h4>
-                                            <a onclick="setPassportListValidPupilId()" href="{% url 'passport_detail' passport.slug %}"><h4 class="passport-options">View Passport</h4></a>
+                                            <a  href="{% url 'passport_detail' passport.slug %}"><h4 class="passport-options">View Passport</h4></a>
                                         </h4>
                                 </div>
                         </div>
                     </div>
                 </div>
             </div>
+
 
             <hr class="list-separator-rule">
             
@@ -94,12 +95,4 @@
                 or visit the about page for more information about how to use this site.
             </h1>
             {% endif %}
-        {% else %}
-        <h3>
-            Warning! 
-            You are unauthorised to view this page! 
-            If you cannot find the page you are looking for please email MyPSE.ie support
-            or visit the about page for more information about how to use this site.
-        </h3>
-        {% endif %}
     {% endblock %}

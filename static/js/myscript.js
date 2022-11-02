@@ -5,6 +5,14 @@ function applyId() {
     localStorage.setItem("id", pupilId);
 }
 
+function notFound() {
+    let pupilPassport= document.getElementById("valid-id").innerHTML
+    console.log(pupilPassport)
+    if (typeof pupilPassport == "undefined") {
+    alert("No matching id found!");
+    }
+}
+
 function setValidPupilCheckId() {
     let pupilId= document.getElementById("valid-pupil-check-id").innerHTML
     localStorage.setItem("id", pupilId);

@@ -65,7 +65,7 @@ class Passport(models.Model):
     my_calming_measures = models.TextField(
        "Calming Measures", max_length=600, blank=False)
     my_communication_skills = models.TextField(
-        max_length=600, blank=False)
+        "Communication Skills", max_length=600, blank=False)
     my_communication_skills_image = CloudinaryField(
         "Communication Skills Photo", default='placeholder')
     my_other_info = models.TextField(

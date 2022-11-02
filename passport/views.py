@@ -33,6 +33,12 @@ class AddEnrolledPupil(LoginRequiredMixin, SuccessMessageMixin,
         form.instance.created_by = self.request.user
         return super(AddEnrolledPupil, self).form_valid(form)
 
+    def form_invalid(self, form):
+        """If the form is invalid, render the invalid form."""
+        messages.add_message(self.request, messages.ERROR,
+                             "Invalid form input... See errors below")
+        return self.render_to_response(self.get_context_data(form=form))
+
 
 class EnrolledPupilList(LoginRequiredMixin, generic.ListView):
     """
@@ -106,7 +112,6 @@ class ValidatePupilId(generic.ListView, SuccessMessageMixin):
     """
     template_name = 'validate_pupil_id.html'
     model = EnrolledPupil
-    success_message = "No matching record found!"
 
     def get_queryset(self):
         query = self.request.GET.get('pupil_id')
@@ -137,7 +142,7 @@ class AddPassport(LoginRequiredMixin, generic.CreateView):
 
     def form_invalid(self, form):
         """If the form is invalid, render the invalid form."""
-        messages.add_message(self.request, messages.WARNING,
+        messages.add_message(self.request, messages.ERROR,
                              "Invalid form input... See errors below")
         return self.render_to_response(self.get_context_data(form=form))
 
@@ -149,6 +154,7 @@ class PassportList(LoginRequiredMixin, generic.ListView):
     model = Passport
     template_name = 'passport_list.html'
     context_object_name = 'passport_list'
+    paginate_by = 3
 
     def get_queryset(self):
         return Passport.objects.filter(
@@ -190,7 +196,7 @@ class UpdatePassport(LoginRequiredMixin, SuccessMessageMixin,
     def form_invalid(self, form):
         """If the form is invalid, render the invalid form."""
         messages.add_message(self.request, messages.ERROR,
-                             "Form is invalid... See errors below")
+                             "Invalid form input... See errors below")
         return self.render_to_response(self.get_context_data(form=form))
 
 

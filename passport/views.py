@@ -47,6 +47,7 @@ class EnrolledPupilList(LoginRequiredMixin, generic.ListView):
     model = EnrolledPupil
     template_name = 'enrolled_pupil_list.html'
     context_object_name = 'enrolled_pupil_list'
+    paginate_by = 3
 
     def get_queryset(self):
         return EnrolledPupil.objects.filter(

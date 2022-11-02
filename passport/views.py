@@ -3,6 +3,7 @@ from django.views import generic, View
 from .models import EnrolledPupil, Passport
 from .forms import EnrolledPupilForm, PassportForm
 from django.urls import reverse_lazy
+from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.mixins import LoginRequiredMixin
 
@@ -67,7 +68,7 @@ class EnrolledPupilRecord(LoginRequiredMixin, View):
         )
 
 
-class UpdatePupilRecord(LoginRequiredMixin, generic.edit.UpdateView):
+class UpdatePupilRecord(LoginRequiredMixin, SuccessMessageMixin, generic.edit.UpdateView):
     """
     User with role of School Admin can update enrolled existing pupil record
     """
@@ -75,28 +76,31 @@ class UpdatePupilRecord(LoginRequiredMixin, generic.edit.UpdateView):
     form_class = EnrolledPupilForm
     template_name = 'enrolled_pupil_form.html'
     success_url = reverse_lazy('enrolled_pupil_list')
+    success_message = "Pupil record updated successfully!"
 
 
-class DeletePupilRecord(LoginRequiredMixin, generic.DeleteView):
+class DeletePupilRecord(LoginRequiredMixin, SuccessMessageMixin, generic.DeleteView):
     """
     User with role of School Admin can delete existing pupil record
     """
     model = EnrolledPupil
     success_url = reverse_lazy('enrolled_pupil_list')
+    success_message = "Pupil record deleted!"
 
     def delete(self, request, *args, **kwargs):
+        messages.success(self.request, self.success_message)
         return super(DeletePupilRecord, self).delete(request, *args, **kwargs)
 
 
-class ValidatePupilId(generic.ListView):
+class ValidatePupilId(generic.ListView, SuccessMessageMixin):
     """
     Ensures Pupil is enrolled in system before a passport can be created
     """
     template_name = 'validate_pupil_id.html'
     model = EnrolledPupil
+    success_message = "No matching record found!"
 
     def get_queryset(self):
-        print(self.request.GET)
         query = self.request.GET.get('pupil_id')
         if query:
             object_list = self.model.objects.filter(pupil_id__icontains=query)
@@ -120,6 +124,10 @@ class AddPassport(LoginRequiredMixin, generic.CreateView):
         """
         form.instance.created_by = self.request.user
         return super(AddPassport, self).form_valid(form)
+
+    def form_invalid(self, form):
+        """If the form is invalid, render the invalid form."""
+        return self.render_to_response(self.get_context_data(form=form))
 
 
 class PassportList(LoginRequiredMixin, generic.ListView):
@@ -187,7 +195,8 @@ class TeacherPassportList(generic.ListView):
     def get_queryset(self):
         query = self.request.GET.get('teacher_id')
         if query:
-            object_list = self.model.objects.filter(teacher_id__icontains=query)
+            object_list = self.model.objects.filter(
+                teacher_id__icontains=query)
         else:
             object_list = self.model.objects.none()
         return object_list

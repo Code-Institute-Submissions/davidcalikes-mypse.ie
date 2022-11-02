@@ -68,7 +68,8 @@ class EnrolledPupilRecord(LoginRequiredMixin, View):
         )
 
 
-class UpdatePupilRecord(LoginRequiredMixin, SuccessMessageMixin, generic.edit.UpdateView):
+class UpdatePupilRecord(LoginRequiredMixin, SuccessMessageMixin,
+                        generic.edit.UpdateView):
     """
     User with role of School Admin can update enrolled existing pupil record
     """
@@ -78,8 +79,15 @@ class UpdatePupilRecord(LoginRequiredMixin, SuccessMessageMixin, generic.edit.Up
     success_url = reverse_lazy('enrolled_pupil_list')
     success_message = "Pupil record updated successfully!"
 
+    def form_invalid(self, form):
+        """If the form is invalid, render the invalid form."""
+        messages.add_message(self.request, messages.ERROR,
+                             "Invalid form input... See errors below")
+        return self.render_to_response(self.get_context_data(form=form))
 
-class DeletePupilRecord(LoginRequiredMixin, SuccessMessageMixin, generic.DeleteView):
+
+class DeletePupilRecord(LoginRequiredMixin, SuccessMessageMixin,
+                        generic.DeleteView):
     """
     User with role of School Admin can delete existing pupil record
     """
@@ -116,17 +124,21 @@ class AddPassport(LoginRequiredMixin, generic.CreateView):
     model = Passport
     form_class = PassportForm
     template_name = 'passport_form.html'
-    success_url = '/'
+    success_url = reverse_lazy('passport_list')
 
     def form_valid(self, form):
         """
         Auto applies foreign key and auto generated settings.
         """
         form.instance.created_by = self.request.user
+        messages.add_message(self.request, messages.SUCCESS,
+                             "Passport Successfully Created!")
         return super(AddPassport, self).form_valid(form)
 
     def form_invalid(self, form):
         """If the form is invalid, render the invalid form."""
+        messages.add_message(self.request, messages.WARNING,
+                             "Invalid form input... See errors below")
         return self.render_to_response(self.get_context_data(form=form))
 
 
@@ -164,7 +176,8 @@ class PassportDetail(LoginRequiredMixin, View):
         )
 
 
-class UpdatePassport(LoginRequiredMixin, generic.edit.UpdateView):
+class UpdatePassport(LoginRequiredMixin, SuccessMessageMixin,
+                     generic.edit.UpdateView):
     """
     Authenticated user with authorisation can update passport information
     """
@@ -172,16 +185,27 @@ class UpdatePassport(LoginRequiredMixin, generic.edit.UpdateView):
     form_class = PassportForm
     template_name = 'passport_form.html'
     success_url = reverse_lazy('passport_list')
+    success_message = "Passport successfully updated!"
+
+    def form_invalid(self, form):
+        """If the form is invalid, render the invalid form."""
+        messages.add_message(self.request, messages.ERROR,
+                             "Form is invalid... See errors below")
+        return self.render_to_response(self.get_context_data(form=form))
 
 
-class DeletePassport(LoginRequiredMixin, generic.DeleteView):
+class DeletePassport(LoginRequiredMixin, SuccessMessageMixin,
+                     generic.DeleteView):
     """
     Authenticated user with authorisation can delete a passport
     """
     model = Passport
     success_url = reverse_lazy('passport_list')
+    success_message = "Passport successfully deleted!"
 
     def delete(self, request, *args, **kwargs):
+        messages.add_message(self.request, messages.SUCCESS,
+                             "Passport successfully deleted!")
         return super(DeletePassport, self).delete(request, *args, **kwargs)
 
 

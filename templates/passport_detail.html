@@ -2,12 +2,6 @@
 {% load static %}
 {% block content %}
 
-    <head>
-        <title>
-        Passport
-        </title>
-    </head>
-
     <body onload="applyId();">
         <div class="container-fluid passport-container">
             <div class="row">
@@ -173,15 +167,16 @@
 
                     <hr class="passport-separator-rule">
 
-                    <div class="col-md-6 vert-center">
-                        <a class="passport-options" href="{% url 'update_passport' passport.id %}"><h4>Edit Passport</h4></a>
-                    </div>
+                    <div class="row passport-button-row">
+                        <div class="col-md-6 vert-center">
+                            <a class="passport-options" href="{% url 'update_passport' passport.id %}"><h4>Edit Passport</h4></a>
+                        </div>
 
-                    <div class="col-md-6 vert-center">
-                            <a class="passport-options" href="{% url 'delete_passport' passport.id %}"><h4>Delete Passport</h4></a>
+                        <div class="col-md-6 vert-center">
+                                <a class="passport-options" href="{% url 'delete_passport' passport.id %}"><h4>Delete Passport</h4></a>
+                        </div>
                     </div>
                     
-                    <br>
                     {% else %}
                     <h3>
                         Warning! 
@@ -205,6 +200,10 @@
                 You have not navigated to this page from your list of approved passports.
             </h3>
             {% endif %}
+        </div>
+    </div>
+<hr class="list-separator-rule">
+</body>
 {% endblock %}
  
        

@@ -249,6 +249,7 @@ h2 {
     background-color: #0ca9a9;
     border: solid 2px white;
     border-radius: 15px;
+    min-height: 700px;
     margin-bottom: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -424,6 +425,11 @@ h2 {
 
 .passport-details-underscore {
     color: #9500a0;
+}
+
+.passport-button-row {
+    width: 100%;
+    margin-top: 2rem;
 }
 
 .passport-options {

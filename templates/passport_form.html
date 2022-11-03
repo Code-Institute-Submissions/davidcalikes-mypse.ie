@@ -4,32 +4,11 @@
 
 <div class="container-fluid form-container">
     <div class="row form-row">
-        {% if "validate_pupil_id" in request.META.HTTP_REFERER or "update_passport" in request.META.HTTP_REFERER or "add_passport" in request.META.HTTP_REFERER %}
+        {% if "validate_pupil_id" in request.META.HTTP_REFERER or "update_passport" in request.META.HTTP_REFERER or "add_passport" in request.META.HTTP_REFERER or "passport_detail" in request.META.HTTP_REFERER %}
        
             {% if user.is_authenticated and user.role == "parent" or "pupil" %}
             <div>
-                <h3 class="nav-item">Pupil Passport Form</h3>
-                <hr>
-                <form name="form"  enctype='multipart/form-data' onsubmit='return validateForm()' method="POST">
-                    {% csrf_token %}
-                    {{ form | crispy }} 
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-            {% else %}
-            <h3>
-                Warning! 
-                You are unauthorised to view this page! 
-                If you cannot find the page you are looking for please email MyPSE.ie support
-                or visit the about page for more information about how to use this site.
-            </h3>
-            {% endif %}
-
-        {% elif "passport_detail" in request.META.HTTP_REFERER %}
-       
-            {% if user.is_authenticated and user.role == "parent" or "pupil" %}
-            <div>
-                <h3 class="nav-item">Pupil Passport Form</h3>
+                <h3 class="nav-item">Create/Edit Pupil Passport</h3>
                 <hr>
                 <form name="form"  enctype='multipart/form-data' onsubmit='return validateForm()' method="POST">
                     {% csrf_token %}

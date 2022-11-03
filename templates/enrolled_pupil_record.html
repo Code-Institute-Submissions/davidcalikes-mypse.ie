@@ -25,7 +25,10 @@
                     <a  href="{% url 'update_pupil_record' record.id %}"><h6 class="passport-options">Edit Pupil Data</h6></a>
                     <a  href="{% url 'delete_pupil_record' record.id %}"><h6 class="passport-options">Delete Pupil Record</h6></a>
                 </div>
-            {% else %}
+            </div>
+        </div>    
+        <hr class="list-separator-rule">
+              {% else %}
             <h3>
                 Warning! 
                 You are unauthorised to view this page! 

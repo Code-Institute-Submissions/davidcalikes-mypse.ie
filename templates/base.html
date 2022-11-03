@@ -20,7 +20,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     
-    <title>MyPSE.ie - {{ title }}</title>
+    <title>{%if page_title %}{{ page_title }}{%else%}MyPSE.ie - User Authentication{% endif %}</title>
 </head>
     <body class="d-flex flex-column min-vh-100 main-bg body-pad">
          <!-- Responsive navbar-->

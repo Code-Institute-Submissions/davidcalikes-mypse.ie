@@ -6,16 +6,18 @@ from django.urls import reverse_lazy
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.mixins import LoginRequiredMixin
+from .mixins import PageTitleMixin
 
 
-class HomePage(generic.TemplateView):
+class HomePage(PageTitleMixin, generic.TemplateView):
     """
     Displays instructional video and links on landing page
     """
     template_name = 'index.html'
+    page_title = "MyPSE.ie - Home"
 
 
-class AddEnrolledPupil(LoginRequiredMixin, SuccessMessageMixin,
+class AddEnrolledPupil(PageTitleMixin, LoginRequiredMixin, SuccessMessageMixin,
                        generic.CreateView):
     """
     User with role of 'school' (admin) can add an enrolled pupil to database.
@@ -23,6 +25,7 @@ class AddEnrolledPupil(LoginRequiredMixin, SuccessMessageMixin,
     model = EnrolledPupil
     form_class = EnrolledPupilForm
     template_name = 'enrolled_pupil_form.html'
+    page_title = "MyPSE.ie - Add Pupil Record"
     success_url = reverse_lazy('enrolled_pupil_list')
     success_message = "Pupil record added successfully!"
 
@@ -40,12 +43,13 @@ class AddEnrolledPupil(LoginRequiredMixin, SuccessMessageMixin,
         return self.render_to_response(self.get_context_data(form=form))
 
 
-class EnrolledPupilList(LoginRequiredMixin, generic.ListView):
+class EnrolledPupilList(PageTitleMixin, LoginRequiredMixin, generic.ListView):
     """
     Displays page that lists pupil records created by logged in user
     """
     model = EnrolledPupil
     template_name = 'enrolled_pupil_list.html'
+    page_title = "MyPSE.ie - Pupil List"
     context_object_name = 'enrolled_pupil_list'
     paginate_by = 3
 
@@ -55,7 +59,7 @@ class EnrolledPupilList(LoginRequiredMixin, generic.ListView):
         )
 
 
-class EnrolledPupilRecord(LoginRequiredMixin, View):
+class EnrolledPupilRecord(PageTitleMixin, LoginRequiredMixin, View):
     """
     Displays pupil record selected by authenticated user
     """
@@ -71,18 +75,20 @@ class EnrolledPupilRecord(LoginRequiredMixin, View):
             'enrolled_pupil_record.html',
             {
                 "record": record,
+                "page_title": "MyPSE.ie - Pupil Record"
             },
         )
 
 
-class UpdatePupilRecord(LoginRequiredMixin, SuccessMessageMixin,
-                        generic.edit.UpdateView):
+class UpdatePupilRecord(PageTitleMixin, LoginRequiredMixin,
+                        SuccessMessageMixin, generic.edit.UpdateView):
     """
     User with role of School Admin can update enrolled existing pupil record
     """
     model = EnrolledPupil
     form_class = EnrolledPupilForm
     template_name = 'enrolled_pupil_form.html'
+    page_title = "MyPSE.ie - Edit Pupil Record"
     success_url = reverse_lazy('enrolled_pupil_list')
     success_message = "Pupil record updated successfully!"
 
@@ -93,13 +99,14 @@ class UpdatePupilRecord(LoginRequiredMixin, SuccessMessageMixin,
         return self.render_to_response(self.get_context_data(form=form))
 
 
-class DeletePupilRecord(LoginRequiredMixin, SuccessMessageMixin,
-                        generic.DeleteView):
+class DeletePupilRecord(PageTitleMixin, LoginRequiredMixin,
+                        SuccessMessageMixin, generic.DeleteView):
     """
     User with role of School Admin can delete existing pupil record
     """
     model = EnrolledPupil
     success_url = reverse_lazy('enrolled_pupil_list')
+    page_title = "MyPSE.ie - Delete Pupil Record"
     success_message = "Pupil record deleted!"
 
     def delete(self, request, *args, **kwargs):
@@ -107,12 +114,13 @@ class DeletePupilRecord(LoginRequiredMixin, SuccessMessageMixin,
         return super(DeletePupilRecord, self).delete(request, *args, **kwargs)
 
 
-class ValidatePupilId(generic.ListView, SuccessMessageMixin):
+class ValidatePupilId(PageTitleMixin, generic.ListView, SuccessMessageMixin):
     """
     Ensures Pupil is enrolled in system before a passport can be created
     """
     template_name = 'validate_pupil_id.html'
     model = EnrolledPupil
+    page_title = "MyPSE.ie - Validate Pupil ID"
 
     def get_queryset(self):
         query = self.request.GET.get('pupil_id')
@@ -123,13 +131,14 @@ class ValidatePupilId(generic.ListView, SuccessMessageMixin):
         return object_list
 
 
-class AddPassport(LoginRequiredMixin, generic.CreateView):
+class AddPassport(PageTitleMixin, LoginRequiredMixin, generic.CreateView):
     """
     User with role of parent and a valid pupil ID number can create a passport
     """
     model = Passport
     form_class = PassportForm
     template_name = 'passport_form.html'
+    page_title = "MyPSE.ie - Add Passport"
     success_url = reverse_lazy('passport_list')
 
     def form_valid(self, form):
@@ -148,12 +157,13 @@ class AddPassport(LoginRequiredMixin, generic.CreateView):
         return self.render_to_response(self.get_context_data(form=form))
 
 
-class PassportList(LoginRequiredMixin, generic.ListView):
+class PassportList(PageTitleMixin, LoginRequiredMixin, generic.ListView):
     """
     Displays page that lists any passports created by logged in user (parent)
     """
     model = Passport
     template_name = 'passport_list.html'
+    page_title = "MyPSE.ie - Passport List"
     context_object_name = 'passport_list'
     paginate_by = 3
 
@@ -163,7 +173,7 @@ class PassportList(LoginRequiredMixin, generic.ListView):
         )
 
 
-class PassportDetail(LoginRequiredMixin, View):
+class PassportDetail(PageTitleMixin, LoginRequiredMixin, View):
     """
     Displays pupil passport selected by authenticated and authorised user
     """
@@ -179,11 +189,12 @@ class PassportDetail(LoginRequiredMixin, View):
             'passport_detail.html',
             {
                 "passport": passport,
+                "page_title": "MyPSE.ie - Passport"
             },
         )
 
 
-class UpdatePassport(LoginRequiredMixin, SuccessMessageMixin,
+class UpdatePassport(PageTitleMixin, LoginRequiredMixin, SuccessMessageMixin,
                      generic.edit.UpdateView):
     """
     Authenticated user with authorisation can update passport information
@@ -191,6 +202,7 @@ class UpdatePassport(LoginRequiredMixin, SuccessMessageMixin,
     model = Passport
     form_class = PassportForm
     template_name = 'passport_form.html'
+    page_title = "MyPSE.ie - Edit Passport"
     success_url = reverse_lazy('passport_list')
     success_message = "Passport successfully updated!"
 
@@ -201,13 +213,14 @@ class UpdatePassport(LoginRequiredMixin, SuccessMessageMixin,
         return self.render_to_response(self.get_context_data(form=form))
 
 
-class DeletePassport(LoginRequiredMixin, SuccessMessageMixin,
+class DeletePassport(PageTitleMixin, LoginRequiredMixin, SuccessMessageMixin,
                      generic.DeleteView):
     """
     Authenticated user with authorisation can delete a passport
     """
     model = Passport
     success_url = reverse_lazy('passport_list')
+    page_title = "MyPSE.ie - Delete Passport"
     success_message = "Passport successfully deleted!"
 
     def delete(self, request, *args, **kwargs):
@@ -216,12 +229,13 @@ class DeletePassport(LoginRequiredMixin, SuccessMessageMixin,
         return super(DeletePassport, self).delete(request, *args, **kwargs)
 
 
-class TeacherPassportList(generic.ListView):
+class TeacherPassportList(PageTitleMixin, generic.ListView):
     """
     Displays list of pupil passports when corresponding teacher id is typed
     """
     model = Passport
     template_name = 'teacher_passport_list.html'
+    page_title = "MyPSE.ie - Teacher Passport List"
 
     def get_queryset(self):
         query = self.request.GET.get('teacher_id')
@@ -233,11 +247,12 @@ class TeacherPassportList(generic.ListView):
         return object_list
 
 
-class TeacherValidatePupilId(generic.ListView):
+class TeacherValidatePupilId(PageTitleMixin, generic.ListView):
     """
     Ensures Teacher has access to Pupil ID  before a passport can be viewed
     """
     template_name = 'teacher_validate_pupil_id.html'
+    page_title = "MyPSE.ie - Validate Pupil ID"
     model = Passport
 
     def get_queryset(self):
@@ -250,7 +265,7 @@ class TeacherValidatePupilId(generic.ListView):
         return object_list
 
 
-class TeacherPassportDetail(LoginRequiredMixin, View):
+class TeacherPassportDetail(PageTitleMixin, LoginRequiredMixin, View):
     """
     Displays passport selected by authenticated and authorised teacher
     """
@@ -266,16 +281,19 @@ class TeacherPassportDetail(LoginRequiredMixin, View):
             'teacher_passport_detail.html',
             {
                 "passport": passport,
+                "page_title": "MyPSE.ie - Passport"
             },
         )
 
 
-class PupilCheck(LoginRequiredMixin, generic.ListView):
+class PupilCheck(PageTitleMixin, LoginRequiredMixin, generic.ListView):
     """
     Displays page that lists pupil records created by logged in user
     """
     model = Passport
     template_name = 'pupil_check.html'
+    page_title = "MyPSE.ie - Pupil Passport List"
+
     context_object_name = 'pupil_check'
 
     def get_queryset(self):

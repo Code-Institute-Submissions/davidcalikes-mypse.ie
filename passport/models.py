@@ -34,9 +34,15 @@ class EnrolledPupil(models.Model):
 class Passport(models.Model):
 
     pupil_id = models.CharField(
-        "Pupil ID Number", max_length=8, unique=True)
+        "Pupil ID Number",
+        validators=[RegexValidator(r'^[0-9]{8}$',
+                    message="Not a valid pupil id number")],
+        max_length=8, unique=True)
     teacher_id = models.CharField(
-        "Teacher ID Number", max_length=6, default="")
+        "Teacher ID Number",
+        validators=[RegexValidator(r'^\d{5}[A-Z]{1}$',
+                    message="Not a valid School Roll Number")],
+        max_length=6, default="")
     slug = models.SlugField(
         max_length=200, unique=True, default="")
     my_full_name = models.CharField(

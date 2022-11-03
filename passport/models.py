@@ -9,7 +9,7 @@ class EnrolledPupil(models.Model):
 
     pupil_full_name = models.CharField(
         "Pupil's Full Name", max_length=200, default="")
-    pupil_id = models.CharField( 
+    pupil_id = models.CharField(
         "Pupil ID Number",
         validators=[RegexValidator(r'^[0-9]{8}$',
                     message="Not a valid pupil id number")],

@@ -77,7 +77,12 @@
 
                     <div class="col-md-6 vert-center">
                         <div class="passport-card">
-                            <img class="passport-item" src=" {{ passport.my_family_image.url }}">
+                                {% if "placeholder" in passport.my_family_image.url %}
+                                <img class="card-img-top"
+                                    src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667433920/passport-placeholder_jd8nl4.png">
+                                {% else %}
+                                <img class="passport-item" src=" {{ passport.my_family_image.url }}">
+                                {% endif %}
                             <h5>My Family Photo</h5>
                         </div>
                     </div>

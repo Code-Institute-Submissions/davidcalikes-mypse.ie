@@ -1,6 +1,7 @@
 from django.db import models
 from user.models import CustomUser
 from cloudinary.models import CloudinaryField
+from django.core.validators import RegexValidator
 from django.utils.text import slugify
 
 
@@ -8,8 +9,11 @@ class EnrolledPupil(models.Model):
 
     pupil_full_name = models.CharField(
         "Pupil's Full Name", max_length=200, default="")
-    pupil_id = models.CharField(
-        "Pupil ID Number", max_length=8, default="", unique=True)
+    pupil_id = models.CharField( 
+        "Pupil ID Number",
+        validators=[RegexValidator(r'^[0-9]{8}$',
+                    message="Not a valid pupil id number")],
+        max_length=8, default="", unique=True)
     school_name = models.CharField(
        "School Name", max_length=200, default="")
     school_roll_number = models.CharField(

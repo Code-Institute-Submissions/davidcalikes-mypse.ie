@@ -17,7 +17,10 @@ class EnrolledPupil(models.Model):
     school_name = models.CharField(
        "School Name", max_length=200, default="")
     school_roll_number = models.CharField(
-        "School Roll No", max_length=6, default="")
+        "School Roll No",
+        validators=[RegexValidator(r'^\d{5}[A-Z]{1}$',
+                    message="Not a valid School Roll Number")],
+        max_length=6, default="")
     school_email = models.EmailField(
         "School Email Address", max_length=300)
     created_by = models.ForeignKey(CustomUser,

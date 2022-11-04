@@ -30,6 +30,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+X_FAME_OPTIONS = 'SAMEORIGIN'
+
 ALLOWED_HOSTS = ['mypse.herokuapp.com', 'localhost']
 
 # Application definition
@@ -58,7 +60,7 @@ SITE_ID = 1
 LOGIN_REDIRECT_URL = 'login_success'
 LOGOUT_REDIRECT_URL = '/'
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+# CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 SUMMERNOTE_CONFIG = {
     'summernote': {

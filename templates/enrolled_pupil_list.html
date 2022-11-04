@@ -16,11 +16,13 @@
                 </div>
                 {% for enrolled_pupil in enrolled_pupil_list %}
                         {% if enrolled_pupil.created_by|stringformat:'s' == user|stringformat:'s' %}
-                        <div>
+            
+                        <div class="{% cycle 'record-bg-dark' 'record-bg-light' %}">
                             <a href="{% url 'enrolled_pupil_record' enrolled_pupil.pupil_id  %}">
-                                <h5>Pupil Name : {{ enrolled_pupil.pupil_full_name}} ---- ID:{{ enrolled_pupil.pupil_id}}</h4>
+                                <p>Pupil Name : {{ enrolled_pupil.pupil_full_name}} ---- ID:{{ enrolled_pupil.pupil_id}}</p>
                             </a>
                         </div>
+                            
                         {% endif %}
                             {% if forloop.counter|divisibleby:3 %}
                         </div>

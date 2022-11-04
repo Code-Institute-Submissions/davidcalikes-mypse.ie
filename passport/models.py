@@ -40,7 +40,7 @@ class Passport(models.Model):
         max_length=8, unique=True)
     teacher_id = models.CharField(
         "Teacher ID Number",
-        validators=[RegexValidator(r'^\d{5}[A-Z]{1}$',
+        validators=[RegexValidator(r'^[0-7]{6}$',
                     message="Not a valid School Roll Number")],
         max_length=6, default="")
     slug = models.SlugField(

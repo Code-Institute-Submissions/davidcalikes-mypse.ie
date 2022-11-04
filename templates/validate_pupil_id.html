@@ -11,7 +11,7 @@
                 <h4>For security purposes, please type your valid PUPIL ID Number to proceed (Tell me more)</h4>
                 <h4>If no match is displayed after clicking Verify Pupil Id then pupil id is not valid!</h4>
                 <form method='GET'>
-                    <input type='text' name='pupil_id' value='{{ request.GET.pupil_id}}'>
+                    <input pattern="[0-9]{8}" title="Eight Digit Pupil ID Number" type='text' name='pupil_id' value='{{ request.GET.pupil_id}}'>
                     <input class="button" type='submit' value="Verify Pupil ID">
                 </form>
                 <hr>

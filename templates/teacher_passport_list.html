@@ -10,7 +10,7 @@
             <h3>You can view any passports you are authorised to access here.</h3>
             <h3>To find any passports you have access to, type your MyPSE teacher ID number below.</h3>
             <form method='GET'>
-                <input type='text' name='teacher_id' value='{{ request.GET.teacher_id }}'>
+                <input pattern="[0-7]{6}" title="Eight Digit Pupil ID Number" type='text' name='teacher_id' value='{{ request.GET.teacher_id }}'>
                 <input class="button" type='submit' value="Search Passports">
               </form>
             <hr>

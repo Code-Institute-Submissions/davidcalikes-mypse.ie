@@ -8,7 +8,7 @@
         <div>
             <h3>For security purposes, please type PUPIL ID Number (Tell me more)</h3>
             <form method='GET'>
-                <input type='text' name='pupil_id' value='{{ request.GET.pupil_id}}'>
+                <input pattern="[0-9]{8}" title="Eight Digit Pupil ID Number" type='text' name='pupil_id' value='{{ request.GET.pupil_id}}'>
                 <input class="button" type='submit' value="Verify Pupil ID">
               </form>
             <hr>

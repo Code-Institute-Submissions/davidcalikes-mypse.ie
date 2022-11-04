@@ -18,12 +18,17 @@
 
                     <div class="row flex-row-reverse passport-text-row">
                         <div class="col-md-6 vert-center">
+                            {% if "placeholder" in passport.my_family_image.url %}
+                            <img class="passport-item"
+                                src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667579706/placeholders/placeholder2_yal2ql.png">
+                            {% else %}
                             <img class="passport-item" src=" {{ passport.my_passport_image.url }}">
+                            {% endif %}
                         </div>
 
                         <div class="col-md-6">
                             <div class="passport-text-item">
-                                <h4>My Personal Details</h4>
+                                <h4><i class="fa fa-user" aria-hidden="true"></i> My Personal Details</h4>
                                 <h4 class="passport-details-underscore"> ------------------- </h4>
                             
                                 <div class="passport-info-item-box">
@@ -72,8 +77,8 @@
                     <div class="col-md-6 vert-center">
                         <div class="passport-card">
                                 {% if "placeholder" in passport.my_family_image.url %}
-                                <img class="card-img-top"
-                                    src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667433920/passport-placeholder_jd8nl4.png">
+                                <img class="passport-item"
+                                    src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667581107/placeholders/placeholder5_cwvyw1.png">
                                 {% else %}
                                 <img class="passport-item" src=" {{ passport.my_family_image.url }}">
                                 {% endif %}
@@ -83,7 +88,12 @@
 
                     <div class="col-md-6 vert-center">
                         <div class="passport-card">
-                            <img class="passport-item" src=" {{ passport.my_likes_image.url }}">
+                                {% if "placeholder" in passport.my_likes_image.url %}
+                                <img class="passport-item"
+                                    src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667579706/placeholders/placeholder1_m3hyoe.png">
+                                {% else %}
+                                <img class="passport-item" src=" {{ passport.my_likes_image.url }}">
+                                {% endif %}
                             <h5>My Likes Photo</h5>
                         </div>
                     </div>
@@ -117,7 +127,12 @@
 
                     <div class="col-md-6 vert-center">
                         <div class="passport-card">
-                            <img class="passport-item" src=" {{ passport.my_supports_image.url }}">
+                                {% if "placeholder" in passport.my_supports_image.url %}
+                                <img class="passport-item"
+                                    src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667579706/placeholders/placeholder4_x8a8y1.png">
+                                {% else %}
+                                <img class="passport-item" src=" {{ passport.my_supports_image.url }}">
+                                {% endif %}
                             <h5>My supports photo</h5>
                         </div>
                     </div>
@@ -142,7 +157,12 @@
 
                     <div class="col-md-6 vert-center">
                         <div class="passport-card">
-                            <img class="passport-item" src=" {{ passport.my_communication_skills_image.url }}">
+                                {% if "placeholder" in passport.my_communication_skills_image.url %}
+                                <img class="passport-item"
+                                    src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667579706/placeholders/placeholder3_rsixss.png">
+                                {% else %}
+                                <img class="passport-item" src="{{ passport.my_communication_skills_image.url }}">
+                                {% endif %}
                             <h5>My Communication Photo</h5>
                         </div>
                     </div>

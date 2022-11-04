@@ -3,7 +3,7 @@
 {% block content %}
 
     <body onload="applyId();">
-        <div class="container-fluid passport-container">
+        <div class="container passport-container">
             <div class="row">
             {% if "passport_list" in request.META.HTTP_REFERER or "pupil_check" in request.META.HTTP_REFERER %}
                 {% if user.is_authenticated and user.role == "parent" or "pupil" %}

@@ -2,34 +2,46 @@
 {% load crispy_forms_tags %}
 {% block content %}
 
+<div id="loading">
+<img id="load-gif" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667607428/loader_clyzfq.gif" alt="Loading!">
+<h2 class="loading-txt" >Loading...</h2>
+</div>
+
 <div class="container-fluid form-container">
-    <div class="row form-row">
-        {% if "validate_pupil_id" in request.META.HTTP_REFERER or "update_passport" in request.META.HTTP_REFERER or "add_passport" in request.META.HTTP_REFERER or "passport_detail" in request.META.HTTP_REFERER %}
-       
-            {% if user.is_authenticated and user.role == "parent" or "pupil" %}
-            <div>
-                <h3 class="nav-item">Create/Edit Pupil Passport</h3>
-                <hr>
-                <form name="form"  enctype='multipart/form-data' onsubmit='return validateForm()' method="POST">
-                    {% csrf_token %}
-                    {{ form | crispy }} 
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-            {% else %}
-            <h3>
-                Warning! 
-                You are unauthorised to view this page! 
-                If you cannot find the page you are looking for please email MyPSE.ie support
-                or visit the about page for more information about how to use this site.
-            </h3>
-            {% endif %}
+<div class="row form-row">
+    {% if "validate_pupil_id" in request.META.HTTP_REFERER or "update_passport" in request.META.HTTP_REFERER or "add_passport" in request.META.HTTP_REFERER or "passport_detail" in request.META.HTTP_REFERER %}
+
+        {% if user.is_authenticated and user.role == "parent" or "pupil" %}
+        <div>
+            <h3 class="nav-item">Create/Edit Pupil Passport</h3>
+            <hr>
+            <form name="form"  enctype='multipart/form-data' onsubmit='return validateForm()' method="POST">
+                {% csrf_token %}
+                {{ form | crispy }} 
+                <input onclick="loadingModal()" type="submit" value="Submit">
+            </form>
+        </div>
         {% else %}
         <h3>
             Warning! 
             You are unauthorised to view this page! 
-            You have not navigated to this page from your list of approved passports.
+            If you cannot find the page you are looking for please email MyPSE.ie support
+            or visit the about page for more information about how to use this site.
         </h3>
-            
         {% endif %}
+    {% else %}
+    <h3>
+        Warning! 
+        You are unauthorised to view this page! 
+        You have not navigated to this page from your list of approved passports.
+    </h3>
+        
+    {% endif %}
+
+<script>
+function loadingModal() {
+document.getElementById("loading").style.display = "block";
+}
+</script>
+    
 {% endblock %}

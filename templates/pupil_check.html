@@ -2,51 +2,62 @@
 {% load static %}
 {% block content %}
 
-    <div id="list-heading">
-        <div class="col-md-12 vert-center">
-            <div class="row">
-                <h2 class="passport-title">My Passport</h2>
-            </div>
-        </div>
-
-        <div class="row passport-text-row">
-            <p class="list-text">Click on a passport below to access, update or delete information <br>
-                You can add add a new passport via the link below
-                if you have a valid pupil id. (read more)</p>
-        </div> 
-    </div>    
-    
-    <hr class="list-separator-rule"> 
-    {% if user.is_authenticated and user.role == "pupil" %}
-    {% for passport in pupil_check %}
+<div class="container-fluid">
     <div class="row">
-        <div class="container"> 
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card card-item">
-                        <img class="card-img-top" src="{{ passport.my_passport_image.url }}" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ passport.my_full_name }}</h5>
-                            <h6 class="pupil-id-text" id="valid-pupil-check-id" class="card-subtitle mb-2 text-muted">{{ passport.pupil_id}}</h6>
-                            <p class="card-text"> Read, and update your passport! </p>
-                        </div>
-                    
-                        <div class="col-md-12 vert-center">
-                            <h4>
-                                <a onclick="setValidPupilCheckId()" href="{% url 'passport_detail' passport.slug %}"><h4 class="passport-options">View My Passport</h4></a>
-                            </h4>
-                        </div>
+        <div id="list-heading">
+            <div class="row list-heading-row">
+                <div class="col-md-6 vert-center">
+                    <div class="row passport-text-row">
+                        <h2 class="passport-title"><i class="fa fa-id-card" aria-hidden="true"></i> My Passport</h2>
+                        <p class="list-text">
+                            Click on your passport below to access, update or delete information. 
+                            <br>
+                            You can add add images to your passport and style text content using the toolbar provided.
+                        </p>
                     </div>
+                </div>
+                <div class="col-md-6 vert-center">
+                    <img class="img-fluid heading-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667598847/placeholders/Screen_Shot_2022-11-04_at_21.52.53_bnpi96.png" alt="">
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <hr class="list-separator-rule">
+{% if user.is_authenticated and user.role == "pupil" %}
+
+<!-- Created Passports Column -->
+<div class="col-md-12 left">
+    <div class="row passport-row">
+        {% for passport in pupil_check %} 
+            <div class="col-md-4">
+                <div class="card card-item">
+                    <div class="card-img-container">
+                        {% if "placeholder" in passport.my_family_image.url %}
+                        <img class="card-img-top"
+                            src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667583583/placeholders/Screen_Shot_2022-11-04_at_17.38.53_jy9cjm.png">
+                        {% else %}
+                            <img class="card-img-top" src="{{ passport.my_passport_image.url }}" alt="Card image cap">  
+                        {% endif %}
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ passport.my_full_name }}</h5>
+                        <h6 class="pupil-id-text"  class="card-subtitle mb-2 text-muted">{{ passport.pupil_id}}</h6>
+                        <p class="card-text"> Read, and update your passport! </p>
+                    </div>
+                                
+                    <div class="col-md-12 vert-center">
+                        <a class="passport-options"  href="{% url 'passport_detail' passport.slug %}">
+                            <h4>View Passport</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>   
+        {% endfor %} 
+    </div>
+</div>
     
-    {% endfor %}
-
-    {% if not pupil_check %} 
+    {% elif not pupil_check %} 
 
     <div class="footer-container">
         <div class="col-md-12 vert-center">
@@ -57,14 +68,13 @@
     </div>
 
     <hr class="list-separator-rule">
-    {% endif %}
 
-        {% else %}
+    {% else %}
         <h3>
             Warning! 
             You are unauthorised to view this page! 
             If you cannot find the page you are looking for please email MyPSE.ie support
             or visit the about page for more information about how to use this site.
         </h3>
-        {% endif %}
+    {% endif %}
 {% endblock %}

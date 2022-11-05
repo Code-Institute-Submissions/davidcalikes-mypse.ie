@@ -137,6 +137,16 @@ footer a {
     box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
 }
 
+.list-heading-row {
+    background: #ffffff;
+    border: solid 2px #0B5657;
+    border-radius: 10px;
+    width: 98%;
+    margin-left: 1%;
+    padding: 0;
+    --bs-gutter-x: 0;
+}
+
 .list-title-row {
     background-color: white;
     padding: 1rem;
@@ -160,6 +170,11 @@ footer a {
     border-radius: 10px;
     box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
 }
+
+.heading-img {
+    padding: 1rem;
+}
+
 
 .footer-container {
     margin-bottom: 1.5rem;
@@ -246,6 +261,36 @@ h2 {
     margin-bottom: 1.5rem;
     padding-bottom: 20%;
     box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
+}
+
+#loading {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-image: url(https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: 5px solid whitesmoke;
+    background-color: #0ca9a9;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+.loading-txt {
+    color: #ffffff;
+    margin: 5%;
+    font-size: 220%;
+    text-align: center;
+}
+
+#load-gif {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 15%;
+    border-radius: 10px;
 }
 
 .form-container {
@@ -348,13 +393,11 @@ h2 {
     text-decoration: underline;
 }
 .passport-container {
-
     background-image: url(https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png);
     background-color: #0ca9a9;
     border: solid 2px white;
     border-radius: 10px;
     margin-bottom: 2rem;
-    padding: 3vw;
     box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
 }
 
@@ -389,6 +432,8 @@ h2 {
     background: #0B5657;
     border-radius: 10px;
     padding: 0.5rem;
+    width: 50%;
+    margin-left: 25%;
 }
 
 .vert-center {
@@ -404,6 +449,15 @@ h2 {
     border: solid 2px #0B5657;
     margin-top: 1rem;
 }
+.passport-heading {
+width: 92%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    border: solid 2px #0B5657;
+    /* margin: 1rem; */
+    margin-left: 4%;
+}
 
 .passport-text-row {
     width: 94%;
@@ -411,10 +465,7 @@ h2 {
     padding: 1rem;
     border-radius: 10px;
     border: solid 2px #0B5657;
-    margin-top: 0.5rem;
-    margin-left: 3%;
-    margin-bottom: 1rem;
-    padding-bottom: 3rem;
+    margin: 1rem;
 }
 .passport-row {
     width: 94%;

@@ -59,6 +59,8 @@ function validateForm() {
         alert("Incorrect ID");
         return false;
         } else {
+        loadingModal();
         return true;
     }
 }
+

@@ -86,10 +86,10 @@ footer a {
 }
 
 .nav-link {
-    background-color: white;
+    background-color: #befbe5;
     margin-right: 10px;
     border-radius: 10px;
-    border: solid 2px #0B5657;
+    border: solid 1px #0B5657;
     margin-top: 5px;
 }
 
@@ -99,8 +99,8 @@ footer a {
 
 .nav-link:hover{
     color: white;
-    background:#9500a0;
-    border: solid 2px white;
+    background:#cc8cd0;
+    border: solid 1px white;
     cursor: pointer;
 }
 
@@ -163,7 +163,6 @@ footer a {
     margin-left: 4%;
     padding: 1.5rem;
     text-align: center;
-    color: white;
     background-image: url(https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png);
     background-color: #0ca9a9;
     border: solid 2px white;
@@ -365,14 +364,15 @@ h2 {
 
 .record-bg-light {
     background-color:#ffffff;
-    text-align: left;
-    padding-top: 0.5rem;
+    padding: 0.5rem;
+    padding-top: 1rem;
 }
 
 .record-bg-dark {
     background-color: #0B5657;
-    text-align: left;
-    padding-top: 0.5rem;
+    text-align: center;
+    padding: 0.5rem;
+    padding-top: 1rem;
 }
 
 .record-bg-light a {
@@ -434,6 +434,7 @@ h2 {
     padding: 0.5rem;
     width: 50%;
     margin-left: 25%;
+    margin-bottom: 1.5rem;
 }
 
 .vert-center {
@@ -523,12 +524,12 @@ width: 92%;
 }
 
 .passport-options {
-    background-color: white;
+    background-color: #befbe5;
     width: 180px;
     margin-top: 1rem;
     border-radius: 10px;
     padding: 0.5rem;
-    border: 2px solid #0B5657;
+    border: 1px solid #0B5657;
     padding: 0.5rem 1rem;
     color:#0B5657;
     text-align: center;
@@ -537,8 +538,8 @@ width: 92%;
 }
 
 .passport-options:hover {
-    background-color: #9500a0;
-    border: 2px solid white;
+    background-color:#cc8cd0;
+    border: 1px solid white;
     color: white;
 }
 

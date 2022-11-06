@@ -2,18 +2,24 @@
 {% load static %}
 {% block content %}
 
-<div class="container form-container">
-    <div class="row form-row">
-        
+<!-- <div class="container form-container"> -->
+    <!-- <div class="row passport-text-row"> -->
         {% if user.is_authenticated and user.role == "school" %}
-        <div class="col-md-8 mt-3 offset-md-2">
-            <h2 class="passport-title"> School Admin Page </h2>
-        </div>
-            <div class="row passport-text-row">
-                <div class="list-text">
-                    <h5>Welcome {{ user.username }}</h5> 
-                    <p>Here are the records you have created. Click the button below to add a new record</p>
+        <div id="list-heading">
+            <div class="row flex-row-reverse list-heading-row">
+                <div class="col-md-6 vert-center">
+                    <div class="row passport-text-row">
+                        <h2 class="passport-title"><i class="fa fa-id-card" aria-hidden="true"></i> School Admin Page</h2>
+                        <h5>Welcome {{ user.username }}</h5> 
+                        <p>Here are the records you have created. Click the button below to add a new record</p>
+                    </div>
                 </div>
+                <div class="col-md-6 vert-center">
+                    <img class="img-fluid heading-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667660572/Screen_Shot_2022-11-05_at_15.02.23_l66hjj.png" alt="School Admin Page">
+                </div>
+            <!-- </div>
+        </div> -->
+        
                 {% for enrolled_pupil in enrolled_pupil_list %}
                         {% if enrolled_pupil.created_by|stringformat:'s' == user|stringformat:'s' %}
             
@@ -29,7 +35,7 @@
                     <div class="row form-row">
                         {% endif %}
                         {% endfor %}
-                        <div style="text-align: center;">
+                        <div style="text-align: center; margin-top: 1rem;">
                             <h6> Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }} </h6>
                         </div>
                         {% if is_paginated %}

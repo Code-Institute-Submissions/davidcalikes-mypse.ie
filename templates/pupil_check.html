@@ -5,7 +5,10 @@
 <div class="container-fluid">
     <div class="row">
         <div id="list-heading">
-            <div class="row list-heading-row">
+            <div class="row flex-row-reverse list-heading-row">
+                <div class="col-md-6 vert-center">
+                    <img class="img-fluid heading-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667598847/placeholders/Screen_Shot_2022-11-04_at_21.52.53_bnpi96.png" alt="">
+                </div>
                 <div class="col-md-6 vert-center">
                     <div class="row passport-text-row">
                         <h2 class="passport-title"><i class="fa fa-id-card" aria-hidden="true"></i> My Passport</h2>
@@ -15,9 +18,6 @@
                             You can add add images to your passport and style text content using the toolbar provided.
                         </p>
                     </div>
-                </div>
-                <div class="col-md-6 vert-center">
-                    <img class="img-fluid heading-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667598847/placeholders/Screen_Shot_2022-11-04_at_21.52.53_bnpi96.png" alt="">
                 </div>
             </div>
         </div>
@@ -47,9 +47,7 @@
                     </div>
                                 
                     <div class="col-md-12 vert-center">
-                        <a class="passport-options"  href="{% url 'passport_detail' passport.slug %}">
-                            <h4>View Passport</h4>
-                        </a>
+                        <a class="passport-options"  href="{% url 'passport_detail' passport.slug %}">View Passport</a>
                     </div>
                 </div>
             </div>   

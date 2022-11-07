@@ -1,5 +1,4 @@
 function applyId() {
-    alert('ID Applied');
     let pupilId= document.getElementById("set-edit-pupil-id").innerHTML
     console.log(pupilId)
     localStorage.setItem("id", pupilId);

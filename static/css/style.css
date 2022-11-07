@@ -6,7 +6,7 @@
 
 .navbar {
     padding-left: 1rem;
-    padding-right: 1rem;
+    padding-right: 0.5rem;
     background-image: url("https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png"),
         linear-gradient(to right, #ffffff, #ffffff, #0ca9a9, #0ca9a9, #0ca9a9, #0ca9a9);
     box-shadow: 10px 10px 15px rgb(0 0 0 / 15%);
@@ -48,9 +48,8 @@ a:hover {
 }
 
 .logo-background {
-    background-color: rgba(255, 255, 255, 0.3);
     padding: 1rem;
-    border-radius: 10px;
+    padding-left: 0;
 }
 
 .footer {
@@ -86,22 +85,32 @@ footer a {
 }
 
 .nav-link {
-    background-color: #befbe5;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
     margin-right: 10px;
-    border-radius: 10px;
-    border: solid 1px #0B5657;
-    margin-top: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
 }
 
 .nav-link a {
     color: #0B5657;
 }
 
-.nav-link:hover{
-    color: white;
-    background:#cc8cd0;
-    border: solid 1px white;
-    cursor: pointer;
+.nav-link:hover {
+    background-color: #1b5757;
+    box-shadow: 0px 10px 15px rgba(185, 246, 241, 0.74);
+    color: #fff;
+    transform: translateY(-4px);
 }
 
 .navbar-light .navbar-nav .nav-link:hover{
@@ -172,6 +181,14 @@ footer a {
 
 .heading-img {
     padding: 1rem;
+}
+
+.page-link {
+    color: #0B5657;
+}
+
+.page-link:hover {
+    color: #f18fe6;
 }
 
 
@@ -456,7 +473,6 @@ width: 92%;
     padding: 1rem;
     border-radius: 10px;
     border: solid 2px #0B5657;
-    /* margin: 1rem; */
     margin-left: 4%;
 }
 
@@ -465,7 +481,6 @@ width: 92%;
     background-color: white;
     padding: 1rem;
     border-radius: 10px;
-    border: solid 2px #0B5657;
     margin: 1rem;
 }
 .passport-row {
@@ -524,23 +539,27 @@ width: 92%;
 }
 
 .passport-options {
-    background-color: #befbe5;
-    width: 180px;
     margin-top: 1rem;
-    border-radius: 10px;
-    padding: 0.5rem;
-    border: 1px solid #0B5657;
-    padding: 0.5rem 1rem;
-    color:#0B5657;
-    text-align: center;
-    text-decoration: none;
-    margin-bottom: 1rem;
+    font-size: 12px;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #198754;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
 }
 
 .passport-options:hover {
-    background-color:#cc8cd0;
-    border: 1px solid white;
-    color: white;
+    background-color: #1b5757;
+    box-shadow: 0px 10px 15px rgba(185, 246, 241, 0.74);
+    color: #fff;
+    transform: translateY(-4px);
 }
 
 .block-text {

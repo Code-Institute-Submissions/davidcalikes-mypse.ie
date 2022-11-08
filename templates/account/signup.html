@@ -7,19 +7,25 @@
 {% block content %}
 <div class="container form-container">
     <div class="row form-row">
+        <div>
+            <img class="auth-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667574694/Screen_Shot_2022-11-04_at_14.47.38_abnb4u.png" alt="MyPSE.ie Logo">
+        </div>
         <div class="col-md-8 mt-3 offset-md-2">
             <h2 class="passport-title">{% trans "Sign Up" %}</h2>
         </div>
         <div class="row passport-text-row">
-            <p class="list-text" >{% blocktrans %}Welcome to MyPSE.ie. 
+            <p class="list-text">{% blocktrans %}Welcome to MyPSE.ie. 
                 <br> 
                 <br>
             If you already have an account, please 
-            <a class="link" href="{{ login_url }}">sign in</a> instead.{% endblocktrans %}</p>
+            <a class="link" href="{{ login_url }}">SIGN IN</a> instead.{% endblocktrans %}</p>
+            <p class="list-text">Please note, If you wish to create an account you will require either
+                a School Roll Number or a valid Pupil/Teacher ID.</p> 
+                <p class="list-text">Visit the ABOUT page for more information</p>
         </div>         
     </div>
     <div class="row form-row">
-        <div class="col-md-8 mt-3 offset-md-2">
+        <div class="form-center">
             <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
                 {% csrf_token %}
                 {{ form.as_p }}

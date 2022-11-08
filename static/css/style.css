@@ -52,6 +52,17 @@ a:hover {
     padding-left: 0;
 }
 
+.auth-logo {
+    width: 30%;
+    border: 2px solid #0B5657;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+#signup_form {
+    width: 11rem;
+}
+
 .footer {
     font-family: Helvetica, sans-serif;
     color: #0B5657;
@@ -232,6 +243,11 @@ footer a {
 
 .link-row {
     text-align: center;
+}
+
+.form-center {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 h1,

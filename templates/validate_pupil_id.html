@@ -2,29 +2,44 @@
 {% load static %}
 {% block content %}
 
-<div class="container-fluid form-container">
-    <div class="row form-row">
-        {% if "/pupil_check" or "/validate_pupil_id" in request.META.HTTP_REFERER %}
-            {% if user.is_authenticated and user.role == "parent" or "pupil" %}
-            <div>
-            <hr>
-                <h4>For security purposes, please type your valid PUPIL ID Number to proceed (Tell me more)</h4>
-                <h4>If no match is displayed after clicking Verify Pupil Id then pupil id is not valid!</h4>
-                <form method='GET'>
-                    <input pattern="[0-9]{8}" title="Eight Digit Pupil ID Number" type='text' name='pupil_id' value='{{ request.GET.pupil_id}}'>
-                    <input class="button" type='submit' value="Verify Pupil ID">
-                </form>
-                <hr>
-            </div>
+{% if "/pupil_check" or "/validate_pupil_id" in request.META.HTTP_REFERER %}
+    {% if user.is_authenticated and user.role == "parent" or "pupil" %}
 
-                {% for pupil in object_list %}
-                    <div>
-                            <h3>Pupil Id Confirmed!</h3>
-                            <h4>Pupil Name : {{ pupil.pupil_full_name}}</h4>
-                            <h4 id="valid-pupil-id">{{ pupil.pupil_id}}</h4> 
-                            <h3><a onclick="setValidatePupilId()" href="{% url 'add_passport' %}">Click to get started!</a></h3>
+    <div class="container-fluid">
+    <div class="row">
+        <div class="list-heading">
+            <div class="row flex-row-reverse list-heading-row">
+                <div class="col-md-6 vert-center">
+                    <img class="img-fluid heading-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667916086/Screen_Shot_2022-11-08_at_14.00.13_yyaacy.png" alt="">
+                </div>
+                <div class="col-md-6 vert-center">
+                    <div class="row passport-text-row">
+                        <h2 class="passport-title"><i class="fa fa-check-circle" aria-hidden="true"></i> Authorisation Check</h2>
+                        <p class="list-text">
+                            For security purposes, please type your valid PUPIL ID Number to proceed (Tell me more)
+                            If no match is displayed after clicking Verify Pupil Id then pupil id is not valid!
+                        </p>
                     </div>
-                {% endfor %} 
+                </div>
+                <div>
+                    <form class="list-form" method='GET'>
+                        <input pattern="[0-9]{8}" title="Eight Digit Pupil ID Number" type='text' name='pupil_id' value='{{ request.GET.pupil_id}}'>
+                        <input class="button" type='submit' value="Verify Pupil ID">
+                    </form>
+                </div>
+                {% for pupil in object_list %}
+                    <div class="record-bg-dark">
+                            <a onclick="setValidatePupilId()" href="{% url 'add_passport' %}">
+                                <p>Pupil Name : {{ pupil.pupil_full_name}} -- Click to get started!</p>
+                                <p id="valid-pupil-id">{{ pupil.pupil_id}}</p> 
+                            </a>
+                    </div>
+                {% endfor %}
+        </div>
+    </div>
+</div> 
+<hr class="list-separator-rule">
+
             {% else %}
             <h3>
                 Warning! 

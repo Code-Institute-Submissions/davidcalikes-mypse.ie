@@ -575,6 +575,11 @@ width: 92%;
     border-radius: 4px;
 }
 
+#valid-pupil-id {
+    display: none;
+}
+
+
 #set-teacher-id {
     display: none;
 }

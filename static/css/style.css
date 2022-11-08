@@ -166,7 +166,7 @@ footer a {
     margin-left: 25%;
 }
 
-#list-heading {
+.list-heading {
     margin-bottom: 1.5rem;
     width: 92%;
     margin-left: 4%;
@@ -318,10 +318,9 @@ h2 {
     background-color: #0ca9a9;
     border: solid 2px white;
     border-radius: 4px;
-    min-height: 700px;
     margin-bottom: 2rem;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 6rem;
     box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
 }
 

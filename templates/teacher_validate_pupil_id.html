@@ -2,27 +2,44 @@
 {% load static %}
 {% block content %}
 
-<div class="container-fluid form-container">
-    <div class="row form-row">
-        {% if user.is_authenticated and user.role == "teacher" %}
-        <div>
-            <h3>For security purposes, please type PUPIL ID Number (Tell me more)</h3>
-            <form method='GET'>
-                <input pattern="[0-9]{8}" title="Eight Digit Pupil ID Number" type='text' name='pupil_id' value='{{ request.GET.pupil_id}}'>
-                <input class="button" type='submit' value="Verify Pupil ID">
-              </form>
-            <hr>
-        </div>
 
-            {% for passport in passport_list %}
-                <div>
-                        <h3>Pupil Id Confirmed!</h3>
-                        <h4>Pupil Name : {{ passport.my_full_name }}</h4>
-                        <h4>{{ passport.teacher_id }}</h4>
-                        
-                        <h3><a href="{% url 'teacher_passport_detail' passport.slug %}">Click here to view Passport</a></h3>
+{% if user.is_authenticated and user.role == "teacher" %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="list-heading">
+            <div class="row flex-row-reverse list-heading-row">
+                <div class="col-md-6 vert-center">
+                    <img class="img-fluid heading-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667916086/Screen_Shot_2022-11-08_at_14.00.13_yyaacy.png" alt="">
                 </div>
-            {% endfor %} 
+                <div class="col-md-6 vert-center">
+                    <div class="row passport-text-row">
+                        <h2 class="passport-title"><i class="fa fa-check-circle" aria-hidden="true"></i> Authorisation Check</h2>
+                        <p class="list-text">
+                            For added security, please type PUPIL ID Number to access this passport. (Tell me more)
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <form class="list-form" method='GET'>
+                        <input pattern="[0-9]{8}" title="Eight Digit Pupil ID Number" type='text' name='pupil_id' value='{{ request.GET.pupil_id}}'>
+                        <input class="button" type='submit' value="Verify Pupil ID">
+                      </form>
+                </div>
+                {% for passport in passport_list %}
+                <div class="record-bg-dark">
+                    <a href="{% url 'teacher_passport_detail' passport.slug %}">
+                    <p>Pupil Name : {{ passport.my_full_name}} ---- Click here!</p>
+                    </a>
+                </div>
+{% endfor %}
+            </div>
+        </div>
+    </div>
+</div> 
+
+<hr class="list-separator-rule">
+
+
         {% else %}
         <h3>
             Warning! 

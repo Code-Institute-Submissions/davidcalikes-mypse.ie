@@ -2,32 +2,51 @@
 {% load static %}
 {% block content %}
 
-<div class="container-fluid form-container">
-    <div class="row form-row">
-        {% if user.is_authenticated and user.role == "teacher" %}
-        <div>
-            <h2>Welcome Teacher</h2>
-            <h3>You can view any passports you are authorised to access here.</h3>
-            <h3>To find any passports you have access to, type your MyPSE teacher ID number below.</h3>
-            <form method='GET'>
-                <input pattern="[0-7]{6}" title="Six Digit Teacher ID Number" type='text' name='teacher_id' value='{{ request.GET.teacher_id }}'>
-                <input class="button" type='submit' value="Search Passports">
-              </form>
-            <hr>
-        </div>
-            {% for passport in passport_list %}
-                <div>
-                    <h4>Pupil Name : {{ passport.my_full_name }} </h4>
-                    <h4 id="set-teacher-id" >{{ passport.teacher_id }}</h4>
-                    <a  onclick="setTeacherId();"  href="{% url 'teacher_validate_pupil_id' %}"> Click Here To Continue</a>
+{% if user.is_authenticated and user.role == "teacher" %}
+<div class="container-fluid">
+    <div class="row">
+        <div id="list-heading">
+            <div class="row flex-row-reverse list-heading-row">
+                <div class="col-md-6 vert-center">
+                    <img class="img-fluid heading-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667598847/placeholders/Screen_Shot_2022-11-04_at_21.52.53_bnpi96.png" alt="">
                 </div>
-            {% endfor %} 
-        {% else %}
-        <h3>
-            Warning! 
-            You are unauthorised to view this page! 
-            If you cannot find the page you are looking for please email MyPSE.ie support
-            or visit the about page for more information about how to use this site.
-        </h3>
-        {% endif %}
-        {% endblock %}
+                <div class="col-md-6 vert-center">
+                    <div class="row passport-text-row">
+                        <h2 class="passport-title"><i class="fa fa-id-card" aria-hidden="true"></i> Pupil Passports</h2>
+                        <p class="list-text">
+                            You can view any passports you are authorised to access here. 
+                            <br>
+                            To find any passports you have access to, type your TEACHER ID NUMBER below.
+                            No passports will appear if they have not been assigned to you by a pupil or a parent.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <form class="list-form" method='GET'>
+                        <input pattern="[0-7]{6}" title="Six Digit Teacher ID Number" type='text' name='teacher_id' value='{{ request.GET.teacher_id }}'>
+                        <input class="button" type='submit' value="Search Passports">
+                      </form>
+                </div>
+                {% for passport in passport_list %}
+                <div class="{% cycle 'record-bg-dark' 'record-bg-light' %}">
+                    <a onclick="setTeacherId();" href="{% url 'teacher_validate_pupil_id' %}">
+                        <p>Pupil Name : {{ passport.my_full_name}} ---- Click here!</p>
+                        <p id="set-teacher-id">{{ passport.teacher_id }}</p>
+                    </a>
+                </div>
+{% endfor %}
+            </div>
+        </div>
+    </div>
+</div> 
+
+ 
+{% else %}
+<h3>
+    Warning! 
+    You are unauthorised to view this page! 
+    If you cannot find the page you are looking for please email MyPSE.ie support
+    or visit the about page for more information about how to use this site.
+</h3>
+{% endif %}
+{% endblock %}

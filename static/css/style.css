@@ -210,8 +210,9 @@ footer a {
 .footer-container {
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
-    width: 70%;
-    margin-left: 15%;
+    width: 80%;
+    height: 84px;
+    margin-left: 10%;
     padding-top: 0.5rem;
     text-align: center;
     color: white;

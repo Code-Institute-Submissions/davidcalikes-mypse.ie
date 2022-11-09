@@ -22,3 +22,6 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('summernote/', include('django_summernote.urls'))
 ]
+
+handler404 = "mypse.views.page_not_found_view"
+handler500 = "mypse.views.error_view"

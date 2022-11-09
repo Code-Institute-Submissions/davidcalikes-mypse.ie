@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container form-container">
+    <div class="row form-row">
+        <div>
+            <img class="auth-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667994858/mypse_404_dcsdsw.png" alt="Page Not Found!">
+        </div>
+        <div class="col-md-8 mt-3 offset-md-2">
+            <h2 class="passport-title">Internal Server Error</h2>
+        </div>
+        <div class="row passport-text-row">
+            <p class="list-text">
+                Please accept this whole bunch of whoopsie daisies!<br>
+                Click the link below to return to the home page 
+                <a class="link" href="{% url 'home' %}">Return Home</a>
+            </p>
+        </div>
+    </div>
+{% endblock %}

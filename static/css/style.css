@@ -59,6 +59,10 @@ a:hover {
     margin-bottom: 1rem;
 }
 
+.warning-logo {
+    width: 30%;
+}
+
 #signup_form {
     width: 11rem;
 }

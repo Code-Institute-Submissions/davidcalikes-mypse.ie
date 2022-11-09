@@ -1,32 +1,24 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-<html>
-    <head>
-        <title>
-            delete
-        </title>
-    </head>
-    <body>
-        <div class="container-fluid list-heading"></div>
-            <div class="opaque-overlay">&nbsp;
-                <div class="row">
-                    <div class="col-12">
-                        <section class="callout jumbotron text-center">
-                            <h1 class="jumbotron-header">***WARNING***</h1>
-                            <hr class="block-divider">
-                            <form method="POST" action="">
-                                {% csrf_token %}
-                                <br>
-                                <p>You are about to delete this record </p>
-                                <input type="submit" value="Delete" class="btn btn-lg btn-danger">
-                                <a href="{% url 'enrolled_pupil_list' %}" class="btn btn-lg btn-success">Go Back</a>
-                            </form>
-                        </section>
-                    </div>
-                </div>
+<div class="container-fluid list-heading">
+    <div>&nbsp;
+        <div class="row">
+            <div>
+                <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
+            </div>
+            <div class="col-12">
+                <section class="passport-heading">
+                    <h1 class="list-text">***WARNING***</h1>
+                    <form method="POST" action="">
+                        {% csrf_token %}
+                        <br>
+                        <p>You are about to delete this pupil's record!</p>
+                        <input type="submit" value="Delete" class="btn btn-lg btn-danger">
+                        <a href="{{request.META.HTTP_REFERER}}" class="btn btn-lg btn-success">Go Back</a>
+                    </form>
+                </section>
             </div>
         </div>
-    </body>
-</html>
-{% endblock %}
+    </div>
+</div>

@@ -4,27 +4,24 @@
 
 
 <body onload="validateTeacher();">
+    <div id="passport-blur" class="container passport-container">
+        <div class="row">
     {% if "teacher_validate_pupil_id" in request.META.HTTP_REFERER %}
         {% if user.is_authenticated and user.role == "teacher" %} 
-    <div id="passport-blur" class="container-fluid passport-container">
-        <div class="row">
                 <p class="pupil-id-text" id="set-edit-pupil-id">{{ passport.pupil_id  }}</p>
                 <p class="pupil-id-text" id="passport-teacher-id">{{ passport.teacher_id  }}</p>
-                <div  class="col-md-12 vert-center">
-                    <div class="row">
-                        <h2 class="passport-title">{{ passport.my_full_name }}</h2>
-                    </div>
-                </div>  
-                <hr class="passport-separator-rule">
-
-                <div class="row flex-row-reverse passport-text-row">
+                <div class="row flex-row-reverse passport-heading">
                     <div class="col-md-6 vert-center">
+                        {% if "placeholder" in passport.my_passport_image.url %}
+                        <img class="passport-item"
+                            src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667941288/fillers/flag_u3b6l1.png">
+                        {% else %}
                         <img class="passport-item" src=" {{ passport.my_passport_image.url }}">
+                        {% endif %}
                     </div>
-
                     <div class="col-md-6">
                         <div class="passport-text-item">
-                            <h4>My Personal Details</h4>
+                            <h4><i class="fa fa-user" aria-hidden="true"></i> {{ passport.my_full_name }}</h4>
                             <h4 class="passport-details-underscore"> ------------------- </h4>
                         
                             <div class="passport-info-item-box">
@@ -72,14 +69,24 @@
 
                 <div class="col-md-6 vert-center">
                     <div class="passport-card">
-                        <img class="passport-item" src=" {{ passport.my_family_image.url }}">
+                            {% if "placeholder" in passport.my_family_image.url %}
+                            <img class="passport-item"
+                                src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667941290/fillers/family_z0n6ze.png">
+                            {% else %}
+                            <img class="passport-item" src=" {{ passport.my_family_image.url }}">
+                            {% endif %}
                         <h5>My Family Photo</h5>
                     </div>
                 </div>
 
                 <div class="col-md-6 vert-center">
                     <div class="passport-card">
-                        <img class="passport-item" src=" {{ passport.my_likes_image.url }}">
+                            {% if "placeholder" in passport.my_likes_image.url %}
+                            <img class="passport-item"
+                                src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667941287/fillers/puzzle_emfpau.png">
+                            {% else %}
+                            <img class="passport-item" src=" {{ passport.my_likes_image.url }}">
+                            {% endif %}
                         <h5>My Likes Photo</h5>
                     </div>
                 </div>
@@ -113,7 +120,12 @@
 
                 <div class="col-md-6 vert-center">
                     <div class="passport-card">
-                        <img class="passport-item" src=" {{ passport.my_supports_image.url }}">
+                            {% if "placeholder" in passport.my_supports_image.url %}
+                            <img class="passport-item"
+                                src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667941290/fillers/abacus_dfl0aj.png">
+                            {% else %}
+                            <img class="passport-item" src=" {{ passport.my_supports_image.url }}">
+                            {% endif %}
                         <h5>My supports photo</h5>
                     </div>
                 </div>
@@ -138,7 +150,12 @@
 
                 <div class="col-md-6 vert-center">
                     <div class="passport-card">
-                        <img class="passport-item" src=" {{ passport.my_communication_skills_image.url }}">
+                            {% if "placeholder" in passport.my_communication_skills_image.url %}
+                            <img class="passport-item"
+                                src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667941289/fillers/map_xor1ly.png">
+                            {% else %}
+                            <img class="passport-item" src="{{ passport.my_communication_skills_image.url }}">
+                            {% endif %}
                         <h5>My Communication Photo</h5>
                     </div>
                 </div>
@@ -163,16 +180,14 @@
 
                 <br>
 
-                <hr class="passport-separator-rule">
-
-                    <div class="col-md-12 vert-center">
-                        <a class="passport-options" href="{% url 'teacher_passport_list' %}"><h4>Back To Passport List</h4></a>
+                    <div class="col-md-12 mt-4 mb-4 vert-center">
+                        <a class="passport-options" href="{% url 'teacher_passport_list' %}">Back To Passport List</a>
                     </div>
-
-                <hr class="passport-separator-rule">
-    </div>           
-
-            {% else %}
+        </div>          
+    
+   
+            
+    {% else %}
             <h3>
                 Warning! 
                 You are unauthorised to view this page! 
@@ -187,5 +202,8 @@
             You have not navigated to this page from your list of approved passports.
         </h3>
         {% endif %}
+        </div>
+        <hr class="list-separator-rule">
+    </div>
 </body>
 {% endblock %}

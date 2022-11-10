@@ -11,7 +11,7 @@ class EnrolledPupil(models.Model):
         "Pupil's Full Name", max_length=200, default="")
     pupil_id = models.CharField(
         "Pupil ID Number",
-        validators=[RegexValidator(r'^[0-9]{8}$',
+        validators=[RegexValidator(r'^[1-9]{1}[0-9]{7}$',
                     message="Not a valid pupil id number")],
         max_length=8, default="", unique=True)
     school_name = models.CharField(

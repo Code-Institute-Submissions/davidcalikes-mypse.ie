@@ -1,21 +1,25 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-<html>
-    <div class="container">  
-        <div class="row">
-            <div id="home-hero">
-                <div id="hero-text">
-                    <h1>About</h1>
-                </div>
-                <img class="hero-image" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1666647455/Screen_Shot_2022-10-24_at_22.36.52_uozlph.png" alt="">
-                <div id="hero-text">
-                    <h5 id="hero-strap-text" >SEN Pupil Passports for Educational Transitions</h5>
-                </div>
+
+<div class ="container">
+<div class="list-heading">
+    <div class="row list-heading-row">
+        <div class="col-md-6 vert-center">
+            <img class="img-fluid heading-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668078361/Screen_Shot_2022-11-10_at_11.04.41_wwquu3.png" alt="About Page Image">
+        </div>
+        <div class="col-md-6 vert-center">
+            <div class="row passport-text-row">
+                <h2 class="passport-title"><i class="fa fa-question-circle" aria-hidden="true"></i> About</h2> 
+                <p>Welcome to MyPSE.ie. (My Passort for Special Education in Ireland)</p>
+                <p>For simple instructions on how to use this site, please see the relevant "How to" section.</p>
+                <p> To learn more about the benefits of SEN Transition Passports, click on the "Learn More" Section.
+                    There are also two sample passports availiable that users are free to view.
+                </p>
             </div>
         </div>
-        
-        <hr class="list-separator-rule">
+    </div>
+</div>
 
         <section> 
             <div class="row">
@@ -25,11 +29,14 @@
                             <div class="card card-item">
                                 <img class="card-img-top" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1666387968/IMG_7195_ukfrkd.jpg" alt="Card image cap">
                                 <div class="row form-row">
-                                    <h5 class="passport-title"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Schools</h5>
+                                    <h5 class="passport-title"><i class="fa fa-graduation-cap" aria-hidden="true"></i> How To</h5>
                                 </div>
                                 <div class="card-body">
-                                    <h6 class="card-subtitle mb-2 text-muted">Enroll pupils to assign teachers</h6>
-                                    <p class="card-text"> Help your pupils safely share their passports...</p>
+                                    <h6 class="card-subtitle mb-2 text-muted">Learn How to Use MyPSE.ie</h6>
+                                    <p class="card-text"> What type of user are you? MyPSE.ie helps Schools, 
+                                        Pupils, Parents and Teachers Signup, Create, Maintain and access SEN Pupil 
+                                        transition passports simply and securely.
+                                     </p>
                                 </div>
                                 <div class="card-buttons">
                                     <a href="{% url 'account_login' %}" class="passport-options">Login</a>
@@ -41,11 +48,13 @@
                             <div class="card card-item">
                                 <img class="card-img-top" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667584050/Screen_Shot_2022-11-04_at_17.38.53_rdog9e.png" alt="Card image cap">
                                 <div class="row form-row">
-                                    <h5 class="passport-title"><i class="fa fa-id-card" aria-hidden="true"></i> Passports</h5>
+                                    <h5 class="passport-title"><i class="fa fa-id-card" aria-hidden="true"></i> Learn More</h5>
                                 </div>
                                 <div class="card-body">
-                                    <h6 class="card-subtitle mb-2 text-muted">Show the world the real you</h6>
-                                    <p class="card-text">Create, Edit and Style your passport!</p>
+                                    <h6 class="card-subtitle mb-2 text-muted">What Are transition Passports?</h6>
+                                    <p class="card-text">Learn how SEN pupil passports for special educational Transitions
+                                        can benefit SEN pupils.
+                                    </p>
                                 </div>
                                 <div class="card-buttons">
                                     <a href="{% url 'account_login' %}" class="passport-options">Login</a>
@@ -57,11 +66,11 @@
                             <div class="card card-item">
                                 <img class="card-img-top" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1666441922/IMG_7243_qskwn9.jpg" alt="Card image cap">
                                 <div class="row form-row">
-                                    <h5 class="passport-title"><i class="fa fa-question-circle" aria-hidden="true"></i> About</h5>
+                                    <h5 class="passport-title"><i class="fa fa-question-circle" aria-hidden="true"></i> Samples</h5>
                                 </div>
                                 <div class="card-body">
-                                    <h6 class="card-subtitle mb-2 text-muted">What are SEN passports?</h6>
-                                    <p class="card-text">Learn about the benefits of transition passports and how they can help SEN pupils...</p>
+                                    <h6 class="card-subtitle mb-2 text-muted">Click a Sample to view</h6>
+                                    <p class="card-text">View a sample passport for inspiration!</p>
                                 </div>
                                 <div class="card-buttons">
                                     <a href="#" class="passport-options">About</a>
@@ -74,5 +83,5 @@
         </section>
         <hr class="list-separator-rule">
     </div> 
-</html>
+</div>
 {% endblock %}

@@ -669,3 +669,25 @@ width: 92%;
     padding-bottom: 75px;
 }
 
+/* **** MEDIA QUERIES **** */
+
+@media screen and (max-width: 700px) {
+    
+    .navbar {
+        background-image: url(https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png), linear-gradient(to right, #ffffff, #ffffff, #0ca9a9, #0ca9a9, #0ca9a9);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    .navbar {
+        background-image: url(https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png), linear-gradient(to right, #ffffff, #ffffff, #0ca9a9, #0ca9a9);
+    }
+}
+
+@media screen and (max-width: 350px) {
+    
+    .navbar {
+        background-image: url(https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png), linear-gradient(to right, #ffffff, #ffffff, #0ca9a9);
+    }
+}

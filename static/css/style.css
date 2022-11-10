@@ -132,6 +132,25 @@ footer a {
     color: white;
 }
 
+.user-status {
+    background-color: #1b5757;
+    color: #fff;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 4px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    letter-spacing: 1px;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    margin-right: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    
+}
+
 .pse-logo {
     color: #f5f5f5;
     background-color: #0B5657;

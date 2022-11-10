@@ -242,6 +242,13 @@ footer a {
     margin-top: 1rem;
 }
 
+.pag-pages {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #1b5757;
+}
+
 .pupil-id-text {
     display: none;
 }
@@ -334,7 +341,39 @@ h2 {
     border-radius: 4px;
 }
 
+.passport-inst {
+    color: #ffe294;
+    width: 80%;
+    margin-left: 10%;
+    background-color: #0B5657;
+    padding: 0.5rem;
+    padding-top: 1rem;
+    border-radius: 4px;
+}
+
+.form-group{
+    text-align: left;
+    margin-bottom: 2rem;
+    width: 94%;
+    margin-left: 3%;
+    background-color: #0B5657;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.form-group a {
+    color: #ffe294;
+}
+
+.invalid-feedback {
+    color: #ffe294;
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+}
+
 .form-container {
+    width: 90%;
     background-image: url(https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png);
     background-color: #0ca9a9;
     border: solid 2px white;
@@ -460,13 +499,13 @@ h2 {
 
 .passport-card {
     width: 90%;
-    height: 400px;
     padding: 1.5rem;
     background-color: white;
     border: solid 2px #0B5657;
     border-radius: 4px;
     margin-top: 1.5rem;
     padding-bottom: 20%;
+    word-break: break-word;
 }
 
 .passport-title {
@@ -561,6 +600,8 @@ width: 92%;
 .passport-button-row {
     width: 100%;
     margin-top: 2rem;
+    margin-left: 1%;
+    text-align: center;
 }
 
 .passport-options {
@@ -627,3 +668,4 @@ width: 92%;
     padding-top: 75px;
     padding-bottom: 75px;
 }
+

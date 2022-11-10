@@ -15,9 +15,9 @@
                         <p class="list-text">
                             Click on a passport below to access, update or delete information 
                             <br>
-                            You can add add a new passport via the link below
-                            if you have a valid pupil id. (read more)
-                        </p>
+                            If you are a pupil user you can only view and edit you own passport.
+                            If you are a parent user you can add multiple passports via the link below.
+                        </p> 
                     </div>
                 </div>
             </div>
@@ -58,7 +58,7 @@
             {% endif %}
             {% endfor %}
             
-            <div style="text-align: center;">
+            <div class="pag-pages">
                 <h6> Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</h6>
             </div>
             {% if is_paginated %}

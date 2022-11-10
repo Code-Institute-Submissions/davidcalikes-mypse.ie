@@ -11,7 +11,8 @@ from .mixins import PageTitleMixin
 
 class HomePage(PageTitleMixin, generic.TemplateView):
     """
-    Displays hero image and cards section with login/about links on landing page.
+    Displays hero image and cards section with login/about
+    links on landing page.
     """
     template_name = 'index.html'
     page_title = "MyPSE.ie - Home"
@@ -19,7 +20,8 @@ class HomePage(PageTitleMixin, generic.TemplateView):
 
 class AboutPage(PageTitleMixin, generic.TemplateView):
     """
-    Displays about page with useful information and mock passports to inform users.
+    Displays about page with useful information and
+    mock passports to inspire users.
     """
     template_name = 'about.html'
     page_title = "MyPSE.ie - About"
@@ -28,7 +30,8 @@ class AboutPage(PageTitleMixin, generic.TemplateView):
 class AddEnrolledPupil(PageTitleMixin, LoginRequiredMixin, SuccessMessageMixin,
                        generic.CreateView):
     """
-    User with role of 'school' (admin) can add an enrolled pupil to database.
+    User with role of 'school' (admin) can add a
+    pupil record to enrolled pupil table in database.
     """
     model = EnrolledPupil
     form_class = EnrolledPupilForm

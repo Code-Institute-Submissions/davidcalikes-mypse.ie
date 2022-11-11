@@ -12,7 +12,8 @@
                     <div class="row passport-text-row">
                         <h2 class="passport-title"><i class="fa fa-id-card" aria-hidden="true"></i> School Admin Page</h2>
                         <h5>Welcome {{ user.username }}</h5> 
-                        <p>Here are the records you have created. Click the button below to add a new pupil record</p>
+                        <p>Here are the records you have created. Click the button below the list to add a new pupil record.</p>
+                        <p>Click <a href="https://res.cloudinary.com/djck2eqxo/image/upload/v1668169629/Pupil_ID_Form_fqjrw3.pdf">here <i class="fa fa-print" aria-hidden="true"></i></a> to download a printable ID form for your pupil/parents.</p>
                     </div>
                 </div>
                 
@@ -28,13 +29,14 @@
                             
                         {% endif %}
                             {% if forloop.counter|divisibleby:3 %}
+
+                        <div class="pag-pages">
+                            <h6> Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }} </h6>
+                        </div>
                         </div>
                     <div class="row form-row">
                         {% endif %}
                         {% endfor %}
-                        <div class="pag-pages">
-                            <h6> Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }} </h6>
-                        </div>
                         {% if is_paginated %}
                         <nav aria-label="Page navigation">
                             <ul class="pagination justify-content-center">

@@ -37,20 +37,20 @@
                         {% if user.is_authenticated and user.role == "school" %}
                         <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}">Logout</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'enrolled_pupil_list' %}">Pupil List</a></li>
-                        <li class="user-status">Logged in as pupil: {{ user.username }}</li>
+                        <li class="user-status">Logged in as School: {{ user.username }}</li>
                         {% elif user.is_authenticated and user.role == "pupil" %}
                         <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}">Logout</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'pupil_check' %}">My Passport</a></li>
-                        <li class="user-status">Logged in as pupil: {{ user.username }}</li>
+                        <li class="user-status">Logged in as Pupil: {{ user.username }}</li>
                         
                         {% elif user.is_authenticated and user.role == "parent" %}
                         <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}">Logout</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'passport_list' %}">My Passports</a></li>
-                        <li class="user-status">Logged in as pupil: {{ user.username }}</li>
+                        <li class="user-status">Logged in as Parent: {{ user.username }}</li>
                         {% elif user.is_authenticated and user.role == "teacher" %}
                         <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}">Logout</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'teacher_passport_list' %}">Pupil Passports</a></li>
-                        <li class="user-status">Logged in as pupil: {{ user.username }}</li>
+                        <li class="user-status">Logged in as Teacher: {{ user.username }}</li>
                         {% elif user.is_authenticated %}
                         <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}">Logout</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Logged in as admin: {{ user.username }}</a></li>

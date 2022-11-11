@@ -147,8 +147,6 @@ footer a {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: 500;
-    
 }
 
 .pse-logo {
@@ -226,9 +224,8 @@ footer a {
 }
 
 .page-link:hover {
-    color: #f18fe6;
+    color: #9500a0;
 }
-
 
 .footer-container {
     margin-bottom: 1.5rem;
@@ -258,6 +255,10 @@ footer a {
     color: #0B5657;
     width: 50%;
     margin-left: 25%;
+    margin-top: 1rem;
+}
+
+.pagination {
     margin-top: 1rem;
 }
 

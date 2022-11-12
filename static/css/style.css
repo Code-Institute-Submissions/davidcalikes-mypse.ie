@@ -34,6 +34,11 @@ a {
     text-decoration: none;
 }
 
+p a {
+    color:#0B5657;
+    text-decoration: underline;
+}
+
 #passport-blur {
     filter: blur(10px);
 }
@@ -277,6 +282,11 @@ footer a {
     text-align: center;
 }
 
+.record-text {
+    text-align: center;
+    color: #000;
+}
+
 .form-center {
     display: flex;
     justify-content: space-evenly;
@@ -439,7 +449,8 @@ h2 {
     margin-left: 5%;
     margin-top: 5%;
     margin-bottom: 1.5rem;
-    object-fit: cover;
+    object-fit: scale-down;
+    background: #ffffff;
 }
 
 .card-body {
@@ -510,7 +521,7 @@ h2 {
 }
 
 .passport-item {
-    max-height: 100%;
+    max-height: 400px;
     max-width: 100%;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -526,6 +537,7 @@ h2 {
     margin-top: 1.5rem;
     padding-bottom: 20%;
     word-break: break-word;
+    text-align: center;
 }
 
 .passport-title {

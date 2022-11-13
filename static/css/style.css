@@ -737,11 +737,11 @@ width: 92%;
         font-size: small;
     }
 
-    #hero-strap-text h5 {
+    #hero-strap-text {
         font-size: x-small;
     }
 
-    h5 {
-        font-size: medium;
+    .passport-title {
+        font-size: large;
     }
 }

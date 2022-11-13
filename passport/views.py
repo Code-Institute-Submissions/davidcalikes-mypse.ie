@@ -27,6 +27,15 @@ class AboutPage(PageTitleMixin, generic.TemplateView):
     page_title = "MyPSE.ie - About"
 
 
+class LearnMorePage(PageTitleMixin, generic.TemplateView):
+    """
+    Displays page that explains the benefits of the site
+    and SEN Passports in general.
+    """
+    template_name = 'learn_more.html'
+    page_title = "MyPSE.ie - Learn More"
+
+
 class AddEnrolledPupil(PageTitleMixin, LoginRequiredMixin, SuccessMessageMixin,
                        generic.CreateView):
     """

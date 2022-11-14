@@ -4,13 +4,13 @@
 
 MyPSE.ie is a full stack web application, designed to support pupils with special educational needs (SEN), during educational transitions.  
 
-<img src="../docs/readme_images/mockup_placeholder.png">
+<img src="../docs/readme_images/mypse_mockup_w.png">
 
 <br>
 
 For SEN pupils, parents and school staff, periods of transition between learning environments can be extremely challenging.
 
-The National Council for Special Education (NCSE) recommends that during these periods, SEN pupils carry with them a document that will allow new teachers and support workers access to vital information about ther care needs, learning supports, communication difficulties and more.  
+The National Council for Special Education (NCSE) recommends that during these periods, SEN pupils carry with them a document that will allow new teachers and support workers access to vital information about their care needs, learning supports, communication difficulties and more.  
 
 Commonly referred to as 'passports' within the Irish education system. These documents can make an immesurable difference into understanding and providing care for SEN pupils during periods of transition.
 
@@ -28,6 +28,39 @@ Utilising the power of coding frameworks like Django and Bootstrap, MyPSE.ie has
 
 
 # Planning & Research
+
+## Research
+
+Due to the sensitive nature of this project and the potential vulnerability of its users, I was acutely aware that
+I could begin to develop such an application without
+thoroughly and extensively researching the many complex challenges that
+SEN pupils and their support networks face during periods of transition.
+
+Whilst waiting for feedback from Educational bodies, teachers and administrators was initially frustrating and time consuming, I feel the application is much more suited for use in the real world as a result of this.
+
+Because of the exhaustive nature of the planning research I have divided it up into more human readable sections below.
+
+
+<details>
+    <summary>Use Case.
+    <br>
+    </summary>
+</details>
+
+<details>
+    <summary>Interviews.
+    <br>
+    </summary>
+</details>
+
+<details>
+    <summary>Design Thinking.
+    <br>
+    </summary>
+</details>
+
+<br>
+
 
 ## User Experience Design
 <br>
@@ -126,13 +159,13 @@ Utilising the power of coding frameworks like Django and Bootstrap, MyPSE.ie has
 
 * As an Teacher, I would like to securely login and out of the application in order to prevent unauthorised access to pupil data.
 
+* As a Teacher, I would like to view a list of all passports assigned to my Teacher ID number in order to 
+conveniently access their passports.
+
 * As a Teacher, I would like to view the passports of children transitioning into my class in order to prepare supports, staff and educational resources to better facilitate their transition.
 
-* As a Teacher, I would like to print a ‘printer friendly’ version of a passport in order to provide an easy reference chart for both staff & pupils during the transitional period.
 
-* As a Teacher, I would like to upload pictures to a gallery section of a pupils passport in order to provide examples of classroom activities. 
 
-* As a Teacher, I would like the ability to comment on pictures in the gallery in order to provide further feedback to pupils, parents and future teachers.
 
 
 <br>

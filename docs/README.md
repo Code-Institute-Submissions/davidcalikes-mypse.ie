@@ -38,14 +38,53 @@ SEN pupils and their support networks face during periods of transition.
 
 Whilst waiting for feedback from Educational bodies, teachers and administrators was initially frustrating and time consuming, I feel the application is much more suited for use in the real world as a result of this.
 
-Because of the exhaustive nature of the planning research I have divided it up into more human readable sections below.
+Because of the exhaustive nature of the planning research, I have divided it up into more human readable sections below.
 
 
 <details>
-    <summary>Use Case.
+<summary>
+Use Case.</summary><br>
+Whilst working in various Special Education settings for the past fifteen years I have witnessed first-hand the challenges faced by SEN pupils as they make transitions throughout their school lives. I have also bore witness to the exponential increase in technological innovation and implimentation within this field. The importance of every support availiable to children with special educational needs requires very little emphasis. I don't feel I need to make the case for SEN 'passports' as a continuing concept here. I do feel however that a web application designed to create, update, organise and share passports would offer manifold advantages over sharing traditional physical documents.
+
+I have outlined the following:
+
+
+
+1. Access to pupil passports would be more convenient for all users. 
+<br>
+
+2. Pupil passports would become uniform in design and layout, maximising effective and efficient use.
+<br>
+
+3. Passports would only have to be created once, requiring just a few minor updates before further pupil transitions.
+<br>
+
+4. Parents and Teacher users can organise and manage multiple passports form the same place.
+<br>
+
+5. Passports can be easily updated in real time, meaning pupils and parents can include information they may have overlooked initially.
+<br>
+
+6. Users can learn about SEN passports, create them and share them all from a single, efficient application.
+<br>
+
+7. Users can protect their data by removing access to their passport when they transition to a new educational setting.
+
+8. Digital passports can include a rich variety of content including images, stylised text and hyperlinks to resources, media and other important information that is beyond the scope of traditional physical passports.
+<br>
+</details>
+
+
+<details>
+    <summary>Business Case.
     <br>
     </summary>
+    1. There is currently no dedicated app available that offers pupils, parents, teachers and schools the ability create and share pupil passports. 
+    2. A dedicated app could be easily integrated into many existing school intranet systems such as 'Alladin' or 'VS Ware' via URL link.
+    3. There has been a marked rise in diagnosis of children with Special Educational Needs [globally](https://blogs.ucl.ac.uk/cdld/2022/04/04/why-the-rise-in-number-of-sen-children-especially-in-the-early-years/)  
 </details>
+
+
 
 <details>
     <summary>Interviews.

@@ -43,8 +43,8 @@ function validateTeacher() {
         window.history.back();
         return false;
         } else {
+        document.getElementById("loading").style.display = "none";
         document.getElementById("passport-blur").style.filter = "blur(0px)";
-        alert("Teacher Id Is Valid!")
         return true;
   }
 }

@@ -32,7 +32,7 @@ Utilising the power of coding frameworks like Django and Bootstrap, MyPSE.ie has
 ## Research
 
 Due to the sensitive nature of this project and the potential vulnerability of its users, I was acutely aware that
-I could begin to develop such an application without
+I could not begin to develop such an application without
 thoroughly and extensively researching the many complex challenges that
 SEN pupils and their support networks face during periods of transition.
 
@@ -44,11 +44,15 @@ Because of the exhaustive nature of the planning research, I have divided it up 
 <details>
 <summary>
 Use Case.</summary><br>
-Whilst working in various Special Education settings for the past fifteen years I have witnessed first-hand the challenges faced by SEN pupils as they make transitions throughout their school lives. I have also bore witness to the exponential increase in technological innovation and implimentation within this field. The importance of every support availiable to children with special educational needs requires very little emphasis. I don't feel I need to make the case for SEN 'passports' as a continuing concept here. I do feel however that a web application designed to create, update, organise and share passports would offer manifold advantages over sharing traditional physical documents.
+Whilst working in various Special Education settings for the past fifteen years I have witnessed first-hand the challenges faced by SEN pupils as they make transitions throughout their school lives. I have also bore witness to the exponential increase in technological innovation and implimentation within this field. The importance of every support availiable to children with special educational needs requires very little emphasis. I don't feel I need to make the case for SEN 'passports' as a continuing concept here. I do feel however, that a web application designed to create, update, organise and share passports would offer manifold advantages over sharing traditional physical documents.
 
-I have outlined the following:
+<br>
 
+<img src="../docs/readme_images/planning1.png"> _A traditional passport template._
 
+<br>
+
+I have outlined the following benefits:
 
 1. Access to pupil passports would be more convenient for all users. 
 <br>

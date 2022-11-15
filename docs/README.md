@@ -2,7 +2,7 @@
 
 ## Overview
 
-MyPSE.ie is a full stack web application, designed to support pupils with special educational needs (SEN), during educational transitions.  
+MyPSE.ie is a full stack web application, designed to support pupils with Special Educational Needs (SEN), during educational transitions.  
 
 <img src="../docs/readme_images/mypse_mockup_w.png">
 
@@ -36,7 +36,7 @@ I could not begin to develop such an application without
 thoroughly and extensively researching the many complex challenges that
 SEN pupils and their support networks face during periods of transition.
 
-Whilst waiting for feedback from Educational bodies, teachers and administrators was initially frustrating and time consuming, I feel the application is much more suited for use in the real world as a result of this.
+Whilst waiting for feedback from educational bodies, teachers and administrators was initially frustrating and time consuming, I feel the application is much more suited for use in the real world as a result of this.
 
 Because of the exhaustive nature of the planning research, I have divided it up into more human readable sections below.
 
@@ -90,7 +90,7 @@ I have outlined the following benefits:
 1. There is currently no dedicated app available that offers pupils, parents, teachers and schools the ability create and share pupil passports.
 <br>
 
-2. A dedicated app could be easily integrated into many existing school intranet systems such as 'Alladin' or 'VS Ware' via URL link.
+2. A dedicated app could be easily integrated into many existing school intranet systems such as 'Aladdin' or 'VS Ware' via URL link.
 <br>
 
 3. There has been a marked rise in diagnosis of children with Special Educational Needs [globally](https://blogs.ucl.ac.uk/cdld/2022/04/04/why-the-rise-in-number-of-sen-children-especially-in-the-early-years/)
@@ -150,6 +150,8 @@ Whilst this refusal might have at first been disheartening, I am extremely grate
     <br>
     </summary>
 <br>
+After initially being disappointed with the NCSE's response (or lacktherof) to my emails, I quickly refocused my attention to other useful sources of information that might benefit the project. If I was going to have to develop the app without any official guidance or input from governing bodies I would have to come up with a strategy that would allow schools themselves to control and manipulate the flow of information themselves. In order to do this, I would need to familiarise myself with the processes and systems used by schools during tranferring the enrolment details and successful pupil transitions. 
+
 Luckily, the secretary at my current place of work, St Mary's Special School, Drumcar, is extremely approachable. Susan Hynes, one of the supporting heroes of this project was always available and enthusiastic about helping me understand the systems and applications involved during the process of a pupil transition, whilst at no point revealing any priviledged or confidential information. I was mainly concerned with what administrative software is currently used by the admin staff at St Mary’s and its provenance. 
 
 I discovered the following:
@@ -164,7 +166,16 @@ The first thing I noticed when I Susan sent me the above image was the tab marke
 <img src="../docs/readme_images/planning8.png"><br>
 _Screenshot of Personal tab._
 
-As you can see from the following image though, this tab does not contain any biographical or useful information in relation to the successful transition of a pupil.
+As you can see from the following image though, this tab does not contain any biographical or useful information in relation to the successful transition of a pupil. I was confident that myPSE.ie's purpose is not already being fulfilled by this software.
+
+The ‘POD’ app solely manages a pupil’s enrolment within a Primary-Level Education Setting. It contains no biographical information regarding a pupil’s personal life or educational ability. All Primary-Level Schools (Including Special Needs Schools) are required to use this app and it is the sole property of the Department of Education. As shown in the example image above, ‘POD’ provides the school administration with the enrolment history of any given pupil and includes enrolment dates and the class teacher for each year. Any given pupil can only be enrolled at one school at a time. When a School enrols a pupil they are then automatically removed from their previous Schools role book. I decided that this type of feature could be implemented for the adding and removing of teacher access to a pupil passport within the myPSE.ie app. 
+
+In addition to the above I also thought it might prove unnecessary to include the pupil history of previous schools within the myPSE.ie project as the School Administration already has access to this data.  
+
+As a parent myself, and an SNA with 15 years experience and still employed in a ‘Special Educational Environment’, I am aware of the many software solutions available to mainstream schools and parents that are used on an every day basis.
+
+<img src="../docs/readme_images/planning9.png"><br>
+_School software examples._
 
 
 </details>

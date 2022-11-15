@@ -12,7 +12,7 @@ For SEN pupils, parents and school staff, periods of transition between learning
 
 It is common practice during transitions within the Irish education system, that SEN pupils provide their new place of education with a document that will allow new teachers and support workers access to vital information about their care needs, learning supports, communication difficulties and more.  
 
-Commonly referred to as 'passports' within the Irish education system. These documents can make an immesurable difference into understanding and providing care for SEN pupils during periods of transition.
+Commonly referred to as 'passports', these documents can make an immesurable difference into understanding and providing care for SEN pupils during periods of transition.
 
 MyPSE.ie allows authenticated and authorised pupils and parents to design, view and update passports reflecting not only each individual pupil's special educational needs, but also a nuanced overview of their personality and style. Teachers can then view the passports that have been assigned to them by entering their unique registration number issued by the Irish Teaching Council.
 
@@ -206,7 +206,13 @@ _Class Dojo Login._
 
 I thought that implementing a similar approach to user login would benefit MyPSE.ie's users, as they would be familiar with the concept of selecting a user role at login. 
 
-Time constraints would restrict this option to a simple dropdown menu but the concept is what I considered to be most important initially. 
+Time constraints would restrict this option to a simple dropdown menu but the concept is what I considered to be most important initially.
+
+I loved the subtle alternation of color between records in the esinet system. I thought this was an elegant way to separate entries and I replicated the style in MyPSE.ie's pupil record list template.  
+
+<img src="../docs/readme_images/planning11.png"><br>
+_Alternating styling for list of records._
+
 
 ‘Aladdin' is a useful communication app that allows schools, teachers and pupils to communicate, share teaching and homework plans, share and log daily attendance as well as many other practical and useful features. This app could potentially be used to send the url of a pupils myPSE.ie passport or even just specific sections of the document to help teachers better understand specific issues relating to the needs of a given pupil. Aladdin's multi-purpose approach to managing daily school life influenced MyPSE's multi-user, multi-layered functionality.
 

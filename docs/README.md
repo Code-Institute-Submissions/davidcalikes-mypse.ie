@@ -16,7 +16,7 @@ Commonly referred to as 'passports' within the Irish education system. These doc
 
 MyPSE.ie allows authenticated and authorised pupils and parents to design, view and update passports reflecting not only each individual pupil's special educational needs, but also a nuanced overview of their personality and style. Teachers can then view the passports that have been assigned to them by entering their unique registration number issued by the Irish Teaching Council.
 
-Because of the highly personal and sensitive nature of the data stored within the site, protection of this data is paramount which is why MyPSE.ie will only allow passports to be created for pupil or by pupils who have been added to a separate database table by their school administration.
+Because of the highly personal and sensitive nature of the data stored within the site, protection of this data is paramount which is why MyPSE.ie will only allow passports to be created for pupils or by pupils who have been added to a separate database table by their school administration.
 
 Utilising the power of coding frameworks like Django and Bootstrap, MyPSE.ie has been rapidly and thoughtfully designed to provide users with an enjoyable and meaningful experience as they securely access, create and organise SEN passports.
 
@@ -44,7 +44,7 @@ Because of the exhaustive nature of the planning research, I have divided it up 
 
 <summary>
 Use Case.</summary><br>
-Whilst working in various Special Education settings for the past fifteen years I have witnessed first-hand the challenges faced by SEN pupils as they make transitions throughout their school lives. I have also bore witness to the exponential increase in technological innovation and implimentation within this field. The importance of every support availiable to children with special educational needs requires very little emphasis. I don't feel I need to make the case for SEN 'passports' as a continuing concept here. I do feel however, that a web application designed to create, update, organise and share passports would offer manifold advantages over sharing traditional physical documents.
+Working as a Special Needs Assistant in various Special Education settings for the past fifteen years, I have witnessed first-hand the challenges faced by SEN pupils as they make transitions throughout their school lives. I have also bore witness to the exponential increase in technological innovation and implimentation within this field. The importance of every support availiable to children with special educational needs requires very little emphasis. I don't feel I need to make the case for SEN 'passports' as a continuing concept here. I do feel however, that a web application designed to create, update, organise and share passports would offer manifold advantages over sharing traditional physical documents.
 
 
 <br>
@@ -66,10 +66,10 @@ I have outlined the following benefits:
 3. Passports would only have to be created once, requiring just simple, minor updates before further pupil transitions.
 <br>
 
-4. Parents and Teacher users can organise and manage multiple passports form the same place.
+4. Parents and Teacher users can organise and manage multiple passports from the same application.
 <br>
 
-5. Passports can be easily updated in real time, meaning pupils and parents can include information they may have overlooked initially.
+5. Passports can be easily updated in real time, meaning pupils and parents can include information they may have forgotten to include initially.
 <br>
 
 6. Users can learn about SEN passports, create them and share them all from a single, efficient application.
@@ -87,7 +87,7 @@ I have outlined the following benefits:
     <br>
     </summary><br>
 
-1. There is currently no dedicated app available that offers pupils, parents, teachers and schools the ability create and share pupil passports.
+1. There is currently no dedicated app available that offers pupils, parents, teachers and schools the ability to create and share pupil passports.
 <br>
 
 2. A dedicated app could be easily integrated into many existing school intranet systems such as 'Aladdin' or 'VS Ware' via URL link.
@@ -103,7 +103,7 @@ I have outlined the following benefits:
     </summary>
 <br>
 
-The National Council for Special Education, https://ncse.ie/about-us is the independent statutory body responsible for improving “…the delivery of education services to persons with special educational needs arising from disabilities with particular emphasis on children”, in Ireland.
+[The National Council for Special Education](https://ncse.ie/about-us) is the independent statutory body responsible for improving “…the delivery of education services to persons with special educational needs arising from disabilities with particular emphasis on children”, in Ireland.
 
 The NSCE provides a wide range of extensive resources, support and guidelines for persons within special education environments. One of the many ways the NCSE can offer support is during periods of transition.
 
@@ -125,7 +125,7 @@ _Screenshot from NCSE's 'Changing Schools' document with potential user story._
 
 For example: "As a parent... I would like to share my knowledge and experience... to help the post-primary plan..."
 
-In addition to the above, the NCSE doesn't just provide support for pupils during transitions between Primary and Secondary School but also provides guidelines for other transitions which can be found [here.](https://ncse.ie/transitions-2)
+In addition to the above, the NCSE doesn't just provide support for pupils during transitions between primary and secondary schools but also provides guidelines for other transitions which can be found [here.](https://ncse.ie/transitions-2)
 
 I was curious to find out if MyPSE.ie could serve pupils involved across this whole spectrum of educational transitions. Including:
 
@@ -147,11 +147,11 @@ _Email to NCSE Screenshot._
 <img src="../docs/readme_images/planning6.png"><br>
 _NCSE response._
 
-Given the potential benefits of the project I couldn’t understand why the NCSE were so reluctant to offer any advice or even constructive criticism of the app so I called the only person from the NCSE who actually replied to my many attempted communications, Caroline McKeown to ask for clarification on this issue.
+Given the potential benefits of the project, I couldn’t understand why the NCSE were so reluctant to offer any advice or even constructive criticism of the app so I attempted to call the only person from the NCSE who actually replied to my many attempted communications, Caroline McKeown to ask for clarification on this issue.
 
-During a productive phone call, Caroline informed me that the NCSE could not commit to or be seen to endorse any project involving Special Education without a robust conference involving any and all stakeholders in such a property including The HSE (Health Service Executive), The Department of Education and others. 
+During a productive phone call, I was informed that the NCSE could not commit to or be seen to endorse any project involving SEN pupils without conferring with any and all stakeholders in such a property including The HSE (Health Service Executive), The Department of Education and Skills and others. 
 
-Whilst this refusal might have at first been disheartening, I am extremely grateful to Caroline for taking the time to inform me about the relationships between governing bodies and how legally complex they can be. It also raised a pertinent question about software currently used within Irish schools. Caroline suggested that with the exception of 'Esinet' administration software, most educational and communication software is implemented at the discretion of each School.
+Whilst this refusal might have at first been disheartening, I am extremely grateful to the NCSE for having someone take the time to inform me about the relationships between governing bodies and how legally complex they can be. It also raised a pertinent question about software currently used within Irish schools. It was also suggested that with the exception of 'Esinet' administration software, educational and communication software is implemented at the discretion of each school.
 
 </details>
 
@@ -164,7 +164,7 @@ Despite my initial disappointment with the NCSE's response (or lacktherof) to my
 
 In order to do this, I would need to familiarise myself with the administrative processes and software systems used by schools during the transfer of enrolment details and successful pupil transitions. 
 
-Luckily, the secretary at my current place of work, St Mary's Special School, Drumcar, is extremely approachable. Susan Hynes, one of the supporting heroes of this project was always available and enthusiastic about helping me understand the systems and applications involved during the process of a pupil transition, whilst at no point revealing any priviledged or confidential information. I was mainly concerned with what administrative software is currently used by the admin staff at St Mary’s and its provenance. 
+Luckily, the secretary at my current place of work, St Mary's Special School, Drumcar, is extremely approachable. Susan Hynes - one of the supporting heroes of this project - was always available and enthusiastic about helping me understand the systems and applications involved during the process of a pupil transition, whilst at no point revealing any privileged information. I was mainly concerned with what administrative software is currently used by the admin staff at St Mary’s and its provenance. 
 
 I discovered the following:
 
@@ -182,24 +182,42 @@ As you can see from the following image though, this tab does not contain any bi
 
 The ‘POD’ app solely manages a pupil’s enrolment within a Primary-Level Education Setting. It contains no biographical information regarding a pupil’s personal life or educational ability. All Primary-Level Schools (Including Special Needs Schools) are required to use this app and it is the sole property of the Department of Education. As shown in the example image above, ‘POD’ provides the school administration with the enrolment history of any given pupil and includes enrolment dates and the class teacher for each year. Any given pupil can only be enrolled at one school at a time. When a School enrols a pupil they are then automatically removed from their previous Schools role book. I decided that this type of feature could be implemented for the adding and removing of teacher access to a pupil passport within the myPSE.ie app. 
 
-In addition to the above I also thought it might prove unnecessary to include the pupil history of previous schools within the myPSE.ie project as the School Administration already has access to this data.  
+In addition to the above I also thought it might prove unnecessary to include the pupil history of previous schools within the myPSE.ie project as the School Administration already has access to this data.
+
+It became apparent at this stage, that department issued pupil ID numbers and school roll numbers would work perfectly as unique keys within the MyPSE.ie data models. Using real world ID numbers like this has many advantages, including easy authentication of pupils and future-proofing later versions of the app.
 
 As a parent myself, and an SNA with 15 years experience and still employed in a ‘Special Educational Environment’, I am aware of the many software solutions available to mainstream schools and parents that are used on an every day basis.
 
 <img src="../docs/readme_images/planning9.png"><br>
 _School software examples._
 
+I referenced the above apps when considering the structural and UI elements of myPSE.ie.
 
-</details>
+Rather than doing a deep dive here I thought it would be more efficient to include only aspects of these apps that have influenced or inspired MyPSE.ie's design and functionality directly.
 
+For example:
 
+Class Dojo has an attractive, high contrast, mobile-friendly 
+login page which allows users to login based on their 
+relationship to the pupil/student.
 
+<img src="../docs/readme_images/planning10.png"><br>
+_Class Dojo Login._
 
+I thought that implementing a similar approach to user login would benefit MyPSE.ie's users, as they would be familiar with the concept of selecting a user role at login. 
 
-<details>
-    <summary>Interviews.
-    <br>
-    </summary>
+Time constraints would restrict this option to a simple dropdown menu but the concept is what I considered to be most important initially. 
+
+‘Aladdin' is a useful communication app that allows schools, teachers and pupils to communicate, share teaching and homework plans, share and log daily attendance as well as many other practical and useful features. This app could potentially be used to send the url of a pupils myPSE.ie passport or even just specific sections of the document to help teachers better understand specific issues relating to the needs of a given pupil. Aladdin's multi-purpose approach to managing daily school life influenced MyPSE's multi-user, multi-layered functionality.
+
+At this stage it's worth pointing out that these apps are indeed multi-dimensional and have communication channels dedicated to informing teachers of SEN pupils needs and issues in real time. So I understand why this might seem confusing to people reading this documentation that are unfamiliar with special education transitions.
+
+What MyPSE.ie offers is information for reference during periods of transition.Passports are by no means the be all and end all of teacher-parent communication. They do however play a vital role in providing a general overview of an SEN pupil at a time when more detailed information is not forthcoming and working relationships and routines have yet to be developed.
+
+Of all of these apps I inspected, Seesaw had the most effect regarding visual style and I based a lot of my UI design choices on its simple, high-contrast approach.
+
+Further into my research, I discovered other applications that heavily influenced my thinking during the initial development of MyPSE.ie. I discuss these in the 'Interviews.' tab below.
+
 </details>
 
 <details>
@@ -208,14 +226,36 @@ _School software examples._
     </summary>
 </details>
 
+<details>
+    <summary>Interviews.
+    <br>
+    </summary>
+</details>
+
+<br>
+
+## Research Summary
+<br>
+
+* A digital 'passports' web app has a real world practical use and business use case. 
+
+* The app should be 'standalone' and available for instant, easy adoption by any Irish school.
+
+* The application should use existing, 'real-world' ID numbers to ensure passports and genuine and to future-proof later versions.
+
+* Relevant sections of the app should reflect the design and layout of traditional style passports, and similar education based software to provide users with a sense of familiarity and confidence.
+
+* Users should be instructed to select their user 'role' at login.
+
+* 
+
+<br>
+
+# User Experience Design
 <br>
 
 
-## User Experience Design
-<br>
-
-
-### User Stories
+## User Stories
 <br>
 
 #### __General User Stories__
@@ -312,9 +352,6 @@ _School software examples._
 conveniently access their passports.
 
 * As a Teacher, I would like to view the passports of children transitioning into my class in order to prepare supports, staff and educational resources to better facilitate their transition.
-
-
-
 
 
 <br>

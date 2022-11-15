@@ -10,7 +10,7 @@ MyPSE.ie is a full stack web application, designed to support pupils with specia
 
 For SEN pupils, parents and school staff, periods of transition between learning environments can be extremely challenging.
 
-The National Council for Special Education (NCSE) recommends that during these periods, SEN pupils carry with them a document that will allow new teachers and support workers access to vital information about their care needs, learning supports, communication difficulties and more.  
+It is common practice during transitions within the Irish education system, that SEN pupils provide their new place of education with a document that will allow new teachers and support workers access to vital information about their care needs, learning supports, communication difficulties and more.  
 
 Commonly referred to as 'passports' within the Irish education system. These documents can make an immesurable difference into understanding and providing care for SEN pupils during periods of transition.
 
@@ -40,15 +40,18 @@ Whilst waiting for feedback from Educational bodies, teachers and administrators
 
 Because of the exhaustive nature of the planning research, I have divided it up into more human readable sections below.
 
-
 <details>
+
 <summary>
 Use Case.</summary><br>
 Whilst working in various Special Education settings for the past fifteen years I have witnessed first-hand the challenges faced by SEN pupils as they make transitions throughout their school lives. I have also bore witness to the exponential increase in technological innovation and implimentation within this field. The importance of every support availiable to children with special educational needs requires very little emphasis. I don't feel I need to make the case for SEN 'passports' as a continuing concept here. I do feel however, that a web application designed to create, update, organise and share passports would offer manifold advantages over sharing traditional physical documents.
 
+
 <br>
 
-<img src="../docs/readme_images/planning1.png"> _A traditional passport template._
+<img src="../docs/readme_images/planning1.png">
+
+_A traditional passport template._
 
 <br>
 
@@ -60,7 +63,7 @@ I have outlined the following benefits:
 2. Pupil passports would become uniform in design and layout, maximising effective and efficient use.
 <br>
 
-3. Passports would only have to be created once, requiring just a few minor updates before further pupil transitions.
+3. Passports would only have to be created once, requiring just simple, minor updates before further pupil transitions.
 <br>
 
 4. Parents and Teacher users can organise and manage multiple passports form the same place.
@@ -82,11 +85,91 @@ I have outlined the following benefits:
 <details>
     <summary>Business Case.
     <br>
-    </summary>
-    1. There is currently no dedicated app available that offers pupils, parents, teachers and schools the ability create and share pupil passports. 
-    2. A dedicated app could be easily integrated into many existing school intranet systems such as 'Alladin' or 'VS Ware' via URL link.
-    3. There has been a marked rise in diagnosis of children with Special Educational Needs [globally](https://blogs.ucl.ac.uk/cdld/2022/04/04/why-the-rise-in-number-of-sen-children-especially-in-the-early-years/)  
+    </summary><br>
+
+1. There is currently no dedicated app available that offers pupils, parents, teachers and schools the ability create and share pupil passports.
+<br>
+
+2. A dedicated app could be easily integrated into many existing school intranet systems such as 'Alladin' or 'VS Ware' via URL link.
+<br>
+
+3. There has been a marked rise in diagnosis of children with Special Educational Needs [globally](https://blogs.ucl.ac.uk/cdld/2022/04/04/why-the-rise-in-number-of-sen-children-especially-in-the-early-years/)
+<br>
 </details>
+
+<details>
+    <summary>NCSE Consultation.
+    <br>
+    </summary>
+<br>
+
+The National Council for Special Education, https://ncse.ie/about-us is the independent statutory body responsible for improving “…the delivery of education services to persons with special educational needs arising from disabilities with particular emphasis on children”, in Ireland.
+
+The NSCE provides a wide range of extensive resources, support and guidelines for persons within special education environments. One of the many ways the NCSE can offer support is during periods of transition.
+
+The NCSE's expertise and authority on this subject made their website my first port of call. 
+
+The information most relevant to my project was found within the following guidelines:
+
+On page 11 of the excellent: 'CHANGING SCHOOLS, Moving from Primary to Post-Primary School' NCSE document (02156), It is stated that:
+
+ “Parents and schools should exchange relevant information to assist planning for students with special education needs.” 
+
+ <img src="../docs/readme_images/planning3.png"><br>
+_Screenshot from NCSE's 'Changing Schools' document._
+
+I also found this text within the same document to be remarkably similar if not identical to what a user story for a parent might look like for this project if re-oredered slightly.
+
+<img src="../docs/readme_images/planning4.png"><br>
+_Screenshot from NCSE's 'Changing Schools' document with potential user story._
+
+For example: "As a parent... I would like to share my knowledge and experience... to help the post-primary plan..."
+
+Naturally, and perhaps, somewhat naively, I thought I'd reach out to the NCSE themselves.
+
+Initially, I wanted to find out if an app like MyPSE.ie already existed perhaps as an underused feature of already existing software. I also wanted to know if the NCSE could advise me on the best way to approach the early part of the app's development.
+
+<img src="../docs/readme_images/planning5.png"><br>
+_Email to NCSE Screenshot._
+
+ I sent multiple emails to several departments outlining a basic proposal over a three week period only to receive a solitary email in which the NCSE stated categorically, that they would not be able to offer any me any feedback whatsoever.
+
+<img src="../docs/readme_images/planning6.png"><br>
+_Unhelpful NCSE response._
+
+Given the potential benefits of the project I couldn’t understand why the NCSE were so reluctant to offer any advice or even constructive criticism of the app so I called the only person from the NCSE who actually replied to my many attempted communications, Caroline McKeown to ask for clarification on this issue.
+
+During a productive phone call, Caroline informed me that the NCSE could not commit to or be seen to endorse any project involving Special Education without a robust conference involving any and all stakeholders in such a property including The HSE (Health Service Executive), The Department of Education and others. 
+
+Whilst this refusal might have at first been disheartening, I am extremely grateful to Caroline for taking the time to inform me about the relationships between governing bodies and how legally complex they can be. It also raised a pertinent question about software currently used within Irish schools. Caroline suggested that with the exception of 'Esinet' administration software, most educational and communication software is implemented at the discretion of each School.
+
+</details>
+
+<details>
+    <summary>Software in Irish Schools
+    <br>
+    </summary>
+<br>
+Luckily, the secretary at my current place of work, St Mary's Special School, Drumcar, is extremely approachable. Susan Hynes, one of the supporting heroes of this project was always available and enthusiastic about helping me understand the systems and applications involved during the process of a pupil transition, whilst at no point revealing any priviledged or confidential information. I was mainly concerned with what administrative software is currently used by the admin staff at St Mary’s and its provenance. 
+
+I discovered the following:
+
+For the transfer of pupils (enrollment) between schools, all Irish Special Schools use a web app called ‘POD’ (Primary Online Data) within the Department Of Education’s ‘Esinet’ umbrella application.
+
+<img src="../docs/readme_images/planning7.png"><br>
+_Screenshot of Esinet software._
+
+The first thing I noticed when I Susan sent me the above image was the tab marked 'PERSONAL' in the main 'Enrolment History' section.
+
+<img src="../docs/readme_images/planning8.png"><br>
+_Screenshot of Personal tab._
+
+As you can see from the following image though, this tab does not contain any biographical or useful information in relation to the successful transition of a pupil.
+
+
+</details>
+
+
 
 
 

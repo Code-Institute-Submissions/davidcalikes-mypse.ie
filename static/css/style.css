@@ -58,7 +58,7 @@ a:hover {
 }
 
 .auth-logo {
-    width: 60%;
+    width: 35%;
     border: 2px solid #0B5657;
     border-radius: 4px;
     margin-bottom: 1rem;
@@ -726,6 +726,22 @@ width: 92%;
         font-size: medium;
     }
 }
+
+@media screen and (max-width: 400px) {
+    
+    .list-heading {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .passport-title {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .list-text {
+        font-size: small;
+    }
 
 @media screen and (max-width: 350px) {
     

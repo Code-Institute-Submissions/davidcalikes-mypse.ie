@@ -16,7 +16,7 @@ Commonly referred to as 'passports' within the Irish education system. These doc
 
 MyPSE.ie allows authenticated and authorised pupils and parents to design, view and update passports reflecting not only each individual pupil's special educational needs, but also a nuanced overview of their personality and style. Teachers can then view the passports that have been assigned to them by entering their unique registration number issued by the Irish Teaching Council.
 
-Because of the highly personal and sensitive nature of the data stored within the site, protection of this data is paramount which is why MyPSE will only allow passports to be created for pupils who have been added to a separate database table by their school administration.
+Because of the highly personal and sensitive nature of the data stored within the site, protection of this data is paramount which is why MyPSE.ie will only allow passports to be created for pupil or by pupils who have been added to a separate database table by their school administration.
 
 Utilising the power of coding frameworks like Django and Bootstrap, MyPSE.ie has been rapidly and thoughtfully designed to provide users with an enjoyable and meaningful experience as they securely access, create and organise SEN passports.
 
@@ -118,14 +118,24 @@ On page 11 of the excellent: 'CHANGING SCHOOLS, Moving from Primary to Post-Prim
  <img src="../docs/readme_images/planning3.png"><br>
 _Screenshot from NCSE's 'Changing Schools' document._
 
-I also found this text within the same document to be remarkably similar if not identical to what a user story for a parent might look like for this project if re-oredered slightly.
+I also found this text within the same document to be remarkably similar if not identical to what a user story for a parent might look like for this project if re-ordered slightly.
 
 <img src="../docs/readme_images/planning4.png"><br>
 _Screenshot from NCSE's 'Changing Schools' document with potential user story._
 
 For example: "As a parent... I would like to share my knowledge and experience... to help the post-primary plan..."
 
-Naturally, and perhaps, somewhat naively, I thought I'd reach out to the NCSE themselves.
+In addition to the above, the NCSE doesn't just provide support for pupils during transitions between Primary and Secondary School but also provides guidelines for other transitions which can be found [here.](https://ncse.ie/transitions-2)
+
+I was curious to find out if MyPSE.ie could serve pupils involved across this whole spectrum of educational transitions. Including:
+
+* Transitions between similar types of school.
+* Transitions between classes within the same school.
+* Transitions between primary and special schools.
+* Transitions between early education and school (starting school)
+* Other educational transitions
+
+Naturally, and perhaps, somewhat naively, I thought I'd reach out to the NCSE in person.
 
 Initially, I wanted to find out if an app like MyPSE.ie already existed perhaps as an underused feature of already existing software. I also wanted to know if the NCSE could advise me on the best way to approach the early part of the app's development.
 
@@ -135,7 +145,7 @@ _Email to NCSE Screenshot._
  I sent multiple emails to several departments outlining a basic proposal over a three week period only to receive a solitary email in which the NCSE stated categorically, that they would not be able to offer any me any feedback whatsoever.
 
 <img src="../docs/readme_images/planning6.png"><br>
-_Unhelpful NCSE response._
+_NCSE response._
 
 Given the potential benefits of the project I couldn’t understand why the NCSE were so reluctant to offer any advice or even constructive criticism of the app so I called the only person from the NCSE who actually replied to my many attempted communications, Caroline McKeown to ask for clarification on this issue.
 
@@ -150,13 +160,15 @@ Whilst this refusal might have at first been disheartening, I am extremely grate
     <br>
     </summary>
 <br>
-After initially being disappointed with the NCSE's response (or lacktherof) to my emails, I quickly refocused my attention to other useful sources of information that might benefit the project. If I was going to have to develop the app without any official guidance or input from governing bodies I would have to come up with a strategy that would allow schools themselves to control and manipulate the flow of information themselves. In order to do this, I would need to familiarise myself with the processes and systems used by schools during tranferring the enrolment details and successful pupil transitions. 
+Despite my initial disappointment with the NCSE's response (or lacktherof) to my emails, I quickly refocused my attention to other useful sources of information that might benefit the project. If I was going to have to develop the app without any official guidance or input from governing bodies I would have to come up with a strategy that would allow schools themselves to provide access to the passport functionality of the app allowing pupil and parent users to control and manipulate the flow of information between themselves and their assigned teachers. 
+
+In order to do this, I would need to familiarise myself with the administrative processes and software systems used by schools during the transfer of enrolment details and successful pupil transitions. 
 
 Luckily, the secretary at my current place of work, St Mary's Special School, Drumcar, is extremely approachable. Susan Hynes, one of the supporting heroes of this project was always available and enthusiastic about helping me understand the systems and applications involved during the process of a pupil transition, whilst at no point revealing any priviledged or confidential information. I was mainly concerned with what administrative software is currently used by the admin staff at St Mary’s and its provenance. 
 
 I discovered the following:
 
-For the transfer of pupils (enrollment) between schools, all Irish Special Schools use a web app called ‘POD’ (Primary Online Data) within the Department Of Education’s ‘Esinet’ umbrella application.
+For the transfer of pupils (enrolment) between schools, all Irish Special Schools use a web app called ‘POD’ (Primary Online Data) within the Department Of Education’s ‘Esinet’ umbrella application.
 
 <img src="../docs/readme_images/planning7.png"><br>
 _Screenshot of Esinet software._

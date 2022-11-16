@@ -227,15 +227,35 @@ Further into my research, I discovered other applications that heavily influence
 </details>
 
 <details>
-    <summary>Design Thinking.
+    <summary>Interviews/Design Thinking.
     <br>
     </summary>
-</details>
+    Working in a special education environment when developing an app for SEN pupils has it's advantages as evidenced earlier in this document by Susan Hynes and in 
+    
+[other projects](https://github.com/davidcalikes/Marvelous-Matching) 
+    I have developed. 
 
-<details>
-    <summary>Interviews.
-    <br>
-    </summary>
+    I was concious however, that working on a project with feedback coming from the teachers and pupils of just one school would be sub-optimal to say the least. 
+    
+    So I reached out (via telephone) to a local school in my area: St Josephs National School, Kingscourt, and arranged with Christina Meade, a teacher from 'Cairde' (St Joseph's ASD Unit) to arrange a quick telephone survey about MyPSE.ie.
+
+    I consulted with St Mary's Vice Principle Declan McCoy as I formulated questions for Christina. In a somewhat fortunate twist of fate Declan provided me with information that came up during a recent teacher-training course that took place earlier that week. While discussing software in schools during the training a course instructor divulged that 
+[Google Workspace For Education](https://edu.google.com/workspace-for-education/editions/education-fundamentals/) has "some integrated passport functionality". 
+
+One of the sticking points that administrators where having difficulty with was the transfer of access priveleges to the assigned teacher and protecting the data of the pupil.
+
+Whilst I was initially disappointed that I had not known about this GWSE feature, I came around to realising that the unique proposition of MyPSE.ie doesn't lie simply in the digitisation of pupil passports and that if anything, for Google to include passport functionality in its suite of education platforms only serves to strengthen the business case for a dedicated app like MyPSE.ie.
+
+I also liked the idea of solving an issue that even Google seemed to be having issues with. Declan was also kind enough to help me formulate some questions for Christina Meade.
+
+<img src="../docs/readme_images/planning12.png"><br>
+_Email Response from Christina._
+
+Christina, who ostensibly had just completed the same GDPR training as Declan and the teachers of St Mary's SNS also raised the issue with the transfer/removal of access to teachers.
+
+
+
+
 </details>
 
 <br>
@@ -253,7 +273,7 @@ Further into my research, I discovered other applications that heavily influence
 
 * Users should be instructed to select their user 'role' at login.
 
-* 
+* Pupil and parent users should be able to style the text content of their passports to better express the personality and tastes of the pupil.
 
 <br>
 

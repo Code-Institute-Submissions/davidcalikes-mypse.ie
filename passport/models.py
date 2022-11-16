@@ -12,14 +12,14 @@ class EnrolledPupil(models.Model):
     pupil_id = models.CharField(
         "Pupil ID Number",
         validators=[RegexValidator(r'^[1-9]{1}[0-9]{7}$',
-                    message="Not a valid pupil id number")],
+                    message="Not a valid pupil id number. Input should match the format of department issued pupil I.D. number.")],
         max_length=8, default="", unique=True)
     school_name = models.CharField(
        "School Name", max_length=200, default="")
     school_roll_number = models.CharField(
         "School Roll No",
         validators=[RegexValidator(r'^\d{5}[A-Za-z]{1}$',
-                    message="Not a valid School Roll Number")],
+                    message="Not a valid School Roll Number. Input should match the format of a department issued school roll number")],
         max_length=6, default="")
     school_email = models.EmailField(
         "School Email Address", max_length=300)

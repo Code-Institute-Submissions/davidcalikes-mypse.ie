@@ -234,7 +234,7 @@ Further into my research, I discovered other applications that heavily influence
 
 Working in a special education environment when developing an app for SEN pupils has it's advantages as evidenced earlier in this document by Susan Hynes and in [other projects](https://github.com/davidcalikes/Marvelous-Matching) I have developed. 
 
-I was concious however, that working on a project with feedback coming from the teachers and pupils of just one school would be sub-optimal to say the least. 
+I was concious however, that working on a project with feedback coming from the teachers and pupils of just one school would be sub-optimal to say the least. I was determined not to let any bias (positive or negative), influence the design of the application. I didn't want the research for MyPSE.ie to be based on people that might just be telling me what I wanted to hear or those who might base their responses to questions on what they thought of me as an individual.
     
 So I reached out (via telephone) to a local school in my area: St Josephs National School, Kingscourt, and arranged with Christina Meade, a teacher from 'Cairde' (St Joseph's ASD Unit) to arrange a quick telephone survey about MyPSE.ie.
 
@@ -245,13 +245,89 @@ One of the sticking points that administrators where having difficulty with was 
 
 Whilst I was initially disappointed that I had not known about this GWSE feature, I came around to realising that the unique proposition of MyPSE.ie doesn't lie simply in the digitisation of pupil passports and that if anything, for Google to include passport functionality in its suite of education platforms only serves to strengthen the business case for a dedicated app like MyPSE.ie.
 
-I also liked the idea of solving an issue that even Google users seemed to be having problems with. Declan was also kind enough to help me formulate some questions for Christina Meade.
+I also liked the idea of solving an issue that even Google users seemed to be having problems with. Declan was also kind enough to help me formulate some of the research questions for Christina Meade.
+
+I have listed the full questions and responses below:
+
+1.  Q -- "How would you describe your experiences with pupil passports?"
+<br>
+    A -- "If we recieve a pupil passport (we sometimes don't), its usually a folder or poly pocket containing a few A4 sheets of background information on the child (pupil). They are never the same, and it can be hard to make sense of some of them. Sometimes there are scrapbook style folders that contain family pictures and artwork from the child and you can tell that effort has been made by whoever put them together. Those are the ones that you get the most out of. 
+
+2.  Q -- "Do you find the information contained within pupil passports useful?"
+<br>
+    A -- "Not really, it can be hard to find to be honest. I suppose any extra background information is welcome but it would't always be there when you went looking for it. I don't think parents are aware what information to include and sometimes include information that isn't relevant, incomplete or outdated.
+
+3.  Q -- "Do you provide parents with a template for transition passports during the pre-enrolment period?"
+<br>
+    A -- "Yes, It's something that we've been doing since I started working here, its an A4 sheet but I'd have to look for it I don't have one on me at the moment."
+
+4.  Q -- "Do you think the passport template you provide for transitions is missing anything?"
+<br>
+    A -- "No from what I remember its laid out quite well, the problem is more parents not sending them back or not following the template. I do like it when the scrapbooks are sent in though, and the more pictures the better."
+
+5.  Q -- "How would a web application that allowed users to create and securely share digital passports be of benefit?"
+<br>
+    A -- "I think it would make it easier if they were all in the one place and you could access them from your phone or iPad. I think the inconvenience is something that puts a lot of parents off. It might make them more likely to actually make a passport in the first place if they can make one on a website."
+
+6.  Q -- "What concerns would you have about using a web app that shared pupil passports"
+<br>
+    A -- "Security obviously. Is that something you could do? I think some of the older teachers might still prefer to use the actual documents but most people have at least a smartphone these days. There might be issues about data protection as well so you'd probably have to look into that."
+ 
+Although I was tempted to ask follow up questions after each response, especially after the first question where I really wanted Christina to elaborate more on instances where passports have proved useful but I only asked the questions I had prepared for the interview. I didn't want try and manipulate the answers I wanted out of the interview.
+
+I appreciate Christina for taking the time to answer the questions. I followed up the interview a week later and we discussed what I gleaned from the interview via email.
+
+I laid out what I thought were key features that the first (Minimum Viable Product) Version of MyPSE.ie should contain in order to address the issues raised during the interview.
+
+* Users should be authenticated before they can create passports.
+* Creating a passport should be made simple (a single form) to encourage users to use the platform.
+* Passports should contain photographs and the layout should be the same for each pupil in order to quickly and easily access information.
+* The app should be accessible from virtually any device with a modern web browser.
+* Teachers should be given the option to print physical passports. (Time permitting)
 
 <img src="../docs/readme_images/planning12.png"><br>
 _Email Response from Christina._
 
-Christina, who ostensibly had completed the same GDPR training as Declan and the teachers of St Mary's SNS also raised the issue with the transfer/removal of access to teachers.
+As I mentioned above, working in a special needs school has it's advantages when approaching a project like this. Working as an SNA however makes some things slightly more difficult. It is teachers in schools that have the (legal) 'duty of care' for a pupil within a school and are therefore entitled to access confidential information that an SNA is not. As is clear from Christina's response the issue with the transfer and removal of access to pupil passports is something that I didnt initially recognise as a major problem.
 
+Here is where I think a rigorous approach to planning has resulted in a much more robust application.
+
+The next step during the planning stage of MyPSE.ie was a meeting with Richard Wells. Richard has been my assigned mentor since I began my studies with the [Code Institute](https://codeinstitute.net/ie/full-stack-software-development-diploma/)
+
+During our meeting we discussed the idea and while Richard admitted he liked the proposal he touched upon a point that I had (yet again) not considered. 
+
+Many SEN pupils are highly capable and could easily (with guidance and support) create and style their own passports. Up to this point, I had been focused so heavily on the types of pupils I have been working with for the past 15 years (pupils within the moderate to severe and profound range of intellectual disability), I had completely ignored an entire user group that could benefit from the app. As usual, I am immensely grateful to Richard for his wisdom and guidance through my continuing education in software development.
+
+So with some haste I arranged a meeting with a teacher from a mainstream school whom I knew to teach SEN pupils.
+
+Unfortunatly, there was no guarding against bias here. I would just have to try and be aware of my questioning and pay as much attention to the responses as possible. I also had no time or expert support like I had with Declan to formulate a new set of questions.  
+
+The teacher in question: Aine Lynch of St Joseph's Secondary School in Rush Co.Dublin (yes both schools where really called St Joseph's) Has been a friend of mine for the past 20 years since I first moved to Ireland. A fellow musician, Aine is the year 6 head, a classroom teacher and a [SET](https://ncse.ie/special-classes) Class teacher.
+
+Notes made during our discussion.
+
+* MyPSE.ie would be of more benefit to St Joseph's than the current passport system. Aine told me that teachers and admin staff at St Joseph's use software called [VSWARE](https://www.vsware.ie/) The information contained within this software most relevant to pupil transitions is limited to a single text field.
+
+* While Aine appreciated the concept of MyPSE.ie she was concerned about having yet another app to manage on top of a growing number of apps. Aine also thought that most other teachers would share this concern. MyPSE.ie being a standalone app might be a disadvantage in this case so an option to embed the app in future should be something to consider.
+
+* While almost all of the SEN pupils who attend St Joseph's (Rush) would have the capability to create a passport online they would need what Aine describes as "scaffolding". In other words a step-by-step guide that they could follow whilst creating their passports.
+
+* Aine also came up with an idea to allow pupils the option to customise their passports. This runs counter my own idea of making the passports uniform to make it easier to find information.
+
+* Aine informed me that out of 900 pupils in ST Joseph's, 300 of those pupils are classed as having Special Eduacational Needs.
+ 
+I'm grateful to Aine for her meeting me and helping extend the scope of the project. It would be dishonest of me to say I wasn't beginning to feel anxious at this stage in the project. But looking back now I think the product is much more inclusive and beneficial to pupil users because of Aine's valuable feedback.
+
+The next area of research was tricky. I have made many friends over the years working as an SNA and have a number of former pupils and parents that I was sure would have been glad to help me gain perspective from a different user viewpoint. But for two reasons I decided not to go down this route. Firstly, as I have already mentioned, I wanted to protect the proposal against biased responses and secondly I felt a little uneasy and borderline exploitative just thinking about it from an ethical standpoint.
+
+So I decided to use what I had learned during the 'design thinking' section of the Code Institute's LMS course content and put together a 'persona template'.
+
+What's remarkable here, is how similar the persona template is to a pupil passport. 
+
+<img src="../docs/readme_images/planning13.png"><br>
+_Code Institute - Persona Template._
+
+Here is the template I created. I wanted to make a template for a non-verbal user first. The reasoning behind this was that it is those who cannot speak for themselves that stand to benefit the most from MyPSE.ie. 
 
 </details>
 

@@ -18,7 +18,7 @@ class EnrolledPupil(models.Model):
        "School Name", max_length=200, default="")
     school_roll_number = models.CharField(
         "School Roll No",
-        validators=[RegexValidator(r'^\d{5}[A-Z]{1}$',
+        validators=[RegexValidator(r'^\d{5}[A-Za-z]{1}$',
                     message="Not a valid School Roll Number")],
         max_length=6, default="")
     school_email = models.EmailField(
@@ -56,33 +56,33 @@ class Passport(models.Model):
     my_date_of_birth = models.DateField(
         "Pupil's Date Of Birth", default="YYYY-MM-DD", blank=False)
     my_biography = models.TextField(
-       "Biography", max_length=1000, blank=False)
+       "Biography", blank=False)
     my_family = models.TextField(
-        "Family", max_length=1000, blank=False)
+        "Family", blank=False)
     my_family_image = CloudinaryField(
         "Family Photo", default="placeholder")
     my_likes = models.TextField(
-       "Likes", max_length=1000, blank=False)
+       "Likes", blank=False)
     my_likes_image = CloudinaryField(
         "Likes Photo", default="placeholder")
     my_dislikes = models.TextField(
-        "Dislikes", max_length=1000, blank=False)
+        "Dislikes", blank=False)
     my_strengths = models.TextField(
-       "Strengths", max_length=1000, blank=False)
+       "Strengths", blank=False)
     my_difficulties = models.TextField(
-        "Difficulties", max_length=1000, blank=False)
+        "Difficulties", blank=False)
     my_supports = models.TextField(
-        "Supports", max_length=1000, blank=False)
+        "Supports", blank=False)
     my_supports_image = CloudinaryField(
         "Supports Photo", default="placeholder")
     my_calming_measures = models.TextField(
-       "Calming Measures", max_length=1000, blank=False)
+       "Calming Measures", blank=False)
     my_communication_skills = models.TextField(
-        "Communication Skills", max_length=1000, blank=False)
+        "Communication Skills", blank=False)
     my_communication_skills_image = CloudinaryField(
         "Communication Skills Photo", default='placeholder')
     my_other_info = models.TextField(
-       "Other Info", max_length=1000, blank=False)
+       "Other Info", blank=False)
     last_updated = models.DateTimeField(auto_now=True)
     created_by = models.ForeignKey(CustomUser,
                                    on_delete=models.CASCADE,

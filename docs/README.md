@@ -329,6 +329,46 @@ _Code Institute - Persona Template._
 
 Here is the template I created. I wanted to make a template for a non-verbal user first. The reasoning behind this was that it is those who cannot speak for themselves that stand to benefit the most from MyPSE.ie. 
 
+Persona Name: John Osawa
+
+Age:11
+Job/Role: Pupil
+Status: Minor
+Other Information:
+
+* non-verbal.
+* non-ambulant (requires a wheelchair).
+* has epilepsy.
+
+Goals:
+
+* To be respected and treated with dignity.
+* To be included, despite my disabilities.
+* Academic achievement.
+
+Pain Point/Concerns
+
+* People sometimes fail to consider what I want because I can't verbalise it for myself.
+* I'm afraid I might be excluded from fun activities because not everywhere is accessible.
+* I love swimming but people are afraid that I might have a seizure in the pool so are reluctant to bring me.
+
+Likes/Dislikes
+
+* I don't like it when people ignore or talk about me and assume I can't understand them just because I have disabilities. 
+
+* I like it when people take the time to talk to me and patiently allow me to communicate with them.
+
+* I like when people really know me and what I like and need. It saves me a great deal of frustration. You might know I like football, but do you know my favorite team is FC Barcelona?
+
+Empathetic excercises like this are second nature to an SNA. It is I suppose, the app's raison d'être.
+
+But solving the right problem is key to the success of any creative enterprise. So in order to define the problem I created the following statement based on the Persona of John Osawa  
+
+"Teachers and supports staff need to better understand a pupil's needs at a time of potential stress and anxiety in order to assist them during a educational transition."
+
+During the early stage of this project 
+
+
 </details>
 
 <br>

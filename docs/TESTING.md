@@ -23,8 +23,6 @@ All of the user story acceptance criteria can be inspected via the four Sprint b
 Each page, feature and link of the application has been rigorously tested.
 I have used dropdown menus for each page to make the documentation more human readable.
 
-
-
 <details>
 
 <summary>
@@ -66,7 +64,7 @@ _W3C HTML Validator Testing Screenshot_
 The Home page was passed through the Jigsaw CSS validator and returned no errors.
 
 <img src="../docs/testing_images/testing_val_2.png"><br>
-_W3C HTML Validator Testing Screenshot_
+_W3C Jigsaw CSS Validator Testing Screenshot_
 
 The Home page was passed through the WCAG Color contrast checker and returned no contrast errors.
 
@@ -85,7 +83,10 @@ In future versions of the app I hope to significantly improve mobile performance
 <br>
 </details>
 
-About Page Testing
+<details>
+
+<summary>
+About Page Testing</summary><br>
 
 Each About Page link was tested for each user type and was marked 'pass' when the following expected behaviour was produced via clickable link.
 
@@ -118,29 +119,32 @@ About page validator testing.
 
 The About page was passed through the W3C HTML Validator and returned no errors
 
-<img src="../docs/testing_images/testing_val_1.png"><br>
+<img src="../docs/testing_images/testing_val_6.png"><br>
 _W3C HTML Validator Testing Screenshot_ 
 
 The About page was passed through the Jigsaw CSS validator and returned no errors.
 
-<img src="../docs/testing_images/testing_val_2.png"><br>
-_W3C HTML Validator Testing Screenshot_
+<img src="../docs/testing_images/testing_val_7.png"><br>
+_W3C Jigsaw CSS Validator Testing Screenshot_
 
 The About page was passed through the WCAG Color contrast checker and returned no contrast errors.
 
-<img src="../docs/testing_images/testing_val_3.png"><br>
+<img src="../docs/testing_images/testing_val_8.png"><br>
 _WGAC Validator Testing Screenshot_
 
 The About Page was passed through Lighthouse and returned the following performance results:
 
-<img src="../docs/testing_images/testing_val_4.png"><br>
+<img src="../docs/testing_images/testing_val_9.png"><br>
 _Desktop Lighthouse Performance Testing Screenshot_
 
-<img src="../docs/testing_images/testing_val_5.png"><br>
+<img src="../docs/testing_images/testing_val_10.png"><br>
 _Mobile Lighthouse Performance Testing Screenshot_
 
 In future versions of the app I hope to significantly improve mobile performance.
 <br>
+</details>
+<br>
+
 ## Bugs
 
 ### Bugs found during development

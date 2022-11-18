@@ -143,7 +143,66 @@ _Mobile Lighthouse Performance Testing Screenshot_
 In future versions of the app I hope to significantly improve mobile performance.
 <br>
 </details>
+
+<details>
+
+<summary>
+Login Page Testing</summary><br>
+
+Each Login Page link was tested and was marked 'pass' when the following expected behaviour was produced via clickable link. A created user from every user type was logged in succesfully.
 <br>
+
+* Can Access Home Page -- The user can access the home page from the login page.
+
+* Can Access About Page -- The user can access the about page from the login page.
+
+* Can Access Register Page -- The user can access the register page via the nav bar or the signup link.
+
+* Can login as Admin -- Admin user can login
+
+* Can login as School -- School user can login
+
+* Can login as Pupil -- Pupil user can login
+
+* Can login as Parent -- Parent user can login
+
+* Can login as Teacher -- Teacher user can login
+
+* Can open footer links -- Footer links open in a new tab.
+
+Below is the testing table for the Login page.
+
+| Logged In As  | Can Access Home Page | Can Access About Page | Can Login As Admin | Can Login As School | Can Login As Pupil  | Can Login As Parent | Can Login As Teacher | Can Access Register (both links) | Can Open Footer Links (new tab) |
+|---------------|----------------------|-----------------------|--------------------|---------------------|---------------------|---------------------|----------------------|----------------------------------|---------------------------------|
+| Not Logged In | yes/pass             | yes/pass              | yes/pass           | yes/pass            | yes/pass            | yes/pass            | Yes Pass             | Yes/Pass                         | yes/pass                        |
+
+Login page validator testing.
+
+The Login page was passed through the W3C HTML Validator and returned no errors
+
+<img src="../docs/testing_images/testing_val_11.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+The Login page was passed through the Jigsaw CSS validator and returned no errors.
+
+<img src="../docs/testing_images/testing_val_12.png"><br>
+_W3C Jigsaw CSS Validator Testing Screenshot_
+
+The Login page was passed through the WCAG Color contrast checker and returned no contrast errors.
+
+<img src="../docs/testing_images/testing_val_13.png"><br>
+_WGAC Validator Testing Screenshot_
+
+The Login Page was passed through Lighthouse and returned the following performance results:
+
+<img src="../docs/testing_images/testing_val_14.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/testing_val_15.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
+<br>
+</details>
+
 
 ## Bugs
 

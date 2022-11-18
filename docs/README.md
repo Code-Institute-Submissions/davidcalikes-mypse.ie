@@ -349,8 +349,8 @@ Goals:
 Pain Point/Concerns
 
 * People sometimes fail to consider what I want because I can't verbalise it for myself.
-* I'm afraid I might be excluded from fun activities because not everywhere is accessible.
-* I love swimming but people are afraid that I might have a seizure in the pool so are reluctant to bring me.
+* I'm afraid I might be excluded from fun activities because I can't let them know when I want to take part
+* I love swimming but people I'm anxious they wont know that in my new school
 
 Likes/Dislikes
 
@@ -362,12 +362,9 @@ Likes/Dislikes
 
 Empathetic excercises like this are second nature to an SNA. It is I suppose, the app's raison d'être.
 
-But solving the right problem is key to the success of any creative enterprise. So in order to define the problem I created the following statement based on the Persona of John Osawa  
+The following problem statement was created as a result of developing this persona,
 
-"Teachers and supports staff need to better understand a pupil's needs at a time of potential stress and anxiety in order to assist them during a educational transition."
-
-During the early stage of this project 
-
+"To help facilitate successful educational transitions, pupils, parents and teachers should share vital information, so they can better understand a pupil's desires, needs and character "
 
 </details>
 
@@ -376,11 +373,13 @@ During the early stage of this project
 ## Research Summary
 <br>
 
-* A digital 'passports' web app has a real world practical use and business use case. 
+* A digital 'passports' web app has both a real-world, practical use case and real-world business use case.
+
+* The primary goal of the app should be to create a viable solution to the problem contained in the problem statment created during the planning stages of development. 
 
 * The app should be 'standalone' and available for instant, easy adoption by any Irish school.
 
-* The application should use existing, 'real-world' ID numbers to ensure passports and genuine and to future-proof later versions.
+* The application should use existing, 'real-world' ID numbers to ensure passports are genuine and to future-proof later versions of the app.
 
 * Relevant sections of the app should reflect the design and layout of traditional style passports, and similar education based software to provide users with a sense of familiarity and confidence.
 
@@ -389,6 +388,8 @@ During the early stage of this project
 * Teachers access privileges should be revoked when a new teacher is assigned to a pupil.
 
 * Pupil and parent users should be able to style the text content of their passports to better express the personality and tastes of the pupil.
+
+* Users should be provided with visual feedback and guidance about how to use the app. 
 
 <br>
 

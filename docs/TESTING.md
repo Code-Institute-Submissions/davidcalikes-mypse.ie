@@ -18,6 +18,24 @@ All of the user story acceptance criteria can be inspected via the four Sprint b
 
 <br>
 
+## Manual Testing
+
+Each page, feature and link of the application has been rigorously tested.
+I have used dropdown menus for each page to make the documentation more human readable. 
+
+Home
+
+Below are the testing tables for the home page.
+
+| Logged in as  | Login Redirect        | Can Access About Page | Can Access Login | Can Access Logout | Can Access Register  | Card Links              | Can open Footer Links (new tab) |
+|---------------|-----------------------|-----------------------|------------------|-------------------|----------------------|-------------------------|---------------------------------|
+| Not Logged In | N/A                   | pass                  | yes/pass         | no/pass           | yes/pass             | login/login/about       | yes/pass                        |
+| Admin         | home                  | pass                  | no/pass          | yes/pass          | no/pass              | home/home/about         | yes/pass                        |
+| School        | Enrolled Pupil List   | pass                  | no/pass          | yes/pass          | no/pass              | redirect/redirect/about | yes/pass                        |
+| Pupil         | Pupil Check           | pass                  | no/pass          | yes/pass          | no/pass              | redirect/redirect/about | yes/pass                        |
+| Parent        | Passport List         | pass                  | no/pass          | yes/pass          | no/pass              | redirect/redirect/about | yes/pass                        |
+| Teacher       | Teacher Passport List | pass                  | no/pass          | yes/pass          | no/pass              | redirect/redirect/about | yes/pass                        |
+
 ## Bugs
 
 ### Bugs found during development

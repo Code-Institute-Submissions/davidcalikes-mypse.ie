@@ -1,7 +1,5 @@
 User-Agent: *
-Allow: /
 Allow: /https://mypse.herokuapp.com//
 Disallow: /https://mypse.herokuapp.com//passport_detail
 Disallow: /https://mypse.herokuapp.com/teacher_passport_detail
 Disallow: /https://mypse.herokuapp.com//pupil_record
-

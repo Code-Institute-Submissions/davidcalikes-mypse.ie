@@ -25,7 +25,11 @@ I have used dropdown menus for each page to make the documentation more human re
 
 Each link was tested for each user type and was marked 'pass' when the following expected behaviour was produced via clickable link.
 
-Home Page Testing
+<details>
+
+<summary>
+Home Page Testing</summary><br>
+
 
 * Login Redirect -- The user is directed to the correct page depending on the users authentication status upon login or when the login links in the homepage cards are clicked.
 
@@ -67,12 +71,18 @@ The Home page was passed through the WCAG Color contrast checker and returned no
 <img src="../docs/testing_images/testing_val_3.png"><br>
 _WGAC Validator Testing Screenshot_
 
-The Home Page was passed through Lighthouse and returned the following performance results
+The Home Page was passed through Lighthouse and returned the following performance results:
 
-<img src="../docs/testing_images/testing_val_3.png"><br>
-_Lighthouse Performance Testing Screenshot_
+<img src="../docs/testing_images/testing_val_4.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
 
+<img src="../docs/testing_images/testing_val_5.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
 
+In future versions of the app I hope to significantly improve mobile performance.
+<br>
+</details>
+<br>
 ## Bugs
 
 ### Bugs found during development

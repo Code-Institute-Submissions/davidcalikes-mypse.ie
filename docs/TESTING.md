@@ -21,20 +21,37 @@ All of the user story acceptance criteria can be inspected via the four Sprint b
 ## Manual Testing
 
 Each page, feature and link of the application has been rigorously tested.
-I have used dropdown menus for each page to make the documentation more human readable. 
+I have used dropdown menus for each page to make the documentation more human readable.
 
-Home
+Each link was tested for each user type and was marked 'pass' when the following expected behaviour was produced via clickable link.
+
+Home Page Testing
+
+* Login Redirect -- The user is directed to the correct page depending on the users authentication status upon login or when the login links in the homepage cards are clicked.
+
+* Can Access About Page -- The user can access the about page from the home page.
+
+* Can Access Login Page -- The user can access the login page via the nav bar.
+
+* Can Access Logout Page -- The user can access the logout page via the nav bar.
+
+* Card Links -- The user is redirected to the login page if not authenticated or redirected to correct landing page for user type if authenticated if login card link is clicked. The user can access the about page from the about card link.
+
+* Can open footer links -- Footer links open in a new tab.
 
 Below are the testing tables for the home page.
 
-| Logged in as  | Login Redirect        | Can Access About Page | Can Access Login | Can Access Logout | Can Access Register  | Card Links              | Can open Footer Links (new tab) |
-|---------------|-----------------------|-----------------------|------------------|-------------------|----------------------|-------------------------|---------------------------------|
-| Not Logged In | N/A                   | pass                  | yes/pass         | no/pass           | yes/pass             | login/login/about       | yes/pass                        |
-| Admin         | home                  | pass                  | no/pass          | yes/pass          | no/pass              | home/home/about         | yes/pass                        |
-| School        | Enrolled Pupil List   | pass                  | no/pass          | yes/pass          | no/pass              | redirect/redirect/about | yes/pass                        |
-| Pupil         | Pupil Check           | pass                  | no/pass          | yes/pass          | no/pass              | redirect/redirect/about | yes/pass                        |
-| Parent        | Passport List         | pass                  | no/pass          | yes/pass          | no/pass              | redirect/redirect/about | yes/pass                        |
-| Teacher       | Teacher Passport List | pass                  | no/pass          | yes/pass          | no/pass              | redirect/redirect/about | yes/pass                        |
+| Logged in as  | Login Redirect             | Can Access About Page | Can Access Login | Can Access Logout | Can Access Register  | Card Links                   | Can open Footer Links (new tab) |
+|---------------|----------------------------|-----------------------|------------------|-------------------|----------------------|------------------------------|---------------------------------|
+| Not Logged In | N/A                        | pass                  | yes/pass         | no/pass           | yes/pass             | login-login-about/pass       | yes/pass                        |
+| Admin         | home                       | pass                  | no/pass          | yes/pass          | no/pass              | home-home-about/pass         | yes/pass                        |
+| School        | Enrolled Pupil List/pass   | pass                  | no/pass          | yes/pass          | no/pass              | redirect-redirect-about/pass | yes/pass                        |
+| Pupil         | Pupil Check/pass           | pass                  | no/pass          | yes/pass          | no/pass              | redirect-redirect-about/pass | yes/pass                        |
+| Parent        | Passport List/pass         | pass                  | no/pass          | yes/pass          | no/pass              | redirect-redirect-about/pass | yes/pass                        |
+| Teacher       | Teacher Passport List/pass | pass                  | no/pass          | yes/pass          | no/pass              | redirect-redirect-about/pass | yes/pass                        |
+
+Home page validator testing.
+
 
 ## Bugs
 

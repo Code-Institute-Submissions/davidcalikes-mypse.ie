@@ -7,6 +7,8 @@ from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .mixins import PageTitleMixin
+from django.http import HttpResponse
+from django.views.decorators.http import require_GET
 
 
 class HomePage(PageTitleMixin, generic.TemplateView):
@@ -336,3 +338,14 @@ def LoginSuccess(request):
         return redirect("pupil_check")
     else:
         return redirect("home")
+
+
+@require_GET
+def robots_txt(request):
+    lines = [
+        "User-Agent: *",
+        "Disallow: /https://mypse.herokuapp.com/pupil_record",
+        "Disallow: /https://mypse.herokuapp.com/passport_detail",
+        "Disallow: /https://mypse.herokuapp.com/teacher_passport_detail",
+    ]
+    return HttpResponse("\n".join(lines), content_type="text/plain")

@@ -1,7 +1,9 @@
 from . import views
+from .views import robots_txt
 from django.urls import path
 
 urlpatterns = [
+    path("robots.txt", robots_txt),
     path('', views.HomePage.as_view(), name='home'),
     path('about/', views.AboutPage.as_view(), name='about'),
     path('learn_more/', views.LearnMorePage.as_view(), name='learn_more'),

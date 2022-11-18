@@ -410,12 +410,32 @@ h2 {
     background-image: url(https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png);
     background-color: #0ca9a9;
     border: solid 2px white;
+    text-align: center;
     border-radius: 4px;
     margin-bottom: 2rem;
-    padding-left: 0%;
     padding-top: 2rem;
     padding-bottom: 6rem;
     box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
+}
+
+label {
+    color: white;
+}
+
+
+.login {
+    background-color: #0B5657;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+.form-text-row {
+    width: 64%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-left: 18%;
+    margin-bottom: 0.5rem;
 }
 
 .form-row {
@@ -714,6 +734,11 @@ width: 92%;
     .navbar {
         background-image: url(https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png), linear-gradient(to right, #ffffff, #ffffff, #0ca9a9, #0ca9a9, #0ca9a9);
     }
+
+    .form-text-row {
+        width: 90%;
+        margin-left: 5%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -781,4 +806,11 @@ width: 92%;
     .passport-title {
         font-size: large;
     }
+
+    .form-row {
+        text-align: center;
+        width: 100%;
+        margin-left: 0%;
+    }
+
 }

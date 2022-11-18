@@ -45,7 +45,7 @@ Each Home Page link was tested for each user type and was marked 'pass' when the
 
 * Can open footer links -- Footer links open in a new tab.
 
-Below are the testing tables for the home page.
+Below is the testing table for the home page.
 
 | Logged in as  | Login Redirect             | Can Access About Page | Can Access Login | Can Access Logout | Can Access Register  | Card Links                   | Can open Footer Links (new tab) |
 |---------------|----------------------------|-----------------------|------------------|-------------------|----------------------|------------------------------|---------------------------------|
@@ -84,6 +84,62 @@ _Mobile Lighthouse Performance Testing Screenshot_
 In future versions of the app I hope to significantly improve mobile performance.
 <br>
 </details>
+
+About Page Testing
+
+Each About Page link was tested for each user type and was marked 'pass' when the following expected behaviour was produced via clickable link.
+
+
+* Can Access Home Page -- The user can access the home page from the about page.
+
+* Can Access Learn More Page -- The user can access the learn more page from the about page.
+
+* Can Access Login Page -- The user can access the login page via the nav bar.
+
+* Can Access Logout Page -- The user can access the logout page via the nav bar.
+
+* Can Download User Guides -- The user can download any of the user guides from the about page. (opens new tab)
+
+* Can Download Samples -- The user can download any of the sample passports frtom the about page. (opens new tab)
+
+* Can open footer links -- Footer links open in a new tab.
+
+
+| Logged in as  | Can Access Home Page | Can Access Learn More Page | Can Access Login | Can Access Logout | Can Access Register  | Can Download User Guide (new tab) | Can Download Samples (new tab) | Can Open Footer Links (new tab) |
+|---------------|----------------------|----------------------------|------------------|-------------------|----------------------|-----------------------------------|--------------------------------|---------------------------------|
+| Not Logged In | Pass                 | pass                       | yes/pass         | no/pass           | yes/pass             | Pupil/Parent/Teacher/School/Pass  | Sample One/SampleTwo/Pass      | yes/pass                        |
+| Admin         | Pass                 | pass                       | no/pass          | yes/pass          | no/pass              | Pupil/Parent/Teacher/School/Pass  | Sample One/SampleTwo/Pass      | yes/pass                        |
+| School        | Pass                 | pass                       | no/pass          | yes/pass          | no/pass              | Pupil/Parent/Teacher/School/Pass  | Sample One/SampleTwo/Pass      | yes/pass                        |
+| Pupil         | Pass                 | pass                       | no/pass          | yes/pass          | no/pass              | Pupil/Parent/Teacher/School/Pass  | Sample One/SampleTwo/Pass      | yes/pass                        |
+| Parent        | Pass                 | pass                       | no/pass          | yes/pass          | no/pass              | Pupil/Parent/Teacher/School/Pass  | Sample One/SampleTwo/Pass      | yes/pass                        |
+| Teacher       | Pass                 | pass                       | no/pass          | yes/pass          | no/pass              | Pupil/Parent/Teacher/School/Pass  | Sample One/SampleTwo/Pass      | yes/pass                        |
+
+About page validator testing.
+
+The About page was passed through the W3C HTML Validator and returned no errors
+
+<img src="../docs/testing_images/testing_val_1.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+The About page was passed through the Jigsaw CSS validator and returned no errors.
+
+<img src="../docs/testing_images/testing_val_2.png"><br>
+_W3C HTML Validator Testing Screenshot_
+
+The About page was passed through the WCAG Color contrast checker and returned no contrast errors.
+
+<img src="../docs/testing_images/testing_val_3.png"><br>
+_WGAC Validator Testing Screenshot_
+
+The About Page was passed through Lighthouse and returned the following performance results:
+
+<img src="../docs/testing_images/testing_val_4.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/testing_val_5.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
+
+In future versions of the app I hope to significantly improve mobile performance.
 <br>
 ## Bugs
 

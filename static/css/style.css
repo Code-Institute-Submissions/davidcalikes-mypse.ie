@@ -548,9 +548,13 @@ h2 {
     background: #0B5657;
     border-radius: 4px;
     padding: 0.5rem;
-    width: 50%;
-    margin-left: 25%;
+    width: 70%;
+    margin-left: 15%;
     margin-bottom: 1.5rem;
+}
+
+.card-subtitle {
+    font-size: large;
 }
 
 .vert-center {

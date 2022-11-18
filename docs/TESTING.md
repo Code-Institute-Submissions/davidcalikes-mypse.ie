@@ -23,12 +23,14 @@ All of the user story acceptance criteria can be inspected via the four Sprint b
 Each page, feature and link of the application has been rigorously tested.
 I have used dropdown menus for each page to make the documentation more human readable.
 
-Each link was tested for each user type and was marked 'pass' when the following expected behaviour was produced via clickable link.
+
 
 <details>
 
 <summary>
 Home Page Testing</summary><br>
+
+Each Home Page link was tested for each user type and was marked 'pass' when the following expected behaviour was produced via clickable link.
 
 
 * Login Redirect -- The user is directed to the correct page depending on the users authentication status upon login or when the login links in the homepage cards are clicked.

@@ -43,6 +43,8 @@ Each Home Page link was tested for each user type and was marked 'pass' when the
 
 * Can open footer links -- Footer links open in a new tab.
 
+<br>
+
 Below is the testing table for the home page.
 
 | Logged in as  | Login Redirect             | Can Access About Page | Can Access Login | Can Access Logout | Can Access Register  | Card Links                   | Can open Footer Links (new tab) |
@@ -105,6 +107,9 @@ Each About Page link was tested for each user type and was marked 'pass' when th
 
 * Can open footer links -- Footer links open in a new tab.
 
+<br>
+
+Below is the testing table for the about page.
 
 | Logged in as  | Can Access Home Page | Can Access Learn More Page | Can Access Login | Can Access Logout | Can Access Register  | Can Download User Guide (new tab) | Can Download Samples (new tab) | Can Open Footer Links (new tab) |
 |---------------|----------------------|----------------------------|------------------|-------------------|----------------------|-----------------------------------|--------------------------------|---------------------------------|
@@ -170,6 +175,8 @@ Each Login Page link was tested and was marked 'pass' when the following expecte
 
 * Can open footer links -- Footer links open in a new tab.
 
+<br>
+
 Below is the testing table for the Login page.
 
 | Logged In As  | Can Access Home Page | Can Access About Page | Can Login As Admin | Can Login As School | Can Login As Pupil  | Can Login As Parent | Can Login As Teacher | Can Access Register (both links) | Can Open Footer Links (new tab) |
@@ -203,7 +210,73 @@ _Mobile Lighthouse Performance Testing Screenshot_
 <br>
 </details>
 
+<details>
 
+<summary>
+Logout Page Testing</summary><br>
+
+Each Logout Page link was tested and was marked 'pass' when the following expected behaviour was produced via clickable link. A created user from every user type was logged out succesfully.
+<br>
+
+* Can Access Home Page -- The user can access the home page from the logout page.
+
+* Can Access About Page -- The user can access the about page from the logout page.
+
+* Can logout as Admin -- Admin user can logout.
+
+* Can logout as School -- School user can logout.
+
+* Can logout as Pupil -- Pupil user can logout.
+
+* Can logout as Parent -- Parent user can logout.
+
+* Can logout as Teacher -- Teacher user can logout.
+
+* Can Access user list - user can access list page dedicated to their user type.
+
+* Can open footer links -- Footer links open in a new tab.
+
+<br>
+
+Below is the testing table for the Logout page.
+
+| Logged in as  | Can Logout | Can Access Home Page | Can Access About Page | Can Access User List | Can Open Footer Links (new tab) |
+|---------------|------------|----------------------|-----------------------|----------------------|---------------------------------|
+| Not Logged In | n/a        | n/a                  | n/a                   | n/a                  | yes/pass                        |
+| Admin         | pass       | pass                 | pass                  | no/pass              | yes/pass                        |
+| School        | pass       | pass                 | pass                  | yes/pass             | yes/pass                        |
+| Pupil         | pass       | pass                 | pass                  | yes/pass             | yes/pass                        |
+| Parent        | pass       | pass                 | pass                  | yes/pass             | yes/pass                        |
+| Teacher       | pass       | pass                 | pass                  | yes/pass             | yes/pass                        |
+
+Logout page validator testing.
+
+The Logout page was passed through the W3C HTML Validator and returned no errors
+
+<img src="../docs/testing_images/testing_val_16.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+The Logout page was passed through the Jigsaw CSS validator and returned no errors.
+
+<img src="../docs/testing_images/testing_val_17.png"><br>
+_W3C Jigsaw CSS Validator Testing Screenshot_
+
+The Logout page was passed through the WCAG Color contrast checker and returned no contrast errors.
+
+<img src="../docs/testing_images/testing_val_18.png"><br>
+_WGAC Validator Testing Screenshot_
+
+The Logout Page was passed through Lighthouse and returned the following performance results:
+
+<img src="../docs/testing_images/testing_val_19.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/testing_val_20.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
+<br>
+
+</details>
+<br>
 ## Bugs
 
 ### Bugs found during development

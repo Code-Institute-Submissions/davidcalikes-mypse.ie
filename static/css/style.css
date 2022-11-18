@@ -292,6 +292,9 @@ footer a {
 .form-center {
     display: flex;
     justify-content: space-evenly;
+    background-color: #0B5657;
+    padding: 1rem;
+    border-radius: 4px;
 }
 
 h1,
@@ -564,6 +567,7 @@ label {
 
 .passport-title {
     font-size: larger;
+    color: #ffffff;
     background: #0B5657;
     border-radius: 4px;
     padding: 0.5rem;

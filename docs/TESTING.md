@@ -52,6 +52,26 @@ Below are the testing tables for the home page.
 
 Home page validator testing.
 
+The Home page was passed through the W3C HTML Validator and returned no errors
+
+<img src="../docs/testing_images/testing_val_1.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+The Home page was passed through the Jigsaw CSS validator and returned no errors.
+
+<img src="../docs/testing_images/testing_val_2.png"><br>
+_W3C HTML Validator Testing Screenshot_
+
+The Home page was passed through the WCAG Color contrast checker and returned no contrast errors.
+
+<img src="../docs/testing_images/testing_val_3.png"><br>
+_WGAC Validator Testing Screenshot_
+
+The Home Page was passed through Lighthouse and returned the following performance results
+
+<img src="../docs/testing_images/testing_val_3.png"><br>
+_Lighthouse Performance Testing Screenshot_
+
 
 ## Bugs
 

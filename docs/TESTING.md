@@ -277,6 +277,60 @@ _Mobile Lighthouse Performance Testing Screenshot_
 
 </details>
 <br>
+
+Registration Page Testing
+
+Each Registration Page link was tested and was marked 'pass' when the following expected behaviour was produced via clickable link. A user of every user type was registered succesfully.
+<br>
+
+* Can Access Home Page -- The user can access the home page from the registration page.
+
+* Can Access About Page (both links) -- The user can access the about page from the registration page.
+
+* Can Access Login Page (both links) -- The user can access the login page from the registration page.
+
+* Can register as School -- School user can register.
+
+* Can register as Pupil -- Pupil user can register.
+
+* Can register as Parent -- Parent user can register.
+
+* Can register as Teacher -- Teacher user can register.
+
+* User is redirected on login - user is redirected to list page dedicated to their user type.
+
+* Can open footer links -- Footer links open in a new tab.
+| Logged In As  | Can Access Home Page | Can Access About Page (both links) | Can Register As School | Can Register As Pupil  | Can Register As Parent | Can Register As Teacher | Can Access Login (both links) | Can Open Footer Links (new tab) |
+|---------------|----------------------|------------------------------------|------------------------|------------------------|------------------------|-------------------------|-------------------------------|---------------------------------|
+| Not Logged In | yes/pass             | yes/pass                           | yes/pass               | yes/pass               | yes/pass               | Yes Pass                | Yes/Pass                      | yes/pass                        |
+
+Rsgistration page validator testing.
+
+The Registration page was passed through the W3C HTML Validator and returned no errors
+
+<img src="../docs/testing_images/testing_val_16.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+The Registration page was passed through the Jigsaw CSS validator and returned no errors.
+
+<img src="../docs/testing_images/testing_val_17.png"><br>
+_W3C Jigsaw CSS Validator Testing Screenshot_
+
+The Registration page was passed through the WCAG Color contrast checker and returned no contrast errors.
+
+<img src="../docs/testing_images/testing_val_18.png"><br>
+_WGAC Validator Testing Screenshot_
+
+The Ragistration Page was passed through Lighthouse and returned the following performance results:
+
+<img src="../docs/testing_images/testing_val_19.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/testing_val_20.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
+<br>
+
+
 ## Bugs
 
 ### Bugs found during development

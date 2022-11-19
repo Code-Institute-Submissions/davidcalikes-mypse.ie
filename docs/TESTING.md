@@ -28,7 +28,7 @@ I have used dropdown menus for each page to make the documentation more human re
 <summary>
 Home Page Testing</summary><br>
 
-Each Home Page link was tested for each user type and was marked 'pass' when the following expected behaviour was produced via clickable link.
+Each link of the Home Page was tested and was marked 'pass' when the following expected behaviour was produced.
 
 
 * Login Redirect -- The user is directed to the correct page depending on the users authentication status upon login or when the login links in the homepage cards are clicked.
@@ -92,7 +92,7 @@ In future versions of the app I hope to significantly improve mobile performance
 <summary>
 About Page Testing</summary><br>
 
-Each About Page link was tested for each user type and was marked 'pass' when the following expected behaviour was produced via clickable link.
+Each link of the About Page was tested and was marked 'pass' when the following expected behaviour was produced.
 
 
 * Can Access Home Page -- The user can access the home page from the about page.
@@ -156,7 +156,7 @@ In future versions of the app I hope to significantly improve mobile performance
 <summary>
 Login Page Testing</summary><br>
 
-Each Login Page link was tested and was marked 'pass' when the following expected behaviour was produced via clickable link. A created user from every user type was logged in succesfully.
+Each link of the Login Page was tested and was marked 'pass' when the following expected behaviour was produced. A created user from every user type was logged in succesfully.
 <br>
 
 * Can Access Home Page -- The user can access the home page from the login page.
@@ -217,7 +217,7 @@ _Mobile Lighthouse Performance Testing Screenshot_
 <summary>
 Logout Page Testing</summary><br>
 
-Each Logout Page link was tested and was marked 'pass' when the following expected behaviour was produced via clickable link. A created user from every user type was logged out succesfully.
+Each link of the Logout Page was tested and was marked 'pass' when the following expected behaviour was produced. A created user from every user type was logged out succesfully.
 <br>
 
 * Can Access Home Page -- The user can access the home page from the logout page.
@@ -286,7 +286,7 @@ _Mobile Lighthouse Performance Testing Screenshot_
 <summary>
 Registration Page Testing</summary><br>
 
-Each Registration Page link was tested and was marked 'pass' when the following expected behaviour was produced via clickable link. A user of every user type was registered succesfully.
+Each link of the Registration Page was tested and was marked 'pass' when the following expected behaviour was produced. A user of every user type was registered succesfully.
 <br>
 
 * Can Access Home Page -- The user can access the home page from the registration page.
@@ -344,7 +344,7 @@ _Mobile Lighthouse Performance Testing Screenshot_
 <summary>
 404 Error Page Testing</summary><br>
 
-Each 404 Error Page link was tested and was marked 'pass' when the following expected behaviour was produced via clickable link.
+Each link of the 404 Error Page Testing was tested and was marked 'pass' when the following expected behaviour was produced.
 <br>
 
 * Can Access Home Page (both links) -- The user can access the home page from the 404 error page
@@ -399,7 +399,7 @@ _Mobile Lighthouse Performance Testing Screenshot_
 <summary>
 500 Error Page Testing</summary><br>
 
-Each 500 Error Page link was tested and was marked 'pass' when the following expected behaviour was produced via clickable link.
+Each link of the 500 Error Page Testing was tested and was marked 'pass' when the following expected behaviour was produced.
 <br>
 
 * Can Access Home Page (both links) -- The user can access the home page from the 500 error page
@@ -456,7 +456,7 @@ _Mobile Lighthouse Performance Testing Screenshot_
 <summary>
 Delete Passport Page Testing</summary><br>
 
-Each Delete Passport page Page link was tested and was marked 'pass' when the following expected behaviour was produced via clickable link.
+Each link of the Delete Passport Page was tested and was marked 'pass' when the following expected behaviour was produced.
 <br>
 
 * Can Access Home Page -- The user can access the home page from the Delete Passport page
@@ -525,7 +525,7 @@ The SEO test score was lower here as the URL is not allowed to be crawled for se
 <summary>
 Delete Pupil Record Page Testing</summary><br>
 
-Each Delete Pupil Record page Page link was tested and was marked 'pass' when the following expected behaviour was produced via clickable link.
+Each link of the Delete Pupil Record Page was tested and was marked 'pass' when the following expected behaviour was produced.
 <br>
 
 * Can Access Home Page -- The user can access the home page from the Delete Pupil Record page.
@@ -583,8 +583,7 @@ The SEO test score was lower here as the URL is not allowed to be crawled for se
 <summary>
 Enrolled Pupil List Page Testing</summary><br>
 
-
-The Enrolled Pupil List Page link was tested and was marked 'pass' when the following expected behaviour was produced via clickable link.
+Each link of the Enrolled Pupil List Page was tested and was marked 'pass' when the following expected behaviour was produced.
 <br>
 
 * Can Access Home Page -- The user can access the home page from the Enrolled Pupil List page. 
@@ -648,9 +647,65 @@ _Mobile Lighthouse Performance Testing Screenshot_
 
 <br>
 </details>
+<details>
+
+<summary>
+Enrolled Pupil Record Page Testing</summary><br>
+
+Each link of the Enrolled Pupil Record Page was tested and was marked 'pass' when the following expected behaviour was produced.
+<br>
+
+* Can Access Home Page -- The user can access the home page from the Enrolled Pupil Record Page. 
+
+* Can Access About Page  -- The user can access the about page from the Enrolled Pupil Record Page.
+
+* Can Access Logout Page - user can access Logout page from the Enrolled Pupil Record Page.
+
+* Can Access User list - user can access list page dedicated to their user type.
+
+* Can Access Edit Pupil record - user can access edit pupil record page via link.
+
+* Can Access Delete Pupil record - user can access delete pupil record page via link.
+
+* Can open footer links -- Footer links open in a new tab.
+
+
+| Logged in as | Can Access Logout | Can Access Home Page | Can Access About Page | Can Access User List | Can Access Edit Pupil Record | Can Access Delete Record Page | Can Open Footer Links (new tab) |
+|--------------|-------------------|----------------------|-----------------------|----------------------|------------------------------|-------------------------------|---------------------------------|
+| School Admin | yes/pass          | yes/pass             | yes/pass              | yes/pass             | yes/pass                     | yes/pass                      | yes/pass                        |
 
 <br>
 
+The Enrolled Pupil Record Page validator testing.
+
+The Enrolled Pupil Record page source code. was passed through the W3C HTML Validator and returned no errors.
+
+<img src="../docs/testing_images/testing_val_46.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+
+The Enrolled Pupil Record page was passed through the Jigsaw CSS validator and returned no errors.
+
+<img src="../docs/testing_images/testing_val_47.png"><br>
+_W3C Jigsaw CSS Validator Testing Screenshot_
+
+The Enrolled Pupil Record page was passed through the WCAG Color contrast checker and returned no contrast errors.
+
+<img src="../docs/testing_images/testing_val_48.png"><br>
+_WCAG Validator Testing Screenshot_
+
+The Enrolled Pupil Record page was passed through Lighthouse and returned the following performance results:
+
+<img src="../docs/testing_images/testing_val_49.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/testing_val_50.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
+
+<br>
+</details>
+
+<br>
 
 ## Bugs
 
@@ -762,7 +817,6 @@ _404 Passport Bug Screenshot_
 I fixed this by adding the missing symbol.
 
 <br>
-
 
 ### JavaScript Testing
 

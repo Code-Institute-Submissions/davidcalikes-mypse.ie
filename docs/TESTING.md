@@ -451,6 +451,125 @@ _Mobile Lighthouse Performance Testing Screenshot_
 <br>
 </details>
 
+<details>
+
+<summary>
+Delete Passport Page Testing</summary><br>
+
+Each Delete Passport page Page link was tested and was marked 'pass' when the following expected behaviour was produced via clickable link.
+<br>
+
+* Can Access Home Page -- The user can access the home page from the Delete Passport page
+
+* Can Access About Page  -- The user can access the about page from the Delete Passport page
+
+* Can Access Login Page (if logged out)  -- The user can access the login page from the Delete Passport page
+
+* Can Access Logout Page - user can access Logout page from the Delete Passport page
+
+* Can Access Registration Page - user can access registration page from the Delete Passport page
+
+* Can Access user list - user can access list page dedicated to their user type.
+
+* Can Delete Passport - user can delete passport and is returned to list view.
+
+* Can return to passport - user can go back to passport without deleting passport by pressing go back.
+
+* Can open footer links -- Footer links open in a new tab.
+
+<br>
+
+| User Status  | Can Access Home Page (both links) | Can Access About Page | Can Access Login Page (if logged in)  | Can Access Logout Page (if logged) | Can Access Registration Page (If Logged Out) | Can Access User List (if logged in | Can Delete Passport | Can Return To Passport | Can Open Footer Links (new tab) |
+|--------------|-----------------------------------|-----------------------|---------------------------------------|------------------------------------|----------------------------------------------|------------------------------------|---------------------|------------------------|---------------------------------|
+| Pupil/Parent | yes/pass                          | yes/pass              | yes/pass                              | yes/pass                           | yes/pass                                     | Yes/Pass                           | yes/pass            | yes/pass               | yes/pass                        |pass                                     | Yes/Pass                           | yes/pass                        |
+
+<br>
+
+Delete Passport page validator testing.
+
+Because The Delete Passport page cannot be accessed by W3c I passed the template code through the W3C HTML Validator and it returned no errors
+
+<img src="../docs/testing_images/testing_val_36.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+The Delete Passport page was passed through the Jigsaw CSS validator and returned no errors.
+
+<img src="../docs/testing_images/testing_val_37.png"><br>
+_W3C Jigsaw CSS Validator Testing Screenshot_
+
+The Delete Passport page was passed through the WCAG Color contrast checker and returned no contrast errors.
+
+<img src="../docs/testing_images/testing_val_38.png"><br>
+_WGAC Validator Testing Screenshot_
+
+The Delete Passport page was passed through Lighthouse and returned the following performance results:
+
+<img src="../docs/testing_images/testing_val_39.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/testing_val_40.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
+<br>
+</details>
+
+<details>
+
+<summary>
+Delete Pupil Record Page Testing</summary><br>
+
+Each Delete Pupil Record page Page link was tested and was marked 'pass' when the following expected behaviour was produced via clickable link.
+<br>
+
+* Can Access Home Page -- The user can access the home page from the Delete Pupil Record page.
+
+* Can Access About Page  -- The user can access the about page from the Delete Pupil Record page.
+
+* Can Access Login Page (if logged out)  -- The user can access the login page from the Delete Pupil Record page.
+
+* Can Access Logout Page - user can access Logout page from the Delete Pupil Record page.
+
+* Can Access Registration Page - user can access registration page from the Delete Pupil Record page.
+
+* Can Access User list - user can access list page dedicated to their user type.
+
+* Can Delete Pupil record - user can delete passport and is returned to list view.
+
+* Can return to Pupil Record - user can go back to passport without deleting pupil record by pressing go back.
+
+* Can open footer links -- Footer links open in a new tab.
+
+<br>
+
+
+
+<br>
+
+Delete Pupil Record page. validator testing.
+
+The Delete Pupil Record page. was passed through the W3C HTML Validator and returned no errors
+
+<img src="../docs/testing_images/testing_val_36.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+The Delete Pupil Record page. page was passed through the Jigsaw CSS validator and returned no errors.
+
+<img src="../docs/testing_images/testing_val_37.png"><br>
+_W3C Jigsaw CSS Validator Testing Screenshot_
+
+The Delete Pupil Record page. page was passed through the WCAG Color contrast checker and returned no contrast errors.
+
+<img src="../docs/testing_images/testing_val_38.png"><br>
+_WGAC Validator Testing Screenshot_
+
+The Delete Pupil Record page. page was passed through Lighthouse and returned the following performance results:
+
+<img src="../docs/testing_images/testing_val_39.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/testing_val_40.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
+<br>
+</details>
 
 <br>
 

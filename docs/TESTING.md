@@ -361,7 +361,7 @@ Each 404 Error Page link was tested and was marked 'pass' when the following exp
 
 * Can open footer links -- Footer links open in a new tab.
 
-| User Status | Can Access Home Page (both links) | Can Access About Page | Can Access Login Page (if logged in)  | Can Access Logout Page (if logged) | Can Access Registration Page (If Logged Out) | Can Access User List (if logged in | Can Open Footer Links (new tab) |
+| User Status | Can Access Home Page (both links) | Can Access About Page | Can Access Login Page (if logged out)  | Can Access Logout Page (if logged in) | Can Access Registration Page (If Logged Out) | Can Access User List (if logged in | Can Open Footer Links (new tab) |
 |-------------|-----------------------------------|-----------------------|---------------------------------------|------------------------------------|----------------------------------------------|------------------------------------|---------------------------------|
 | Any         | yes/pass                          | yes/pass              | yes/pass                              | yes/pass                           | yes/pass                                     | Yes/Pass                           | yes/pass                        |
 
@@ -418,7 +418,7 @@ Each 500 Error Page link was tested and was marked 'pass' when the following exp
 
 <br>
 
-| User Status | Can Access Home Page (both links) | Can Access About Page | Can Access Login Page (if logged in)  | Can Access Logout Page (if logged) | Can Access Registration Page (If Logged Out) | Can Access User List (if logged in | Can Open Footer Links (new tab) |
+| User Status | Can Access Home Page (both links) | Can Access About Page | Can Access Login Page (if logged out)  | Can Access Logout Page (if logged in) | Can Access Registration Page (If Logged Out) | Can Access User List (if logged in | Can Open Footer Links (new tab) |
 |-------------|-----------------------------------|-----------------------|---------------------------------------|------------------------------------|----------------------------------------------|------------------------------------|---------------------------------|
 | Any         | yes/pass                          | yes/pass              | yes/pass                              | yes/pass                           | yes/pass                                     | Yes/Pass                           | yes/pass                        |
 
@@ -475,7 +475,7 @@ Each Delete Passport page Page link was tested and was marked 'pass' when the fo
 
 <br>
 
-| User Status  | Can Access Home Page (both links) | Can Access About Page | Can Access Login Page (if logged in)  | Can Access User List (if logged in | Can Delete Passport | Can Return To Passport | Can Open Footer Links (new tab) |
+| User Status  | Can Access Home Page (both links) | Can Access About Page | Can Access Login Page (if logged out)  | Can Access User List (if logged in | Can Delete Passport | Can Return To Passport | Can Open Footer Links (new tab) |
 |--------------|-----------------------------------|-----------------------|---------------------------------------|------------------------------------|---------------------|------------------------|---------------------------------|
 | Pupil/Parent | yes/pass                          | yes/pass              | yes/pass                              | Yes/Pass                           | yes/pass            | yes/pass               | yes/pass                        |
 
@@ -536,13 +536,13 @@ Each Delete Pupil Record page Page link was tested and was marked 'pass' when th
 
 * Can Access User list - user can access list page dedicated to their user type.
 
-* Can Delete Pupil record - user can delete passport and is returned to list view.
+* Can Delete Pupil record - user can delete pupil record and is returned to list view.
 
-* Can return to Pupil Record - user can go back to passport without deleting pupil record by pressing go back.
+* Can return to Pupil Record - user can go back to pupil record without deleting pupil record by pressing go back.
 
 * Can open footer links -- Footer links open in a new tab.
 
-| User Status  | Can Access Home Page (both links) | Can Access About Page | Can Access Login Page (if logged in)  | Can Access User List (if logged in | Can Delete Passport | Can Return To Passport | Can Open Footer Links (new tab) |
+| User Status  | Can Access Home Page (both links) | Can Access About Page | Can Access Login Page (if logged out)  | Can Access User List (if logged in | Can Delete Passport | Can Return To Passport | Can Open Footer Links (new tab) |
 |--------------|-----------------------------------|-----------------------|---------------------------------------|------------------------------------|---------------------|------------------------|---------------------------------|
 | School Admin | yes/pass                          | yes/pass              | yes/pass                              | Yes/Pass                           | yes/pass            | yes/pass               | yes/pass                        |
 
@@ -556,17 +556,77 @@ The Delete Pupil Record page source code. was passed through the W3C HTML Valida
 _W3C HTML Validator Testing Screenshot_ 
 
 
-The Delete Pupil Record page. page was passed through the Jigsaw CSS validator and returned no errors.
+The Delete Pupil Record page was passed through the Jigsaw CSS validator and returned no errors.
 
 <img src="../docs/testing_images/testing_val_42.png"><br>
 _W3C Jigsaw CSS Validator Testing Screenshot_
 
-The Delete Pupil Record page. page was passed through the WCAG Color contrast checker and returned no contrast errors.
+The Delete Pupil Record page was passed through the WCAG Color contrast checker and returned no contrast errors.
 
 <img src="../docs/testing_images/testing_val_43.png"><br>
 _WGAC Validator Testing Screenshot_
 
-The Delete Pupil Record page. page was passed through Lighthouse and returned the following performance results:
+The Delete Pupil Record page was passed through Lighthouse and returned the following performance results:
+
+<img src="../docs/testing_images/testing_val_44.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/testing_val_45.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
+
+The SEO test score was lower here as the URL is not allowed to be crawled for security purposes.
+<br>
+
+</details>
+<details>
+
+<summary>
+Enrolled Pupil List Page Testing</summary><br>
+
+
+The Enrolled Pupil List Page link was tested and was marked 'pass' when the following expected behaviour was produced via clickable link.
+<br>
+
+* Can Access Home Page -- The user can access the home page from the Enrolled Pupil List page. 
+
+* Can Access About Page  -- The user can access the about page from the Enrolled Pupil List page.
+
+* Can Access Logout Page - user can access Logout page from the Enrolled Pupil List page.
+
+* Can Access User list - user can access list page dedicated to their user type.
+
+* Can Access Pupil record - user can access pupil record via link.
+
+* Can Download Printable PDF  - user can download form via link.
+
+* Can open footer links -- Footer links open in a new tab.
+
+
+| Logged in as | Can Access Logout | Can Access Home Page | Can Access About Page | Can Access User List | Can Access Pupil Record | Can Download PDF | Can Open Footer Links (new tab) |
+|--------------|-------------------|----------------------|-----------------------|----------------------|-------------------------|------------------|---------------------------------|
+| School Admin | yes/pass          | yes/pass             | yes/pass              | yes/pass             | yes/pass                | yes/pass         | yes/pass                        |
+
+<br>
+
+The Enrolled Pupil List validator testing.
+
+The Enrolled Pupil List page source code. was passed through the W3C HTML Validator and returned no errors.
+
+<img src="../docs/testing_images/testing_val_41.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+
+The Enrolled Pupil List page was passed through the Jigsaw CSS validator and returned no errors.
+
+<img src="../docs/testing_images/testing_val_42.png"><br>
+_W3C Jigsaw CSS Validator Testing Screenshot_
+
+The Enrolled Pupil List page was passed through the WCAG Color contrast checker and returned no contrast errors.
+
+<img src="../docs/testing_images/testing_val_43.png"><br>
+_WGAC Validator Testing Screenshot_
+
+The Enrolled Pupil List page was passed through Lighthouse and returned the following performance results:
 
 <img src="../docs/testing_images/testing_val_44.png"><br>
 _Desktop Lighthouse Performance Testing Screenshot_

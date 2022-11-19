@@ -4,7 +4,7 @@
 
 ### User Story Tests
 
-I tested each of my user stories by adding an acceptance criteria to each card of each of the four sprint boards I created as part of the Agile planning process. 
+I tested each of my user stories by adding acceptance criteria to each card of each of the four sprint boards I created as part of the [AGILE](../docs/AGILE.md) planning process. 
 
 No story could move to the 'done' column of each Kanban board unless all tasks had been completed and the criteria had been met.
 
@@ -20,7 +20,7 @@ All of the user story acceptance criteria can be inspected via the four Sprint b
 
 ## Manual Testing
 
-Each page, feature and link of the application has been rigorously tested.
+Each page, feature and link of the application has been tested.
 I have used dropdown menus for each page to make the documentation more human readable.
 
 <details>
@@ -675,7 +675,6 @@ Each link of the Enrolled Pupil Record Page was tested and was marked 'pass' whe
 | School Admin | yes/pass          | yes/pass             | yes/pass              | yes/pass             | yes/pass                     | yes/pass                      | yes/pass                        |
 
 <br>
-
 The Enrolled Pupil Record Page validator testing.
 
 The Enrolled Pupil Record page source code. was passed through the W3C HTML Validator and returned no errors.

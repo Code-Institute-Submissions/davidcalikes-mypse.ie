@@ -704,6 +704,62 @@ _Mobile Lighthouse Performance Testing Screenshot_
 <br>
 </details>
 
+<details>
+
+<summary>
+Add Pupil Record Page Testing</summary><br>
+
+Each link of the Add Pupil Record Page was tested and was marked 'pass' when the following expected behaviour was produced.
+<br>
+
+* Can Access Home Page -- The user can access the home page from the Add Pupil Record Page. 
+
+* Can Access About Page  -- The user can access the about page from the Add Pupil Record Page.
+
+* Can Access Logout Page - user can access Logout page from the Add Pupil Record Page.
+
+* Can Access User list - user can access list page dedicated to their user type.
+
+* Can Submit Pupil record - user can submit pupil record via form.
+
+* Can Cancel without Submit - user can cancel without submitting the form and is returned to the Pupil List Page.
+
+* Can open footer links -- Footer links open in a new tab.
+
+| Logged in as | Can Access Logout | Can Access Home Page | Can Access About Page | Can Access User List | Can Access Submit Pupil Record | Can Cancel without Sumbit | Can Open Footer Links (new tab) |
+|--------------|-------------------|----------------------|-----------------------|----------------------|--------------------------------|---------------------------|---------------------------------|
+| School Admin | yes/pass          | yes/pass             | yes/pass              | yes/pass             | yes/pass                       | yes/pass                  | yes/pass                        |
+
+<br>
+The Add Pupil Record Page validator testing.
+
+The Add Pupil Record page source code. was passed through the W3C HTML Validator and returned no errors.
+
+<img src="../docs/testing_images/testing_val_51.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+
+The Add Pupil Record page was passed through the Jigsaw CSS validator and returned no errors.
+
+<img src="../docs/testing_images/testing_val_52.png"><br>
+_W3C Jigsaw CSS Validator Testing Screenshot_
+
+The Add Pupil Record page was passed through the WCAG Color contrast checker and returned no contrast errors.
+
+<img src="../docs/testing_images/testing_val_53.png"><br>
+_WCAG Validator Testing Screenshot_
+
+The Add Pupil Record page was passed through Lighthouse and returned the following performance results:
+
+<img src="../docs/testing_images/testing_val_54.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/testing_val_55.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
+<br>
+
+</details>
+
 <br>
 
 ## Bugs

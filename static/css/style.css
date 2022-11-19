@@ -294,7 +294,11 @@ footer a {
     justify-content: space-evenly;
     background-color: #0B5657;
     padding: 1rem;
+    padding-bottom: 2rem;
     border-radius: 4px;
+    margin-top: 1rem;
+    width: 64%;
+    margin-left: 18%;
 }
 
 h1,
@@ -740,6 +744,11 @@ width: 92%;
     }
 
     .form-text-row {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .form-center {
         width: 90%;
         margin-left: 5%;
     }

@@ -73,7 +73,7 @@ _W3C Jigsaw CSS Validator Testing Screenshot_
 The Home page was passed through the WCAG Color contrast checker and returned no contrast errors.
 
 <img src="../docs/testing_images/testing_val_3.png"><br>
-_WGAC Validator Testing Screenshot_
+_WCAG Validator Testing Screenshot_
 
 The Home Page was passed through Lighthouse and returned the following performance results:
 
@@ -137,7 +137,7 @@ _W3C Jigsaw CSS Validator Testing Screenshot_
 The About page was passed through the WCAG Color contrast checker and returned no contrast errors.
 
 <img src="../docs/testing_images/testing_val_8.png"><br>
-_WGAC Validator Testing Screenshot_
+_WCAG Validator Testing Screenshot_
 
 The About Page was passed through Lighthouse and returned the following performance results:
 
@@ -200,7 +200,7 @@ _W3C Jigsaw CSS Validator Testing Screenshot_
 The Login page was passed through the WCAG Color contrast checker and returned no contrast errors.
 
 <img src="../docs/testing_images/testing_val_13.png"><br>
-_WGAC Validator Testing Screenshot_
+_WCAG Validator Testing Screenshot_
 
 The Login Page was passed through Lighthouse and returned the following performance results:
 
@@ -268,7 +268,7 @@ _W3C Jigsaw CSS Validator Testing Screenshot_
 The Logout page was passed through the WCAG Color contrast checker and returned no contrast errors.
 
 <img src="../docs/testing_images/testing_val_18.png"><br>
-_WGAC Validator Testing Screenshot_
+_WCAG Validator Testing Screenshot_
 
 The Logout Page was passed through Lighthouse and returned the following performance results:
 
@@ -327,7 +327,7 @@ _W3C Jigsaw CSS Validator Testing Screenshot_
 The Registration page was passed through the WCAG Color contrast checker and returned no contrast errors.
 
 <img src="../docs/testing_images/testing_val_23.png"><br>
-_WGAC Validator Testing Screenshot_
+_WCAG Validator Testing Screenshot_
 
 The Registration Page was passed through Lighthouse and returned the following performance results:
 
@@ -382,7 +382,7 @@ _W3C Jigsaw CSS Validator Testing Screenshot_
 The 404 error page was passed through the WCAG Color contrast checker and returned no contrast errors.
 
 <img src="../docs/testing_images/testing_val_28.png"><br>
-_WGAC Validator Testing Screenshot_
+_WCAG Validator Testing Screenshot_
 
 The 404 error page was passed through Lighthouse and returned the following performance results:
 
@@ -439,7 +439,7 @@ _W3C Jigsaw CSS Validator Testing Screenshot_
 The 500 error page was passed through the WCAG Color contrast checker and returned no contrast errors.
 
 <img src="../docs/testing_images/testing_val_33.png"><br>
-_WGAC Validator Testing Screenshot_
+_WCAG Validator Testing Screenshot_
 
 The 500 error page was passed through Lighthouse and returned the following performance results:
 
@@ -506,7 +506,7 @@ _W3C Jigsaw CSS Validator Testing Screenshot_
 The Delete Passport page was passed through the WCAG Color contrast checker and returned no contrast errors.
 
 <img src="../docs/testing_images/testing_val_38.png"><br>
-_WGAC Validator Testing Screenshot_
+_WCAG Validator Testing Screenshot_
 
 The Delete Passport page was passed through Lighthouse and returned the following performance results:
 
@@ -564,7 +564,7 @@ _W3C Jigsaw CSS Validator Testing Screenshot_
 The Delete Pupil Record page was passed through the WCAG Color contrast checker and returned no contrast errors.
 
 <img src="../docs/testing_images/testing_val_43.png"><br>
-_WGAC Validator Testing Screenshot_
+_WCAG Validator Testing Screenshot_
 
 The Delete Pupil Record page was passed through Lighthouse and returned the following performance results:
 
@@ -612,29 +612,40 @@ The Enrolled Pupil List validator testing.
 
 The Enrolled Pupil List page source code. was passed through the W3C HTML Validator and returned no errors.
 
-<img src="../docs/testing_images/testing_val_41.png"><br>
+<img src="../docs/testing_images/testing_val_46.png"><br>
 _W3C HTML Validator Testing Screenshot_ 
 
 
 The Enrolled Pupil List page was passed through the Jigsaw CSS validator and returned no errors.
 
-<img src="../docs/testing_images/testing_val_42.png"><br>
+<img src="../docs/testing_images/testing_val_47.png"><br>
 _W3C Jigsaw CSS Validator Testing Screenshot_
 
 The Enrolled Pupil List page was passed through the WCAG Color contrast checker and returned no contrast errors.
 
-<img src="../docs/testing_images/testing_val_43.png"><br>
-_WGAC Validator Testing Screenshot_
+<img src="../docs/testing_images/testing_val_48.png"><br>
+_WCAG Validator Testing Screenshot_
 
 The Enrolled Pupil List page was passed through Lighthouse and returned the following performance results:
 
-<img src="../docs/testing_images/testing_val_44.png"><br>
+<img src="../docs/testing_images/testing_val_49_error.png"><br>
 _Desktop Lighthouse Performance Testing Screenshot_
 
-<img src="../docs/testing_images/testing_val_45.png"><br>
+The SEO was affected by a poor link decription.
+
+<img src="../docs/testing_images/testing_val_49_fix.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+I changed the link description to the following.
+
+<img src="../docs/testing_images/testing_val_49.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+The SEO was optimal after I fixed the error.
+
+<img src="../docs/testing_images/testing_val_50.png"><br>
 _Mobile Lighthouse Performance Testing Screenshot_
 
-The SEO test score was lower here as the URL is not allowed to be crawled for security purposes.
 <br>
 </details>
 

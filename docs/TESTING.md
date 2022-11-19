@@ -39,7 +39,7 @@ Each Home Page link was tested for each user type and was marked 'pass' when the
 
 * Can Access Logout Page -- The user can access the logout page via the nav bar.
 
-* Card Links -- The user is redirected to the login page if not authenticated or redirected to correct landing page for user type if authenticated if login card link is clicked. The user can access the about page from the about card link.
+* Card Links -- The user is redirected to the login page if not authenticated or redirected to correct landing page for user type if authenticated when login card link is clicked. The user can access the about page from the about card link.
 
 * Can open footer links -- Footer links open in a new tab.
 
@@ -276,9 +276,11 @@ _Mobile Lighthouse Performance Testing Screenshot_
 <br>
 
 </details>
-<br>
 
-Registration Page Testing
+<details>
+
+<summary>
+Registration Page Testing</summary><br>
 
 Each Registration Page link was tested and was marked 'pass' when the following expected behaviour was produced via clickable link. A user of every user type was registered succesfully.
 <br>
@@ -308,26 +310,29 @@ Rsgistration page validator testing.
 
 The Registration page was passed through the W3C HTML Validator and returned no errors
 
-<img src="../docs/testing_images/testing_val_16.png"><br>
+<img src="../docs/testing_images/testing_val_21.png"><br>
 _W3C HTML Validator Testing Screenshot_ 
 
 The Registration page was passed through the Jigsaw CSS validator and returned no errors.
 
-<img src="../docs/testing_images/testing_val_17.png"><br>
+<img src="../docs/testing_images/testing_val_22.png"><br>
 _W3C Jigsaw CSS Validator Testing Screenshot_
 
 The Registration page was passed through the WCAG Color contrast checker and returned no contrast errors.
 
-<img src="../docs/testing_images/testing_val_18.png"><br>
+<img src="../docs/testing_images/testing_val_23.png"><br>
 _WGAC Validator Testing Screenshot_
 
 The Ragistration Page was passed through Lighthouse and returned the following performance results:
 
-<img src="../docs/testing_images/testing_val_19.png"><br>
+<img src="../docs/testing_images/testing_val_24.png"><br>
 _Desktop Lighthouse Performance Testing Screenshot_
 
-<img src="../docs/testing_images/testing_val_20.png"><br>
+<img src="../docs/testing_images/testing_val_25.png"><br>
 _Mobile Lighthouse Performance Testing Screenshot_
+<br>
+</details>
+
 <br>
 
 

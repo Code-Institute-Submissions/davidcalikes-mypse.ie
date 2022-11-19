@@ -323,6 +323,13 @@ class PupilCheck(PageTitleMixin, LoginRequiredMixin, generic.ListView):
             created_by=self.request.user
         )
 
+class TestView(generic.TemplateView):
+    """
+    Displays 500 error page when URL is typed
+    """
+    template_name = '500.html'
+    page_title = "MyPSE.ie - Home"
+
 
 def LoginSuccess(request):
     """

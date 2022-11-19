@@ -4,6 +4,7 @@ from django.urls import path
 
 urlpatterns = [
     path("robots.txt", robots_txt),
+    path('test_view/', views.TestView.as_view(), name='test_view'),
     path('', views.HomePage.as_view(), name='home'),
     path('about/', views.AboutPage.as_view(), name='about'),
     path('learn_more/', views.LearnMorePage.as_view(), name='learn_more'),

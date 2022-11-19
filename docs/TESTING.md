@@ -394,6 +394,11 @@ _Mobile Lighthouse Performance Testing Screenshot_
 <br>
 </details>
 
+<details>
+
+<summary>
+500 Error Page Testing</summary><br>
+
 Each 500 Error Page link was tested and was marked 'pass' when the following expected behaviour was produced via clickable link.
 <br>
 
@@ -403,7 +408,7 @@ Each 500 Error Page link was tested and was marked 'pass' when the following exp
 
 * Can Access Login Page (if logged out)  -- The user can access the login page from the 500 error page
 
-* Can Access Logout Page - user can access Logout page from the 404 error page
+* Can Access Logout Page - user can access Logout page from the 500 error page
 
 * Can Access Registration Page - user can access registration page from the 500 error page
 
@@ -423,25 +428,25 @@ Each 500 Error Page link was tested and was marked 'pass' when the following exp
 
 The 500 error page was passed through the W3C HTML Validator and returned no errors
 
-<img src="../docs/testing_images/testing_val_26.png"><br>
+<img src="../docs/testing_images/testing_val_31.png"><br>
 _W3C HTML Validator Testing Screenshot_ 
 
-The 404 error page was passed through the Jigsaw CSS validator and returned no errors.
+The 500 error page was passed through the Jigsaw CSS validator and returned no errors.
 
-<img src="../docs/testing_images/testing_val_27.png"><br>
+<img src="../docs/testing_images/testing_val_32.png"><br>
 _W3C Jigsaw CSS Validator Testing Screenshot_
 
-The 404 error page was passed through the WCAG Color contrast checker and returned no contrast errors.
+The 500 error page was passed through the WCAG Color contrast checker and returned no contrast errors.
 
-<img src="../docs/testing_images/testing_val_28.png"><br>
+<img src="../docs/testing_images/testing_val_33.png"><br>
 _WGAC Validator Testing Screenshot_
 
-The 404 error page was passed through Lighthouse and returned the following performance results:
+The 500 error page was passed through Lighthouse and returned the following performance results:
 
-<img src="../docs/testing_images/testing_val_29.png"><br>
+<img src="../docs/testing_images/testing_val_34.png"><br>
 _Desktop Lighthouse Performance Testing Screenshot_
 
-<img src="../docs/testing_images/testing_val_30.png"><br>
+<img src="../docs/testing_images/testing_val_35.png"><br>
 _Mobile Lighthouse Performance Testing Screenshot_
 <br>
 </details>

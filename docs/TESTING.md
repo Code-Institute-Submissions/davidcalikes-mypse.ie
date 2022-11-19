@@ -344,7 +344,7 @@ _Mobile Lighthouse Performance Testing Screenshot_
 <summary>
 404 Error Page Testing</summary><br>
 
-Each 404 Page link was tested and was marked 'pass' when the following expected behaviour was produced via clickable link.
+Each 404 Error Page link was tested and was marked 'pass' when the following expected behaviour was produced via clickable link.
 <br>
 
 * Can Access Home Page (both links) -- The user can access the home page from the 404 error page
@@ -370,6 +370,58 @@ Each 404 Page link was tested and was marked 'pass' when the following expected 
 404 error page validator testing.
 
 The 404 error page was passed through the W3C HTML Validator and returned no errors
+
+<img src="../docs/testing_images/testing_val_26.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+The 404 error page was passed through the Jigsaw CSS validator and returned no errors.
+
+<img src="../docs/testing_images/testing_val_27.png"><br>
+_W3C Jigsaw CSS Validator Testing Screenshot_
+
+The 404 error page was passed through the WCAG Color contrast checker and returned no contrast errors.
+
+<img src="../docs/testing_images/testing_val_28.png"><br>
+_WGAC Validator Testing Screenshot_
+
+The 404 error page was passed through Lighthouse and returned the following performance results:
+
+<img src="../docs/testing_images/testing_val_29.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/testing_val_30.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
+<br>
+</details>
+
+Each 500 Error Page link was tested and was marked 'pass' when the following expected behaviour was produced via clickable link.
+<br>
+
+* Can Access Home Page (both links) -- The user can access the home page from the 500 error page
+
+* Can Access About Page  -- The user can access the about page from the 500 error page
+
+* Can Access Login Page (if logged out)  -- The user can access the login page from the 500 error page
+
+* Can Access Logout Page - user can access Logout page from the 404 error page
+
+* Can Access Registration Page - user can access registration page from the 500 error page
+
+* Can Access user list - user can access list page dedicated to their user type.
+
+* Can open footer links -- Footer links open in a new tab.
+
+<br>
+
+| User Status | Can Access Home Page (both links) | Can Access About Page | Can Access Login Page (if logged in)  | Can Access Logout Page (if logged) | Can Access Registration Page (If Logged Out) | Can Access User List (if logged in | Can Open Footer Links (new tab) |
+|-------------|-----------------------------------|-----------------------|---------------------------------------|------------------------------------|----------------------------------------------|------------------------------------|---------------------------------|
+| Any         | yes/pass                          | yes/pass              | yes/pass                              | yes/pass                           | yes/pass                                     | Yes/Pass                           | yes/pass                        |
+
+<br>
+
+500 error page validator testing.
+
+The 500 error page was passed through the W3C HTML Validator and returned no errors
 
 <img src="../docs/testing_images/testing_val_26.png"><br>
 _W3C HTML Validator Testing Screenshot_ 

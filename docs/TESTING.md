@@ -305,6 +305,8 @@ Each link of the Registration Page was tested and was marked 'pass' when the fol
 
 * User is redirected on login - user is redirected to list page dedicated to their user type.
 
+Below is the testing table for the Registration page.
+
 * Can open footer links -- Footer links open in a new tab.
 | Logged In As  | Can Access Home Page | Can Access About Page (both links) | Can Register As School | Can Register As Pupil  | Can Register As Parent | Can Register As Teacher | Can Access Login (both links) | Can Open Footer Links (new tab) |
 |---------------|----------------------|------------------------------------|------------------------|------------------------|------------------------|-------------------------|-------------------------------|---------------------------------|
@@ -361,6 +363,8 @@ Each link of the 404 Error Page Testing was tested and was marked 'pass' when th
 
 * Can open footer links -- Footer links open in a new tab.
 
+Below is the testing table for the 404 Error page.
+
 | User Status | Can Access Home Page (both links) | Can Access About Page | Can Access Login Page (if logged out)  | Can Access Logout Page (if logged in) | Can Access Registration Page (If Logged Out) | Can Access User List (if logged in | Can Open Footer Links (new tab) |
 |-------------|-----------------------------------|-----------------------|---------------------------------------|------------------------------------|----------------------------------------------|------------------------------------|---------------------------------|
 | Any         | yes/pass                          | yes/pass              | yes/pass                              | yes/pass                           | yes/pass                                     | Yes/Pass                           | yes/pass                        |
@@ -416,7 +420,7 @@ Each link of the 500 Error Page Testing was tested and was marked 'pass' when th
 
 * Can open footer links -- Footer links open in a new tab.
 
-<br>
+Below is the testing table for the 500 Error page.
 
 | User Status | Can Access Home Page (both links) | Can Access About Page | Can Access Login Page (if logged out)  | Can Access Logout Page (if logged in) | Can Access Registration Page (If Logged Out) | Can Access User List (if logged in | Can Open Footer Links (new tab) |
 |-------------|-----------------------------------|-----------------------|---------------------------------------|------------------------------------|----------------------------------------------|------------------------------------|---------------------------------|
@@ -473,7 +477,7 @@ Each link of the Delete Passport Page was tested and was marked 'pass' when the 
 
 * Can open footer links -- Footer links open in a new tab.
 
-<br>
+Below is the testing table for the Delete Passport page.
 
 | User Status  | Can Access Home Page (both links) | Can Access About Page | Can Access Login Page (if logged out)  | Can Access User List (if logged in | Can Delete Passport | Can Return To Passport | Can Open Footer Links (new tab) |
 |--------------|-----------------------------------|-----------------------|---------------------------------------|------------------------------------|---------------------|------------------------|---------------------------------|
@@ -542,6 +546,8 @@ Each link of the Delete Pupil Record Page was tested and was marked 'pass' when 
 
 * Can open footer links -- Footer links open in a new tab.
 
+Below is the testing table for the Delete Pupil Record page.
+
 | User Status  | Can Access Home Page (both links) | Can Access About Page | Can Access Login Page (if logged out)  | Can Access User List (if logged in | Can Delete Passport | Can Return To Passport | Can Open Footer Links (new tab) |
 |--------------|-----------------------------------|-----------------------|---------------------------------------|------------------------------------|---------------------|------------------------|---------------------------------|
 | School Admin | yes/pass                          | yes/pass              | yes/pass                              | Yes/Pass                           | yes/pass            | yes/pass               | yes/pass                        |
@@ -600,6 +606,7 @@ Each link of the Enrolled Pupil List Page was tested and was marked 'pass' when 
 
 * Can open footer links -- Footer links open in a new tab.
 
+Below is the testing table for the Enrolled Pupil List page.
 
 | Logged in as | Can Access Logout | Can Access Home Page | Can Access About Page | Can Access User List | Can Access Pupil Record | Can Download PDF | Can Open Footer Links (new tab) |
 |--------------|-------------------|----------------------|-----------------------|----------------------|-------------------------|------------------|---------------------------------|
@@ -669,6 +676,7 @@ Each link of the Enrolled Pupil Record Page was tested and was marked 'pass' whe
 
 * Can open footer links -- Footer links open in a new tab.
 
+Below is the testing table for the Enrolled Pupil Record page.
 
 | Logged in as | Can Access Logout | Can Access Home Page | Can Access About Page | Can Access User List | Can Access Edit Pupil Record | Can Access Delete Record Page | Can Open Footer Links (new tab) |
 |--------------|-------------------|----------------------|-----------------------|----------------------|------------------------------|-------------------------------|---------------------------------|
@@ -726,6 +734,8 @@ Each link of the Add Pupil Record Page was tested and was marked 'pass' when the
 
 * Can open footer links -- Footer links open in a new tab.
 
+Below is the testing table for the Add Pupil Record page.
+
 | Logged in as | Can Access Logout | Can Access Home Page | Can Access About Page | Can Access User List | Can Access Submit Pupil Record | Can Cancel without Sumbit | Can Open Footer Links (new tab) |
 |--------------|-------------------|----------------------|-----------------------|----------------------|--------------------------------|---------------------------|---------------------------------|
 | School Admin | yes/pass          | yes/pass             | yes/pass              | yes/pass             | yes/pass                       | yes/pass                  | yes/pass                        |
@@ -759,6 +769,63 @@ _Mobile Lighthouse Performance Testing Screenshot_
 <br>
 
 </details>
+
+Each link of the Learn More Page was tested and was marked 'pass' when the following expected behaviour was produced.
+<br>
+
+* Can Access Home Page -- The user can access the home page from the Learn More Page. 
+
+* Can Access About Page (both links)  -- The user can access the about page from the Learn More Page.
+
+* Can Access Logout Page - user can access Logout page from the Learn More Page.
+
+* Can Access User list - user can access list page dedicated to their user type.
+
+* Can Submit open NCSE link - user can open NCSE link in new tab.
+
+* Can open footer links -- Footer links open in a new tab.
+
+Below is the testing table for the Learn More page.
+
+| Logged in as  | Can Logout | Can Access Home Page | Can Access About Page (both links) | Can Open NCSE Link (new tab) | Can Access User List | Can Open Footer Links (new tab) |
+|---------------|------------|----------------------|------------------------------------|------------------------------|----------------------|---------------------------------|
+| Not Logged In | n/a        | yes/pass             | yes/pass                           | yes/pass                     | n/a                  | yes/pass                        |
+| Admin         | yes/pass   | yes/pass             | yes/pass                           | yes/pass                     | no/pass              | yes/pass                        |
+| School        | yes/pass   | yes/pass             | yes/pass                           | yes/pass                     | yes/pass             | yes/pass                        |
+| Pupil         | yes/pass   | yes/pass             | yes/pass                           | yes/pass                     | yes/pass             | yes/pass                        |
+| Parent        | yes/pass   | yes/pass             | yes/pass                           | yes/pass                     | yes/pass             | yes/pass                        |
+| Teacher       | yes/pass   | yes/pass             | yes/pass                           | yes/pass                     | yes/pass             | yes/pass                        |
+
+
+<br>
+The Learn More Page validator testing.
+
+The Learn More page source code. was passed through the W3C HTML Validator and returned no errors.
+
+<img src="../docs/testing_images/testing_val_51.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+
+The Learn More page was passed through the Jigsaw CSS validator and returned no errors.
+
+<img src="../docs/testing_images/testing_val_52.png"><br>
+_W3C Jigsaw CSS Validator Testing Screenshot_
+
+The Learn More page was passed through the WCAG Color contrast checker and returned no contrast errors.
+
+<img src="../docs/testing_images/testing_val_53.png"><br>
+_WCAG Validator Testing Screenshot_
+
+The Learn More page was passed through Lighthouse and returned the following performance results:
+
+<img src="../docs/testing_images/testing_val_54.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/testing_val_55.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
+<br>
+
+
 
 <br>
 

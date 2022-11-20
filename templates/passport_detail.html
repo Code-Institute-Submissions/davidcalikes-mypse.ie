@@ -5,7 +5,7 @@
     <body onload="applyId();">
         <div class="container passport-container">
             <div class="row">
-            {% if "passport_list" in request.META.HTTP_REFERER or "pupil_check" in request.META.HTTP_REFERER or "delete" in request.META.HTTP_REFERER or "passport_detail" in request.META.HTTP_REFERER %}
+            {% if "passport_list" in request.META.HTTP_REFERER or "pupil_check" in request.META.HTTP_REFERER or "delete" in request.META.HTTP_REFERER or "lighthouse" in request.META.HTTP_REFERER %}
                 {% if user.is_authenticated and user.role == "parent" or "pupil" %}
                     {% if passport.created_by|stringformat:'s' == user|stringformat:'s' %}  
                     <p class="pupil-id-text" id="set-edit-pupil-id">{{ passport.pupil_id  }}</p>  

@@ -654,6 +654,11 @@ width: 92%;
     padding-top: 0.5rem;
 }
 
+.passport-card-icon {
+    color: #0B5657;
+    font-size: x-large;
+}
+
 .passport-underscore {
     text-align: center;
     color: #9500a0;

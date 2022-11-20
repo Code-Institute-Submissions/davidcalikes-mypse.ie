@@ -13,9 +13,9 @@
                         <div class="col-md-6 vert-center">
                             {% if "placeholder" in passport.my_passport_image.url %}
                             <img class="passport-item"
-                                src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667941288/fillers/flag_u3b6l1.png">
+                                src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667941288/fillers/flag_u3b6l1.png" alt="placeholder image">
                             {% else %}
-                            <img class="passport-item" src=" {{ passport.my_passport_image.url }}">
+                            <img class="passport-item" src=" {{ passport.my_passport_image.url }}" alt="passport image">
                             {% endif %}
                         </div>
                         <div class="col-md-6">
@@ -24,16 +24,16 @@
                                 <h4 class="passport-details-underscore"> ------------------- </h4>
                             
                                 <div class="passport-info-item-box">
-                                    <h5 class="passport-info-text"><i class="fa fa-calendar" aria-hidden="true"></i><span></span>
-                                    My Date of Birth:</h5> <h4 class="passport-info-data">{{ passport.my_date_of_birth }}</h4>
+                                    <h4 class="passport-info-text"><i class="fa fa-calendar" aria-hidden="true"></i><span></span>
+                                    My Date of Birth:</h4> <h4 class="passport-info-data">{{ passport.my_date_of_birth }}</h4>
                                 </div>
                                 <div class="passport-info-item-box">
-                                    <h5 class="passport-info-text"><i class="fa fa-user" aria-hidden="true"></i><span></span>
-                                    My Emergency Contact Person:</h5> <h4 class="passport-info-data"> {{ passport.my_emergency_contact_name }}</h4>
+                                    <h4 class="passport-info-text"><i class="fa fa-user" aria-hidden="true"></i><span></span>
+                                    My Emergency Contact Person:</h4> <h4 class="passport-info-data"> {{ passport.my_emergency_contact_name }}</h4>
                                 </div>
                                 <div class="passport-info-item-box">
-                                    <h5 class="passport-info-text"><i class="fa fa-phone-square fa-flip-horizontal" aria-hidden="true"></i><span></span>
-                                    My Emergency Contact Number:</h5> <h4 class="passport-info-data">{{ passport.my_emergency_contact_number}}</h4>
+                                    <h4 class="passport-info-text"><i class="fa fa-phone-square fa-flip-horizontal" aria-hidden="true"></i><span></span>
+                                    My Emergency Contact Number:</h4> <h4 class="passport-info-data">{{ passport.my_emergency_contact_number}}</h4>
                                     </div>
                             </div>
                         </div>
@@ -70,11 +70,11 @@
                         <div class="passport-card">
                                 {% if "placeholder" in passport.my_family_image.url %}
                                 <img class="passport-item"
-                                    src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667941290/fillers/family_z0n6ze.png">
+                                    src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667941290/fillers/family_z0n6ze.png" alt="placeholder image">
                                 {% else %}
-                                <img class="passport-item" src=" {{ passport.my_family_image.url }}">
+                                <img class="passport-item" src=" {{ passport.my_family_image.url }}" alt="family image">
                                 {% endif %}
-                            <h5>My Family Photo</h5>
+                            <h4>My Family Photo</h4>
                         </div>
                     </div>
 
@@ -82,11 +82,11 @@
                         <div class="passport-card">
                                 {% if "placeholder" in passport.my_likes_image.url %}
                                 <img class="passport-item"
-                                    src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667941287/fillers/puzzle_emfpau.png">
+                                    src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667941287/fillers/puzzle_emfpau.png" alt="placeholder image">
                                 {% else %}
-                                <img class="passport-item" src=" {{ passport.my_likes_image.url }}">
+                                <img class="passport-item" src=" {{ passport.my_likes_image.url }}" alt="likes image">
                                 {% endif %}
-                            <h5>My Likes Photo</h5>
+                            <h4>My Likes Photo</h4>
                         </div>
                     </div>
                     
@@ -121,11 +121,11 @@
                         <div class="passport-card">
                                 {% if "placeholder" in passport.my_supports_image.url %}
                                 <img class="passport-item"
-                                    src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667941290/fillers/abacus_dfl0aj.png">
+                                    src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667941290/fillers/abacus_dfl0aj.png" alt="placeholder image">
                                 {% else %}
-                                <img class="passport-item" src=" {{ passport.my_supports_image.url }}">
+                                <img class="passport-item" src=" {{ passport.my_supports_image.url }}" alt="supports image">
                                 {% endif %}
-                            <h5>My supports photo</h5>
+                            <h4>My supports photo</h4>
                         </div>
                     </div>
 
@@ -151,11 +151,11 @@
                         <div class="passport-card">
                                 {% if "placeholder" in passport.my_communication_skills_image.url %}
                                 <img class="passport-item"
-                                    src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667941289/fillers/map_xor1ly.png">
+                                    src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667941289/fillers/map_xor1ly.png" alt="placeholder image">
                                 {% else %}
-                                <img class="passport-item" src="{{ passport.my_communication_skills_image.url }}">
+                                <img class="passport-item" src="{{ passport.my_communication_skills_image.url }}" alt="communication image">
                                 {% endif %}
-                            <h5>My Communication Photo</h5>
+                            <h4>My Communication Photo</h4>
                         </div>
                     </div>
 

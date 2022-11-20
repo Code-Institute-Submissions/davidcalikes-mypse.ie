@@ -154,6 +154,68 @@ In future versions of the app I hope to significantly improve mobile performance
 <details>
 
 <summary>
+Learn More Page Testing</summary><br>
+
+Each link of the Learn More Page was tested and was marked 'pass' when the following expected behaviour was produced.
+<br>
+
+* Can Access Home Page -- The user can access the home page from the Learn More Page. 
+
+* Can Access About Page (both links)  -- The user can access the about page from the Learn More Page.
+
+* Can Access Logout Page - user can access Logout page from the Learn More Page.
+
+* Can Access User list - user can access list page dedicated to their user type.
+
+* Can open NCSE link - user can open NCSE link in new tab.
+
+* Can open footer links -- Footer links open in a new tab.
+
+Below is the testing table for the Learn More page.
+
+| Logged in as  | Can Logout | Can Access Home Page | Can Access About Page (both links) | Can Open NCSE Link (new tab) | Can Access User List | Can Open Footer Links (new tab) |
+|---------------|------------|----------------------|------------------------------------|------------------------------|----------------------|---------------------------------|
+| Not Logged In | n/a        | yes/pass             | yes/pass                           | yes/pass                     | n/a                  | yes/pass                        |
+| Admin         | yes/pass   | yes/pass             | yes/pass                           | yes/pass                     | no/pass              | yes/pass                        |
+| School        | yes/pass   | yes/pass             | yes/pass                           | yes/pass                     | yes/pass             | yes/pass                        |
+| Pupil         | yes/pass   | yes/pass             | yes/pass                           | yes/pass                     | yes/pass             | yes/pass                        |
+| Parent        | yes/pass   | yes/pass             | yes/pass                           | yes/pass                     | yes/pass             | yes/pass                        |
+| Teacher       | yes/pass   | yes/pass             | yes/pass                           | yes/pass                     | yes/pass             | yes/pass                        |
+
+
+<br>
+The Learn More Page validator testing.
+
+The Learn More page source code. was passed through the W3C HTML Validator and returned no errors.
+
+<img src="../docs/testing_images/testing_val_61.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+
+The Learn More page was passed through the Jigsaw CSS validator and returned no errors.
+
+<img src="../docs/testing_images/testing_val_62.png"><br>
+_W3C Jigsaw CSS Validator Testing Screenshot_
+
+The Learn More page was passed through the WCAG Color contrast checker and returned no contrast errors.
+
+<img src="../docs/testing_images/testing_val_63.png"><br>
+_WCAG Validator Testing Screenshot_
+
+The Learn More page was passed through Lighthouse and returned the following performance results:
+
+<img src="../docs/testing_images/testing_val_64.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/testing_val_65.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
+<br>
+
+</details>
+
+<details>
+
+<summary>
 Login Page Testing</summary><br>
 
 Each link of the Login Page was tested and was marked 'pass' when the following expected behaviour was produced. A created user from every user type was logged in succesfully.
@@ -687,26 +749,26 @@ The Enrolled Pupil Record Page validator testing.
 
 The Enrolled Pupil Record page source code. was passed through the W3C HTML Validator and returned no errors.
 
-<img src="../docs/testing_images/testing_val_46.png"><br>
+<img src="../docs/testing_images/testing_val_51.png"><br>
 _W3C HTML Validator Testing Screenshot_ 
 
 
 The Enrolled Pupil Record page was passed through the Jigsaw CSS validator and returned no errors.
 
-<img src="../docs/testing_images/testing_val_47.png"><br>
+<img src="../docs/testing_images/testing_val_51.png"><br>
 _W3C Jigsaw CSS Validator Testing Screenshot_
 
 The Enrolled Pupil Record page was passed through the WCAG Color contrast checker and returned no contrast errors.
 
-<img src="../docs/testing_images/testing_val_48.png"><br>
+<img src="../docs/testing_images/testing_val_53.png"><br>
 _WCAG Validator Testing Screenshot_
 
 The Enrolled Pupil Record page was passed through Lighthouse and returned the following performance results:
 
-<img src="../docs/testing_images/testing_val_49.png"><br>
+<img src="../docs/testing_images/testing_val_54.png"><br>
 _Desktop Lighthouse Performance Testing Screenshot_
 
-<img src="../docs/testing_images/testing_val_50.png"><br>
+<img src="../docs/testing_images/testing_val_55.png"><br>
 _Mobile Lighthouse Performance Testing Screenshot_
 
 <br>
@@ -745,89 +807,32 @@ The Add Pupil Record Page validator testing.
 
 The Add Pupil Record page source code. was passed through the W3C HTML Validator and returned no errors.
 
-<img src="../docs/testing_images/testing_val_51.png"><br>
+<img src="../docs/testing_images/testing_val_56.png"><br>
 _W3C HTML Validator Testing Screenshot_ 
 
 
 The Add Pupil Record page was passed through the Jigsaw CSS validator and returned no errors.
 
-<img src="../docs/testing_images/testing_val_52.png"><br>
+<img src="../docs/testing_images/testing_val_57.png"><br>
 _W3C Jigsaw CSS Validator Testing Screenshot_
 
 The Add Pupil Record page was passed through the WCAG Color contrast checker and returned no contrast errors.
 
-<img src="../docs/testing_images/testing_val_53.png"><br>
+<img src="../docs/testing_images/testing_val_58.png"><br>
 _WCAG Validator Testing Screenshot_
 
 The Add Pupil Record page was passed through Lighthouse and returned the following performance results:
 
-<img src="../docs/testing_images/testing_val_54.png"><br>
+<img src="../docs/testing_images/testing_val_59.png"><br>
 _Desktop Lighthouse Performance Testing Screenshot_
 
-<img src="../docs/testing_images/testing_val_55.png"><br>
+<img src="../docs/testing_images/testing_val_60.png"><br>
 _Mobile Lighthouse Performance Testing Screenshot_
 <br>
 
 </details>
 
-Each link of the Learn More Page was tested and was marked 'pass' when the following expected behaviour was produced.
-<br>
 
-* Can Access Home Page -- The user can access the home page from the Learn More Page. 
-
-* Can Access About Page (both links)  -- The user can access the about page from the Learn More Page.
-
-* Can Access Logout Page - user can access Logout page from the Learn More Page.
-
-* Can Access User list - user can access list page dedicated to their user type.
-
-* Can Submit open NCSE link - user can open NCSE link in new tab.
-
-* Can open footer links -- Footer links open in a new tab.
-
-Below is the testing table for the Learn More page.
-
-| Logged in as  | Can Logout | Can Access Home Page | Can Access About Page (both links) | Can Open NCSE Link (new tab) | Can Access User List | Can Open Footer Links (new tab) |
-|---------------|------------|----------------------|------------------------------------|------------------------------|----------------------|---------------------------------|
-| Not Logged In | n/a        | yes/pass             | yes/pass                           | yes/pass                     | n/a                  | yes/pass                        |
-| Admin         | yes/pass   | yes/pass             | yes/pass                           | yes/pass                     | no/pass              | yes/pass                        |
-| School        | yes/pass   | yes/pass             | yes/pass                           | yes/pass                     | yes/pass             | yes/pass                        |
-| Pupil         | yes/pass   | yes/pass             | yes/pass                           | yes/pass                     | yes/pass             | yes/pass                        |
-| Parent        | yes/pass   | yes/pass             | yes/pass                           | yes/pass                     | yes/pass             | yes/pass                        |
-| Teacher       | yes/pass   | yes/pass             | yes/pass                           | yes/pass                     | yes/pass             | yes/pass                        |
-
-
-<br>
-The Learn More Page validator testing.
-
-The Learn More page source code. was passed through the W3C HTML Validator and returned no errors.
-
-<img src="../docs/testing_images/testing_val_51.png"><br>
-_W3C HTML Validator Testing Screenshot_ 
-
-
-The Learn More page was passed through the Jigsaw CSS validator and returned no errors.
-
-<img src="../docs/testing_images/testing_val_52.png"><br>
-_W3C Jigsaw CSS Validator Testing Screenshot_
-
-The Learn More page was passed through the WCAG Color contrast checker and returned no contrast errors.
-
-<img src="../docs/testing_images/testing_val_53.png"><br>
-_WCAG Validator Testing Screenshot_
-
-The Learn More page was passed through Lighthouse and returned the following performance results:
-
-<img src="../docs/testing_images/testing_val_54.png"><br>
-_Desktop Lighthouse Performance Testing Screenshot_
-
-<img src="../docs/testing_images/testing_val_55.png"><br>
-_Mobile Lighthouse Performance Testing Screenshot_
-<br>
-
-
-
-<br>
 
 ## Bugs
 

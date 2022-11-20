@@ -802,7 +802,6 @@ Below is the testing table for the Add Pupil Record page.
 |--------------|-------------------|----------------------|-----------------------|----------------------|--------------------------------|---------------------------|---------------------------------|
 | School Admin | yes/pass          | yes/pass             | yes/pass              | yes/pass             | yes/pass                       | yes/pass                  | yes/pass                        |
 
-<br>
 The Add Pupil Record Page validator testing.
 
 The Add Pupil Record page source code. was passed through the W3C HTML Validator and returned no errors.
@@ -832,6 +831,66 @@ _Mobile Lighthouse Performance Testing Screenshot_
 
 </details>
 
+<details>
+
+<summary>
+Passport List Page Testing</summary><br>
+
+Each link of the Passport List Page was tested and was marked 'pass' when the following expected behaviour was produced.
+<br>
+
+* Can Access Home Page -- The user can access the home page from the Passport List Page. 
+
+* Can Access About Page  -- The user can access the about page from the Passport List Page.
+
+* Can Access Logout Page - user can access Logout page from the Passport List Page.
+
+* Can Access User list - user can access list page dedicated to their user type.
+
+* Can Access Passports - user can access any passports they have created.
+
+* Can Access Passports form - user can access passport form page.
+
+* Can open footer links -- Footer links open in a new tab.
+
+Below is the testing table for the Passport List page.
+
+| Logged in as                   | Can Access Logout | Can Access Home Page | Can Access About Page | Can Access User List | Can Access Passport(s) | Can Access Passport Form Page | Can Open Footer Links (new tab) |
+|--------------------------------|-------------------|----------------------|-----------------------|----------------------|------------------------|-------------------------------|---------------------------------|
+| Parent                         | yes/pass          | yes/pass             | yes/pass              | yes/pass             | yes/pass               | yes/pass                      | yes/pass                        |
+| Pupil(redirected after sumbit) | yes/pass          | yes/pass             | yes/pass              | yes/pass             | yes/pass               | no/pass                       | yes/pass                        |
+
+<br>
+The Passport List Page validator testing.
+
+The Passport List page source code. was passed through the W3C HTML Validator and returned no errors.
+
+<img src="../docs/testing_images/testing_val_66.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+
+The Passport List page was passed through the Jigsaw CSS validator and returned no errors.
+
+<img src="../docs/testing_images/testing_val_67.png"><br>
+_W3C Jigsaw CSS Validator Testing Screenshot_
+
+The Passport List page was passed through the WCAG Color contrast checker and returned no contrast errors.
+
+<img src="../docs/testing_images/testing_val_68.png"><br>
+_WCAG Validator Testing Screenshot_
+
+The Passport List page was passed through Lighthouse and returned the following performance results:
+
+<img src="../docs/testing_images/testing_val_69.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/testing_val_70.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
+<br>
+
+</details>
+
+<br>
 
 
 ## Bugs

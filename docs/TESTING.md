@@ -964,6 +964,11 @@ _Mobile Lighthouse Performance Testing Screenshot_
 
 </details>
 
+<details>
+
+<summary>
+Passport Form Page Testing</summary><br>
+
 Each link of the Passport Form Page was tested and was marked 'pass' when the following expected behaviour was produced.
 <br>
 
@@ -1005,22 +1010,24 @@ I will continue to look for a solution to this issue.
 
 The CSS file for the Passport Form page (and all other pages of the site) passes W3C Jigsaw validation with no errors.
 
-<img src="../docs/testing_images/testing_val_67.png"><br>
+<img src="../docs/testing_images/testing_val_77.png"><br>
 _W3C Jigsaw CSS Validator Testing Screenshot_
 
 The Passport Form page was passed through the WCAG Color contrast checker and returned no contrast errors.
 
-<img src="../docs/testing_images/testing_val_68.png"><br>
+<img src="../docs/testing_images/testing_val_78.png"><br>
 _WCAG Validator Testing Screenshot_
 
 The Passport Form page was passed through Lighthouse and returned the following performance results:
 
-<img src="../docs/testing_images/testing_val_69.png"><br>
+<img src="../docs/testing_images/testing_val_79.png"><br>
 _Desktop Lighthouse Performance Testing Screenshot_
 
-<img src="../docs/testing_images/testing_val_70.png"><br>
+<img src="../docs/testing_images/testing_val_80.png"><br>
 _Mobile Lighthouse Performance Testing Screenshot_
 <br>
+
+</details>
 
 <br>
 

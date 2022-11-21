@@ -802,6 +802,10 @@ width: 92%;
     #hero-strap-text {
         font-size: large;
     }
+
+    .list-form .button {
+        margin-top: 1rem;
+    }
 }
 
 @media screen and (max-width: 400px) {

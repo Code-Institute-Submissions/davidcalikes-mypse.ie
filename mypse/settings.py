@@ -65,7 +65,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 SUMMERNOTE_CONFIG = {
     'summernote': {
         'airMode': False,
-        'width': '100%',
+        'width': '100',
         'toolbar': ['bold', 'italic', 'underline', 'style',
                     'fontsize', 'fontname', 'color', 'link', ],
         },

@@ -1381,6 +1381,80 @@ _Mobile Lighthouse Performance Testing Screenshot_
 
 </details>
 
+<details>
+
+<summary>
+Teacher Passport Detail Page Testing</summary><br>
+
+Each link of the Teacher Passport Detail Page was tested and was marked 'pass' when the following expected behaviour was produced.
+<br>
+
+* Can Access Home Page -- The user can access the home page from the Teacher Passport Detail Page. 
+
+* Can Access About Page  -- The user can access the about page from the Teacher Passport Detail Page.
+
+* Can Access Logout Page - user can access Logout page from the Teacher Passport Detail Page.
+
+* Can Access User list - user can access list page dedicated to their user type.
+
+* Can Click To Proceed - user can click to proceed with valid ID and is returned to the previous page if id is invalid.
+
+* Can Return to passport list page - teacher user can return to passport list by clicking link at base of passport. 
+
+* Can open footer links -- Footer links open in a new tab.
+
+Below is the testing table for the Teacher Passport Detail page.
+
+| Logged in as | Can Logout | Can Access Home Page | Can Access About Page | Can Access User List | Can Click To Proceed | Can Return To Teacher Passport List | Can Open Footer Links (new tab) |
+|--------------|------------|----------------------|-----------------------|----------------------|----------------------|-------------------------------------|---------------------------------|
+| Teacher      | yes/pass   | yes/pass             | yes/pass              | yes/pass             | yes/pass             | yes/pass                            | yes/pass                        |
+
+<br>
+The Teacher Passport Detail Page validator testing.
+<br>
+
+The Teacher Passport Detail page source code. was passed through the W3C HTML Validator and multiple errors were returned.
+
+<img src="../docs/testing_images/testing_val_101_error.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+Having placed a body tag inside a template that the extends base.html template, I had a returned a document with multiple body tags.
+I resolved this issue by removing the body tag from the passport detail template and calling the validateTeacher script via an onclick event instead.
+
+<img src="../docs/testing_images/testing_val_101_fix.png"><br>
+_W3C HTML Validator Error Fix_ 
+
+<img src="../docs/testing_images/testing_val_101_fix_2.png"><br>
+_W3C HTML Validator Error Fix_ 
+
+Another HTML Validation Error I found was caused by the rendering of Summernote text content. Summernote was adding an extra closing paragraph tag to each text field submitted. 
+
+<img src="../docs/testing_images/testing_val_101.png"><br>
+_Summernote Rendering HTML Validator Error_ 
+
+I decided I could leave this problem for now, as the error is not causing any issues with the rendering of the page or visible to the user in any way. I will implement a solution as soon as possible.
+
+The CSS file for the Teacher Passport Detail page (and all other pages of the site) passes W3C Jigsaw validation with no errors.
+
+<img src="../docs/testing_images/testing_val_102.png"><br>
+_W3C Jigsaw CSS Validator Testing Screenshot_
+
+The Teacher Passport Detail page was passed through the WCAG Color contrast checker and returned no contrast errors.
+
+<img src="../docs/testing_images/testing_val_103.png"><br>
+_WCAG Validator Testing Screenshot_
+
+Bacause The Teacher Passport Detail page is restricted, I had to temporarily remove HTTP referer conditions before it was passed through Lighthouse and returned the following performance results:
+
+<img src="../docs/testing_images/testing_val_104.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/testing_val_105.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
+<br>
+
+</details>
+
 <br>
 
 

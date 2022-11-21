@@ -2,193 +2,193 @@
 {% load static %}
 {% block content %}
 
-
 <h1 id="floating-button" onclick="validateTeacher();">Click to proceed!</h1>
 
     <div id="passport-blur" class="container passport-container">
         <div class="row">
-    {% if "teacher_validate_pupil_id" in request.META.HTTP_REFERER %}
-        {% if user.is_authenticated and user.role == "teacher" %} 
-                <p class="pupil-id-text" id="set-edit-pupil-id">{{ passport.pupil_id  }}</p>
-                <p class="pupil-id-text" id="passport-teacher-id">{{ passport.teacher_id  }}</p>
-                <div class="row flex-row-reverse passport-heading">
-                    <div class="col-md-6 vert-center">
-                        {% if "placeholder" in passport.my_passport_image.url %}
-                        <img class="passport-item"
-                            src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668959303/fillers/flag_u3b6l1_xjere2.webp" alt="placeholder image">
-                        {% else %}
-                        <img class="passport-item" src=" {{ passport.my_passport_image.url }}" alt="passport image">
-                        {% endif %}
-                    </div>
-                    <div class="col-md-6">
-                        <div class="passport-text-item">
-                            <h4><i class="fa fa-user" aria-hidden="true"></i> {{ passport.my_full_name }}</h4>
-                            <h4 class="passport-details-underscore"> ------------------- </h4>
-                        
-                            <div class="passport-info-item-box">
-                                <h4 class="passport-info-text"><i class="fa fa-calendar" aria-hidden="true"></i><span></span>
-                                My Date of Birth:</h4> <h4 class="passport-info-data">{{ passport.my_date_of_birth }}</h4>
-                            </div>
-                            <div class="passport-info-item-box">
-                                <h4 class="passport-info-text"><i class="fa fa-user" aria-hidden="true"></i><span></span>
-                                My Emergency Contact Person:</h4> <h4 class="passport-info-data"> {{ passport.my_emergency_contact_name }}</h4>
-                            </div>
-                            <div class="passport-info-item-box">
-                                <h4 class="passport-info-text"><i class="fa fa-phone-square fa-flip-horizontal" aria-hidden="true"></i><span></span>
-                                My Emergency Contact Number:</h4> <h4 class="passport-info-data">{{ passport.my_emergency_contact_number}}</h4>
-                                </div>
+            {% if "teacher_validate_pupil_id" in request.META.HTTP_REFERER %}
+            {% if user.is_authenticated and user.role == "teacher" %} 
+            <p class="pupil-id-text" id="set-edit-pupil-id">{{ passport.pupil_id  }}</p>
+            <p class="pupil-id-text" id="passport-teacher-id">{{ passport.teacher_id  }}</p>
+            
+            <div class="row flex-row-reverse passport-heading">
+                <div class="col-md-6 vert-center">
+                    {% if "placeholder" in passport.my_passport_image.url %}
+                    <img class="passport-item"
+                        src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668959303/fillers/flag_u3b6l1_xjere2.webp" alt="placeholder image">
+                    {% else %}
+                    <img class="passport-item" src=" {{ passport.my_passport_image.url }}" alt="passport image">
+                    {% endif %}
+                </div>
+
+                <div class="col-md-6">
+                    <div class="passport-text-item">
+                        <h4><i class="fa fa-user" aria-hidden="true"></i> {{ passport.my_full_name }}</h4>
+                        <h4 class="passport-details-underscore"> ------------------- </h4>
+                    
+                        <div class="passport-info-item-box">
+                            <h4 class="passport-info-text"><i class="fa fa-calendar" aria-hidden="true"></i><span></span>
+                            My Date of Birth:</h4> <h4 class="passport-info-data">{{ passport.my_date_of_birth }}</h4>
+                        </div>
+
+                        <div class="passport-info-item-box">
+                            <h4 class="passport-info-text"><i class="fa fa-user" aria-hidden="true"></i><span></span>
+                            My Emergency Contact Person:</h4> <h4 class="passport-info-data"> {{ passport.my_emergency_contact_name }}</h4>
+                        </div>
+
+                        <div class="passport-info-item-box">
+                            <h4 class="passport-info-text"><i class="fa fa-phone-square fa-flip-horizontal" aria-hidden="true"></i><span></span>
+                            My Emergency Contact Number:</h4> <h4 class="passport-info-data">{{ passport.my_emergency_contact_number}}</h4>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-md-6 vert-center">
-                    <div class="passport-card">
-                        <i class="fa fa-id-card passport-card-icon" aria-hidden="true"></i>
-                        <h4 class="passport-card-text-heading">My Biography</h4>
-                        <h4 class="passport-underscore"> --------------- </h4>
-                        <p>{{ passport.my_biography | safe }}</p>
-                    </div>
+            <div class="col-md-6 vert-center">
+                <div class="passport-card">
+                    <i class="fa fa-id-card passport-card-icon" aria-hidden="true"></i>
+                    <h4 class="passport-card-text-heading">My Biography</h4>
+                    <h4 class="passport-underscore"> --------------- </h4>
+                    <p>{{ passport.my_biography | safe }}</p>
                 </div>
-                
-                <div class="col-md-6 vert-center">
-                    <div class="passport-card">
-                        <i class="fa fa-hand-rock passport-card-icon" aria-hidden="true"></i>
-                        <h4 class="passport-card-text-heading">My Strengths</h4>
-                        <h4 class="passport-underscore"> --------------- </h4>
-                        <p>{{ passport.my_strengths | safe }}</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 vert-center">
-                    <div class="passport-card">
-                        <i class="fa fa-users passport-card-icon" aria-hidden="true"></i>
-                        <h4 class="passport-card-text-heading">My Family</h4>
-                        <h4 class="passport-underscore"> --------------- </h4>
-                        <p>{{ passport.my_family | safe }}</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 vert-center">
-                    <div class="passport-card">
-                            {% if "placeholder" in passport.my_family_image.url %}
-                            <img class="passport-item"
-                                src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668959303/fillers/family_z0n6ze_in7cw0.webp" alt="placeholder image">
-                            {% else %}
-                            <img class="passport-item" src=" {{ passport.my_family_image.url }}" alt="family image">
-                            {% endif %}
-                        <h4>My Family Photo</h4>
-                    </div>
-                </div>
-
-                <div class="col-md-6 vert-center">
-                    <div class="passport-card">
-                            {% if "placeholder" in passport.my_likes_image.url %}
-                            <img class="passport-item"
-                                src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668959268/fillers/puzzle_emfpau_gfd5ru.webp" alt="placeholder image">
-                            {% else %}
-                            <img class="passport-item" src=" {{ passport.my_likes_image.url }}" alt="likes image">
-                            {% endif %}
-                        <h4>My Likes Photo</h4>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 vert-center">
-                    <div class="passport-card">
-                        <i class="fa fa-thumbs-up passport-card-icon" aria-hidden="true"></i>
-                        <h4 class="passport-card-text-heading">My Likes</h4>
-                        <h4 class="passport-underscore"> --------------- </h4>
-                        <p>{{ passport.my_likes | safe }}</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 vert-center">
-                    <div class="passport-card">
-                        <i class="fa fa-thumbs-down passport-card-icon" aria-hidden="true"></i>
-                        <h4 class="passport-card-text-heading">My Dislikes</h4>
-                        <h4 class="passport-underscore"> --------------- </h4>
-                        <p>{{ passport.my_dislikes | safe }}</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 vert-center">
-                    <div class="passport-card">
-                        <i class="fa fa-ban passport-card-icon" aria-hidden="true"></i>
-                        <h4 class="passport-card-text-heading">My Difficulties</h4>
-                        <h4 class="passport-underscore"> --------------- </h4>
-                        <p>{{ passport.my_difficulties | safe }}</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 vert-center">
-                    <div class="passport-card">
-                            {% if "placeholder" in passport.my_supports_image.url %}
-                            <img class="passport-item"
-                                src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668959197/fillers/abacus_dfl0aj_kt8orp.webp" alt="placeholder image">
-                            {% else %}
-                            <img class="passport-item" src=" {{ passport.my_supports_image.url }}" alt="supports image">
-                            {% endif %}
-                        <h4>My supports photo</h4>
-                    </div>
-                </div>
-
-                <div class="col-md-6 vert-center">
-                    <div class="passport-card">
-                        <i class="fa fa-life-ring passport-card-icon" aria-hidden="true"></i>
-                        <h4 class="passport-card-text-heading">My Supports</h4>
-                        <h4 class="passport-underscore"> --------------- </h4>
-                        <p>{{ passport.my_supports | safe }}</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 vert-center">
-                    <div class="passport-card">
-                        <i class="fa fa-comments" aria-hidden="true"></i>
-                        <h4 class="passport-card-text-heading">My Communication Skills</h4>
-                        <h4 class="passport-underscore"> --------------- </h4>
-                        <p>{{ passport.my_communication_skills | safe }}</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 vert-center">
-                    <div class="passport-card">
-                            {% if "placeholder" in passport.my_communication_skills_image.url %}
-                            <img class="passport-item"
-                                src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668959303/fillers/map_xor1ly_naxiug.webp" alt="placeholder image">
-                            {% else %}
-                            <img class="passport-item" src="{{ passport.my_communication_skills_image.url }}" alt="communication image">
-                            {% endif %}
-                        <h4>My Communication Photo</h4>
-                    </div>
-                </div>
-
-                <div class="col-md-6 vert-center">
-                    <div class="passport-card">
-                        <i class="fa fa-hand-peace passport-card-icon" aria-hidden="true"></i>
-                        <h4 class="passport-card-text-heading">My Calming Measures</h4>
-                        <h4 class="passport-underscore"> --------------- </h4>
-                        <p>{{ passport.my_calming_measures | safe }}</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 vert-center">
-                    <div class="passport-card">
-                        <i class="fa fa-question-circle passport-card-icon" aria-hidden="true"></i>
-                        <h4 class="passport-card-text-heading">My Other Info</h4>
-                        <h4 class="passport-underscore"> --------------- </h4>
-                        <p>{{ passport.my_other_info | safe }}</p>
-                    </div>
-                </div>
-
-                <br>
-
-                    <div class="col-md-12 mt-4 mb-4 vert-center">
-                        <a class="passport-options" href="{% url 'teacher_passport_list' %}">Back To Passport List</a>
-                    </div>
-        </div>          
-    
-   
+            </div>
             
-    {% else %}
+            <div class="col-md-6 vert-center">
+                <div class="passport-card">
+                    <i class="fa fa-hand-rock passport-card-icon" aria-hidden="true"></i>
+                    <h4 class="passport-card-text-heading">My Strengths</h4>
+                    <h4 class="passport-underscore"> --------------- </h4>
+                    <p>{{ passport.my_strengths | safe }}</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 vert-center">
+                <div class="passport-card">
+                    <i class="fa fa-users passport-card-icon" aria-hidden="true"></i>
+                    <h4 class="passport-card-text-heading">My Family</h4>
+                    <h4 class="passport-underscore"> --------------- </h4>
+                    <p>{{ passport.my_family | safe }}</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 vert-center">
+                <div class="passport-card">
+                        {% if "placeholder" in passport.my_family_image.url %}
+                        <img class="passport-item"
+                            src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668959303/fillers/family_z0n6ze_in7cw0.webp" alt="placeholder image">
+                        {% else %}
+                        <img class="passport-item" src=" {{ passport.my_family_image.url }}" alt="family image">
+                        {% endif %}
+                    <h4>My Family Photo</h4>
+                </div>
+            </div>
+
+            <div class="col-md-6 vert-center">
+                <div class="passport-card">
+                        {% if "placeholder" in passport.my_likes_image.url %}
+                        <img class="passport-item"
+                            src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668959268/fillers/puzzle_emfpau_gfd5ru.webp" alt="placeholder image">
+                        {% else %}
+                        <img class="passport-item" src=" {{ passport.my_likes_image.url }}" alt="likes image">
+                        {% endif %}
+                    <h4>My Likes Photo</h4>
+                </div>
+            </div>
+            
+            <div class="col-md-6 vert-center">
+                <div class="passport-card">
+                    <i class="fa fa-thumbs-up passport-card-icon" aria-hidden="true"></i>
+                    <h4 class="passport-card-text-heading">My Likes</h4>
+                    <h4 class="passport-underscore"> --------------- </h4>
+                    <p>{{ passport.my_likes | safe }}</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 vert-center">
+                <div class="passport-card">
+                    <i class="fa fa-thumbs-down passport-card-icon" aria-hidden="true"></i>
+                    <h4 class="passport-card-text-heading">My Dislikes</h4>
+                    <h4 class="passport-underscore"> --------------- </h4>
+                    <p>{{ passport.my_dislikes | safe }}</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 vert-center">
+                <div class="passport-card">
+                    <i class="fa fa-ban passport-card-icon" aria-hidden="true"></i>
+                    <h4 class="passport-card-text-heading">My Difficulties</h4>
+                    <h4 class="passport-underscore"> --------------- </h4>
+                    <p>{{ passport.my_difficulties | safe }}</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 vert-center">
+                <div class="passport-card">
+                        {% if "placeholder" in passport.my_supports_image.url %}
+                        <img class="passport-item"
+                            src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668959197/fillers/abacus_dfl0aj_kt8orp.webp" alt="placeholder image">
+                        {% else %}
+                        <img class="passport-item" src=" {{ passport.my_supports_image.url }}" alt="supports image">
+                        {% endif %}
+                    <h4>My supports photo</h4>
+                </div>
+            </div>
+
+            <div class="col-md-6 vert-center">
+                <div class="passport-card">
+                    <i class="fa fa-life-ring passport-card-icon" aria-hidden="true"></i>
+                    <h4 class="passport-card-text-heading">My Supports</h4>
+                    <h4 class="passport-underscore"> --------------- </h4>
+                    <p>{{ passport.my_supports | safe }}</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 vert-center">
+                <div class="passport-card">
+                    <i class="fa fa-comments" aria-hidden="true"></i>
+                    <h4 class="passport-card-text-heading">My Communication Skills</h4>
+                    <h4 class="passport-underscore"> --------------- </h4>
+                    <p>{{ passport.my_communication_skills | safe }}</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 vert-center">
+                <div class="passport-card">
+                        {% if "placeholder" in passport.my_communication_skills_image.url %}
+                        <img class="passport-item"
+                            src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668959303/fillers/map_xor1ly_naxiug.webp" alt="placeholder image">
+                        {% else %}
+                        <img class="passport-item" src="{{ passport.my_communication_skills_image.url }}" alt="communication image">
+                        {% endif %}
+                    <h4>My Communication Photo</h4>
+                </div>
+            </div>
+
+            <div class="col-md-6 vert-center">
+                <div class="passport-card">
+                    <i class="fa fa-hand-peace passport-card-icon" aria-hidden="true"></i>
+                    <h4 class="passport-card-text-heading">My Calming Measures</h4>
+                    <h4 class="passport-underscore"> --------------- </h4>
+                    <p>{{ passport.my_calming_measures | safe }}</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 vert-center">
+                <div class="passport-card">
+                    <i class="fa fa-question-circle passport-card-icon" aria-hidden="true"></i>
+                    <h4 class="passport-card-text-heading">My Other Info</h4>
+                    <h4 class="passport-underscore"> --------------- </h4>
+                    <p>{{ passport.my_other_info | safe }}</p>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="col-md-12 mt-4 mb-4 vert-center">
+                <a class="passport-options" href="{% url 'teacher_passport_list' %}">Back To Passport List</a>
+            </div>
+        </div>          
+        {% else %}
             <h3>
                 Warning! 
                 You are unauthorised to view this page! 

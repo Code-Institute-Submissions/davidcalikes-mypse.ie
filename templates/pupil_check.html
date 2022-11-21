@@ -7,7 +7,7 @@
         <div class="list-heading">
             <div class="row flex-row-reverse list-heading-row">
                 <div class="col-md-6 vert-center">
-                    <img class="img-fluid heading-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667598847/placeholders/Screen_Shot_2022-11-04_at_21.52.53_bnpi96.png" alt="">
+                    <img class="img-fluid heading-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668959293/fillers/passport_list_header_har77a.webp" alt="">
                 </div>
                 <div class="col-md-6 vert-center">
                     <div class="row passport-text-row">
@@ -41,8 +41,8 @@
                             {% endif %}
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">{{ passport.my_full_name }}</h5>
-                            <h6 class="pupil-id-text"  class="card-subtitle mb-2 text-muted">{{ passport.pupil_id}}</h6>
+                            <h3 class="card-title">{{ passport.my_full_name }}</h3>
+                            <h4 class="pupil-id-text card-subtitle mb-2 text-muted">{{ passport.pupil_id}}</h4>
                             <p class="card-text"> Read, and update your passport! </p>
                         </div>
                                     
@@ -56,7 +56,7 @@
             <div class="footer-container">
                 <div class="col-md-12 vert-center">
                     <div class="row">
-                        <a  href="{% url 'validate_pupil_id' %}"><h6 class="passport-options">Create Your Passport +</h6></a>
+                        <a  href="{% url 'validate_pupil_id' %}" class="passport-options">Create Your Passport +</a>
                     </div>
                 </div>
             </div>

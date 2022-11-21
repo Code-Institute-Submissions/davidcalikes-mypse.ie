@@ -828,6 +828,11 @@ width: 92%;
     .passport-text-row {
         margin: 0rem;
     }
+
+    footer a {
+        font-size: x-large;
+        margin: 0.5rem;
+    }
 }
 
 @media screen and (max-width: 350px) {

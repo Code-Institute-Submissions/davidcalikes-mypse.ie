@@ -18,6 +18,117 @@ All of the user story acceptance criteria can be inspected via the four Sprint b
 
 <br>
 
+## Bugs
+
+### Bugs found during development
+
+After I imported django allauth I recieved the following error.
+
+<img src="../docs/testing_images/testing_error_1_allauth.png"><br>
+_ProgrammingError Screenshot_
+
+I searched for and found a solution to this issue on Stack Overflow.
+
+<img src="../docs/testing_images/testing_error_1_allauth_fix_1.png"><br>
+_ProgrammingError Stack Overflow Screenshot_ 
+
+<img src="../docs/testing_images/testing_error_1_allauth_fix2.png"><br>
+_ProgrammingError Bugfix Screenshot_ 
+
+Migrating sites fixed the error.
+
+<br>
+
+The next bug I found during development took the form of a 'NoReverseMatch' error. 
+
+<img src="../docs/testing_images/testing_error_4_typo_screen.png"><br>
+_NoReverseMatch Bug Screenshot_ 
+
+This was simply a typo in the Login Redirect setting.
+
+<img src="../docs/testing_images/testing_error_4_typo_fix.png"><br>
+_NoReverseMatch Bug Screenshot_ 
+
+I fixed the typo to correct the error.
+
+<br>
+
+By far the most difficult error I had during development was when attempting to develop the update record view. This is the message that was returned.
+
+<img src="../docs/testing_images/testing_error_pk_error.png"><br>
+_AttributeError Screenshot_
+
+This was caused by the incorrect syntax being used in the URL configuration.
+
+I resolved this issue by contacting the Code Institute's tutor support and was given assistance by Ger.
+
+<img src="../docs/testing_images/testing_error_pk_error_fix.png"><br>
+_Transcript from Code Institute tutor support_
+
+I was somewhat heartend to hear that this problem was an unusual issue and it took an experienced developer a bit of time to reach a resolution.
+Because of the nature and scope of this project, I was less concerned about trying to solve every issue by myself. If anything feel I probably spent too long working on this error before asking for help. It is a trait I will concentrate on as I continue my journey as a junior developer. 
+
+<br>
+
+Another problem was encountered when, the pupil record template returned this 404 error.
+<img src="../docs/testing_images/testing_bug2_er.png"><br>
+_404 Error Screenshot_ 
+
+I examined the code block and it seemed to be because the pupil ID number began with zero and the database was dropping the leading zero.
+
+<img src="../docs/testing_images/testing_bug2.png"><br>
+_404 Bug Screenshot_ 
+
+<img src="../docs/testing_images/testing_bug2b.png"><br>
+_404 Pupil ID begins with zero_
+
+I fixed this bug by re-configuring the fields REGEX validator to only accept digits 1-9 for the first digit of a pupil ID number.
+
+<img src="../docs/testing_images/testing_bug2_fix.png"><br>
+_404 Bugfix Screenshot_ 
+
+I then used the Admin panel to remove any instances that began with zero.
+
+<br>
+
+I recieved this NameError when developing the MVT relationships to access passports.
+
+<img src="../docs/testing_images/testing_bug4.png"><br>
+_NameError Passport Bug Screenshot_
+
+This error was caused by a missing module at the top of views.py
+
+<img src="../docs/testing_images/testing_bugfix4.png"><br>
+_NameError Passport Bugfix Screenshot_
+
+I fixed this by importing the passport model at the top of views.py
+
+<br>
+
+I found and fixed a bug caused by a typo in the passport detail template. A miss-typed field name was the cause of the missing text.
+
+<img src="../docs/testing_images/testing_bug1.png"><br>
+_Typo Bug Screenshot_ 
+
+<img src="../docs/testing_images/testing_bug1fix.png"><br>
+_Typo Bugfix Screenshot_ 
+
+<br>
+
+The next 404 error was trying returned when I tried to access a pupil passport.
+
+<img src="../docs/testing_images/testing_bug3.png"><br>
+_404 Passpory Bug Screenshot_ 
+
+This error was caused by a missing curly brace.
+
+<img src="../docs/testing_images/testing_bugfix3.png"><br>
+_404 Passport Bug Screenshot_ 
+
+I fixed this by adding the missing symbol.
+
+<br>
+
 ## Manual Testing
 
 Each page, feature and link of the application has been tested.
@@ -1096,11 +1207,11 @@ Teacher Passport List Page Testing</summary><br>
 Each link of the Teacher Passport List Page was tested and was marked 'pass' when the following expected behaviour was produced.
 <br>
 
-* Can Access Home Page -- The user can access the home page from the Pupil Check Page. 
+* Can Access Home Page -- The user can access the home page from the Teacher Passport List Page. 
 
-* Can Access About Page  -- The user can access the about page from the Pupil Check Page.
+* Can Access About Page  -- The user can access the about page from the Teacher Passport List Page.
 
-* Can Access Logout Page - user can access Logout page from the Pupil Check Page.
+* Can Access Logout Page - user can access Logout page from the Teacher Passport List Page.
 
 * Can Access User list - user can access list page dedicated to their user type.
 
@@ -1155,119 +1266,65 @@ _Mobile Lighthouse Performance Testing Screenshot_
 
 </details>
 
+<details>
+
+<summary>
+Teacher Validate Pupil ID Page Testing</summary><br>
+
+Each link of the Teacher Validate Pupil ID Page was tested and was marked 'pass' when the following expected behaviour was produced.
 <br>
 
+* Can Access Home Page -- The user can access the home page from the Teacher Validate Pupil ID Page. 
 
-## Bugs
+* Can Access About Page  -- The user can access the about page from the Teacher Validate Pupil ID List Page.
 
-### Bugs found during development
+* Can Access Logout Page - user can access Logout page from the Teacher Validate Pupil ID List Page.
 
-After I imported django allauth I recieved the following error.
+* Can Access User list - user can access list page dedicated to their user type.
 
-<img src="../docs/testing_images/testing_error_1_allauth.png"><br>
-_ProgrammingError Screenshot_
+* Can Verify Pupil ID - teacher can verify the id of the pupil before they view the passport.
 
-I searched for and found a solution to this issue on Stack Overflow.
+* Can Get Link - teacher is provided with a link to a pupil passport if they submit a valid pupil ID.
 
-<img src="../docs/testing_images/testing_error_1_allauth_fix_1.png"><br>
-_ProgrammingError Stack Overflow Screenshot_ 
+* Can open footer links -- Footer links open in a new tab.
 
-<img src="../docs/testing_images/testing_error_1_allauth_fix2.png"><br>
-_ProgrammingError Bugfix Screenshot_ 
+Below is the testing table for the Pupil Check page.
 
-Migrating sites fixed the error.
-
-<br>
-
-The next bug I found during development took the form of a 'NoReverseMatch' error. 
-
-<img src="../docs/testing_images/testing_error_4_typo_screen.png"><br>
-_NoReverseMatch Bug Screenshot_ 
-
-This was simply a typo in the Login Redirect setting.
-
-<img src="../docs/testing_images/testing_error_4_typo_fix.png"><br>
-_NoReverseMatch Bug Screenshot_ 
-
-I fixed the typo to correct the error.
+| Logged in as | Can Logout | Can Access Home Page | Can Access About Page | Can Access User List | Can Submit Teacher ID | Can View Passport List | Can Open Footer Links (new tab) |
+|--------------|------------|----------------------|-----------------------|----------------------|-----------------------|------------------------|---------------------------------|
+| Teacher      | yes/pass   | yes/pass             | yes/pass              | yes/pass             | yes/pass              | yes/pass               | yes/pass                        |
 
 <br>
+Teacher Validate Pupil ID Page validator testing.
 
-By far the most difficult error I had during development was when attempting to develop the update record view. This is the message that was returned.
+Teacher Validate Pupil ID page source code. was passed through the W3C HTML Validator and returned no errors.
 
-<img src="../docs/testing_images/testing_error_pk_error.png"><br>
-_AttributeError Screenshot_
+<img src="../docs/testing_images/testing_val_91.png"><br>
+_W3C HTML Validator Testing Screenshot_  
 
-This was caused by the incorrect syntax being used in the URL configuration.
+The CSS file for the Pupil Check page (and all other pages of the site) passes W3C Jigsaw validation with no errors.
 
-I resolved this issue by contacting the Code Institute's tutor support and was given assistance by Ger.
+<img src="../docs/testing_images/testing_val_92.png"><br>
+_W3C Jigsaw CSS Validator Testing Screenshot_
 
-<img src="../docs/testing_images/testing_error_pk_error_fix.png"><br>
-_Transcript from Code Institute tutor support_
+Teacher Validate Pupil ID page was passed through the WCAG Color contrast checker and returned no contrast errors.
 
-I was somewhat heartend to hear that this problem was an unusual issue and it took an experienced developer a bit of time to reach a resolution.
-Because of the nature and scope of this project, I was less concerned about trying to solve every issue by myself. If anything feel I probably spent too long working on this error before asking for help. It is a trait I will concentrate on as I continue my journey as a junior developer. 
+<img src="../docs/testing_images/testing_val_93.png"><br>
+_WCAG Validator Testing Screenshot_
 
+Teacher Validate Pupil ID page was passed through Lighthouse and returned the following performance results:
+
+<img src="../docs/testing_images/testing_val_94.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/testing_val_95.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
 <br>
 
-Another problem was encountered when, the pupil record template returned this 404 error.
-<img src="../docs/testing_images/testing_bug2_er.png"><br>
-_404 Error Screenshot_ 
-
-I examined the code block and it seemed to be because the pupil ID number began with zero and the database was dropping the leading zero.
-
-<img src="../docs/testing_images/testing_bug2.png"><br>
-_404 Bug Screenshot_ 
-
-<img src="../docs/testing_images/testing_bug2b.png"><br>
-_404 Pupil ID begins with zero_
-
-I fixed this bug by re-configuring the fields REGEX validator to only accept digits 1-9 for the first digit of a pupil ID number.
-
-<img src="../docs/testing_images/testing_bug2_fix.png"><br>
-_404 Bugfix Screenshot_ 
-
-I then used the Admin panel to remove any instances that began with zero.
+</details>
 
 <br>
 
-I recieved this NameError when developing the MVT relationships to access passports.
-
-<img src="../docs/testing_images/testing_bug4.png"><br>
-_NameError Passport Bug Screenshot_
-
-This error was caused by a missing module at the top of views.py
-
-<img src="../docs/testing_images/testing_bugfix4.png"><br>
-_NameError Passport Bugfix Screenshot_
-
-I fixed this by importing the passport model at the top of views.py
-
-<br>
-
-I found and fixed a bug caused by a typo in the passport detail template. A miss-typed field name was the cause of the missing text.
-
-<img src="../docs/testing_images/testing_bug1.png"><br>
-_Typo Bug Screenshot_ 
-
-<img src="../docs/testing_images/testing_bug1fix.png"><br>
-_Typo Bugfix Screenshot_ 
-
-<br>
-
-The next 404 error was trying returned when I tried to access a pupil passport.
-
-<img src="../docs/testing_images/testing_bug3.png"><br>
-_404 Passpory Bug Screenshot_ 
-
-This error was caused by a missing curly brace.
-
-<img src="../docs/testing_images/testing_bugfix3.png"><br>
-_404 Passport Bug Screenshot_ 
-
-I fixed this by adding the missing symbol.
-
-<br>
 
 ### JavaScript Testing
 

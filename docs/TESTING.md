@@ -1230,7 +1230,7 @@ Below is the testing table for the Pupil Check page.
 <br>
 Teacher Passport List Page validator testing.
 
-Teacher Passport List page source code. was passed through the W3C HTML Validator and returned no errors.
+The Teacher Passport List page source code. was passed through the W3C HTML Validator and returned no errors.
 
 <img src="../docs/testing_images/testing_val_86.png"><br>
 _W3C HTML Validator Testing Screenshot_  
@@ -1240,12 +1240,12 @@ The CSS file for the Pupil Check page (and all other pages of the site) passes W
 <img src="../docs/testing_images/testing_val_87.png"><br>
 _W3C Jigsaw CSS Validator Testing Screenshot_
 
-Teacher Passport List page was passed through the WCAG Color contrast checker and returned no contrast errors.
+The Teacher Passport List page was passed through the WCAG Color contrast checker and returned no contrast errors.
 
 <img src="../docs/testing_images/testing_val_88.png"><br>
 _WCAG Validator Testing Screenshot_
 
-Teacher Passport List page was passed through Lighthouse and returned the following performance results:
+The Teacher Passport List page was passed through Lighthouse and returned the following performance results:
 
 The SEO score was low because of an overlap between form elements.
 
@@ -1276,9 +1276,9 @@ Each link of the Teacher Validate Pupil ID Page was tested and was marked 'pass'
 
 * Can Access Home Page -- The user can access the home page from the Teacher Validate Pupil ID Page. 
 
-* Can Access About Page  -- The user can access the about page from the Teacher Validate Pupil ID List Page.
+* Can Access About Page  -- The user can access the about page from the Teacher Validate Pupil ID Page.
 
-* Can Access Logout Page - user can access Logout page from the Teacher Validate Pupil ID List Page.
+* Can Access Logout Page - user can access Logout page from the Teacher Validate Pupil ID Page.
 
 * Can Access User list - user can access list page dedicated to their user type.
 
@@ -1288,7 +1288,7 @@ Each link of the Teacher Validate Pupil ID Page was tested and was marked 'pass'
 
 * Can open footer links -- Footer links open in a new tab.
 
-Below is the testing table for the Pupil Check page.
+Below is the testing table for the Teacher Validate Pupil ID page.
 
 | Logged in as | Can Logout | Can Access Home Page | Can Access About Page | Can Access User List | Can Submit Teacher ID | Can View Passport List | Can Open Footer Links (new tab) |
 |--------------|------------|----------------------|-----------------------|----------------------|-----------------------|------------------------|---------------------------------|
@@ -1297,27 +1297,85 @@ Below is the testing table for the Pupil Check page.
 <br>
 Teacher Validate Pupil ID Page validator testing.
 
-Teacher Validate Pupil ID page source code. was passed through the W3C HTML Validator and returned no errors.
+The Teacher Validate Pupil ID page source code. was passed through the W3C HTML Validator and returned no errors.
 
 <img src="../docs/testing_images/testing_val_91.png"><br>
 _W3C HTML Validator Testing Screenshot_  
 
-The CSS file for the Pupil Check page (and all other pages of the site) passes W3C Jigsaw validation with no errors.
+The CSS file for the Teacher Validate Pupil ID page (and all other pages of the site) passes W3C Jigsaw validation with no errors.
 
 <img src="../docs/testing_images/testing_val_92.png"><br>
 _W3C Jigsaw CSS Validator Testing Screenshot_
 
-Teacher Validate Pupil ID page was passed through the WCAG Color contrast checker and returned no contrast errors.
+The Teacher Validate Pupil ID page was passed through the WCAG Color contrast checker and returned no contrast errors.
 
 <img src="../docs/testing_images/testing_val_93.png"><br>
 _WCAG Validator Testing Screenshot_
 
-Teacher Validate Pupil ID page was passed through Lighthouse and returned the following performance results:
+The Teacher Validate Pupil ID page was passed through Lighthouse and returned the following performance results:
 
 <img src="../docs/testing_images/testing_val_94.png"><br>
 _Desktop Lighthouse Performance Testing Screenshot_
 
 <img src="../docs/testing_images/testing_val_95.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
+<br>
+
+</details>
+
+<details>
+
+<summary>
+Validate Pupil ID Page Testing</summary><br>
+
+Each link of the Validate Pupil ID Page was tested and was marked 'pass' when the following expected behaviour was produced.
+<br>
+
+* Can Access Home Page -- The user can access the home page from the Validate Pupil ID Page. 
+
+* Can Access About Page  -- The user can access the about page from the Validate Pupil ID Page.
+
+* Can Access Logout Page - user can access Logout page from the Validate Pupil ID Page.
+
+* Can Access User list - user can access list page dedicated to their user type.
+
+* Can Verify Pupil ID - user can verify the id of the pupil before they create a passport.
+
+* Can Get Link - user is provided with a link to the pupil passport form if they submit a valid pupil ID.
+
+* Can open footer links -- Footer links open in a new tab.
+
+Below is the testing table for the Validate Pupil ID page.
+
+| Logged in as | Can Logout | Can Access Home Page | Can Access About Page | Can Access User List | Can Verify Pupil ID | Can Get Link | Can Open Footer Links (new tab) |
+|--------------|------------|----------------------|-----------------------|----------------------|---------------------|--------------|---------------------------------|
+| Parent       | yes/pass   | yes/pass             | yes/pass              | yes/pass             | yes/pass            | yes/pass     | yes/pass                        |
+| Pupil        | yes/pass   | yes/pass             | yes/pass              | yes/pass             | yes/pass            | yes/pass     | yes/pass                        |
+
+<br>
+Validate Pupil ID Page validator testing.
+
+The Validate Pupil ID page source code. was passed through the W3C HTML Validator and returned no errors.
+
+<img src="../docs/testing_images/testing_val_96.png"><br>
+_W3C HTML Validator Testing Screenshot_  
+
+The CSS file for the Pupil Check page (and all other pages of the site) passes W3C Jigsaw validation with no errors.
+
+<img src="../docs/testing_images/testing_val_97.png"><br>
+_W3C Jigsaw CSS Validator Testing Screenshot_
+
+The Validate Pupil ID page was passed through the WCAG Color contrast checker and returned no contrast errors.
+
+<img src="../docs/testing_images/testing_val_98.png"><br>
+_WCAG Validator Testing Screenshot_
+
+The Validate Pupil ID page was passed through Lighthouse and returned the following performance results:
+
+<img src="../docs/testing_images/testing_val_99.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/testing_val_100.png"><br>
 _Mobile Lighthouse Performance Testing Screenshot_
 <br>
 

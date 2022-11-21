@@ -323,6 +323,7 @@ class PupilCheck(PageTitleMixin, LoginRequiredMixin, generic.ListView):
             created_by=self.request.user
         )
 
+
 class TestView(generic.TemplateView):
     """
     Displays 500 error page when URL is typed

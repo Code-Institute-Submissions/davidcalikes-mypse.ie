@@ -890,6 +890,73 @@ _Mobile Lighthouse Performance Testing Screenshot_
 
 </details>
 
+Each link of the Passport Detail Page was tested and was marked 'pass' when the following expected behaviour was produced.
+<br>
+
+* Can Access Home Page -- The user can access the home page from the Passport Detail Page. 
+
+* Can Access About Page  -- The user can access the about page from the Passport Detail Page.
+
+* Can Access Logout Page - user can access Logout page from the Passport Detail Page.
+
+* Can Access User list - user can access list page dedicated to their user type.
+
+* Can Access Edit Passport Form Page - user can access the edit passport form page from the passport detail page.
+
+* Can Access delete passport page - user can access the delete passport form page from the passport detail page.
+
+* Can open footer links -- Footer links open in a new tab.
+
+Below is the testing table for the Passport List page.
+
+| Logged in as | Can Access Logout | Can Access Home Page | Can Access About Page | Can Access User List | Can Access Edit Passport Form page | Can Access Delete Passport Form Page | Can Open Footer Links (new tab) |
+|--------------|-------------------|----------------------|-----------------------|----------------------|------------------------------------|--------------------------------------|---------------------------------|
+| Parent       | yes/pass          | yes/pass             | yes/pass              | yes/pass             | yes/pass                           | yes/pass                             | yes/pass                        |
+| Pupil        | yes/pass          | yes/pass             | yes/pass              | yes/pass             | yes/pass                           | yes/pass                             | yes/pass                        |
+
+<br>
+The Passport Detail Page validator testing.
+
+The Passport Detail page source code. was passed through the W3C HTML Validator and multiple errors were returned.
+
+<img src="../docs/testing_images/testing_val_71_error.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+Having placed a body tag inside a template that the extends base.html template, I had a returned a document with multiple body tags.
+I resolved this issue by removing the body tag from the passport detail template and calling the applyID script via an onclick event instead.
+
+<img src="../docs/testing_images/testing_val_71_fix1.png"><br>
+_W3C HTML Validator Error Fix_ 
+
+<img src="../docs/testing_images/testing_val_71_fix2.png"><br>
+_W3C HTML Validator Error Fix_ 
+
+Another HTML Validation Error I found was caused by the rendering of Summernote text content. Summernote was adding an extra closing pararaph tag to each text field submitted. 
+
+<img src="../docs/testing_images/testing_val_71_fix2.png"><br>
+_Summernote Rendering HTML Validator Error_ 
+
+I decided I could leave this problem for now, as the error is not causing any issues with the rendering of the page or visible to the user in any way. I will implement a solution as soon as possible.
+
+The CSS file for the Passport Detail page (and all other pages of the site) passes W3C Jigsaw validation with no errors.
+
+<img src="../docs/testing_images/testing_val_72.png"><br>
+_W3C Jigsaw CSS Validator Testing Screenshot_
+
+The Passport Detail page was passed through the WCAG Color contrast checker and returned no contrast errors.
+
+<img src="../docs/testing_images/testing_val_73.png"><br>
+_WCAG Validator Testing Screenshot_
+
+Bacause The Passport Detail page is restricted, I had to temporarily remove HTTP referer conditions before it was passed through Lighthouse and returned the following performance results:
+
+<img src="../docs/testing_images/testing_val_74.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/testing_val_75.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
+<br>
+
 <br>
 
 

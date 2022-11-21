@@ -1029,6 +1029,11 @@ _Mobile Lighthouse Performance Testing Screenshot_
 
 </details>
 
+<details>
+
+<summary>
+Pupil Check Page Testing</summary><br>
+
 Each link of the Pupil Check Page was tested and was marked 'pass' when the following expected behaviour was produced.
 <br>
 
@@ -1040,52 +1045,48 @@ Each link of the Pupil Check Page was tested and was marked 'pass' when the foll
 
 * Can Access User list - user can access list page dedicated to their user type.
 
-* Can Submit Passport Form - user can submit a passport they have created.
+* Can Access Passport - user can read a passport they have created.
 
-* Loading Modal Displayed - The loading modal displays upon form submission.
+* Can Add Passport (if created) - pupil user cannot create a passport if they already have one.
+
+* Can Add passport (if not created) - pupil user can create passport if they don't already have one.
 
 * Can open footer links -- Footer links open in a new tab.
 
 Below is the testing table for the Pupil Check page.
 
-| Logged in as | Can Access Logout | Can Access Home Page | Can Access About Page | Can Access User List | Can Submit Passport Form | Loading Modal Displayed | Can Open Footer Links (new tab) |
-|--------------|-------------------|----------------------|-----------------------|----------------------|--------------------------|-------------------------|---------------------------------|
-| Parent       | yes/pass          | yes/pass             | yes/pass              | yes/pass             | yes/pass                 | yes/pass                | yes/pass                        |
-| Pupil        | yes/pass          | yes/pass             | yes/pass              | yes/pass             | yes/pass                 | yes/pass                | yes/pass                        |
+| Logged in as | Can Access Logout | Can Access Home Page | Can Access About Page | Can Access User List | Can Access Passport (if created) | Can Add passport (if created) | Can Add Passport (if not Created) | Can Open Footer Links (new tab) |
+|--------------|-------------------|----------------------|-----------------------|----------------------|----------------------------------|-------------------------------|-----------------------------------|---------------------------------|
+| Pupil        | yes/pass          | yes/pass             | yes/pass              | yes/pass             | yes/pass                         | no/pass                       | yes/pass                          | yes/pass                        |
 
 <br>
 The Pupil Check Page validator testing.
 
-The Pupil Check page source code. was passed through the W3C HTML Validator and returned multiple errors.
+The Pupil Check page source code. was passed through the W3C HTML Validator and returned no errors.
 
-<img src="../docs/testing_images/testing_val_76.png"><br>
-_W3C HTML Validator Testing Screenshot_ 
-
-There are nine issues outstanding that repeat for every summernote text input field. I have searched for a solution to this
-problem but none was forthcoming. I discovered it is a known issue using summernote with Django. Because styling the text 
-is such a key part of providing a positive user experience to pupil and parent users, I have decided to leave these errors as
-they do not impact the user and removing summernote would drastically reduce the user experience and functionality of MyPSE.ie.
-
-I will continue to look for a solution to this issue.  
+<img src="../docs/testing_images/testing_val_81.png"><br>
+_W3C HTML Validator Testing Screenshot_  
 
 The CSS file for the Pupil Check page (and all other pages of the site) passes W3C Jigsaw validation with no errors.
 
-<img src="../docs/testing_images/testing_val_77.png"><br>
+<img src="../docs/testing_images/testing_val_82.png"><br>
 _W3C Jigsaw CSS Validator Testing Screenshot_
 
 The Pupil Check page was passed through the WCAG Color contrast checker and returned no contrast errors.
 
-<img src="../docs/testing_images/testing_val_78.png"><br>
+<img src="../docs/testing_images/testing_val_83.png"><br>
 _WCAG Validator Testing Screenshot_
 
 The Pupil Check page was passed through Lighthouse and returned the following performance results:
 
-<img src="../docs/testing_images/testing_val_79.png"><br>
+<img src="../docs/testing_images/testing_val_84.png"><br>
 _Desktop Lighthouse Performance Testing Screenshot_
 
-<img src="../docs/testing_images/testing_val_80.png"><br>
+<img src="../docs/testing_images/testing_val_5.png"><br>
 _Mobile Lighthouse Performance Testing Screenshot_
 <br>
+
+</details>
 
 <br>
 
@@ -1253,7 +1254,10 @@ iPad Mini 5 Chrome, Safari, Firefox
 <img src="../docs/testing_images/testing_resp6.png"><br>
 _MyPSE on iPad Mini 5: Firefox_
 
-HP Pavillion Notebook (Windows 10) Chrome, Safari
+HP ProDesk (Windows 10) Chrome
+
+<img src="../docs/testing_images/testing_resp7.png"><br>
+_MyPSE on Windows 10 Chrome_
 
 ## Practical Testing
 

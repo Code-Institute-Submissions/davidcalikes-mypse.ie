@@ -998,12 +998,12 @@ _W3C HTML Validator Testing Screenshot_
 
 There are nine issues outstanding that repeat for every summernote text input field. I have searched for a solution to this
 problem but none was forthcoming. I discovered it is a known issue using summernote with Django. Because styling the text 
-is such a key part of providing a positive user experience to pupil and parent users I have decided to leave these errors as
-they do not impact the user and removing summernnote would drastically reduce the user experience and functionality of MyPSE.ie.
+is such a key part of providing a positive user experience to pupil and parent users, I have decided to leave these errors as
+they do not impact the user and removing summernote would drastically reduce the user experience and functionality of MyPSE.ie.
 
 I will continue to look for a solution to this issue.  
 
-The Passport Form page was passed through the Jigsaw CSS validator and returned no errors.
+The CSS file for the Passport Form page (and all other pages of the site) passes W3C Jigsaw validation with no errors.
 
 <img src="../docs/testing_images/testing_val_67.png"><br>
 _W3C Jigsaw CSS Validator Testing Screenshot_

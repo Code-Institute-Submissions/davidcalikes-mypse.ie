@@ -43,7 +43,7 @@ function validateTeacher() {
         window.history.back();
         return false;
         } else {
-        document.getElementById("loading").style.display = "none";
+        document.getElementById("floating-button").style.display = "none";
         document.getElementById("passport-blur").style.filter = "blur(0px)";
         return true;
   }

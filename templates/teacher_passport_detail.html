@@ -2,13 +2,9 @@
 {% load static %}
 {% block content %}
 
-<div id="loading">
-    
 
-<body onload="loadingModal(); validateTeacher();">
-    <img id="load-gif" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667607428/loader_clyzfq.gif" alt="Loading!">
-    <h2 class="loading-txt" >Loading...</h2>
-    </div>
+<h1 id="floating-button" onclick="validateTeacher();">Click to proceed!</h1>
+
     <div id="passport-blur" class="container passport-container">
         <div class="row">
     {% if "teacher_validate_pupil_id" in request.META.HTTP_REFERER %}
@@ -209,11 +205,4 @@
         {% endif %}
         </div>
         <hr class="list-separator-rule">
-    </div>
-    <script>
-        function loadingModal() {
-        document.getElementById("loading").style.display = "block";
-        }
-        </script>
-</body>
 {% endblock %}

@@ -1082,7 +1082,74 @@ The Pupil Check page was passed through Lighthouse and returned the following pe
 <img src="../docs/testing_images/testing_val_84.png"><br>
 _Desktop Lighthouse Performance Testing Screenshot_
 
-<img src="../docs/testing_images/testing_val_5.png"><br>
+<img src="../docs/testing_images/testing_val_85.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
+<br>
+
+</details>
+
+<details>
+
+<summary>
+Teacher Passport List Page Testing</summary><br>
+
+Each link of the Teacher Passport List Page was tested and was marked 'pass' when the following expected behaviour was produced.
+<br>
+
+* Can Access Home Page -- The user can access the home page from the Pupil Check Page. 
+
+* Can Access About Page  -- The user can access the about page from the Pupil Check Page.
+
+* Can Access Logout Page - user can access Logout page from the Pupil Check Page.
+
+* Can Access User list - user can access list page dedicated to their user type.
+
+* Can Submit Teacher ID - teacher user can submit teacher id to view a list of passports to which they have been assigned.
+
+* Can View Passport List (if assigned) - teacher user can see a list of assigned pupil passports .
+
+* Can open footer links -- Footer links open in a new tab.
+
+Below is the testing table for the Pupil Check page.
+
+| Logged in as | Can Logout | Can Access Home Page | Can Access About Page | Can Access User List | Can Submit Teacher ID | Can View Passport List | Can Open Footer Links (new tab) |
+|--------------|------------|----------------------|-----------------------|----------------------|-----------------------|------------------------|---------------------------------|
+| Teacher      | yes/pass   | yes/pass             | yes/pass              | yes/pass             | yes/pass              | yes/pass               | yes/pass                        |
+
+<br>
+Teacher Passport List Page validator testing.
+
+Teacher Passport List page source code. was passed through the W3C HTML Validator and returned no errors.
+
+<img src="../docs/testing_images/testing_val_86.png"><br>
+_W3C HTML Validator Testing Screenshot_  
+
+The CSS file for the Pupil Check page (and all other pages of the site) passes W3C Jigsaw validation with no errors.
+
+<img src="../docs/testing_images/testing_val_87.png"><br>
+_W3C Jigsaw CSS Validator Testing Screenshot_
+
+Teacher Passport List page was passed through the WCAG Color contrast checker and returned no contrast errors.
+
+<img src="../docs/testing_images/testing_val_88.png"><br>
+_WCAG Validator Testing Screenshot_
+
+Teacher Passport List page was passed through Lighthouse and returned the following performance results:
+
+The SEO score was low because of an overlap between form elements.
+
+<img src="../docs/testing_images/testing_val_89_error.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/testing_val_89_fix.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+When a solution was applied the SEO score became optimal.
+
+<img src="../docs/testing_images/testing_val_89.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/testing_val_90.png"><br>
 _Mobile Lighthouse Performance Testing Screenshot_
 <br>
 

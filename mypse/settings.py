@@ -62,10 +62,16 @@ LOGOUT_REDIRECT_URL = '/'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
+SUMMERNOTE_theme = 'bs5'
+
 SUMMERNOTE_CONFIG = {
+
+    'iframe': True,
+
     'summernote': {
         'airMode': False,
         'width': '100',
+        'height': '280',
         'toolbar': ['bold', 'italic', 'underline', 'style',
                     'fontsize', 'fontname', 'color', 'link', ],
         },

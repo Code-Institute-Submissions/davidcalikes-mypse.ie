@@ -868,7 +868,6 @@ The Passport List page source code. was passed through the W3C HTML Validator an
 <img src="../docs/testing_images/testing_val_66.png"><br>
 _W3C HTML Validator Testing Screenshot_ 
 
-
 The Passport List page was passed through the Jigsaw CSS validator and returned no errors.
 
 <img src="../docs/testing_images/testing_val_67.png"><br>
@@ -889,6 +888,11 @@ _Mobile Lighthouse Performance Testing Screenshot_
 <br>
 
 </details>
+
+<details>
+
+<summary>
+Passport Detail Page Testing</summary><br>
 
 Each link of the Passport Detail Page was tested and was marked 'pass' when the following expected behaviour was produced.
 <br>
@@ -916,6 +920,7 @@ Below is the testing table for the Passport List page.
 
 <br>
 The Passport Detail Page validator testing.
+<br>
 
 The Passport Detail page source code. was passed through the W3C HTML Validator and multiple errors were returned.
 
@@ -956,6 +961,8 @@ _Desktop Lighthouse Performance Testing Screenshot_
 <img src="../docs/testing_images/testing_val_75.png"><br>
 _Mobile Lighthouse Performance Testing Screenshot_
 <br>
+
+</details>
 
 <br>
 

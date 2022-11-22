@@ -16,7 +16,7 @@ Commonly referred to as 'passports', these documents can make an immesurable dif
 
 MyPSE.ie allows authenticated and authorised pupils and parents to design, view and update passports reflecting not only each individual pupil's special educational needs, but also a nuanced overview of their personality and style. Teachers can then view the passports that have been assigned to them by entering their unique registration number issued by the Irish Teaching Council.
 
-Because of the highly personal and sensitive nature of the data stored within the site, protection of this data is paramount which is why MyPSE.ie will only allow passports to be created for pupils or by pupils who have been added to a separate database table by their school administration.
+To protect pupils against data breaches and identity theft, MyPSE.ie will only allow passports to be created for pupils or by pupils who have been added to a separate database table by their school administration.
 
 Utilising the power of coding frameworks like Django and Bootstrap, MyPSE.ie has been rapidly and thoughtfully designed to provide users with an enjoyable and meaningful experience as they securely access, create and organise SEN passports.
 
@@ -375,7 +375,7 @@ The following problem statement was created as a result of developing this perso
 
 * A digital 'passports' web app has both a real-world, practical use case and real-world business use case.
 
-* The primary goal of the app should be to create a viable solution to the problem contained in the problem statment created during the planning stages of development. 
+* The primary goal of the app should be to create a viable solution to the problem contained in the problem statement created during the planning stages of development. 
 
 * The app should be 'standalone' and available for instant, easy adoption by any Irish school.
 
@@ -391,11 +391,26 @@ The following problem statement was created as a result of developing this perso
 
 * Users should be provided with visual feedback and guidance about how to use the app. 
 
-<br>
 
 # User Experience Design
 <br>
 
+## Target Audience
+
+MyPSE.ie aims to provide its service to all Irish based SEN School Pupils and their representitives. The application also benefits teachers and schools within the Irish education system.
+<br>
+
+## Target Audience summary
+
+* Users who are SEN pupils that are making educational transitions.
+
+* Users who are parents of SEN pupils that are making educational transitions.
+
+* Users who are teachers of SEN pupils making educational transitions.
+
+* Users who are school administrators that want to facilitate SEN pupils who are making educational transitions.
+
+<br>
 
 ## User Stories
 <br>
@@ -494,6 +509,36 @@ The following problem statement was created as a result of developing this perso
 conveniently access their passports.
 
 * As a Teacher, I would like to view the passports of children transitioning into my class in order to prepare supports, staff and educational resources to better facilitate their transition.
+
+
+## Objectives of MyPSE.ie
+
+* To make MyPSE.ie a viable solution to an existing problem.
+
+* To make the purpose of the app obvious to the user.
+
+* To provide users with an enjoyable, intuitive and easy to use interface.
+
+* To provide users with a positive user experience, underwritten by feelings of familiarity, confidence and security.
+
+* To protect user data.
+
+
+## Approach
+
+* The information will be displayed to the user logically and informed by planning and research.
+
+* The app will be created following the principles of user experience design.
+
+* The app's functionality will depend on the 'role of the user.
+
+* The app will be simple to use and provide visual feedback for all users.
+
+* The app will include an extensive guidance section including printable documents.
+
+* The app will allow SEN pupils and their representatives to create personal, stylised passport documents.
+
+* the app will ensure it conforms to GDPR guidlines.
 
 
 <br>

@@ -38,7 +38,7 @@ SEN pupils and their support networks face during periods of transition.
 
 Whilst waiting for feedback from educational bodies, teachers and administrators was initially frustrating and time consuming, I feel the application is much more suited for use in the real world as a result of this.
 
-Because of the exhaustive nature of the planning research, I have divided it up into more human readable sections below.
+Because of the exhaustive nature of the planning research, I have divided it up into more readable sections below.
 
 <details>
 
@@ -329,25 +329,29 @@ _Code Institute - Persona Template._
 
 Here is the template I created. I wanted to make a template for a non-verbal user first. The reasoning behind this was that it is those who cannot speak for themselves that stand to benefit the most from MyPSE.ie. 
 
-Persona Name: John Osawa
+Persona Name: 
+* John Osawa
 
-Age:11
-Job/Role: Pupil
-Status: Minor
+Age:
+* 11
+
+Job/Role: 
+* Pupil
+
+Status:
+* Minor
+
 Other Information:
-
 * non-verbal.
 * non-ambulant (requires a wheelchair).
 * has epilepsy.
 
 Goals:
-
 * To be respected and treated with dignity.
 * To be included, despite my disabilities.
 * Academic achievement.
 
-Pain Point/Concerns
-
+Pain Point/Concerns:
 * People sometimes fail to consider what I want because I can't verbalise it for myself.
 * I'm afraid I might be excluded from fun activities because I can't let them know when I want to take part
 * I love swimming but people I'm anxious they wont know that in my new school
@@ -362,9 +366,13 @@ Likes/Dislikes
 
 Empathetic excercises like this are second nature to an SNA. It is I suppose, the app's raison d'être.
 
+## Problem Statement
+
+<br>
+
 The following problem statement was created as a result of developing this persona,
 
-"To help facilitate successful educational transitions, pupils, parents and teachers should share vital information, so they can better understand a pupil's desires, needs and character "
+"To help facilitate successful educational transitions, pupils, parents and teachers should share vital information, so they can better understand a pupil's desires, needs and personality."
 
 </details>
 
@@ -379,6 +387,10 @@ The following problem statement was created as a result of developing this perso
 
 * The app should be 'standalone' and available for instant, easy adoption by any Irish school.
 
+* Authentication should be required for CRUD interactions.
+
+* Users should be instructed to select their user 'role' at registration.
+
 * The application should use existing, 'real-world' ID numbers to ensure passports are genuine and to future-proof later versions of the app.
 
 * Relevant sections of the app should reflect the design and layout of traditional style passports, and similar education based software to provide users with a sense of familiarity and confidence.
@@ -392,15 +404,17 @@ The following problem statement was created as a result of developing this perso
 * Users should be provided with visual feedback and guidance about how to use the app. 
 
 
-# User Experience Design
+
 <br>
+
+# User Experience Design
 
 ## Target Audience
 
 MyPSE.ie aims to provide its service to all Irish based SEN School Pupils and their representitives. The application also benefits teachers and schools within the Irish education system.
 <br>
 
-## Target Audience summary
+### Target Audience summary
 
 * Users who are SEN pupils that are making educational transitions.
 
@@ -510,8 +524,11 @@ conveniently access their passports.
 
 * As a Teacher, I would like to view the passports of children transitioning into my class in order to prepare supports, staff and educational resources to better facilitate their transition.
 
+<br>
 
 ## Objectives of MyPSE.ie
+
+<br>
 
 * To make MyPSE.ie a viable solution to an existing problem.
 
@@ -521,10 +538,12 @@ conveniently access their passports.
 
 * To provide users with a positive user experience, underwritten by feelings of familiarity, confidence and security.
 
-* To protect user data.
+* To provide a positive user experience whilst protecting user data.
 
+<br>
 
 ## Approach
+<br>
 
 * The information will be displayed to the user logically and informed by planning and research.
 
@@ -538,10 +557,40 @@ conveniently access their passports.
 
 * The app will allow SEN pupils and their representatives to create personal, stylised passport documents.
 
-* the app will ensure it conforms to GDPR guidlines.
-
+* The app will follow strict data privacy guidlines
 
 <br>
+
+<img src="../docs/readme_images/data_basic_structure.png"><br>
+_Basic App Structure_
+
+## Data Flow
+
+In order for MyPSE.ie to function as a stand alone application, I had to consider how to verify the identity of the SEN pupils who benefit from it. I wanted to do this for two reasons. Firstly to protect against identity theft and data breaches. Secondly, to make sure that anyone who creates a passport using MyPSE.ie is doing so for all of the correct reasons. I became hyper consious of how simple it might be to create a 'fake' passport using images found online as I was creating the sample passports for reference purposes. Should an individual be able to create a passport without verification, hypothetically they could misuse it in order to gain access or influence in other areas of special education, the health service or other areas of public life.
+
+<img src="../docs/readme_images/data_flow_chart.png"><br>
+_Flow Chart_
+
+
+## Database Schema
+
+<img src="../docs/readme_images/data_database_schema.png"><br>
+_Flow Chart_
+
+There are two 'real-world' data sources I have used to help me create my custom data models for this project. The Enrolled Pupils List data table has fields derived from the Department of Education's POD (Primary Online Database) application. 
+
+<img src="../docs/readme_images/planning7.png"><br>
+_POD application_
+
+As I mentioned in the planning section earlier, the 'pupil id' and 'school roll no' fields provide unique identifiers for both schools and pupils. At the moment school roll numbers are only validated by REGEX validator code but I thought this was a good enough security measure for the moment as anyone trying to add a pupil record would at least have to know the unique format of a valid school roll number before they can create a pupil record. In future versions of the app, this field could be linked to a separate data table containing the roll number of every Irish school. The pupil ID field is a unique identifier for every school pupil in Ireland. The idea behind using this was to guarantee that as long as school administrators used this number, they wouldn't have to come up with their own system for creating and storing separate, unique pupil id numbers. Another advantage would be that schools, teachers, pupils and their parents would have one less number to remember.
+
+The Passport custom data model was created using the fields from the 4 schools 'Planner for Teachers of Special Education Classes". This was in order to narrow the scope of information to only the most vital fields required. The Excellent 4 schools planner was produced in accordance with NCSE and Department of Education Guidelines so it also meant that I could be confident the passports would contain everything required and nothing superfluous. 
+
+<img src="../docs/readme_images/data_4schools_planner.png"><br>
+_4 Schools Planner Passport_
+
+
+
 
 # Deployment
 

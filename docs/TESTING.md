@@ -4,7 +4,7 @@
 
 ### User Story Tests
 
-I tested each of my user stories by adding acceptance criteria to each card of each of the four sprint boards I created as part of the [AGILE](../docs/AGILE.md) planning process. 
+I tested each user story by adding acceptance criteria to every card of each of the four 'sprint' boards I created as part of the [AGILE](../docs/AGILE.md) planning process. 
 
 No story could move to the 'done' column of each Kanban board unless all tasks had been completed and the criteria had been met.
 
@@ -12,22 +12,22 @@ No story could move to the 'done' column of each Kanban board unless all tasks h
 _User Story Screenshot_ 
 
 <img src="../docs/testing_images/testing_us2.png"><br>
-_Bug Screenshot_ 
+_Kanban Board Screenshot_ 
 
-All of the user story acceptance criteria can be inspected via the four Sprint boards I have linked to in the [AGILE](../docs/AGILE.md) documentation.
+All of the user story acceptance criteria can be inspected via the four KANBAN boards I have linked to in the [AGILE](../docs/AGILE.md) document.
 
 <br>
 
-## Bugs
+## Bugs & Errors
 
-### Bugs found during development
+### Errors found during development
 
 After I imported django allauth I recieved the following error.
 
 <img src="../docs/testing_images/testing_error_1_allauth.png"><br>
 _ProgrammingError Screenshot_
 
-I searched for and found a solution to this issue on Stack Overflow.
+I searched for, and found a solution to this issue on Stack Overflow.
 
 <img src="../docs/testing_images/testing_error_1_allauth_fix_1.png"><br>
 _ProgrammingError Stack Overflow Screenshot_ 
@@ -39,15 +39,15 @@ Migrating sites fixed the error.
 
 <br>
 
-The next bug I found during development took the form of a 'NoReverseMatch' error. 
+The next error I encountered during development took the form of a 'NoReverseMatch' error. 
 
 <img src="../docs/testing_images/testing_error_4_typo_screen.png"><br>
-_NoReverseMatch Bug Screenshot_ 
+_NoReverseMatch Error Screenshot_ 
 
 This was simply a typo in the Login Redirect setting.
 
 <img src="../docs/testing_images/testing_error_4_typo_fix.png"><br>
-_NoReverseMatch Bug Screenshot_ 
+_NoReverseMatch Error Screenshot_ 
 
 I fixed the typo to correct the error.
 
@@ -519,7 +519,7 @@ _Mobile Lighthouse Performance Testing Screenshot_
 <summary>
 404 Error Page Testing</summary><br>
 
-Each link of the 404 Error Page Testing was tested and was marked 'pass' when the following expected behaviour was produced.
+Each link of the 404 Error Page was tested and was marked 'pass' when the following expected behaviour was produced.
 <br>
 
 * Can Access Home Page (both links) -- The user can access the home page from the 404 error page
@@ -675,7 +675,7 @@ This resolved the error.
 <img src="../docs/testing_images/testing_val_36.png"><br>
 _W3C HTML Validator Testing Screenshot_ 
 
-The Delete Passport page was passed through the Jigsaw CSS validator and returned no errors.
+The CSS file for the Delete Passport page (and all other pages of the site) passes W3C Jigsaw validation with no errors.
 
 <img src="../docs/testing_images/testing_val_37.png"><br>
 _W3C Jigsaw CSS Validator Testing Screenshot_
@@ -693,7 +693,7 @@ _Desktop Lighthouse Performance Testing Screenshot_
 <img src="../docs/testing_images/testing_val_40.png"><br>
 _Mobile Lighthouse Performance Testing Screenshot_
 
-The SEO test score was lower here as the URL is not allowed to be crawled for security purposes.
+The SEO test score was lower here as the href has been left blank.
 <br>
 </details>
 
@@ -735,7 +735,7 @@ The Delete Pupil Record page source code. was passed through the W3C HTML Valida
 _W3C HTML Validator Testing Screenshot_ 
 
 
-The Delete Pupil Record page was passed through the Jigsaw CSS validator and returned no errors.
+The CSS file for the Delete Pupil Record page (and all other pages of the site) passes W3C Jigsaw validation with no errors.
 
 <img src="../docs/testing_images/testing_val_42.png"><br>
 _W3C Jigsaw CSS Validator Testing Screenshot_
@@ -753,7 +753,7 @@ _Desktop Lighthouse Performance Testing Screenshot_
 <img src="../docs/testing_images/testing_val_45.png"><br>
 _Mobile Lighthouse Performance Testing Screenshot_
 
-The SEO test score was lower here as the URL is not allowed to be crawled for security purposes.
+The SEO test score was lower here as the href attribute has been left blank.
 <br>
 
 </details>
@@ -795,7 +795,7 @@ The Enrolled Pupil List page source code. was passed through the W3C HTML Valida
 _W3C HTML Validator Testing Screenshot_ 
 
 
-The Enrolled Pupil List page was passed through the Jigsaw CSS validator and returned no errors.
+The CSS file for the Enrolled Pupil List page (and all other pages of the site) passes W3C Jigsaw validation with no errors.
 
 <img src="../docs/testing_images/testing_val_47.png"><br>
 _W3C Jigsaw CSS Validator Testing Screenshot_
@@ -864,7 +864,7 @@ The Enrolled Pupil Record page source code. was passed through the W3C HTML Vali
 _W3C HTML Validator Testing Screenshot_ 
 
 
-The Enrolled Pupil Record page was passed through the Jigsaw CSS validator and returned no errors.
+The CSS file for the Pupil Record page (and all other pages of the site) passes W3C Jigsaw validation with no errors.
 
 <img src="../docs/testing_images/testing_val_51.png"><br>
 _W3C Jigsaw CSS Validator Testing Screenshot_
@@ -921,7 +921,7 @@ The Add Pupil Record page source code. was passed through the W3C HTML Validator
 _W3C HTML Validator Testing Screenshot_ 
 
 
-The Add Pupil Record page was passed through the Jigsaw CSS validator and returned no errors.
+The CSS file for the Add Pupil Record page (and all other pages of the site) passes W3C Jigsaw validation with no errors.
 
 <img src="../docs/testing_images/testing_val_57.png"><br>
 _W3C Jigsaw CSS Validator Testing Screenshot_
@@ -979,7 +979,7 @@ The Passport List page source code. was passed through the W3C HTML Validator an
 <img src="../docs/testing_images/testing_val_66.png"><br>
 _W3C HTML Validator Testing Screenshot_ 
 
-The Passport List page was passed through the Jigsaw CSS validator and returned no errors.
+The CSS file for the Passport List page (and all other pages of the site) passes W3C Jigsaw validation with no errors.
 
 <img src="../docs/testing_images/testing_val_67.png"><br>
 _W3C Jigsaw CSS Validator Testing Screenshot_

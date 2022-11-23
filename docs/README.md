@@ -652,19 +652,79 @@ The reasoning behind this was to project a sense of fun and adventure into the t
 
 *  There are two fonts used throughout the application.
 
-    * Lato: A strong professional font for heading elements 
+    * Lato: A strong, elegant font for heading elements to project a professional, secure application. 
    
-    * Helvetica: A clear, professional font is used in paragraph text.
+    * Helvetica: A clear, familiar and accessible font is used in paragraph text.
 
     The fonts were imported to the stylesheet via Google fonts.
 
+<br>
 
 ## Naming The App
 
+I researched many naming options for the application but many of the names I considered were already established apps or unavailable as .ie domains.
+
+A .ie domain was required to communicate the app's area of operation.
+
+I originally wanted to call the app "Class Pass" but a quick google search led me to a globally recognised gym class management app of the same name.
+
+<img src="../docs/readme_images/visual_naming1.png"><br>
+_ClassPass_
+
+There is also a women-only gym in Cork city occupying the classpass.ie domain.
+
+I abandoned this idea and then tried to come up with an acronym which would include the title letters of each of the following words.
+
+* P for Passport
+
+* S for Special
+
+* E for Education
+
+* T for transitions
+
+S.T.E.P was the obvious choice here, as it could imply progression and assistance but it didn't work as a coherent sentence when laid out. Special Transitions Education Passports was confusing and illogical. In any case when I Googled "STEP app" the search returned yet another established fitness application. 
+
+<img src="../docs/readme_images/visual_naming2.png"><br>
+_STEP app_
+
+Eventually MyPSE.ie was chosen. A lot of Irish public service applications use the prefix 'My' for apps that provide services (MyGov, MyID, MyWelfare etc.) so I decided this would perfectly communicate the administrative, personal and facilitative nature of the application. I also liked the rhyming qualities of the letter 'E' in PSE and the 'e' from the .ie extension. 
+
+This is already practiced by the following Irish websites and is a nice, subtle way of making a domain name instantly more memorable.
+
+<img src="../docs/readme_images/visual_naming_123.png"><br>
+_123.ie_
+
+<img src="../docs/readme_images/visual_naming_RIP.png"><br>
+_RIP.ie_
+
+I made an application to purchase the MyPSE.ie domain name and was successful.
+
+<img src="../docs/readme_images/visual_naming_final.png"><br>
+_MyPSE.ie Domain Registration_
 
 
+# Features
 
-
+## Nav Bar
+## Footer
+## Home Page
+## About Page
+## Learn More Page
+## User Guides
+## Sample Passports
+## Authentication & Authorisation
+## Pupil List Page
+## Pupil Record Form Page
+## Pupil Record Page
+## Passport List Page
+## Pupil ID Check Page
+## Passport Form Page
+## Passport Page
+## Teacher Pupil List Page
+## Teacher Pupil ID Page
+## Teacher Passport Page
+## Added Security Features
 
 
 
@@ -673,6 +733,12 @@ The reasoning behind this was to project a sense of fun and adventure into the t
 
 
 # Deployment
+
+MyPSE.ie was deployed to heroku early during development. I wanted to make sure the database and static files were all accessible from the beginning of the project so I wouldn't have to worry about deployment errors closer to releasing the app.
+
+<img src="../docs/readme_images/deploy_early_benefit.png"><br>
+_Early Deployment Screenshot_
+
 
 ## Deployment errors and issues
 

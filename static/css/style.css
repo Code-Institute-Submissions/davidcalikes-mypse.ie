@@ -93,8 +93,8 @@ a:hover {
 }
 
 .signup-button {
-    width: 50%;
-    margin-left: 25%;
+    width: 60%;
+    margin-left: 20%;
 }
 
 .footer {
@@ -803,6 +803,11 @@ width: 92%;
         width: 90%;
         margin-left: 5%;
     }
+
+    .signup-button {
+        width: 80%;
+        margin-left: 10%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -845,6 +850,10 @@ width: 92%;
 
 @media screen and (max-width: 400px) {
     
+    .form-container {
+        width: 100%;
+    }
+
     .list-heading {
         width: 100%;
         margin-left: 0%;
@@ -866,6 +875,16 @@ width: 92%;
 
     .passport-text-row {
         margin: 0rem;
+    }
+
+    .card-container {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .card-item {
+        width: 100%;
+        margin-left: 0%;
     }
 
     footer a {

@@ -584,7 +584,7 @@ _POD application_
 
 As I mentioned in the planning section earlier, the 'pupil id' and 'school roll no' fields provide unique identifiers for both schools and pupils. At the moment school roll numbers are only validated by REGEX validator code but I thought this was a good enough security measure for the moment as anyone trying to add a pupil record would at least have to know the unique format of a valid school roll number before they can create a pupil record. In future versions of the app, this field could be linked to a separate data table containing the roll number of every Irish school. The pupil ID field is a unique identifier for every school pupil in Ireland. The idea behind using this was to guarantee that as long as school administrators used this number, they wouldn't have to come up with their own system for creating and storing separate, unique pupil id numbers. Another advantage would be that schools, teachers, pupils and their parents would have one less number to remember.
 
-The Passport custom data model was created using the fields from the 4 schools 'Planner for Teachers of Special Education Classes". This was in order to narrow the scope of information to only the most vital fields required. The Excellent 4 schools planner was produced in accordance with NCSE and Department of Education guidelines so it also meant that MyPSE.ie passports would conform to these guidelines by proxy and I could be confident the passports would contain everything required and nothing superfluous. 
+The Passport custom data model was created using the fields from the 4 schools "Planner for Teachers of Special Education Classes". This was in order to narrow the scope of information to only the most vital fields required. The Excellent 4 schools planner was produced in accordance with NCSE and Department of Education guidelines so it also meant that MyPSE.ie passports would conform to these guidelines by proxy and I could be confident the passports would contain everything required and nothing superfluous. 
 
 <img src="../docs/readme_images/data_4schools_planner.png"><br>
 _4 Schools Planner Passport_
@@ -623,7 +623,7 @@ _MyPSE.ie Color Scheme_
 
 The colors used throughout the site are listed above. They are positive colors without being brash and are evocative of the Irish tricolor flag. (MyPSE.ie being an exclusively Irish enterprise) 
 
-The contrasting dark magenta color was used as a natural compliment to the greens and is used as an indicator for hover pseudo elements, overwriting bootstrap's default blue.
+The contrasting dark magenta color was used as a natural compliment to the greens and is used as an indicator for hover pseudo elements, overwriting the default blue of bootstrap.
 
 ## Nav and Footer Gradient
 
@@ -688,7 +688,7 @@ S.T.E.P was the obvious choice here, as it could imply progression and assistanc
 <img src="../docs/readme_images/visual_naming2.png"><br>
 _STEP app_
 
-Eventually MyPSE.ie was chosen. A lot of Irish public service applications use the prefix 'My' for apps that provide services (MyGov, MyID, MyWelfare etc.) so I decided this would perfectly communicate the administrative, personal and facilitative nature of the application. I also liked the rhyming qualities of the letter 'E' in PSE and the 'e' from the .ie extension. 
+Eventually MyPSE.ie was chosen. A lot of Irish public service applications use the prefix 'My' for apps that provide services (MyGov, MyID, MyWelfare etc.) so I decided this would perfectly communicate both the personal and administrative nature of the application. I also liked the rhyming qualities of the letter 'E' in PSE and the 'e' from the .ie extension. 
 
 This is already practiced by the following Irish websites and is a nice, subtle way of making a domain name instantly more memorable.
 
@@ -714,6 +714,7 @@ _MyPSE.ie Domain Registration_
 ## User Guides
 ## Sample Passports
 ## Authentication & Authorisation
+## Feedback Messages
 ## Pupil List Page
 ## Pupil Record Form Page
 ## Pupil Record Page
@@ -726,11 +727,7 @@ _MyPSE.ie Domain Registration_
 ## Teacher Passport Page
 ## Added Security Features
 
-
-
-
-
-
+<br>
 
 # Deployment
 

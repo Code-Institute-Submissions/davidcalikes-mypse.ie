@@ -25,13 +25,16 @@
     </div>
     <div class="row form-row">
         <div class="col-md-8 mt-3 offset-md-2 center-align">
-            <form class="login" method="POST" action="{% url 'account_login' %}">
+            <div class="login">
+            <form  method="POST" action="{% url 'account_login' %}">
                 {% csrf_token %}
                 {{ form.as_p }}
                 {% if redirect_field_value %}
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                 {% endif %}
+            </div>
                 <button class="btn btn-signup right passport-options" type="submit">{% trans "Sign In" %}</button>
+            
             </form>
         </div>
     </div>

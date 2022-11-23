@@ -32,11 +32,20 @@ h4 a {
 a {
     color:#0B5657;
     text-decoration: none;
+    font-family: Lato, sans-serif;
 }
 
 p a {
     color:#0B5657;
     text-decoration: underline;
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+}
+
+li {
+    font-family: Lato, sans-serif;
 }
 
 #floating-button {
@@ -73,7 +82,6 @@ a:hover {
     border: 2px solid #0B5657;
     border-radius: 4px;
     margin-bottom: 1rem;
-    color:
 }
 
 .warning-logo {
@@ -82,6 +90,11 @@ a:hover {
 
 #signup_form {
     width: 11rem;
+}
+
+.signup-button {
+    width: 50%;
+    margin-left: 25%;
 }
 
 .footer {
@@ -363,6 +376,14 @@ h2 {
     box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
 }
 
+.card-container {
+    margin-bottom: 2.5rem;
+    width: 98%;
+    margin-left: 1%;
+    padding: 1.5rem;
+    text-align: center;
+}
+
 #loading {
     display: none;
     position: fixed;
@@ -594,6 +615,7 @@ label {
 
 .passport-title {
     font-size: larger;
+    font-family: Lato, sans-serif;
     color: #ffffff;
     background: #0B5657;
     border-radius: 4px;
@@ -605,6 +627,7 @@ label {
 
 .card-subtitle {
     font-size: large;
+    font-family: Lato, sans-serif;
 }
 
 .vert-center {
@@ -828,8 +851,8 @@ width: 92%;
     }
 
     .passport-title {
-        width: 100%;
-        margin-left: 0%;
+        width: 80%;
+        margin-left: 10%;
     }
 
     .list-text {

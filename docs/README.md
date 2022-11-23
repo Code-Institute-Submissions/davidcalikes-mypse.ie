@@ -584,10 +584,90 @@ _POD application_
 
 As I mentioned in the planning section earlier, the 'pupil id' and 'school roll no' fields provide unique identifiers for both schools and pupils. At the moment school roll numbers are only validated by REGEX validator code but I thought this was a good enough security measure for the moment as anyone trying to add a pupil record would at least have to know the unique format of a valid school roll number before they can create a pupil record. In future versions of the app, this field could be linked to a separate data table containing the roll number of every Irish school. The pupil ID field is a unique identifier for every school pupil in Ireland. The idea behind using this was to guarantee that as long as school administrators used this number, they wouldn't have to come up with their own system for creating and storing separate, unique pupil id numbers. Another advantage would be that schools, teachers, pupils and their parents would have one less number to remember.
 
-The Passport custom data model was created using the fields from the 4 schools 'Planner for Teachers of Special Education Classes". This was in order to narrow the scope of information to only the most vital fields required. The Excellent 4 schools planner was produced in accordance with NCSE and Department of Education Guidelines so it also meant that I could be confident the passports would contain everything required and nothing superfluous. 
+The Passport custom data model was created using the fields from the 4 schools 'Planner for Teachers of Special Education Classes". This was in order to narrow the scope of information to only the most vital fields required. The Excellent 4 schools planner was produced in accordance with NCSE and Department of Education guidelines so it also meant that MyPSE.ie passports would conform to these guidelines by proxy and I could be confident the passports would contain everything required and nothing superfluous. 
 
 <img src="../docs/readme_images/data_4schools_planner.png"><br>
 _4 Schools Planner Passport_
+
+The relationships between the data tables are designed in order to solve the problem regarding the transfer of teacher access to pupil passports. To conform to privacy policy, only one teacher can be assigned access to a pupils transition document at any given time. To solve this issue, MyPSE.ie puts the pupils and parents in command of who can view their passports and when. They can even revoke access altogether if they choose. When pupils become enrolled in the MyPSE.ie Enrolled Pupil List data table they are given a Physical Document by their school adminitistration staff containing the Teacher ID number of their assigned teacher. This ensures they will have complete control over who views their passport and also that they can transfer teacher privileges instantly upon future educational transitions.
+
+
+# Visual Design
+
+## Wireframes
+
+I designed wireframes for reference as I began to develop the application. They are instructive as to how the site should display across multiple device widths.
+
+<img src="../docs/readme_images/wireframes_home.png"><br>
+_Home Page Wireframe_
+
+<img src="../docs/readme_images/wireframes_login.png"><br>
+_Login Page Wireframe_
+
+<img src="../docs/readme_images/wireframes_passport_list.png"><br>
+_Passport List Wireframe_
+
+<img src="../docs/readme_images/wireframes_school_admin.png"><br>
+_School Admin Wireframe_
+
+<img src="../docs/readme_images/wireframes_passport.png"><br>
+_Passport Wireframe_
+
+Due to the scope of this application and how similar many of the pages are, I thought it unnecessary to include every single page here. Take the passport page for example. The passport layout will be the same for every user type except for minor visual/functional changes such as the removal of edit/delete buttons for teachers. The wireframes reflect the general feeling I had at the beginning of the project regarding the styling, layout and functionality. 
+
+
+## Color Scheme
+
+<img src="../docs/readme_images/visual_colors.png"><br>
+_MyPSE.ie Color Scheme_
+
+The colors used throughout the site are listed above. They are positive colors without being brash and are evocative of the Irish tricolor flag. (MyPSE.ie being an exclusively Irish enterprise) 
+
+The contrasting dark magenta color was used as a natural compliment to the greens and is used as an indicator for hover pseudo elements, overwriting bootstrap's default blue.
+
+## Nav and Footer Gradient
+
+<img src="../docs/readme_images/visual_gradient1.png"><br>
+_MyPSE.ie Nav & Footer Gradient_
+
+The Nav and Footer elements of the site have a white to green gradient set on a textured 'scribble' background. The gradient from neutral white to positive green (for go!) symbolises the 'transition' of SEN pupils and the textured background informs their often tumultuous nature.
+
+The nav gradient reduces in severity across smaller screen widths in order to maintain a high contrast ratio for the MyPSE.ie logo.
+
+## Background Gradient
+
+<img src="../docs/readme_images/visual_gradient2.png"><br>
+_MyPSE.ie Background Gradient_
+
+The background gradient of MyPSE.ie features a subtle vertical waves pattern. This is designed to look similar to the watermarked paper of a traditional travel passport. (See example below)
+
+<img src="../docs/readme_images/visual_waves_example.png"><br>
+_Watermarked paper example_
+
+The reasoning behind this was to project a sense of fun and adventure into the transition process as well as being suggestive of beurocratic competence and security.
+
+<br>
+
+## Typography
+
+*  There are two fonts used throughout the application.
+
+    * Lato: A strong professional font for heading elements 
+   
+    * Helvetica: A clear, professional font is used in paragraph text.
+
+    The fonts were imported to the stylesheet via Google fonts.
+
+
+## Naming The App
+
+
+
+
+
+
+
+
 
 
 

@@ -596,24 +596,37 @@ The relationships between the data tables are designed in order to solve the pro
 
 ## Wireframes
 
-I designed wireframes for reference as I began to develop the application. They are instructive as to how the site should display across multiple device widths.
+I designed wireframes for reference as I began to develop the application. They are instructive as to how I wanted the app to display across multiple device widths. I deviated slightly from the original design as I had to add extra views and templates to request security information etc but for the most part the essence of the site and how I initially wanted to display it is evident here. 
+
+Because this was my first time using Django as a project framework and my first time creating a full stack application, I was unsure at the beginning of how I would approach the CRUD functionality of the app. Initially I had envisioned a blank template passport that a user could edit one field at a time without requiring to resubmit the entire form. Unfortunately, this was beyond my current skillset given the short period of time I had to complete the project. 
 
 <img src="../docs/readme_images/wireframes_home.png"><br>
 _Home Page Wireframe_
 
+<img src="../docs/readme_images/wireframes_about.png"><br>
+_About Page Wireframe_
+
 <img src="../docs/readme_images/wireframes_login.png"><br>
 _Login Page Wireframe_
-
-<img src="../docs/readme_images/wireframes_passport_list.png"><br>
-_Passport List Wireframe_
 
 <img src="../docs/readme_images/wireframes_school_admin.png"><br>
 _School Admin Wireframe_
 
+I deviated from both the pupil record and passport list wireframes by creating a more user friendly and visually pleasing layout for each page.
+
+<img src="../docs/readme_images/wireframes_add_pupil.png"><br>
+_Add_Pupil Form Wireframe_
+
+<img src="../docs/readme_images/wireframes_passport_list.png"><br>
+_Passport List Wireframe_
+
+<img src="../docs/readme_images/wireframes_add_passport.png"><br>
+_Passport Form Wireframe_
+
 <img src="../docs/readme_images/wireframes_passport.png"><br>
 _Passport Wireframe_
 
-Due to the scope of this application and how similar many of the pages are, I thought it unnecessary to include every single page here. Take the passport page for example. The passport layout will be the same for every user type except for minor visual/functional changes such as the removal of edit/delete buttons for teachers. The wireframes reflect the general feeling I had at the beginning of the project regarding the styling, layout and functionality. 
+Due to the scope of this application and how similar many of the pages are, I thought it unnecessary to include every single page here. Take the passport page for example. The passport layout will be the same for every user type except for minor visual/functional changes such as the removal of edit/delete buttons for teachers.
 
 
 ## Color Scheme

@@ -921,9 +921,42 @@ School administrators can also add new pupil records to the pupil record list by
 <img src="../docs/readme_images/feat_pages_pupil_list_lower.png"><br>
 _MyPSE.ie Lower Pupil List Page_
 
+<br>
 
 ## Pupil Record Form Page
+
+The Pupil Record Form page contains a standard form for the enrolment of pupils on the MyPSE.ie Pupil List Data Sheet. This is so the identity of a pupil can be confirmed before a passport can be created by them or for them. The list contains heading text that contains instructions on how to successfully complete the form. A genuine school administrator will have access to pupil ID numbers and School Roll numbers so will know the format that is required. If someone who is not a school administrator tries to submit a form they are unlikley to know the formats of pupils identification let alone their actual ID numbers. This security measure lessens the likelyhood that bad actors can misuse the site.
+
+This page is also used to edit existing records via a link in the Pupil Record Page.
+
+<img src="../docs/readme_images/feat_pages_pupil_record_form.png"><br>
+_MyPSE.ie Upper Pupil Record Form Page_
+
+The Lower Pupil Record Form Page contains a button for submitting the form as well as a cancel without saving button that returns the user to the previous page.
+
+<img src="../docs/readme_images/feat_pages_lower_pupil_record_form.png"><br>
+_MyPSE.ie Lower Pupil Record Form Page_
+
+<br>
+
 ## Pupil Record Page
+
+The pupil record page contains the MyPSE.ie enrolment information for a given pupil. The form contains a link to edit pupil record via a pre-populated instance of the Pupil Record Form. There is also a link to delete the record via the Delete Pupil Record page.
+
+<img src="../docs/readme_images/feat_pages_pupil_record.png"><br>
+_MyPSE.ie Pupil Record Page_
+
+<br>
+
+## Delete Pupil Record Page
+
+The delete pupil record page contains buttons to delete pupil information and is accessed via a specific pupil record page. The page contains a warning regarding the action and a success message when the record is deleted. The user is returned to the school admin list upon successful deletion.
+
+<img src="../docs/readme_images/feat_pages_delete_record.png"><br>
+_MyPSE.ie Delete Pupil Record Page_
+
+*** NB Deleting a pupil record removes a users ability to create a new passport. It does not delete a pupil's passport if one exists but should a pupil decide to delete thier own passport after their enrolment file has been removed they will require re-enrolment via a new school administration. ***
+
 ## Passport List Page
 ## Pupil ID Check Page
 ## Passport Form Page

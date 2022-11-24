@@ -7,8 +7,11 @@
     <div class="row form-row">
         {% if user.is_authenticated and user.role == "school" %}
         <div>
-
             <h3 class="passport-title">Create/Edit Pupil Record</h3>
+            <div class="passport-inst" >
+                <h6>Form Fields marked with an asterix (*) are required!</h6>
+                <h6>Pupil ID and School Roll Numbers must match the exact format of numbers issued by the department of education via the Primary Online Database System.</h6>
+            </div>
             <hr>
             <form method="POST" enctype='multipart/form-data'>
                 {% csrf_token %}

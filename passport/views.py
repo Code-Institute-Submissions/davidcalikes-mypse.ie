@@ -73,7 +73,7 @@ class EnrolledPupilList(PageTitleMixin, LoginRequiredMixin, generic.ListView):
     template_name = 'enrolled_pupil_list.html'
     page_title = "MyPSE.ie - Pupil List"
     context_object_name = 'enrolled_pupil_list'
-    paginate_by = 3
+    paginate_by = 9
 
     def get_queryset(self):
         return EnrolledPupil.objects.filter(

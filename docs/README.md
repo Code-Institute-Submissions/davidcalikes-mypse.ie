@@ -898,8 +898,30 @@ MyPSE.ie provides consistent visual feedback via stylish alert messages to all a
 <img src="../docs/readme_images/feat_feedback_messages_logged_out.png"><br>
 _MyPSE.ie Sign out Form on tablet device_
 
+<br>
 
 ## Pupil List Page
+
+The Pupil List Page is only available to users with the user role of 'school' (or admin). School Administrators are redirected to this page immediately upon login and can return to the page via the 'Pupil List' Link in the Nav Bar should they visit another page while logged in.
+
+The Upper Section of the Pupil List page contains a heading image and header text as well as a link to download a printable id form in PDF format which opens in a new tab when clicked.
+
+<img src="../docs/readme_images/feat_pages_pupil_list_ID_form.png"><br>
+_MyPSE.ie Pupil ID Form_
+
+ The Pupil List Page also provides links to all of the records that a given School Administrator has created. The links are displayed in a list which is styled in an alternating pattern making them easily differentiated to the user.
+
+<img src="../docs/readme_images/feat_pages_pupil_list_upper.png"><br>
+_MyPSE.ie Upper Pupil List Page_
+
+The lower section of the Pupil List Page features links that paginate the list of pupil records if the list contains more than nine objects. There is also a visual indicator provided that informs the user of the number of pupil list pages.
+
+School administrators can also add new pupil records to the pupil record list by clicking on the "add pupil record button" which opens the Pupil Record Form page.
+
+<img src="../docs/readme_images/feat_pages_pupil_list_lower.png"><br>
+_MyPSE.ie Lower Pupil List Page_
+
+
 ## Pupil Record Form Page
 ## Pupil Record Page
 ## Passport List Page

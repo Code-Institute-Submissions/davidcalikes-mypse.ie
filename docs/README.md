@@ -716,18 +716,189 @@ I made an application to purchase the MyPSE.ie domain name and was successful.
 <img src="../docs/readme_images/visual_naming_final.png"><br>
 _MyPSE.ie Domain Registration_
 
+<br>
 
 # Features
 
-## Nav Bar
-## Footer
+## Existing Features
+
+### Features present across all pages
+
+<br>
+
+## The Navbar
+
+The navbar is present across all pages of the app and sticks to the top of the page as a user scrolls downwards, providing an optimal navigational experience.
+
+<img src="../docs/readme_images/feat_nav_bar.png"><br>
+_MyPSE.ie Nav Bar_
+
+<br>
+
+## Nav Logo
+
+The highly stylised navbar for the app contains a CSS designed Logo in the upper left corner of the app that returns users to the home page when clicked. 
+
+<img src="../docs/readme_images/feat_nav_logo.png"><br>
+_MyPSE.ie Nav Logo_
+
+<br>
+
+## Menu Links
+
+The Menu Links are arranged from left to right in order of importance to first time visitors of MyPSE.ie.
+
+<img src="../docs/readme_images/feat_nav_menu_logout.png"><br>
+_MyPSE.ie Nav Menu_
+
+<br>
+
+## Animated Buttons
+
+Each link in the menu has a custom CSS animation that activates when hovered over providing a pleasing visual user experience.
+
+<img src="../docs/readme_images/feat_nav_menu_buttons.png"><br>
+_MyPSE.ie Nav Menu_
+
+The Menu Contains links to the Home, About, Login and Register pages for Logged out or unregistered users. Upon Login users are presented with different options depending on their user type.
+
+<img src="../docs/readme_images/feat_nav_menu_loggedin.png"><br>
+_MyPSE.ie Nav Menu_
+
+When logged in the user is presented with a Logout link instead and the register link is removed. There is a link to the relevant user list (pupil list, passport list etc.) as well as a user status indicator that provides visual feedback for the user.
+
+<br>
+
+## User Status Indicator
+
+<img src="../docs/readme_images/feat_nav_menu_indicator.png"><br>
+_MyPSE.ie User Status Indicator_
+
+The user status indicator informs the user of their login status, role and username.
+
+<br>
+
+## Collapsed Menu
+
+At smaller screen widths, the nav bar collapses into a burger style dropdown menu to enhance user experience on mobile and tablet devices.
+
+<img src="../docs/readme_images/feat_nav_menu_collapse.png"><br>
+_MyPSE.ie Collapsable Menu_
+
+<br>
+
+## The Footer
+
+<img src="../docs/readme_images/feat_footer.png"><br>
+_MyPSE.ie Footer_
+
+The Footer section hugs the bottom of each page of the site and contains Copyright and Developer information including social links that open in a new tab.
+
+<br>
+
+## Existing Features (cont)
+
+### Individual Pages
+
+<br>
+
 ## Home Page
+
+The Home page or landing page, is the first page of the app. The upper section contains the nav bar, hero image and heading text that make the site's purpose instantly obvious to the user. Teaser content can be seen at the base of the upper page encouraging users to scroll.
+
+<img src="../docs/readme_images/feat_pages_home_upper.png"><br>
+_MyPSE.ie Home Page with Hero Image and heading text_
+
+<br>
+
+The lower section of the home page contains three 'cards' that offer more insight to the functions of MyPSE.ie. Each card contains brightly colored images and inviting links that encourage users to login or visit the about page for more information.
+
+<img src="../docs/readme_images/feat_pages_home_lower.png"><br>
+_MyPSE.ie Lower Home Page with info cards, links and footer_
+
+<br>
+
 ## About Page
+
+The About page contains information and resources for users that compliment the application and is available to view for authenticated and visiting users. The upper section contains the nav bar, heading image and heading text. There is also a small paragraph of text that provides instructions for the user. Teaser content can be seen at the base of the upper page encouraging users to scroll.
+
+<img src="../docs/readme_images/feat_pages_about_upper.png"><br>
+_MyPSE.ie About Page with Heading Image and info text content_
+
+<br>
+
+The lower section of the About page contains three 'cards' that offer links and resources to assist users during their operation of MyPSE.ie. Each card contains relevant images and links that encourage users to download user guides, sample passports or learn more about SEN transition passports.
+
+<img src="../docs/readme_images/feat_pages_about_lower.png"><br>
+_MyPSE.ie Lower About Page with info cards, downloads and link to Learn More Page_
+
+<br>
+
 ## Learn More Page
+
+The Learn More page contains information regarding the important role that SEN passports have during educational transitions for SEN pupils, parents and teachers. The lower section lists the advantages of MyPSE.ie specifically.
+
+<img src="../docs/readme_images/feat_pages_learn_more.png"><br>
+_MyPSE.ie Learn More Page_
+
+<br>
+
 ## User Guides
+
+User guides can be downloaded via link from the About page in PDF format. This is to provide useful guidance for all authenticated MyPSE.ie users who wish to interact with application data. 
+
+<img src="../docs/readme_images/feat_downloads_user_guides.png"><br>
+_MyPSE.ie User Guide Screenshot_
+
+<br>
+
 ## Sample Passports
+
+Sample Passports can be downloaded via link from the About page in PDF format. This is to provide inspiration for all authenticated MyPSE.ie users who wish to create a passport but would like a handy reference document to assist them. 
+
+<img src="../docs/readme_images/feat_downloads_samples.png"><br>
+_MyPSE.ie Sample Passports Screenshot_
+
+<br>
+
 ## Authentication & Authorisation
+
+### Registration page
+
+A key feature of MyPSE.ie is the assignment of user roles to users at the point of registration. On the Registration page, users can choose to create an account as a SEN pupil, parent, teacher or school administrator.
+
+Once they have created an account with their chosen role they are redirected to a list page containing information pertinent to their user type.
+
+<img src="../docs/readme_images/feat_pages_registration.png"><br>
+_MyPSE.ie Registration Form_
+
+<br>
+
+### Sign In Page
+
+The Login page has a simple form that allows already registered users to log in and access data.
+
+<img src="../docs/readme_images/feat_pages_login.png"><br>
+_MyPSE.ie Registration Form_
+
+
+### Sign Out
+
+The Sign out page allows users to logout at the end of their session.
+
+<img src="../docs/readme_images/feat_pages_logout.png"><br>
+_MyPSE.ie Sign out Form on tablet device_
+
+<br>
+
 ## Feedback Messages
+
+MyPSE.ie provides consistent visual feedback via stylish alert messages to all authenticated users who manipulate data using the application. The messages are programmed to appear for successful authentication actions as well as successful data submissions and submission errors.
+
+<img src="../docs/readme_images/feat_feedback_messages_logged_out.png"><br>
+_MyPSE.ie Sign out Form on tablet device_
+
+
 ## Pupil List Page
 ## Pupil Record Form Page
 ## Pupil Record Page

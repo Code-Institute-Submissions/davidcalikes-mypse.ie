@@ -23,7 +23,7 @@
                 </div>
                 <div>
                     <form class="list-form" method='GET'>
-                        <input pattern="[0-7]{6}" title="Six Digit Teacher ID Number" type='text' name='teacher_id' value='{{ request.GET.teacher_id }}'>
+                        <input pattern="[0-9]{6}" title="Six Digit Teacher ID Number" type='text' name='teacher_id' value='{{ request.GET.teacher_id }}'>
                         <input class="button" type='submit' value="Search Passports">
                       </form>
                 </div>

@@ -35,12 +35,12 @@ class Passport(models.Model):
 
     pupil_id = models.CharField(
         "Pupil ID Number",
-        validators=[RegexValidator(r'^[0-9]{8}$',
+        validators=[RegexValidator(r'^[1-9]{8}$',
                     message="Not a valid pupil id number")],
         max_length=8, unique=True)
     teacher_id = models.CharField(
         "Teacher ID Number",
-        validators=[RegexValidator(r'^[0-9]{6}$',
+        validators=[RegexValidator(r'^[1-9]{6}$',
                     message="Not a valid Teacher ID")],
         max_length=6, default="")
     slug = models.SlugField(

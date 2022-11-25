@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
+
+{% if "enrolled_pupil_record" in request.META.HTTP_REFERER %}
 <div class="container-fluid list-heading">
     <div>&nbsp;
         <div class="row">
@@ -22,4 +24,18 @@
         </div>
     </div>
 </div>
+{% else %}
+        <section class="passport-heading">
+            <div>
+                <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
+            </div>
+            <h1 class="list-text">***WARNING***</h1>
+                <p>Warning! 
+                    You are unauthorised to view this page! 
+                    You have navigated to this page from an unauthorised url or your user role is unauthorised to view this page.
+                    <br>
+                    Please visit the <a href="{% url 'about' %}">about page</a>  for more information about how to use this site.</p>
+                <a href="{% url 'home' %}" class="btn btn-lg btn-success">Click Here to visit the MyPSE.ie Home page</a>
+        </section>
+        {% endif %} 
 {% endblock %}

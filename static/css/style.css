@@ -647,7 +647,8 @@ label {
     margin-top: 1rem;
 }
 .passport-heading {
-width: 92%;
+    width: 92%;
+    text-align: center;
     background-color: white;
     padding: 1rem;
     border-radius: 4px;

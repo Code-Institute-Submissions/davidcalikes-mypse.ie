@@ -64,7 +64,7 @@
         </div>
         <hr class="list-separator-rule">
     </div>
-
+    {% else %}
     <section class="warning-heading">
         <div>
             <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
@@ -77,4 +77,5 @@
                 Please visit the <a href="{% url 'about' %}">about page</a>  for more information about how to use this site.</p>
             <a href="{% url 'home' %}" class="btn btn-lg btn-success">Click Here to visit the MyPSE.ie Home page</a>
     </section>
+    {% endif %}
 {% endblock %}

@@ -389,6 +389,8 @@ The following problem statement was created as a result of developing this perso
 
 * Authentication should be required for CRUD interactions.
 
+* The site admin panel should be used sparingly for sit maintenence by vetted personel and should not be required to submit pupil records or passports. 
+
 * Users should be instructed to select their user 'role' at registration.
 
 * The application should use existing, 'real-world' ID numbers to ensure passports are genuine and to future-proof later versions of the app.
@@ -861,9 +863,7 @@ _MyPSE.ie Sample Passports Screenshot_
 
 <br>
 
-## Authentication & Authorisation
-
-### Registration page
+## Registration page
 
 A key feature of MyPSE.ie is the assignment of user roles to users at the point of registration. On the Registration page, users can choose to create an account as a SEN pupil, parent, teacher or school administrator.
 
@@ -874,7 +874,7 @@ _MyPSE.ie Registration Form_
 
 <br>
 
-### Sign In Page
+## Sign In Page
 
 The Login page has a simple form that allows already registered users to log in and access data.
 
@@ -882,7 +882,7 @@ The Login page has a simple form that allows already registered users to log in 
 _MyPSE.ie Registration Form_
 
 
-### Sign Out
+## Sign Out
 
 The Sign out page allows users to logout at the end of their session.
 
@@ -893,7 +893,7 @@ _MyPSE.ie Sign out Form on tablet device_
 
 ## Feedback Messages
 
-MyPSE.ie provides consistent visual feedback via stylish alert messages to all authenticated users who manipulate data using the application. The messages are programmed to appear for successful authentication actions as well as successful data submissions and submission errors.
+MyPSE.ie provides consistent visual feedback via stylish alert messages to all authenticated users who manipulate data using the application. The messages are programmed to appear for successful authentication actions as well as successful data submissions and submission errors then dissapear after a few seconds.
 
 <img src="../docs/readme_images/feat_feedback_messages_logged_out.png"><br>
 _MyPSE.ie Sign out Form on tablet device_
@@ -914,7 +914,7 @@ _MyPSE.ie Pupil ID Form_
 <img src="../docs/readme_images/feat_pages_pupil_list_upper.png"><br>
 _MyPSE.ie Upper Pupil List Page_
 
-The lower section of the Pupil List Page features links that paginate the list of pupil records if the list contains more than nine objects. There is also a visual indicator provided that informs the user of the number of pupil list pages.
+The lower section of the Pupil List Page features links that navigate through pages of records if the list contains more than nine objects. There is also a visual indicator provided that informs the user of the number of pupil list pages.
 
 School administrators can also add new pupil records to the pupil record list by clicking on the "add pupil record button" which opens the Pupil Record Form page.
 
@@ -1054,7 +1054,27 @@ _MyPSE.ie Teacher Pupil ID Check_
 
 Clicking an individual link will bring the teacher user to the Teacher Pupil ID page.
 
+<br>
+
+## Admin Panel
+
+MyPSE.ie's Admin Panel Utilises Django's Built in Admin functionality. The Admin panel has been designed to be used by Garda vetted site administrators for database and record maintenence only and is not required to create user records or passports. Admin Users can access and edit all data on the application's database. Summernote form fields are also included in the Admin Passports Form page to maintain a consistency of use across the site. 
+
+<img src="../docs/readme_images/feat_admin.png"><br>
+_MyPSE.ie Admin Panel_
+
+<br>
+
 ## Added Security Features
+
+MyPSE.ie has addes security features that prevent unauthorised user access and form submission.
+
+* URL referer feature. 
+
+This feature ensures that users who are authenticated, but not authorised to view pages ouside the scope of their own user role cannot access pupil record and passport forms by navigating to the page directly via URL input. 
+
+<img src="../docs/readme_images/feat_security_urls.png"><br>
+_MyPSE.ie Invalid URL Referer Message_
 
 <br>
 

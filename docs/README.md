@@ -957,13 +957,103 @@ _MyPSE.ie Delete Pupil Record Page_
 
 *** NB Deleting a pupil record removes a users ability to create a new passport. It does not delete a pupil's passport if one exists but should a pupil decide to delete thier own passport after their enrolment file has been removed they will require re-enrolment via a new school administration. ***
 
+An almost identical page is used via the Passport Page to delete pupil passports.
+
 ## Passport List Page
+
+The Passport List Page is only available to users with the user role of 'Parent/Pupil', (or admin). Parent users are redirected to this page immediately upon login and can return to the page via the 'Pupil List' Link in the Nav Bar should they visit another page while logged in. Pupil users are redirected to this page after they successfully create or edit their passports. 
+
+The Upper Section of the Pupil List page contains a heading image and header text as well and is consitent in style with the rest of the site.
+
+<img src="../docs/readme_images/feat_pages_upper_passport_list.png"><br>
+_MyPSE.ie Upper Passport List Page_
+
+The Lower Passport List Page contains 'card' style passport holders that link to any number of passports that parent users have created and any single passports that pupil users have created. The cards, which contain the name and image of the passport holder are displayed from left to right to the user and paginate if the list contains more than three objects. There is a link at the bottom of each card for users to access each document. For parennt users there is a button above the footer that allows access to add new passports. For pupil users, this disappears after they have created one passport.
+
+<img src="../docs/readme_images/feat_pages_lower_passport_list.png"><br>
+_MyPSE.ie Lower Passport List Page_
+
+<br>
+
 ## Pupil ID Check Page
+
+The Pupil ID check is the key security feature of the MyPSE.ie application. The page presents the users an input field that queries the Pupil Records Data table. If a matching Pupil ID is found to the one submitted users can click on the link provided to begin creating a pupil passport. The pupil ID chack page is available to both pupil and parent users via the add passport link in the passport list page. The page features a heading image and text that informs the user they cannot create a passport without a valid ID.
+
+<img src="../docs/readme_images/feat_pages_pupil_id_check.png"><br>
+_MyPSE.ie Pupil ID Check page_
+
 ## Passport Form Page
+
+The Passport Form Page contains the main form for submitting a pupil passport to the MyPSE.ie Passports data table. The page has heading text and instructions for the users at the top of the form. 
+<img src="../docs/readme_images/feat_pages_passport_form.png"><br>
+_MyPSE.ie Passport Form page_
+
+The form also contains the following key features:
+
+* Text form fields for clerical inputs like 'pupil' and 'teacher' fields.
+These fields are important as they are what authorise teacher users to access passports. Pupils fill these fields out using the information contained in the physical form provided by their school administration staff.
+
+* Custom JavaScript functionality that ensures users cannot change their pupil ID from the one they submitted during the authorisation check.
+
+<img src="../docs/readme_images/feat_pages_passport_form_js.png"><br>
+_MyPSE.ie JavaScript ID Check Function_
+
+* Cloudinary Image Fields that allow users to upload multiple images to compliment their passports.
+
+Image Fields
+<img src="../docs/readme_images/feat_pages_passport_form_images.png"><br>
+_MyPSE.ie JavaScript ID Check Function_
+
+* Summernote text editors on every passport text field allowing users greater freedom of self expression when creating text content. Summernote fields hav no character limit to allow users the maximum scope availiable to accurately communicate a pupils transitional needs.
+
+<img src="../docs/readme_images/feat_pages_passport_form_summernote.png"><br>
+_MyPSE.ie Summernote_
+
+The passport form can be submitted via a link at the bottom of the page.
+A pre-populated instance of the form is also used form is used to edit passport data via a link form the base of the passport. 
+
+<br>
+
 ## Passport Page
+
+The Passport Page is availiable to Pupil, Parent and Teacher Users.
+
+Pupils and Parent users can access passports via the passport list page and authorised Teacher users can access passports via the Teacher pupil list page after they confirm the pupil's ID number.
+
+<img src="../docs/readme_images/feat_pages_passport.png"><br>
+_MyPSE.ie Passport Page_
+
+Passports are displayed in a layout similar to that of the 4 schools template referenced in the planning section in order to provide users with a sense of familiarity and confidence. Text is displayed using whatever style the user submits during the creation of the passports due to the WYSIWYG qualities of Summernote. 
+
+<img src="../docs/readme_images/feat_pages_passport_summernote.png"><br>
+_MyPSE.ie Summernote Passport Text_
+
+Links to the edit and delete passport pages are available at the base of the passport page. These links are not available to Teacher users.
+
+<br>
+
 ## Teacher Pupil List Page
-## Teacher Pupil ID Page
-## Teacher Passport Page
+
+The Teacher Pupil List Page is only available to authenticated 'Teacher' users who are redirected to the page direct from login. Teachers can return to the page should they navigate away from it by way of the 'Pupil Passports' link in the nav bar.
+
+The Upper Teacher Passport list page contains a heading image and text feedback to instruct the user. Teacher users can access a list of pupil passports to which they have been assigned by submitting their official Irish Teaching Council Number. Using the teaching council number ensures that no other Teacher user can view the pupil passport.
+
+<img src="../docs/readme_images/feat_pages_teacher_passport_list.png"><br>
+_MyPSE.ie Teacher Passport List_
+
+Clicking an individual link will bring the teacher user to the Teacher Pupil ID page.
+
+<br>
+
+## Teacher Pupil ID Check Page
+
+The Teacher Pupil ID Page is only available to Teacher users. Similar to the Pupil ID Page, the pupil's id must be valid before the Teacher user can access the passport. This is to prevent Parent Or Pupil users, who have access to Teacher ID numbers from accessing the passports of other pupils by creating a teacher account and using a teacher ID number to display a list of pupils assigned to that teacher. This extra security check ensures that Teachers must have both Teacher and Pupil ID numbers, meaning if a pupil or parent user does create a Teacher account, the only passports they will be able to access are passports they have both ID numbers for. (Their own)
+
+<img src="../docs/readme_images/feat_pages_teacher_pupil_check.png"><br>
+_MyPSE.ie Teacher Pupil ID Check_
+
+Clicking an individual link will bring the teacher user to the Teacher Pupil ID page.
+
 ## Added Security Features
 
 <br>

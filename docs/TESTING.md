@@ -480,7 +480,7 @@ Each link of the Registration Page was tested and was marked 'pass' when the fol
 
 Below is the testing table for the Registration page.
 
-* Can open footer links -- Footer links open in a new tab.
+*Can open footer links -- Footer links open in a new tab.
 | Logged In As  | Can Access Home Page | Can Access About Page (both links) | Can Register As School | Can Register As Pupil  | Can Register As Parent | Can Register As Teacher | Can Access Login (both links) | Can Open Footer Links (new tab) |
 |---------------|----------------------|------------------------------------|------------------------|------------------------|------------------------|-------------------------|-------------------------------|---------------------------------|
 | Not Logged In | yes/pass             | yes/pass                           | yes/pass               | yes/pass               | yes/pass               | Yes Pass                | Yes/Pass                      | yes/pass                        |

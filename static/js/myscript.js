@@ -55,7 +55,7 @@ function validateForm() {
     let storedId = localStorage.getItem("id");
     console.log(storedId)
         if (pupilId !==  storedId) {
-        alert("Incorrect ID");
+        alert("Incorrect Pupil ID! Pupil ID must match one given during authoristation check");
         return false;
         } else {
         loadingModal();

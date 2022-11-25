@@ -473,6 +473,9 @@ label {
     color: white;
 }
 
+.errorlist {
+    color: #ffffff;
+}
 
 .login {
     background-color: #0B5657;

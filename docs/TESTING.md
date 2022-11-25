@@ -1517,6 +1517,18 @@ _MyPSE on Windows 10 Chrome_
 
 ## Practical Testing
 
+Every Function of MyPSE.ie was tested for practical use across multiple device sizes:
+
+### Mobile Testing -- Huawei P20 Pro
+
+* Unregistered user tests:
+
+
+
+
+
+
+
 The app was tested for practical use by a School administrator by Susan Hynes, secretary of St Mary's Special School, Drumcar.
 
 During testing, Susan found the following bug.

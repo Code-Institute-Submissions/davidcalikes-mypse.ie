@@ -646,9 +646,9 @@ label {
     border: solid 2px #0B5657;
     margin-top: 1rem;
 }
+
 .passport-heading {
     width: 92%;
-    text-align: center;
     background-color: white;
     padding: 1rem;
     border-radius: 4px;
@@ -767,6 +767,17 @@ label {
 #set-teacher-id {
     display: none;
 }
+
+.warning-heading {
+    width: 92%;
+    text-align: center;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    border: solid 2px #0B5657;
+    margin-left: 4%;
+}
+
 
 .callout-container {
     height: 100vh;

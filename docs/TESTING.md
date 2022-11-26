@@ -1477,46 +1477,6 @@ _Using console logs to squash a bug_
 
 <br>
 
-
-### Responsiveness Testing
-
-The responsiveness of the application was tested across the following devices.
-
-Macbook Pro 13 (OSX High Sierra): Chrome, Safari and Firefox
-
-<img src="../docs/testing_images/testing_resp1.png"><br>
-_Screenshot from Macbook Pro: Chrome_ 
-
-<img src="../docs/testing_images/testing_resp2.png"><br>
-_Screenshot from Macbook Pro: Safari_ 
-
-A this was my development machine, I also used it to test responsiveness across a full range of devices using Google's Development tools.
-
-<img src="../docs/testing_images/testing_resp3.png"><br>
-_Screenshot from Macbook Pro: Safari_ 
-
-iPhone XR Chrome, Safari
-
-<img src="../docs/testing_images/testing_resp4.png"><br>
-_MyPSE on iPhone XR_
-
-Huawei P20 Pro (Android) Chrome, Firefox
-
-<img src="../docs/testing_images/testing_resp5.png"><br>
-_Screenshot from on Huawei P20 Pro: Chrome_
-
-iPad Mini 5 Chrome, Safari, Firefox
-
-<img src="../docs/testing_images/testing_resp6.png"><br>
-_MyPSE on iPad Mini 5: Firefox_
-
-HP ProDesk (Windows 10) Chrome
-
-<img src="../docs/testing_images/testing_resp7.png"><br>
-_MyPSE on Windows 10 Chrome_
-
-<br>
-
 ## Practical Testing
 
 Every Function of MyPSE.ie was tested for practical use across multiple device types:
@@ -1682,17 +1642,17 @@ _MyPSE.ie on Macbook Pro_
 ### Unregistered user tests:
 <br>
 
-* All pages that are accessible to unregistered users were tested for practical use on a tablet device.
+* All pages that are accessible to unregistered users were tested for practical use on a pc.
 
 * All pages displayed correctly with all information available to the user.
 
 * All downloads links were tested and functioned correctly.
 
-* A user account was created successfully with the role of 'school' and the name of 'test-school-tablet'.
+* A user account was created successfully with the role of 'school' and the name of 'test-school-macbook'.
 
-* A user account was created successfully with the role of 'pupil' and the name of 'test-parent-tablet'.
+* A user account was created successfully with the role of 'pupil' and the name of 'test-parent-macbook'.
 
-* A user account was created successfully with the role of 'teacher' and the name of 'test-teacher-tablet'.
+* A user account was created successfully with the role of 'teacher' and the name of 'test-teacher-macbook'.
 
 <br>
 
@@ -1725,7 +1685,7 @@ _Registration on Macbook Pro_
 <img src="../docs/testing_images/testing_pc3.png"><br>
 _Authorisation on Macbook Pro_
 
-* A passport was created with the name of "Test Pupil School Mobile", a Pupil ID of "19347657" and a Teacher ID of "543216".
+* A passport was created with the name of "Test Pupil macbook", a Pupil ID of "19347657" and a Teacher ID of "543216".
 
 <img src="../docs/testing_images/testing_pc4.png"><br>
 _Passport list on Macbook Pro_
@@ -1748,11 +1708,15 @@ _Teacher Passport ID check on Macbook Pro_
 <img src="../docs/testing_images/testing_pc6.png"><br>
 _Teacher Passport on Macbook Pro_
 
+<br>
 
+## Errors/Issues found during practical testing
 
-## Preliminary Testing
+<br>
 
-The app was initially tested for practical use by a School administrator by Susan Hynes, secretary of St Mary's Special School, Drumcar.
+### Practical testing by a School Administrator
+
+The app was tested for practical use by a School administrator by Susan Hynes, secretary of St Mary's Special School, Drumcar.
 
 During testing, Susan found the following bug.
 
@@ -1765,6 +1729,94 @@ The pupil record form would not accept a lowercase letter as the final character
 _Bugfix School Roll Number_
 
 This bug was fixed by altering the REGEX validator code for the School Roll no form field to allow lowercase letters.
+
+
+### Practical testing by a Parent/Pupil
+
+The app was tested for practical use by a Pupil/Parent.
+
+During testing, I found the following bug.
+
+<img src="../docs/testing_images/testing_bug_susan.png"><br>
+_Issue found during practical testing_
+
+<img src="../docs/testing_images/testing_bugfix_susan.png"><br>
+_Bugfix School Roll Number_
+
+This bug was fixed by altering the REGEX validator code for the School Roll no form field to allow lowercase letters.
+
+<br>
+
+### Practical testing by a Teacher
+
+The app was tested for practical use by Christina Meade
+
+During testing, Christina offered the following feedback.
+
+"The website is brilliant but if I didn't have the childs ID at hand or if I have to look it up every time I have to use it I can see it getting a bit frustrating."
+
+It is clear that the user experience of teacher users of MyPSE.ie is less than optimal. This is something that future iterations of the app will remedy, but for this first, MVP version, the protection of pupil data must take precident.
+
+
+### Responsiveness Testing
+
+The responsiveness of the application was tested across the following devices.
+
+Macbook Pro 13 (OSX High Sierra): Chrome, Safari and Firefox
+
+<img src="../docs/testing_images/testing_resp1.png"><br>
+_Screenshot from Macbook Pro: Chrome_ 
+
+<img src="../docs/testing_images/testing_resp2.png"><br>
+_Screenshot from Macbook Pro: Safari_ 
+
+A this was my development machine, I also used it to test responsiveness across a full range of devices using Google's Development tools.
+
+<img src="../docs/testing_images/testing_resp3.png"><br>
+_Screenshot from Macbook Pro: Safari_ 
+
+iPhone XR Chrome, Safari
+
+<img src="../docs/testing_images/testing_resp4.png"><br>
+_MyPSE on iPhone XR_
+
+Huawei P20 Pro (Android) Chrome, Firefox
+
+<img src="../docs/testing_images/testing_resp5.png"><br>
+_Screenshot from on Huawei P20 Pro: Chrome_
+
+iPad Mini 5 Chrome, Safari, Firefox
+
+<img src="../docs/testing_images/testing_resp6.png"><br>
+_MyPSE on iPad Mini 5: Firefox_
+
+HP ProDesk (Windows 10) Chrome
+
+<img src="../docs/testing_images/testing_resp7.png"><br>
+_MyPSE on Windows 10 Chrome_
+
+<br>
+
+The application is fully responsive across all devices and displays no errors or rendering issues with the exeption of the iPad Mini.
+
+When scrolling the Sticky Nav bar would sometimes overlap with the top of the page. This is only an aesthetic issue during scrolling and causes no issues with the functionality of the app.
+
+Changes were made to the Teacher Passport Detail page after the following issue was found:
+
+<img src="../docs/testing_images/testing_resp_er1.png"><br>
+_MyPSE.ie Floating Button Error_
+
+The 'Floating Button' is placed over the Teacher Passport Detail page and fires a JavaScript function that checks to make sure the Teacher user's ID number is the same as the Teacher User ID field of the Passport. If the numbers do not match when the button is clicked the passport page will remain opaque and the user will be returned to the previous page. The floating button was displaying out of center alignment and inconsistent with the design of the rest of the site.
+
+<img src="../docs/testing_images/testing_resp_err_fix.png"><br>
+_MyPSE.ie Floating Button Error_
+
+I resolved this by using google dev tools to modify the CSS style rules that would center the button maintaining a consistent design style.
+
+<br>
+
+
+
 
 
 

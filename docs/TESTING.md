@@ -1480,7 +1480,7 @@ _Using console logs to squash a bug_
 
 ### Responsiveness Testing
 
-I physically tested the responsiveness of the application across the following devices.
+The responsiveness of the application was tested across the following devices.
 
 Macbook Pro 13 (OSX High Sierra): Chrome, Safari and Firefox
 
@@ -1515,21 +1515,163 @@ HP ProDesk (Windows 10) Chrome
 <img src="../docs/testing_images/testing_resp7.png"><br>
 _MyPSE on Windows 10 Chrome_
 
+<br>
+
 ## Practical Testing
 
-Every Function of MyPSE.ie was tested for practical use across multiple device sizes:
+Every Function of MyPSE.ie was tested for practical use across multiple device types:
 
-### Mobile Testing -- Huawei P20 Pro
+### Mobile Testing -- Huawei P20 Pro:
 
-* Unregistered user tests:
+<img src="../docs/testing_images/testing_mobile.png">
+
+<br>
+
+### Unregistered user tests:
+<br>
+
+* All pages that are accessible to unregistered users were tested for practical use on a mobile device.
+
+* All pages displayed correctly with all information available to the user.
+
+* All downloads links were tested and function correctly.
+
+* A user account was created successfully with the role of 'school' and the name of 'test-school-mobile'.
+
+* A user account was created successfully with the role of 'parent' and the name of 'test-parent-mobile'.
+
+* A user account was created successfully with the role of 'teacher' and the name of 'test-teacher-mobile'.
+
+<br>
+
+<img src="../docs/testing_images/testing_mobile1.png">
+
+_Registration on Mobile_
+<br>
+
+###  Users registered as a School Administrator (user role = school)
+
+* As a School Administrator a pupil record was successfully created with the name of "Test Pupil Mobile" and a Pupil ID of "17652435".
+
+<br>
+
+<img src="../docs/testing_images/testing_mobile2.png">
+_Registration on Mobile_
+
+<br>
+
+* The School Administrator user was successfully logged out.
+
+<br>
+
+###  Users registered as a Parent (user role = parent)
+
+<br>
+
+* As a Parent, a pupil ID was successfully submitted to the Authorisation page.
+
+<img src="../docs/testing_images/testing_mobile3.png"><br>
+_Authorisation on Mobile_
+
+* A passport was created with the name of "Test Pupil School Mobile", a Pupil ID of "17652435" and a Teacher ID of "181818".
+
+<br>
+
+###  Users registered as a Teacher (user role = Teacher)
+
+<br>
+
+* As a Teacher, a Teacher ID was successfully submitted to the Teacher Passports list page.
+
+* As a Teacher, a pupil ID was successfully submitted to the Authorisation page.
+
+<img src="../docs/testing_images/testing_mobile5.png"><br>
+_Teacher Passport ID check on Mobile_
+
+* As a Teacher the selected pupil passport was displayed correctly after JavaScript authentication function. 
+
+<img src="../docs/testing_images/testing_mobile6.png"><br>
+_Teacher Passport on Mobile_
+
+<br>
+
+### Tablet Testing -- iPad Mini 5:
+
+<img src="../docs/testing_images/testing_tablet.png"><br>
+_MyPse.ie on iPad Mini_
+
+<br>
+
+### Unregistered user tests:
+<br>
+
+* All pages that are accessible to unregistered users were tested for practical use on a tablet device.
+
+* All pages displayed correctly with all information available to the user.
+
+* All downloads links were tested and functioned correctly.
+
+* A user account was created successfully with the role of 'school' and the name of 'test-school-tablet'.
+
+* A user account was created successfully with the role of 'parent' and the name of 'test-parent-tablet'.
+
+* A user account was created successfully with the role of 'teacher' and the name of 'test-teacher-tablet'.
+
+<br>
+
+<img src="../docs/testing_images/testing_mobile1.png">
+
+_Registration on iPad Mini_
+<br>
+
+###  Users registered as a School Administrator (user role = school)
+
+* As a School Administrator a pupil record was successfully created with the name of "Test Pupil Mobile" and a Pupil ID of "17652435".
+
+<br>
+
+<img src="../docs/testing_images/testing_mobile2.png">
+_Registration on iPad Mini_
+
+<br>
+
+* The School Administrator user was successfully logged out.
+
+<br>
+
+###  Users registered as a Parent (user role = parent)
+
+<br>
+
+* As a Parent, a pupil ID was successfully submitted to the Authorisation page.
+
+<img src="../docs/testing_images/testing_mobile3.png"><br>
+_Authorisation on iPad Mini_
+
+* A passport was created with the name of "Test Pupil School Mobile", a Pupil ID of "17652435" and a Teacher ID of "181818".
+
+<br>
+
+###  Users registered as a Teacher (user role = Teacher)
+
+<br>
+
+* As a Teacher, a Teacher ID was successfully submitted to the Teacher Passports list page.
+
+* As a Teacher, a pupil ID was successfully submitted to the Authorisation page.
+
+<img src="../docs/testing_images/testing_mobile5.png"><br>
+_Teacher Passport ID check on iPad Mini_
+
+* As a Teacher the selected pupil passport was displayed correctly after JavaScript authentication function. 
+
+<img src="../docs/testing_images/testing_mobile6.png"><br>
+_Teacher Passport on iPad Mini_
 
 
+## Preliminary Testing
 
-
-
-
-
-The app was tested for practical use by a School administrator by Susan Hynes, secretary of St Mary's Special School, Drumcar.
+The app was initially tested for practical use by a School administrator by Susan Hynes, secretary of St Mary's Special School, Drumcar.
 
 During testing, Susan found the following bug.
 

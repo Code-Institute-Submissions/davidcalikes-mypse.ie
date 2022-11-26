@@ -87,7 +87,7 @@ I have outlined the following benefits:
     <br>
     </summary><br>
 
-1. There is currently no dedicated app available that offers pupils, parents, teachers and schools the ability to create and share pupil passports.
+1. There are currently no dedicated apps available that can offer pupils, parents, teachers and schools the ability to create and share pupil passports.
 <br>
 
 2. A dedicated app could be easily integrated into many existing school intranet systems such as 'Aladdin' or 'VS Ware' via URL link.
@@ -592,6 +592,10 @@ The Passport custom data model was created using the fields from the 4 schools "
 _4 Schools Planner Passport_
 
 The relationships between the data tables are designed in order to solve the problem regarding the transfer of teacher access to pupil passports. To conform to privacy policy, only one teacher can be assigned access to a pupils transition document at any given time. To solve this issue, MyPSE.ie puts the pupils and parents in command of who can view their passports and when. They can even revoke access altogether if they choose. When pupils become enrolled in the MyPSE.ie Enrolled Pupil List data table they are given a Physical Document by their school adminitistration staff containing the Teacher ID number of their assigned teacher. This ensures they will have complete control over who views their passport and also that they can transfer teacher privileges instantly upon future educational transitions.
+
+# Agile
+
+MyPSE.ie was developed using the Agile Development Methodology. A detailed overview of the Agile process is availiable [here.](../docs/AGILE.md)
 
 
 # Visual Design

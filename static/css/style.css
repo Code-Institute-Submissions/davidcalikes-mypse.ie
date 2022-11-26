@@ -52,9 +52,8 @@ li {
     background-color: #0B5657;
     padding: 2rem;
     border-radius: 4px;
-    position: fixed;
-    top: 40%;
-    left: 35%;
+    position: sticky;
+    top: 50%;
     z-index: 1;
     cursor: pointer;
 }

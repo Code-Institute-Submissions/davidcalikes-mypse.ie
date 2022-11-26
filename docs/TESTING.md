@@ -1613,24 +1613,24 @@ _MyPse.ie on iPad Mini_
 
 * A user account was created successfully with the role of 'school' and the name of 'test-school-tablet'.
 
-* A user account was created successfully with the role of 'parent' and the name of 'test-parent-tablet'.
+* A user account was created successfully with the role of 'pupil' and the name of 'test-parent-tablet'.
 
 * A user account was created successfully with the role of 'teacher' and the name of 'test-teacher-tablet'.
 
 <br>
 
-<img src="../docs/testing_images/testing_mobile1.png">
+<img src="../docs/testing_images/testing_tablet1.png">
 
 _Registration on iPad Mini_
 <br>
 
 ###  Users registered as a School Administrator (user role = school)
 
-* As a School Administrator a pupil record was successfully created with the name of "Test Pupil Mobile" and a Pupil ID of "17652435".
+* As a School Administrator a pupil record was successfully created with the name of "Test Pupil Mobile" and a Pupil ID of "19347657".
 
 <br>
 
-<img src="../docs/testing_images/testing_mobile2.png">
+<img src="../docs/testing_images/testing_tablet2.png">
 _Registration on iPad Mini_
 
 <br>
@@ -1645,10 +1645,13 @@ _Registration on iPad Mini_
 
 * As a Parent, a pupil ID was successfully submitted to the Authorisation page.
 
-<img src="../docs/testing_images/testing_mobile3.png"><br>
+<img src="../docs/testing_images/testing_tablet3.png"><br>
 _Authorisation on iPad Mini_
 
-* A passport was created with the name of "Test Pupil School Mobile", a Pupil ID of "17652435" and a Teacher ID of "181818".
+* A passport was created with the name of "Test Pupil School Mobile", a Pupil ID of "19347657" and a Teacher ID of "181818".
+
+<img src="../docs/testing_images/testing_tablet4.png"><br>
+_Passport list on iPad Mini_
 
 <br>
 
@@ -1660,13 +1663,91 @@ _Authorisation on iPad Mini_
 
 * As a Teacher, a pupil ID was successfully submitted to the Authorisation page.
 
-<img src="../docs/testing_images/testing_mobile5.png"><br>
+<img src="../docs/testing_images/testing_tablet5.png"><br>
 _Teacher Passport ID check on iPad Mini_
 
 * As a Teacher the selected pupil passport was displayed correctly after JavaScript authentication function. 
 
-<img src="../docs/testing_images/testing_mobile6.png"><br>
+<img src="../docs/testing_images/testing_tablet6.png"><br>
 _Teacher Passport on iPad Mini_
+
+
+### PC Testing -- Macbook Pro With Apple Cinema Display:
+
+<img src="../docs/testing_images/testing_pc.png"><br>
+_MyPSE.ie on Macbook Pro_
+
+<br>
+
+### Unregistered user tests:
+<br>
+
+* All pages that are accessible to unregistered users were tested for practical use on a tablet device.
+
+* All pages displayed correctly with all information available to the user.
+
+* All downloads links were tested and functioned correctly.
+
+* A user account was created successfully with the role of 'school' and the name of 'test-school-tablet'.
+
+* A user account was created successfully with the role of 'pupil' and the name of 'test-parent-tablet'.
+
+* A user account was created successfully with the role of 'teacher' and the name of 'test-teacher-tablet'.
+
+<br>
+
+<img src="../docs/testing_images/testing_pc1.png">
+
+_Registration on Macbook Pro_
+<br>
+
+###  Users registered as a School Administrator (user role = school)
+
+* As a School Administrator a pupil record was successfully created with the name of "Test Pupil Mobile" and a Pupil ID of "14523121".
+
+<br>
+
+<img src="../docs/testing_images/testing_pc2.png">
+_Registration on Macbook Pro_
+
+<br>
+
+* The School Administrator user was successfully logged out.
+
+<br>
+
+###  Users registered as a Parent (user role = parent)
+
+<br>
+
+* As a Parent, a pupil ID was successfully submitted to the Authorisation page.
+
+<img src="../docs/testing_images/testing_pc3.png"><br>
+_Authorisation on Macbook Pro_
+
+* A passport was created with the name of "Test Pupil School Mobile", a Pupil ID of "19347657" and a Teacher ID of "543216".
+
+<img src="../docs/testing_images/testing_pc4.png"><br>
+_Passport list on Macbook Pro_
+
+<br>
+
+###  Users registered as a Teacher (user role = Teacher)
+
+<br>
+
+* As a Teacher, a Teacher ID was successfully submitted to the Teacher Passports list page.
+
+* As a Teacher, a pupil ID was successfully submitted to the Authorisation page.
+
+<img src="../docs/testing_images/testing_pc5.png"><br>
+_Teacher Passport ID check on Macbook Pro_
+
+* As a Teacher the selected pupil passport was displayed correctly after JavaScript authentication function. 
+
+<img src="../docs/testing_images/testing_pc6.png"><br>
+_Teacher Passport on Macbook Pro_
+
 
 
 ## Preliminary Testing

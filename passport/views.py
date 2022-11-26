@@ -326,7 +326,7 @@ class PupilCheck(PageTitleMixin, LoginRequiredMixin, generic.ListView):
 
 class TestView(generic.TemplateView):
     """
-    Displays 500 error page when URL is typed
+    Displays 500 error page when URL/500 is typed in browser (for validator testing)
     """
     template_name = '500.html'
     page_title = "MyPSE.ie - Home"

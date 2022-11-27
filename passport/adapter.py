@@ -17,10 +17,6 @@ class MyAccountAdapter(DefaultAccountAdapter):
         email = data.get("email")
         role = data.get("role")
         username = data.get("username")
-        user.phone = data.get("phone")
-        user.birth_date = data.get("birth_date")
-        user.city = data.get("city")
-        user.address = data.get("address")
         user_email(user, email)
         user_username(user, username)
         if first_name:

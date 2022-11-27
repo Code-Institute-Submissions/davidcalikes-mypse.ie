@@ -1462,7 +1462,7 @@ _Mobile Lighthouse Performance Testing Screenshot_
 <br>
 
 
-### JavaScript Testing
+## JavaScript Testing
 
 I used the console in google development tools to test my custom JavaScript code. I used the console log to return values and data types. I also used alert messages when developing MyPSE.ie's check id functions.
 
@@ -1479,7 +1479,11 @@ This was simply down to a rougue space as seen in the image below.
 <img src="../docs/testing_images/testing_js_missing_element_fix.png"><br>
 _Using console logs to squash a bug_ 
 
+I passed the script file through jshint and no errors were returned.
+
 <br>
+
+## Pep8 Validation
 
 ## Practical Testing
 
@@ -1923,3 +1927,5 @@ _MyPSE.ie Floating Button Error_
 I resolved this by using google dev tools to modify the CSS style rules that would center the button maintaining a consistent design style.
 
 <br>
+
+

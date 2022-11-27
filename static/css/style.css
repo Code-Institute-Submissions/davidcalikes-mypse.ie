@@ -777,24 +777,6 @@ label {
     margin-left: 4%;
 }
 
-
-.callout-container {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.opaque-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
 .content-container {
     padding-top: 75px;
     padding-bottom: 75px;

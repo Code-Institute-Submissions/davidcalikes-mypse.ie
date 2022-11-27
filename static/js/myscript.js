@@ -4,19 +4,6 @@ function applyId() {
     localStorage.setItem("id", pupilId);
 }
 
-function notFound() {
-    let pupilPassport= document.getElementById("valid-id").innerHTML
-    console.log(pupilPassport)
-    if (typeof pupilPassport == "undefined") {
-    alert("No matching id found!");
-    }
-}
-
-function setValidPupilCheckId() {
-    let pupilId= document.getElementById("valid-pupil-check-id").innerHTML
-    localStorage.setItem("id", pupilId);
-}
-
 function setValidatePupilId() {
     let pupilId= document.getElementById("valid-pupil-id").innerHTML
     localStorage.setItem("id", pupilId);
@@ -39,7 +26,7 @@ function validateTeacher() {
     let storedId = localStorage.getItem("id");
     console.log(storedId)
         if (teacherId !==  storedId) {
-        alert("Incorrect Teacher ID!");
+        alert("Incorrect Teacher ID! Teacher ID must match one given after login");
         window.history.back();
         return false;
         } else {

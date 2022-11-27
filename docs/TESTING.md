@@ -127,6 +127,10 @@ _404 Passport Bug Screenshot_
 
 I fixed this by adding the missing symbol.
 
+## Outstanding/Unfixed Bugs
+
+There are currently no outstanding bugs butI will maintain this section of the testing document for future issues.
+
 <br>
 
 ## Manual Testing
@@ -1735,15 +1739,7 @@ This bug was fixed by altering the REGEX validator code for the School Roll no f
 
 The app was tested for practical use by a Pupil/Parent.
 
-During testing, I found the following bug.
-
-<img src="../docs/testing_images/testing_bug_susan.png"><br>
-_Issue found during practical testing_
-
-<img src="../docs/testing_images/testing_bugfix_susan.png"><br>
-_Bugfix School Roll Number_
-
-This bug was fixed by altering the REGEX validator code for the School Roll no form field to allow lowercase letters.
+During practical testing as a Pupil/Parent no immediate issues were found.
 
 <br>
 
@@ -1757,6 +1753,119 @@ During testing, Christina offered the following feedback.
 
 It is clear that the user experience of teacher users of MyPSE.ie is less than optimal. This is something that future iterations of the app will remedy, but for this first, MVP version, the protection of pupil data must take precident.
 
+<br>
+
+## Form Testing & Error Handling
+
+<br>
+
+## Authorisation forms
+
+All inputs were tested using the following sequence.
+
+* Inputs submitted blank -- Response: "Please fill in this field"
+
+* User submitted exists -- Response: "Username already exists" **** Contrast Error!
+
+* Invalid Email Expression -- Response: "Please include and @ in the email address..."
+
+* Incorrect Details -- Response: "The username and/or password you specified are not correct."
+
+A contrast error was returned during the testing of the Authorisation forms.
+
+<img src="../docs/testing_images/testing_forms_1.png"><br>
+_Contrast Error_
+
+This was fixed this by changing the font color to increase the contrast.
+
+<img src="../docs/testing_images/testing_forms_2.png"><br>
+_Contrast Error Fix_
+
+<br>
+
+## Add Pupil Record form
+
+All inputs were tested using the following sequence.
+
+* Inputs submitted blank -- Response: "Please fill in this field"
+
+* Pupil ID submitted exists -- Response: "Enrolled pupil with this Pupil ID Number already exists."
+
+* Invalid Email Expression -- Response: "Enter a valid email address."
+
+* Invalid School Roll Number -- Response: "Not a valid School Roll Number. Input should match the format of a department issued school roll number."
+
+<img src="../docs/testing_images/testing_forms_3.png"><br>
+_Add Pupil Record Form Testing_
+
+All error handling and REGEX validation messages function correctly.
+
+<br>
+
+## Add Passport form
+
+All inputs were tested using the following sequence.
+
+* Inputs submitted blank -- Response: "Please fill in this field"
+
+*  Alternative Pupil ID submitted -- Response: "Incorrect Pupil ID! Pupil ID must match one given during authoristation check"
+
+<img src="../docs/testing_images/testing_forms_4.png"><br>
+_Add Passport Form Testing_
+
+* Invalid Teacher ID Expression -- Response: "Not a valid Teacher ID number"
+
+* Invalid Date of Birth -- Response: "Enter a valid date"
+
+* Invalid School Roll Number -- Response: "Not a valid School Roll Number. Input should match the format of a department issued school roll number."
+
+<img src="../docs/testing_images/testing_forms_5.png"><br>
+_Add Passport Form Testing_
+
+All error handling and REGEX validation messages function correctly.
+
+<br>
+
+## ID Requests
+
+### Pupil ID request
+
+* Invalid ID Format -- Response: "Please match the format requested. Eight Digit Pupil ID Number
+
+<img src="../docs/testing_images/testing_forms_6.png"><br>
+_ID Request Testing_
+
+
+### Teacher ID request
+
+* Invalid ID Format -- Response: "Please match the format requested. Six Digit Teacher ID Number
+
+<img src="../docs/testing_images/testing_forms_6.png"><br>
+_ID Request Testing_
+
+Both ID forms REGEX validaton codes function correctly.
+
+
+## 404 & 500 Errors
+
+A 404 Error was created by navigating to a page that d0es not exist.
+
+<img src="../docs/testing_images/testing_404.png"><br>
+_404 Error Handling Testing_
+
+
+A 500 Error was created by creating a server error via the env.py file.
+
+
+<img src="../docs/testing_images/testing_500_env.png"><br>
+_500 Error Handling Testing_
+
+<img src="../docs/testing_images/testing_500.png"><br>
+_500 Error Handling Testing_
+
+Both 404 and 500 error handling functions fired due to testing errors and displayed the appropriate pages.
+
+<br>
 
 ### Responsiveness Testing
 
@@ -1778,7 +1887,7 @@ _Screenshot from Macbook Pro: Safari_
 iPhone XR Chrome, Safari
 
 <img src="../docs/testing_images/testing_resp4.png"><br>
-_MyPSE on iPhone XR_
+_MyPSE.ie on iPhone XR_
 
 Huawei P20 Pro (Android) Chrome, Firefox
 
@@ -1814,11 +1923,3 @@ _MyPSE.ie Floating Button Error_
 I resolved this by using google dev tools to modify the CSS style rules that would center the button maintaining a consistent design style.
 
 <br>
-
-
-
-
-
-
-
-

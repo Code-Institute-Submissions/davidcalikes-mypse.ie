@@ -1036,6 +1036,15 @@ Links to the edit and delete passport pages are available at the base of the pas
 
 <br>
 
+## Loading Modal
+
+The Loading modal is an element that displays while the passport form is being submitted. This feature was included as there can be a significant delay when submitting passport data if large images are included in the passport design.
+
+<img src="../docs/readme_images/feat_loading_modal.png"><br>
+_MyPSE.ie loading_modal_
+
+The Loading modal features a rotating MyPSE.ie logo and 'Loading' heading text. The modal covers the whole screen to prevent user interruptions. This feature provides visual feedback for the user in two ways. First of all if the logo animation stops during a rotation it will indicate to the user that the loading process is no longer taking place and that the page has crashed. In addition, the heading text provides unambiguous visual feedback regarding the process currently underway. 
+
 ## Teacher Pupil List Page
 
 The Teacher Pupil List Page is only available to authenticated 'Teacher' users who are redirected to the page direct from login. Teachers can return to the page should they navigate away from it by way of the 'Pupil Passports' link in the nav bar.

@@ -129,7 +129,21 @@ I fixed this by adding the missing symbol.
 
 ## Outstanding/Unfixed Bugs
 
-There are currently no outstanding bugs butI will maintain this section of the testing document for future issues.
+There is currently a bug that occurs when submitting a passport via the passport form page. 
+
+<img src="../docs/testing_images/testing_bug_images_error.png"><br>
+_Bug Form Submission Error_
+
+The bug occurs when the user selects an image for upload and then sumbits a form that contains an error in another field. This causes the selected image to require re-selection after fixing the form field error and results in a negative experience for the user. 
+
+<img src="../docs/testing_images/testing_bug_images_error1.png"><br>
+_Bug Form Submission Error_
+
+I have eleborated on this issue and the short term measures I have taken to address it in the practical testing section later in this document. 
+
+
+
+Apart from this bug there are no other known bugs at present.
 
 <br>
 
@@ -1469,7 +1483,7 @@ I used the console in google development tools to test my custom JavaScript code
 <img src="../docs/testing_images/testing_js_alert.png"><br>
 _Alert raised to signify JS function is working_ 
 
-A particularly annoying bug was found when I recieved an element not found error in the console.
+A particularly challenging bug was found when I recieved an element not found error in the console.
 
 <img src="../docs/testing_images/testing_js_missing_element.png"><br>
 _Using console logs to squash a bug_ 
@@ -1479,11 +1493,91 @@ This was simply down to a rougue space as seen in the image below.
 <img src="../docs/testing_images/testing_js_missing_element_fix.png"><br>
 _Using console logs to squash a bug_ 
 
-I passed the script file through jshint and no errors were returned.
+The script was passed through jshint and multiple warnings were returned.
+
+<img src="../docs/testing_images/testing_jshint_errors_1.png"><br>
+_JavaScript jshint validator testing_ 
+
+I corrected the missing semi-colon errors and catalogued the DOM-called function names that the linter misreads to be 'unused variables' in the 'exported' comment at the top of the script. 
+
+I removed the dot notation warnings by making the following changes.
+
+<img src="../docs/testing_images/testing_jshint2.png"><br>
+_JavaScript dot notation fix_
+
+After the alterations I made the myscript.js file is now free from all jshint warnings.
+
+<img src="../docs/testing_images/testing_jshint_no_errors.png"><br>
+_Javascript jshint validation_
 
 <br>
 
-## Pep8 Validation
+## Pep8 (CI Python Linter) Validation
+
+### Pages Checked
+
+All pages were returned without errors.(with the exception of acceptable known Django errors.)
+
+settings.py (mypse)
+
+<img src="../docs/testing_images/testing_pep81.png"><br>
+_CI Python Linter_
+
+The 'line too long' errors returned here are a known errors within Django. I deemed it acceptable to ignore these.
+
+views.py (mypse)
+
+<img src="../docs/testing_images/testing_pep82.png"><br>
+_CI Python Linter_
+
+urls.py (mypse)
+
+<img src="../docs/testing_images/testing_pep83.png"><br>
+_CI Python Linter_
+
+admin.py (passport)
+
+<img src="../docs/testing_images/testing_pep84.png"><br>
+_CI Python Linter_
+
+forms.py (passport)
+
+<img src="../docs/testing_images/testing_pep85.png"><br>
+_CI Python Linter_
+
+mixins.py (passport)
+
+<img src="../docs/testing_images/testing_pep86.png"><br>
+_CI Python Linter_
+
+models.py (passport)
+
+<img src="../docs/testing_images/testing_pep87.png"><br>
+_CI Python Linter_
+
+urls.py (passport)
+
+<img src="../docs/testing_images/testing_pep88.png"><br>
+_CI Python Linter_
+
+'Line too long' errors were returned here.
+
+<img src="../docs/testing_images/testing_pep88fix.png"><br>
+_CI Python Linter_
+
+No errors where returned after this fix.
+
+admin.py (user)
+
+<img src="../docs/testing_images/testing_pep810.png"><br>
+_CI Python Linter_
+
+models.py (user)
+
+<img src="../docs/testing_images/testing_pep811.png"><br>
+_CI Python Linter_
+
+<br>
 
 ## Practical Testing
 
@@ -1738,12 +1832,30 @@ _Bugfix School Roll Number_
 
 This bug was fixed by altering the REGEX validator code for the School Roll no form field to allow lowercase letters.
 
+<br>
 
 ### Practical testing by a Parent/Pupil
 
 The app was tested for practical use by a Pupil/Parent.
 
-During practical testing as a Pupil/Parent no immediate issues were found.
+During practical testing as a Pupil/Parent I found the following bug that results in a negative user experience.
+
+<img src="../docs/testing_images/testing_bug_images_error.png"><br>
+_Bug Form Submission_
+
+The issue occurs when a Passport fom is submitted and an input error is caught by form input error handling measures.
+
+<img src="../docs/testing_images/testing_bug_images_error1.png"><br>
+_Bug Form Submission Error_
+
+As demonstrated in the image, whenever a user includes an image for upload in their passport then the previously selected image will have to be re-selected if any errors are caught during the form submission. This is a less than optimal user experience and could potentially cause reluctance to use the app repeatedly. 
+
+<img src="../docs/testing_images/testing_bug_images_error2.png"><br>
+_Custom Placeholder Images_
+
+I have included custom placeholder images as a short term measure to ensure an image is displayed in the event users fail to notice this issue. The placeholders are specific to individual image fields and provide a much improved user experience than an empty image field.
+
+A more elegant, user friendly solution to this problem will be forthcoming in future iterations of this app. For this 'MVP' version of MyPSE.ie, custom image placeholders sufficiently address this problem.
 
 <br>
 

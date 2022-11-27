@@ -78,7 +78,7 @@ class EnrolledPupilList(PageTitleMixin, LoginRequiredMixin, generic.ListView):
     def get_queryset(self):
         return EnrolledPupil.objects.filter(
             created_by=self.request.user
-        )
+        ).order_by('pupil_full_name')
 
 
 class EnrolledPupilRecord(PageTitleMixin, LoginRequiredMixin, View):
@@ -192,7 +192,7 @@ class PassportList(PageTitleMixin, LoginRequiredMixin, generic.ListView):
     def get_queryset(self):
         return Passport.objects.filter(
             created_by=self.request.user
-        )
+        ).order_by('my_full_name')
 
 
 class PassportDetail(PageTitleMixin, LoginRequiredMixin, View):

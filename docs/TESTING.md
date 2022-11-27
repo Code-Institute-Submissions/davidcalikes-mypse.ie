@@ -1535,6 +1535,11 @@ urls.py (mypse)
 <img src="../docs/testing_images/testing_pep83.png"><br>
 _CI Python Linter_
 
+adapter.py (passport)
+
+<img src="../docs/testing_images/testing_pep812.png"><br>
+_CI Python Linter_
+
 admin.py (passport)
 
 <img src="../docs/testing_images/testing_pep84.png"><br>
@@ -1868,6 +1873,15 @@ During testing, Christina offered the following feedback.
 "The website is brilliant but if I didn't have the childs ID at hand or if I have to look it up every time I have to use it I can see it getting a bit frustrating."
 
 It is clear that the user experience of teacher users of MyPSE.ie is less than optimal. This is something that future iterations of the app will remedy, but for this first, MVP version, the protection of pupil data must take precident.
+
+<br>
+
+### Removing objects created during practical testing.
+
+All objects created during practical testing were successfully deleted.
+
+<img src="../docs/testing_images/testing_bug_images_error2.png"><br>
+_Deleting Test Objects_
 
 <br>
 

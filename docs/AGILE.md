@@ -4,7 +4,7 @@
 
 I utilised the Agile planning methodology during the development of MyPSE.ie.   
 
-<img src="../docs/agile_images/mockup_placeholder.png">
+<img src="../docs/agile_images/placeholder.png">
 
 <br>
 

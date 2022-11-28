@@ -1071,7 +1071,9 @@ Clicking an individual link will bring the teacher user to the Teacher Pupil ID 
 
 ## Admin Panel
 
-MyPSE.ie's Admin Panel Utilises Django's Built in Admin functionality. The Admin panel has been designed to be used by Garda vetted site administrators for database and record maintenence only and is not required to create user records or passports. Admin Users can access and edit all data on the application's database. Summernote form fields are also included in the Admin Passports Form page to maintain a consistency of use across the site. 
+MyPSE.ie's Admin Panel Utilises Django's Built in Admin functionality. The Admin panel has been designed to be used by Garda vetted site administrators for database and record maintenence only and is not required to create user records or passports. Admin Users can access and edit all data on the application's database. Summernote form fields are also included in the Admin Passports Form page to maintain a consistency of use across the site.
+
+The Admin panel was not used to create user groups and permissions as I didn't want school admin, parents and pupils users to have access to and the ability to alter the records and passports that did not belong to them.
 
 <img src="../docs/readme_images/feat_admin.png"><br>
 _MyPSE.ie Admin Panel_
@@ -1093,13 +1095,107 @@ _MyPSE.ie Invalid URL Referer Message_
 
 # Deployment
 
-MyPSE.ie was deployed to heroku early during development. I wanted to make sure the database and static files were all accessible from the beginning of the project so I wouldn't have to worry about deployment errors closer to releasing the app.
+MyPSE.ie was deployed to heroku during the early stages of development. I wanted to make sure the database and static files were all accessible from the beginning of the project so I wouldn't have to worry about deployment issues closer to releasing the app.
+
+The live site can be viewed [here:](https://mypse.herokuapp.com/)
 
 <img src="../docs/readme_images/deploy_early_benefit.png"><br>
 _Early Deployment Screenshot_
 
+## Database
 
-## Deployment errors and issues
+<br>
+
+### ElephantSQL
+
+To create a managed postgres datasbase go to [ElephantSQL](https://www.elephantsql.com/) and Signup/Signin to your account.
+
+* Click on 'Create New Instance'.
+
+<img src="../docs/readme_images/deploy_elephant1.png"><br>
+_ElephantSQL_
+
+* Name your database, choose the 'Tiny Turtle' payment plan and click 'Select Region'.
+
+<img src="../docs/readme_images/deploy_elephant_2.png"><br>
+_ElephantSQL_
+
+* Choose your region and then create the database. instance.
+
+* In the instances page, click the name of your chosen database.
+
+* In the details section of the following page copy the postgres url.
+
+<img src="../docs/readme_images/deploy_elephant_3.png"><br>
+_ElephantSQL_
+
+
+
+
+
+ ## Deploying to Heroku
+
+* Signup/Signin to Heroku.
+
+* Create a new app from the Heroku dashboard.
+
+<img src="../docs/readme_images/deploy_heroku1.png"><br>
+_Heroku Deployment_
+
+* Give the app a unique name and enter the region of operation then click 'create app'.
+
+* Set up an Elephant Sql Database Account
+
+
+<br>
+
+## Forking the GitHub Repository
+
+If you want to make an independent copy of the MyPSE.ie GitHub repository please follow these steps:
+
+* Signup/Signin to GitHub.
+
+* Follow this link to the MyPSE.ie repository: https://github.com/davidcalikes/mypse.ie
+
+* Click on the 'Fork' button at the top-right of the page.
+
+<img src="../docs/readme_images/deploy_1.png"><br>
+_Forking the repo_
+
+* A copy of the MyPSE.ie repository should now be available in your list of GitHub repositories.
+
+Forking the GitHub repo will not affect the original codebase. 
+
+<br>
+
+## Cloning the GitHub Repository
+
+If you want to contribute to the MyPSE.ie project, a clone creates a linked copy of the repository that will run on a local machine and the synchronize with the original repo. please follow these steps:
+
+* Signup/Signin to GitHub.
+
+* Follow this link to the MyPSE.ie repository: https://github.com/davidcalikes/mypse.ie
+
+* Click on the <> Code button near the top-right of the page.
+
+* Access the 'Code' menu from above the main directory window and choose a preffered cloning option by selecting either HTTPS or GitHub CLI. An SSH key is required should you prefer that option. 
+
+* Press the overlapping squares icon to copy the link to the repository.
+
+<img src="../docs/readme_images/deploy_2.png"><br>
+_Cloning the repo_
+
+* Open the code editor of your choice.
+
+* Create a new working directory for the cloned repo.
+
+* Use the 'git clone command and paste in the copied link.
+
+* Press enter and the repo will be cloned locally to your machine.
+
+
+
+
 
 ### Security Key.
 

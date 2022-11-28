@@ -1102,9 +1102,9 @@ The live site can be viewed [here:](https://mypse.herokuapp.com/)
 <img src="../docs/readme_images/deploy_early_benefit.png"><br>
 _Early Deployment Screenshot_
 
-## Database
-
 <br>
+
+## Database
 
 ### ElephantSQL
 
@@ -1129,11 +1129,11 @@ _ElephantSQL_
 <img src="../docs/readme_images/deploy_elephant_3.png"><br>
 _ElephantSQL_
 
+You can now use this URL when linking the database to the project's GitHub repository.
 
+<br>
 
-
-
- ## Deploying to Heroku
+## Deploying to Heroku
 
 * Signup/Signin to Heroku.
 
@@ -1144,7 +1144,70 @@ _Heroku Deployment_
 
 * Give the app a unique name and enter the region of operation then click 'create app'.
 
-* Set up an Elephant Sql Database Account
+* From your newly created app choose the settings tab and navigate to 'Reveal Config Vars'.
+
+* Paste the ElephantSQL Database url into the DATABASE_URL environment variable.
+
+<img src="../docs/readme_images/deploy_heroku2.png"><br>
+_Heroku Deployment_
+
+* Create an env.py file in the root directory of your Django project. (At the same directory level as requirements.txt and manage.py)
+
+The file should look like the image below, with the os library imported at the top of the file.
+
+<img src="../docs/readme_images/deploy_env1.png"><br>
+_env.py_
+
+* Paste the ElephantSQL url for the DATABASE_URL value.
+
+* Add the following libraries to the settings.py file: Import Path from pathlib, dj_database_url and os.
+
+<img src="../docs/readme_images/deploy_env3.png"><br>
+_settings.py_
+
+* Create a secret key to replace the insecure SECRET_KEY variable in the settings.py file. Link the secure key in env.py to the settings.py SECRET_KEY variable with the following code: SECRET_KEY = os.environ.get('SECRET_KEY')
+
+* Add your secret key to HEROKU Config Vars.
+
+* Link the DATABASES value to the env.py file with the following code: DATABASES = {
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+
+* You can now migrate the app models to the new database using the command: "python3 manage.py makemigrations" then Python3 manage.py migrate.
+
+
+The final part of setting up the env.py file concerns static files. To manage the static files for the project execute the following steps:
+
+* Signup/Signin to [Cloudinary](https://cloudinary.com/)
+
+* Copy the 'cloudinary url' from your account dashboard and paste it as the CLOUDINARY_URL value in env.py.
+
+* Add the CLOUDINARY_URL to the Config Vars in Heroku.
+
+* Change the static file settings in Django by altering the following.
+
+ * The STATIC_URL
+ * STATICFILES_STORAGE
+ * STATICFILES_DIRS
+ * STATIC_ROOT
+ * MEDIA URL
+ * DEFAULT_FILE_STORAGE
+
+ The STATIC section of settings should resemple the following image.
+
+ <img src="../docs/readme_images/deploy_env2.png"><br>
+_settings.py_
+
+
+
+
+  
+
+
+
+
+
+
 
 
 <br>

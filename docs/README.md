@@ -1184,6 +1184,8 @@ The final part of setting up the env.py file concerns static files. To manage th
 
 * Add the CLOUDINARY_URL to the Config Vars in Heroku.
 
+* Also Add the DISABLE_COLLECTSTATIC Key with the value of 1
+
 * Change the static file settings in Django by altering the following.
 
  * The STATIC_URL
@@ -1193,22 +1195,31 @@ The final part of setting up the env.py file concerns static files. To manage th
  * MEDIA URL
  * DEFAULT_FILE_STORAGE
 
- The STATIC section of settings should resemple the following image.
+ The STATIC section of settings.py should resemble the following image:
 
- <img src="../docs/readme_images/deploy_env2.png"><br>
-_settings.py_
+ <img src="../docs/readme_images/deploy_env3.png"><br>
+_STATIC settings.
 
+* Change the TEMPLATES 'DIRS' Setting in Settings.py to [TEMPLATES_DIR] TEMPLATES configuration for the project should resemble the following image:
 
+ <img src="../docs/readme_images/deploy_env4.png"><br>
+_TEMPLATES Setting in settings.py
 
+* Back nearer the top of the settings.py file add the Setting TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
-  
+* Create 3 new folders for static files, media files and HTML templates. (At the same directory level as requirements.txt and manage.py.)
 
+* Create a Procfile(capital P) and add the following: web: gunicorn NAME_OF_THE_APP_GOES_HERE.wsgi 
 
+* Add the app name and herokuapp.com to the list of ALLOWED_HOSTS.
 
+* Add and commit the changes to GitHub.
 
+* Remove DISABLE_COLLECTSTATIC from Heroku Config Vars
 
+* Deploy via the 'Deploy Main Branch' button in the Deployment page of HEROKU.
 
-
+* If you recieve an success message, you can click the link provided to view the app in the web browser.
 
 <br>
 

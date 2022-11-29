@@ -1067,10 +1067,10 @@ _W3C HTML Validator Error Fix_
 
 Another HTML Validation Error I found was caused by the rendering of Summernote text content. Summernote was adding an extra closing pararaph tag to each text field submitted. 
 
-<img src="../docs/testing_images/testing_val_71_fix2.png"><br>
+<img src="../docs/testing_images/testing_val_71_error2.png"><br>
 _Summernote Rendering HTML Validator Error_ 
 
-I decided I could leave this problem for now, as the error is not causing any issues with the rendering of the page or visible to the user in any way. I will implement a solution as soon as possible.
+I decided I could leave this problem for now, as the error is not causing any issues with the rendering of the page or visible to the user in any way. I will implement a solution as soon as one becomes available.
 
 The CSS file for the Passport Detail page (and all other pages of the site) passes W3C Jigsaw validation with no errors.
 

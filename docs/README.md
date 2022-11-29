@@ -1244,7 +1244,7 @@ Forking the GitHub repo will not affect the original codebase.
 
 ## Cloning the GitHub Repository
 
-If you want to contribute to the MyPSE.ie project, a clone creates a linked copy of the repository that will run on a local machine and the synchronize with the original repo. please follow these steps:
+If you want to contribute to the MyPSE.ie project, You can clone the MyPSE.ie repo. A clone creates a linked copy of the repository that will run on a local machine which can then be synchronized with the original repo. To clone MyPSE.ie please follow these steps:
 
 * Signup/Signin to GitHub.
 
@@ -1266,10 +1266,6 @@ _Cloning the repo_
 * Use the 'git clone command and paste in the copied link.
 
 * Press enter and the repo will be cloned locally to your machine.
-
-
-
-
 
 ### Security Key.
 

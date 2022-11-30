@@ -144,6 +144,13 @@ li {
     letter-spacing: 2px;
 }
 
+.noscript{
+    font-size: larger;
+    text-align: center;
+    color: #0B5657;
+    padding: 1rem;
+}
+
 /* Watermarked Passport Paper Effect */
 .main-bg {
     background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/vertical-waves.png"),
@@ -194,7 +201,6 @@ footer a {
     padding-left: 2rem;
     padding-right: 2rem;
     text-align: center;
-    color: white;
     background-image: url("https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png");
     background-color: #0ca9a9;
     border: solid 2px white;

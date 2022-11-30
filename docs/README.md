@@ -1100,6 +1100,8 @@ There are a number of features that will be integrated into the MyPSE.ie applica
 
 These include:
 
+* Deploy to the MyPSE.ie domain. This application was deveoped as my fourth Portfolio Project Submission (Full Stack Frameworks) for the Code Institute's Full Stack Software Development with eCommerce Diploma course. After the project has been assessed I will consider deploying the site to the MyPSE.ie domain based on the feedback of the CI assesment team.
+
 * One-click authorisation for teacher users. To improve the user experience of teachers, the app will provide a feature that allows teachers to remember the pupil ID numbers of all pupils after each number is initially provided. This will allow teacher users to access passports more efficiently and encourage repeat visits to the app while maintaining the security of the pupil's data. 
 
 * Print physical passports. In MyPSE.ie v2.0 I hope to include the ability for users to print physical documents that contain only certain elements of the passports page and do not include sensitive information, such as pupil or teacher ID nummbers.

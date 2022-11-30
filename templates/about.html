@@ -2,6 +2,8 @@
 {% load static %}
 {% block content %}
 
+<!-- About page heading text and image -->
+
 
 <div class="list-heading">
     <div class="row list-heading-row">
@@ -20,66 +22,73 @@
         </div>
     </div>
 </div>
+
 <hr class="list-separator-rule">
+
+<!-- About page feature cards containing links and downloadable documents -->
             
-                <div class="card-container"> 
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="card card-item">
-                                <img class="card-img-top" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668794877/learn_more_zh9h5e_wawghc.webp" alt="Card image cap">
-                                <div class="row form-row">
-                                    <h3 class="passport-title"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Learn More</h3>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-subtitle mb-2 text-muted">What Are transition Passports?</h4>
-                                    <p class="card-text">Learn how SEN Pupil Passports for Special Educational Transitions
-                                        can benefit SEN pupils.
-                                    </p>
-
-                                    <a href="{% url 'learn_more' %}">Click here! <i class="fa fa-mouse-pointer" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                            
-                        </div>
-
-                        <div class="col-lg-4">
-                            <div class="card card-item">
-                                <img class="card-img-top" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668794811/instructions_mjawki_hrbh3s.webp" alt="Card image cap">
-                                <div class="row form-row">
-                                    <h3 class="passport-title"><i class="fa fa-question-circle" aria-hidden="true"></i> User Guides</h3>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-subtitle mb-2 text-muted">Learn How to Use MyPSE.ie</h4>
-                                    <p class="card-text"> Download one of our handy user guides by clicking a link below.</p>
-                                    <a target="_blank" href="https://res.cloudinary.com/djck2eqxo/image/upload/v1668304302/user_guide_pupil_g6qlix.pdf">Pupil User Guide PDF <i class="fa fa-download" aria-hidden="true"></i></a>
-                                    <br>
-                                    <a target="_blank" href="https://res.cloudinary.com/djck2eqxo/image/upload/v1668304288/user_guide_parent_tlufbk.pdf">Parent User Guide PDF <i class="fa fa-download" aria-hidden="true"></i></a>
-                                    <br>
-                                    <a target="_blank" href="https://res.cloudinary.com/djck2eqxo/image/upload/v1668304275/user_guide_teacher_ot2sgp.pdf">Teacher User Guide PDF <i class="fa fa-download" aria-hidden="true"></i></a>
-                                    <br>
-                                    <a target="_blank" href="https://res.cloudinary.com/djck2eqxo/image/upload/v1668377991/user_guide_school_rbyt72.pdf">School Admin User Guide PDF <i class="fa fa-download" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
+        <div class="card-container"> 
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card card-item">
+                        <img class="card-img-top" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668794877/learn_more_zh9h5e_wawghc.webp" alt="Card image cap">
                         
-                        <div class="col-lg-4">
-                            <div class="card card-item">
-                                <img class="card-img-top" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668794118/samples_header_fc4yd2_ctya6j.webp" alt="Card image cap">
-                                <div class="row form-row">
-                                    <h3 class="passport-title"><i class="fa fa-id-card" aria-hidden="true"></i> Samples</h3>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-subtitle mb-2 text-muted">Click a Sample to view</h4>
-                                    <p class="card-text">View a sample passport for inspiration!</p>
-                                    <a target="_blank" href="https://res.cloudinary.com/djck2eqxo/image/upload/v1668376122/wmsample_abi_mrmseh.pdf">Sample One - Abigail <i class="fa fa-download" aria-hidden="true"></i></a>
-                                    <br>
-                                    <a target="_blank" href="https://res.cloudinary.com/djck2eqxo/image/upload/v1668376146/wmsample_ami_h5rwcx.pdf">Sample Two - Amida <i class="fa fa-download" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
+                        <div class="row form-row">
+                            <h3 class="passport-title"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Learn More</h3>
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-subtitle mb-2 text-muted">What Are transition Passports?</h4>
+                            <p class="card-text">Learn how SEN Pupil Passports for Special Educational Transitions
+                                can benefit SEN pupils.
+                            </p>
+                            <a href="{% url 'learn_more' %}">Click here! <i class="fa fa-mouse-pointer" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                </div>    
-        
-        <hr class="list-separator-rule"> 
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card card-item">
+                        <img class="card-img-top" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668794811/instructions_mjawki_hrbh3s.webp" alt="Card image cap">
+                        
+                        <div class="row form-row">
+                            <h3 class="passport-title"><i class="fa fa-question-circle" aria-hidden="true"></i> User Guides</h3>
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-subtitle mb-2 text-muted">Learn How to Use MyPSE.ie</h4>
+                            <p class="card-text"> Download one of our handy user guides by clicking a link below.</p>
+                            <a target="_blank" href="https://res.cloudinary.com/djck2eqxo/image/upload/v1668304302/user_guide_pupil_g6qlix.pdf">Pupil User Guide PDF <i class="fa fa-download" aria-hidden="true"></i></a>
+                            <br>
+                            <a target="_blank" href="https://res.cloudinary.com/djck2eqxo/image/upload/v1668304288/user_guide_parent_tlufbk.pdf">Parent User Guide PDF <i class="fa fa-download" aria-hidden="true"></i></a>
+                            <br>
+                            <a target="_blank" href="https://res.cloudinary.com/djck2eqxo/image/upload/v1668304275/user_guide_teacher_ot2sgp.pdf">Teacher User Guide PDF <i class="fa fa-download" aria-hidden="true"></i></a>
+                            <br>
+                            <a target="_blank" href="https://res.cloudinary.com/djck2eqxo/image/upload/v1668377991/user_guide_school_rbyt72.pdf">School Admin User Guide PDF <i class="fa fa-download" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card card-item">
+                        <img class="card-img-top" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668794118/samples_header_fc4yd2_ctya6j.webp" alt="Card image cap">
+                        
+                        <div class="row form-row">
+                            <h3 class="passport-title"><i class="fa fa-id-card" aria-hidden="true"></i> Samples</h3>
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-subtitle mb-2 text-muted">Click a Sample to view</h4>
+                            <p class="card-text">View a sample passport for inspiration!</p>
+                            <a target="_blank" href="https://res.cloudinary.com/djck2eqxo/image/upload/v1668376122/wmsample_abi_mrmseh.pdf">Sample One - Abigail <i class="fa fa-download" aria-hidden="true"></i></a>
+                            <br>
+                            <a target="_blank" href="https://res.cloudinary.com/djck2eqxo/image/upload/v1668376146/wmsample_ami_h5rwcx.pdf">Sample Two - Amida <i class="fa fa-download" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+<hr class="list-separator-rule"> 
 
 {% endblock %}

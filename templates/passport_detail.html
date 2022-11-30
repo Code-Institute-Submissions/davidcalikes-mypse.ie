@@ -2,6 +2,8 @@
 {% load static %}
 {% block content %}
 
+<!-- Passport detail page. Displays text and image content of pupil passports -->
+
     <div class="container passport-container">
         <div class="row">
             {% if "passport_list" in request.META.HTTP_REFERER or "pupil_check" in request.META.HTTP_REFERER or "delete" in request.META.HTTP_REFERER %}
@@ -185,55 +187,74 @@
                             <a class="passport-options" href="{% url 'delete_passport' passport.id %}">Delete Passport</a>
                     </div>
                 </div>
-                
-                {% else %}
-                <section class="warning-heading">
-                    <div>
-                        <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
-                    </div>
-                    <h1 class="list-text">***WARNING***</h1>
-                        <p>Warning! 
-                            You are unauthorised to view this page! 
-                            You have navigated to this page from an unauthorised url or your user role is unauthorised to view this page.
-                            <br>
-                            Please visit the <a href="{% url 'about' %}">about page</a>  for more information about how to use this site.</p>
-                        <a href="{% url 'home' %}" class="btn btn-lg btn-success">Click Here to visit the MyPSE.ie Home page</a>
-                </section>
-                <p class="pupil-id-text" id="set-edit-pupil-id">{{ passport.pupil_id  }}</p>
-                {% endif %}
-            {% else %}
-            <section class="warning-heading">
-                <div>
-                    <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
-                </div>
-                <h1 class="list-text">***WARNING***</h1>
-                    <p>Warning! 
-                        You are unauthorised to view this page! 
-                        You have navigated to this page from an unauthorised url or your user role is unauthorised to view this page.
-                        <br>
-                        Please visit the <a href="{% url 'about' %}">about page</a>  for more information about how to use this site.</p>
-                    <a href="{% url 'home' %}" class="btn btn-lg btn-success">Click Here to visit the MyPSE.ie Home page</a>
-            </section>
-            <p class="pupil-id-text" id="set-edit-pupil-id">{{ passport.pupil_id  }}</p>
-            {% endif %}
+
+        <!-- If user not authorised show this instead! -->
+            
         {% else %}
-        <section class="warning-heading">
+
+        <div class="warning-heading">
             <div>
                 <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
             </div>
+        
             <h1 class="list-text">***WARNING***</h1>
-                <p>Warning! 
-                    You are unauthorised to view this page! 
-                    You have navigated to this page from an unauthorised url or your user role is unauthorised to view this page.
-                    <br>
-                    Please visit the <a href="{% url 'about' %}">about page</a>  for more information about how to use this site.</p>
-                <a href="{% url 'home' %}" class="btn btn-lg btn-success">Click Here to visit the MyPSE.ie Home page</a>
-        </section>
+            <p>Warning! 
+                You are unauthorised to view this page! 
+                You have navigated to this page from an unauthorised url or your user role is unauthorised to view this page.
+                <br>
+                Please visit the <a href="{% url 'about' %}">about page</a>  for more information about how to use this site.</p>
+            <a href="{% url 'home' %}" class="btn btn-lg btn-success">Click Here to visit the MyPSE.ie Home page</a>
+        </div>
         <p class="pupil-id-text" id="set-edit-pupil-id">{{ passport.pupil_id  }}</p>
+        
         {% endif %}
+
+        <!-- If user not authorised show this instead! -->
+
+        {% else %}
+
+        <div class="warning-heading">
+            <div>
+                <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
+            </div>
+        
+            <h1 class="list-text">***WARNING***</h1>
+            <p>Warning! 
+                You are unauthorised to view this page! 
+                You have navigated to this page from an unauthorised url or your user role is unauthorised to view this page.
+                <br>
+                Please visit the <a href="{% url 'about' %}">about page</a>  for more information about how to use this site.</p>
+            <a href="{% url 'home' %}" class="btn btn-lg btn-success">Click Here to visit the MyPSE.ie Home page</a>
+        </div>
+        <p class="pupil-id-text" id="set-edit-pupil-id">{{ passport.pupil_id  }}</p>
+        
+        {% endif %}
+
+        <!-- If user not authorised show this instead! -->
+        
+        {% else %}
+       
+        <div class="warning-heading">
+            <div>
+                <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
+            </div>
+        
+            <h1 class="list-text">***WARNING***</h1>
+            <p>Warning! 
+                You are unauthorised to view this page! 
+                You have navigated to this page from an unauthorised url or your user role is unauthorised to view this page.
+                <br>
+                Please visit the <a href="{% url 'about' %}">about page</a>  for more information about how to use this site.</p>
+            <a href="{% url 'home' %}" class="btn btn-lg btn-success">Click Here to visit the MyPSE.ie Home page</a>
+        </div>
+        <p class="pupil-id-text" id="set-edit-pupil-id">{{ passport.pupil_id  }}</p>
+        
+        {% endif %}
+
     </div>
 </div>
 <hr class="list-separator-rule">
+
 {% endblock %}
  
        

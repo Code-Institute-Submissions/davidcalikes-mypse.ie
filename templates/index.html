@@ -1,76 +1,84 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-    <div class="container">  
-        <div class="row">
-            <div id="home-hero">
-                <div class="hero-text">
-                    <h1>Your passport to a world <i class="fa fa-globe" aria-hidden="true"></i> of understanding...</h1>
-                </div>
-                <img class="hero-image" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668775124/mypseie_hero_qinzv5.webp" alt="mypse.ie hero">
-                <div class="hero-text">
-                    <h2 id="hero-strap-text" >SEN Pupil Passports for Educational Transitions</h2>
-                </div>
+
+<!-- Home/landing page header text and hero image -->
+
+<div class="container">  
+    <div class="row">
+        <div id="home-hero">
+            <div class="hero-text">
+                <h1>Your passport to a world <i class="fa fa-globe" aria-hidden="true"></i> of understanding...</h1>
+            </div>
+            <img class="hero-image" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668775124/mypseie_hero_qinzv5.webp" alt="mypse.ie hero">
+            <div class="hero-text">
+                <h2 id="hero-strap-text" >SEN Pupil Passports for Educational Transitions</h2>
             </div>
         </div>
-        
-        <hr class="list-separator-rule">
+    </div>
+    
+    <hr class="list-separator-rule">
 
-        <section> 
-            <div class="row">
-                <div class="container"> 
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="card card-item">
-                                <img class="card-img-top" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668778777/schools_weq3mg.webp" alt="Card image cap for schools card">
-                                <div class="row form-row">
-                                    <h3 class="passport-title"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Schools</h3>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-subtitle mb-2 text-muted">Enroll pupils to assign teachers</h4>
-                                    <p class="card-text"> Help your pupils safely share their passports...</p>
-                                </div>
-                                <div class="card-buttons">
-                                    <a href="{% url 'account_login' %}" class="passport-options">Login</a>
-                                </div>
-                            </div>
-                        </div>
+<!-- Home/landing page feature cards with login and about links -->
 
-                        <div class="col-lg-4">
-                            <div class="card card-item">
-                                <img class="card-img-top" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668778765/passports_wtllud.webp" alt="Card image cap for passports card">
-                                <div class="row form-row">
-                                    <h3 class="passport-title"><i class="fa fa-id-card" aria-hidden="true"></i> Passports</h3>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-subtitle mb-2 text-muted">Show the world the real you</h4>
-                                    <p class="card-text">Create, Edit and Style your passport!</p>
-                                </div>
-                                <div class="card-buttons">
-                                    <a href="{% url 'account_login' %}" class="passport-options">Login</a>
-                                </div>
+    <section> 
+        <div class="row">
+            <div class="container"> 
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card card-item">
+                            <img class="card-img-top" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668778777/schools_weq3mg.webp" alt="Card image cap for schools card">
+                            <div class="row form-row">
+                                <h3 class="passport-title"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Schools</h3>
                             </div>
-                        </div>
-                        
-                        <div class="col-lg-4">
-                            <div class="card card-item">
-                                <img class="card-img-top" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668778777/about_rawxfu.webp" alt="Card image cap for about card">
-                                <div class="row form-row">
-                                    <h3 class="passport-title"><i class="fa fa-question-circle" aria-hidden="true"></i> About</h3>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-subtitle mb-2 text-muted">What are SEN passports?</h4>
-                                    <p class="card-text">Learn about the benefits of transition passports and how they can help SEN pupils...</p>
-                                </div>
-                                <div class="card-buttons">
-                                    <a href="{% url 'about' %}" class="passport-options">About</a>
-                                </div>
+                            <div class="card-body">
+                                <h4 class="card-subtitle mb-2 text-muted">Enroll pupils to assign teachers</h4>
+                                <p class="card-text"> Help your pupils safely share their passports...</p>
+                            </div>
+                            <div class="card-buttons">
+                                <a href="{% url 'account_login' %}" class="passport-options">Login</a>
                             </div>
                         </div>
                     </div>
-                </div>    
-            </div>
-        </section>
-        <hr class="list-separator-rule">
-    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card card-item">
+                            <img class="card-img-top" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668778765/passports_wtllud.webp" alt="Card image cap for passports card">
+                            <div class="row form-row">
+                                <h3 class="passport-title"><i class="fa fa-id-card" aria-hidden="true"></i> Passports</h3>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-subtitle mb-2 text-muted">Show the world the real you</h4>
+                                <p class="card-text">Create, Edit and Style your passport!</p>
+                            </div>
+                            <div class="card-buttons">
+                                <a href="{% url 'account_login' %}" class="passport-options">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="card card-item">
+                            <img class="card-img-top" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668778777/about_rawxfu.webp" alt="Card image cap for about card">
+                            <div class="row form-row">
+                                <h3 class="passport-title"><i class="fa fa-question-circle" aria-hidden="true"></i> About</h3>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-subtitle mb-2 text-muted">What are SEN passports?</h4>
+                                <p class="card-text">Learn about the benefits of transition passports and how they can help SEN pupils...</p>
+                            </div>
+                            <div class="card-buttons">
+                                <a href="{% url 'about' %}" class="passport-options">About</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
+
+    <hr class="list-separator-rule">
+
+</div>
+
 {% endblock %}

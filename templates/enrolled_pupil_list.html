@@ -2,84 +2,92 @@
 {% load static %}
 {% block content %}
 
-    {% if user.is_authenticated and user.role == "school" %}
-    <div class="list-heading">
-        <div class="row list-heading-row">
-            <div class="col-md-6 vert-center">
-                <img class="img-fluid heading-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667660572/Screen_Shot_2022-11-05_at_15.02.23_l66hjj.png" alt="School Admin Page">
-            </div>
-            
-            <div class="col-md-6 vert-center">
-                <div class="row passport-text-row">
-                    <h2 class="passport-title"><i class="fa fa-id-card" aria-hidden="true"></i> School Admin Page</h2>
-                    <h3>Welcome {{ user.username }}</h3> 
-                    <p>Here are the records you have created. Click the button below the list to add a new pupil record.</p>
-                    <p><a href="https://res.cloudinary.com/djck2eqxo/image/upload/v1668169629/Pupil_ID_Form_fqjrw3.pdf" target="_blank">Download a printable ID form <i class="fa fa-print" aria-hidden="true"></i></a></a> for your pupil/parents.</p>
-                </div>
-            </div>
-    
-            {% for enrolled_pupil in enrolled_pupil_list %}
-            {% if enrolled_pupil.created_by|stringformat:'s' == user|stringformat:'s' %}
+<!-- Pupil records list with access and authorisation conditions -->
 
-            <div class="{% cycle 'record-bg-dark' 'record-bg-light' %}">
-                <a href="{% url 'enrolled_pupil_record' enrolled_pupil.pupil_id  %}">
-                    <p>Pupil Name : {{ enrolled_pupil.pupil_full_name}} ---- ID:{{ enrolled_pupil.pupil_id}} CLICK HERE!</p>
-                </a>
-            </div>
-            {% endif %}
-            
-            {% if forloop.counter|divisibleby:9 %}
-
-            <div class="pag-pages">
-                <p> Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }} </p>
-            </div>
-            
-        </div>
-
-        <div class="row form-row">
-            {% endif %}
-            {% endfor %}
-
-            {% if is_paginated %}
-            <nav aria-label="Page navigation">
-                <ul class="pagination justify-content-center">
-                    
-                    {% if page_obj.has_previous %}
-                    
-                    <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
-                    
-                    {% endif %}
-                    {% if page_obj.has_next %}
-
-                    <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
-
-                    {% endif %}
-                </ul>
-            </nav>
-
-            {% endif %}
+{% if user.is_authenticated and user.role == "school" %}
+<div class="list-heading">
+    <div class="row list-heading-row">
+        <div class="col-md-6 vert-center">
+            <img class="img-fluid heading-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667660572/Screen_Shot_2022-11-05_at_15.02.23_l66hjj.png" alt="School Admin Page">
         </div>
         
-        <div class="card-buttons"> 
-            <a class="passport-options" href="{% url 'add_enrolled_pupil' %}">Add Pupil Record +</a>
+        <div class="col-md-6 vert-center">
+            <div class="row passport-text-row">
+                <h2 class="passport-title"><i class="fa fa-id-card" aria-hidden="true"></i> School Admin Page</h2>
+                <h3>Welcome {{ user.username }}</h3> 
+                <p>Here are the records you have created. Click the button below the list to add a new pupil record.</p>
+                <p><a href="https://res.cloudinary.com/djck2eqxo/image/upload/v1668169629/Pupil_ID_Form_fqjrw3.pdf" target="_blank">Download a printable ID form <i class="fa fa-print" aria-hidden="true"></i></a> for your pupil/parents.</p>
+            </div>
         </div>
 
+        {% for enrolled_pupil in enrolled_pupil_list %}
+        {% if enrolled_pupil.created_by|stringformat:'s' == user|stringformat:'s' %}
+
+        <div class="{% cycle 'record-bg-dark' 'record-bg-light' %}">
+            <a href="{% url 'enrolled_pupil_record' enrolled_pupil.pupil_id  %}">
+                <p>Pupil Name : {{ enrolled_pupil.pupil_full_name}} ---- ID:{{ enrolled_pupil.pupil_id}} CLICK HERE!</p>
+            </a>
+        </div>
+        {% endif %}
+        
+        {% if forloop.counter|divisibleby:9 %}
+
+        <div class="pag-pages">
+            <p> Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }} </p>
+        </div>
     </div>
+
+    <div class="row form-row">
+        {% endif %}
+        {% endfor %}
+
+        {% if is_paginated %}
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+                
+                {% if page_obj.has_previous %}
+                
+                <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
+                
+                {% endif %}
+                {% if page_obj.has_next %}
+
+                <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
+
+                {% endif %}
+            </ul>
+        </nav>
+
+        {% endif %}
+    </div>
+    
+    <div class="card-buttons"> 
+        <a class="passport-options" href="{% url 'add_enrolled_pupil' %}">Add Pupil Record +</a>
+    </div>
+
+</div>
         
 <hr class="list-separator-rule">
         
-        {% else %}
-        <section class="warning-heading">
-            <div>
-                <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
-            </div>
-            <h1 class="list-text">***WARNING***</h1>
-                <p>Warning! 
-                    You are unauthorised to view this page! 
-                    You have navigated to this page from an unauthorised url or your user role is unauthorised to view this page.
-                    <br>
-                    Please visit the <a href="{% url 'about' %}">about page</a>  for more information about how to use this site.</p>
-                <a href="{% url 'home' %}" class="btn btn-lg btn-success">Click Here to visit the MyPSE.ie Home page</a>
-        </section>
-        {% endif %}
-        {% endblock %}
+<!-- If user not authorised show this instead! -->
+
+{% else %}
+
+<!-- Unauthorised access warning logo and text content -->
+
+<div class="warning-heading">
+    <div>
+        <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
+    </div>
+
+    <h1 class="list-text">***WARNING***</h1>
+    <p>Warning! 
+        You are unauthorised to view this page! 
+        You have navigated to this page from an unauthorised url or your user role is unauthorised to view this page.
+        <br>
+        Please visit the <a href="{% url 'about' %}">about page</a>  for more information about how to use this site.</p>
+    <a href="{% url 'home' %}" class="btn btn-lg btn-success">Click Here to visit the MyPSE.ie Home page</a>
+</div>
+    
+{% endif %}
+{% endblock %}

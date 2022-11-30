@@ -2,10 +2,14 @@
 {% load crispy_forms_tags %}
 {% block content %}
 
+<!-- Loading modal with permenant style property of display = none. Fires via function in myscript.js when form is submitted  -->
+
 <div id="loading">
-<img id="load-gif" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667607428/loader_clyzfq.gif" alt="Loading!">
-<h2 class="loading-txt" >Loading...</h2>
+    <img id="load-gif" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667607428/loader_clyzfq.gif" alt="Loading!">
+    <h2 class="loading-txt" >Loading...</h2>
 </div>
+
+<!-- Passport form with summernote fields, access and authorisation conditions -->
 
 <div class="container-fluid form-container">
     <div class="row form-row">
@@ -27,34 +31,49 @@
             </div>
         </div>
     </div>
-        {% else %}
-        <section class="warning-heading">
-            <div>
-                <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
-            </div>
-            <h1 class="list-text">***WARNING***</h1>
-                <p>Warning! 
-                    You are unauthorised to view this page! 
-                    You have navigated to this page from an unauthorised url or your user role is unauthorised to view this page.
-                    <br>
-                    Please visit the <a href="{% url 'about' %}">about page</a>  for more information about how to use this site.</p>
-                <a href="{% url 'home' %}" class="btn btn-lg btn-success">Click Here to visit the MyPSE.ie Home page</a>
-        </section>
-        {% endif %}
-    {% else %}
-    <section class="warning-heading">
-        <div>
-            <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
-        </div>
-        <h1 class="list-text">***WARNING***</h1>
-            <p>Warning! 
-                You are unauthorised to view this page! 
-                You have navigated to this page from an unauthorised url or your user role is unauthorised to view this page.
-                <br>
-                Please visit the <a href="{% url 'about' %}">about page</a>  for more information about how to use this site.</p>
-            <a href="{% url 'home' %}" class="btn btn-lg btn-success">Click Here to visit the MyPSE.ie Home page</a>
-    </section>
-        
-    {% endif %}
+
+<!-- If user not authorised show this instead! -->
+
+{% else %}
+
+<!-- Unauthorised access warning logo and text content -->
+
+<div class="warning-heading">
+    <div>
+        <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
+    </div>
+
+    <h1 class="list-text">***WARNING***</h1>
+    <p>Warning! 
+        You are unauthorised to view this page! 
+        You have navigated to this page from an unauthorised url or your user role is unauthorised to view this page.
+        <br>
+        Please visit the <a href="{% url 'about' %}">about page</a>  for more information about how to use this site.</p>
+    <a href="{% url 'home' %}" class="btn btn-lg btn-success">Click Here to visit the MyPSE.ie Home page</a>
+</div>
+    
+{% endif %}
+
+<!-- If user not authorised show this instead! -->
+
+{% else %}
+
+<!-- Unauthorised access warning logo and text content -->
+
+<div class="warning-heading">
+    <div>
+        <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
+    </div>
+
+    <h1 class="list-text">***WARNING***</h1>
+    <p>Warning! 
+        You are unauthorised to view this page! 
+        You have navigated to this page from an unauthorised url or your user role is unauthorised to view this page.
+        <br>
+        Please visit the <a href="{% url 'about' %}">about page</a>  for more information about how to use this site.</p>
+    <a href="{% url 'home' %}" class="btn btn-lg btn-success">Click Here to visit the MyPSE.ie Home page</a>
+</div>
+    
+{% endif %}
 
 {% endblock %}

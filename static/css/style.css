@@ -1,7 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lato&display=swap');
 
+/* General Style Rules */
+a {
+    color:#0B5657;
+    text-decoration: none;
+    font-family: Lato, sans-serif;
+}
+
+a:hover {
+    color:#9500a0;
+    text-decoration: none;
+}
+
+h4 a {
+    text-decoration: none;
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+}
+
+p a {
+    color:#0B5657;
+    text-decoration: underline;
+}
+
+h1,
+h2 {
+    color: white;
+    text-align: center;
+}
+
+li {
+    font-family: Lato, sans-serif;
+}
+
+/* Base Template */
 .body-pad {
     padding-top: 94px;
+}
+
+.logo-background {
+    padding: 1rem;
+    padding-left: 0;
+}
+
+.pse-logo {
+    color: #f5f5f5;
+    background-color: #0B5657;
+    border-radius: 50%;
+    padding: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.logo-text-1 {
+    color: #0B5657;
+    font-size: x-large;
+    margin-right: 3px;
+}
+
+.logo-text-2 {
+    color: #0B5657;
+    font-size: x-large;
+    margin-left: 1px
 }
 
 .navbar {
@@ -25,109 +88,10 @@
     border-width: 2px;
 }
 
-h4 a {
-    text-decoration: none;
-}
-
-a {
-    color:#0B5657;
-    text-decoration: none;
-    font-family: Lato, sans-serif;
-}
-
-p a {
-    color:#0B5657;
-    text-decoration: underline;
-}
-
-p {
-    font-family: Helvetica, sans-serif;
-}
-
-li {
-    font-family: Lato, sans-serif;
-}
-
-#floating-button {
-    background-color: #0B5657;
-    padding: 2rem;
-    border-radius: 4px;
-    position: sticky;
-    top: 50%;
-    z-index: 1;
-    cursor: pointer;
-}
-
-#passport-blur {
-    filter: blur(10px);
-}
-
-#passport-unblur {
-    filter: blur(0px);
-}
-
-a:hover {
-    color:#9500a0;
-    text-decoration: none;
-}
-
-.logo-background {
-    padding: 1rem;
-    padding-left: 0;
-}
-
-.auth-logo {
-    width: 35%;
-    border: 2px solid #0B5657;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-}
-
-.warning-logo {
-    width: 25%;
-}
-
-#signup_form {
-    width: 11rem;
-}
-
-.signup-button {
-    width: 60%;
-    margin-left: 20%;
-}
-
-.footer {
-    font-family: Helvetica, sans-serif;
+.navbar-light .navbar-nav .nav-link {
     color: #0B5657;
-    background-image: url("https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png"),
-        linear-gradient(to right, #ffffff, #ffffff, #0ca9a9, #0ca9a9, #0ca9a9, #0ca9a9);
-        display: flex;
-        justify-content: center;
-    
-}
-
-footer a {
-    color: #0B5657;
-}
-
-.footer-box {
-    background-color: white;
-    width: 260px;
-    border-radius: 4px;
-    padding: 0.5rem;
-    border: 2px solid #0B5657;
-}
-
-.logo-text-1 {
-    color: #0B5657;
-    font-size: x-large;
-    margin-right: 3px;
-}
-
-.logo-text-2 {
-    color: #0B5657;
-    font-size: x-large;
-    margin-left: 1px
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .nav-link {
@@ -180,22 +144,51 @@ footer a {
     letter-spacing: 2px;
 }
 
-.pse-logo {
-    color: #f5f5f5;
-    background-color: #0B5657;
-    border-radius: 50%;
-    padding: 0.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-size: 1.8rem;
+/* Watermarked Passport Paper Effect */
+.main-bg {
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/vertical-waves.png"),
+        linear-gradient(to right, #ffffff, #ffffff, #23BBBB);
 }
 
-.navbar-light .navbar-nav .nav-link {
+/* Footer */
+.footer {
+    font-family: Helvetica, sans-serif;
     color: #0B5657;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    background-image: url("https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png"),
+        linear-gradient(to right, #ffffff, #ffffff, #0ca9a9, #0ca9a9, #0ca9a9, #0ca9a9);
+    display: flex;
+    justify-content: center;
 }
 
+footer a {
+    color: #0B5657;
+}
+
+.footer-box {
+    background-color: white;
+    width: 260px;
+    border-radius: 4px;
+    padding: 0.5rem;
+    border: 2px solid #0B5657;
+}
+
+.footer-container {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    width: 80%;
+    height: 84px;
+    margin-left: 10%;
+    padding-top: 0.5rem;
+    text-align: center;
+    color: white;
+    background-image: url(https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png);
+    background-color: #0ca9a9;
+    border: solid 2px white;
+    border-radius: 4px;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
+}
+
+/* Home Template */
 #home-hero {
     margin-bottom: 1.5rem;
     padding-left: 2rem;
@@ -209,6 +202,149 @@ footer a {
     box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
 }
 
+.hero-image {
+    border: solid 2px white;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.hero-text {
+    font-family: lato, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text h1 {
+    font-size: x-large;
+    background: #0B5657;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+#hero-strap-text {
+    font-family: Helvetica, sans-serif;
+    font-size: medium;
+    text-transform: none;
+    background: #0B5657;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+/* Styling for all forms and form page templates */
+.passport-inst {
+    color: #ffe294;
+    width: 80%;
+    margin-left: 10%;
+    background-color: #0B5657;
+    padding: 0.5rem;
+    padding-top: 1rem;
+    border-radius: 4px;
+}
+
+.form-group{
+    text-align: left;
+    margin-bottom: 2rem;
+    width: 94%;
+    margin-left: 3%;
+    background-color: #0B5657;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.form-group a {
+    color: #ffe294;
+}
+
+.invalid-feedback {
+    color: #ffe294;
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+}
+
+.form-container {
+    width: 90%;
+    background-image: url(https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png);
+    background-color: #0ca9a9;
+    border: solid 2px white;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
+}
+
+.form-center {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #0B5657;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    width: 64%;
+    margin-left: 18%;
+}
+
+.login {
+    background-color: #0B5657;
+    border-radius: 4px;
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+.form-text-row {
+    width: 64%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-left: 18%;
+    margin-bottom: 0.5rem;
+}
+
+.form-row {
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.form-center-align {
+    text-align: -webkit-center;
+}
+
+/* Overwrites Crispyforms Styles */
+.form-group {
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+.errorlist {
+    color: #ffffff;
+}
+
+.auth-logo {
+    width: 35%;
+    border: 2px solid #0B5657;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+#signup_form {
+    width: 11rem;
+}
+
+.signup-button {
+    width: 60%;
+    margin-left: 20%;
+}
+
+/* List Templates */
 .list-heading-row {
     background: #ffffff;
     border: solid 2px #0B5657;
@@ -258,22 +394,6 @@ footer a {
     color: #9500a0;
 }
 
-.footer-container {
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
-    width: 80%;
-    height: 84px;
-    margin-left: 10%;
-    padding-top: 0.5rem;
-    text-align: center;
-    color: white;
-    background-image: url(https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png);
-    background-color: #0ca9a9;
-    border: solid 2px white;
-    border-radius: 4px;
-    box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
-}
-
 .list-text {
     font-size: large;
     color: black;
@@ -313,76 +433,7 @@ footer a {
     color: #000;
 }
 
-.form-center {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #0B5657;
-    padding: 1rem;
-    padding-bottom: 2rem;
-    border-radius: 4px;
-    margin-top: 1rem;
-    width: 64%;
-    margin-left: 18%;
-}
-
-h1,
-h2 {
-    color: white;
-    text-align: center;
-}
-
-.hero-text {
-    font-family: lato, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.hero-text h1 {
-    font-size: x-large;
-    background: #0B5657;
-    border-radius: 4px;
-    padding: 1rem;
-}
-
-#hero-strap-text {
-    font-family: Helvetica, sans-serif;
-    font-size: medium;
-    text-transform: none;
-    background: #0B5657;
-    border-radius: 4px;
-    padding: 1rem;
-}
-
-.main-bg {
-    background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/vertical-waves.png"),
-        linear-gradient(to right, #ffffff, #ffffff, #23BBBB);
-}
-
-.card-item {
-    width: 95%;
-    min-height: 550px;
-    color: black;
-    background-image: url("https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png");
-    background-color: #0ca9a9;
-    border: solid 2px white;
-    border-radius: 4px;
-    margin-top: 1rem;
-    margin-left: 2.5%;
-    margin-bottom: 1.5rem;
-    padding-bottom: 20%;
-    box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
-}
-
-.card-container {
-    margin-bottom: 2.5rem;
-    width: 98%;
-    margin-left: 1%;
-    padding: 1.5rem;
-    text-align: center;
-}
-
+/* Loading Modal */
 #loading {
     display: none;
     position: fixed;
@@ -420,88 +471,7 @@ h2 {
     border-radius: 4px;
 }
 
-.passport-inst {
-    color: #ffe294;
-    width: 80%;
-    margin-left: 10%;
-    background-color: #0B5657;
-    padding: 0.5rem;
-    padding-top: 1rem;
-    border-radius: 4px;
-}
-
-.form-group{
-    text-align: left;
-    margin-bottom: 2rem;
-    width: 94%;
-    margin-left: 3%;
-    background-color: #0B5657;
-    padding: 1rem;
-    border-radius: 4px;
-}
-
-.form-group a {
-    color: #ffe294;
-}
-
-.invalid-feedback {
-    color: #ffe294;
-    text-align: center;
-    font-size: large;
-    font-style: italic;
-}
-
-.form-container {
-    width: 90%;
-    background-image: url(https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png);
-    background-color: #0ca9a9;
-    border: solid 2px white;
-    text-align: center;
-    border-radius: 4px;
-    margin-bottom: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 6rem;
-    box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
-}
-
-.form-group {
-    color: white;
-}
-
-label {
-    color: white;
-}
-
-.errorlist {
-    color: #ffffff;
-}
-
-.login {
-    background-color: #0B5657;
-    border-radius: 4px;
-    padding: 1rem;
-    padding-bottom: 2rem;
-}
-
-.form-text-row {
-    width: 64%;
-    background-color: white;
-    padding: 1rem;
-    border-radius: 4px;
-    margin-left: 18%;
-    margin-bottom: 0.5rem;
-}
-
-.form-row {
-    text-align: center;
-    width: 80%;
-    margin-left: 10%;
-}
-
-.form-center-align {
-    text-align: -webkit-center;
-}
-
+/* Custom cards */
 .block-text {
     background: white;
     text-align: center;
@@ -543,12 +513,30 @@ label {
     justify-content: center;
 }
 
-.hero-image {
+.card-item {
+    width: 95%;
+    min-height: 550px;
+    color: black;
+    background-image: url("https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png");
+    background-color: #0ca9a9;
     border: solid 2px white;
     border-radius: 4px;
-    width: 100%;
+    margin-top: 1rem;
+    margin-left: 2.5%;
+    margin-bottom: 1.5rem;
+    padding-bottom: 20%;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
 }
 
+.card-container {
+    margin-bottom: 2.5rem;
+    width: 98%;
+    margin-left: 1%;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* Pupil Record Templates */
 .record-bg-light {
     background-color:#ffffff;
     padding: 0.5rem;
@@ -579,6 +567,26 @@ label {
     color: antiquewhite;
     text-decoration: underline;
 }
+
+/* Passport Templates */
+#floating-button {
+    background-color: #0B5657;
+    padding: 2rem;
+    border-radius: 4px;
+    position: sticky;
+    top: 50%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#passport-blur {
+    filter: blur(10px);
+}
+
+#passport-unblur {
+    filter: blur(0px);
+}
+
 .passport-container {
     background-image: url(https://res.cloudinary.com/djck2eqxo/image/upload/v1666627962/scribble-light_ubbfq8.png);
     background-color: #0ca9a9;
@@ -786,9 +794,13 @@ label {
     display: none;
 }
 
-
 #set-teacher-id {
     display: none;
+}
+
+/* Unauthorised user elements */
+.warning-logo {
+    width: 25%;
 }
 
 .warning-heading {

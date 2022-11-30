@@ -12,7 +12,7 @@ For SEN pupils, parents and school staff, periods of transition between learning
 
 It is common practice during transitions within the Irish education system, that SEN pupils provide their new place of education with a document that will allow new teachers and support workers access to vital information about their care needs, learning supports, communication difficulties and more.  
 
-Commonly referred to as 'passports', these documents can make an imemasurable difference into understanding and providing care for SEN pupils during periods of transition.
+Commonly referred to as 'passports', these documents can make an immeasurable difference into understanding and providing care for SEN pupils during periods of transition.
 
 MyPSE.ie allows authenticated and authorised pupils and parents to design, view and update passports reflecting not only each individual pupil's special educational needs, but also a nuanced overview of their personality and style. Teachers can then view the passports that have been assigned to them by entering their unique registration number issued by the Irish Teaching Council.
 
@@ -1454,7 +1454,13 @@ When creating page titles for the project I referenced the following:
 
  I consulted the summernote [documentation](https://summernote.org/deep-dive/) when customising the editor toolbar
 
- <br> 
+ <br>
+ 
+ ### Search Function
+
+ I implemented the code in this article when searching through lists of objects.
+
+https://stackoverflow.com/questions/13416502/django-search-form-in-class-based-listview
  
  ### Head Code
 

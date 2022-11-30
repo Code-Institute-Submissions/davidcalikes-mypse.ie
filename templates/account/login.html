@@ -7,14 +7,18 @@
 
 {% block content %}
 
+    <!-- Login page logo and heading text-->
+
 <div class="container form-container">
     <div class="row form-row">
         <div>
             <img class="auth-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667574694/Screen_Shot_2022-11-04_at_14.47.38_abnb4u.png" alt="MyPSE.ie Logo">
         </div>
+
         <div class="col-md-8 mt-3 offset-md-2">
             <h2 class="passport-title">{% trans "Sign In" %}</h2>
         </div>
+
         <div class="row form-text-row">
             <p class="list-text">{% blocktrans %}Welcome back to MyPSE.ie. <br> 
                 Please log in to see your passports or pupil records. <br>
@@ -23,20 +27,23 @@
                 first.{% endblocktrans %}</p>
         </div>
     </div>
+
+    <!-- Login form -->
+
     <div class="row form-row">
         <div class="col-md-8 mt-3 offset-md-2 center-align">
             <div class="login">
-            <form  method="POST" action="{% url 'account_login' %}">
-                {% csrf_token %}
-                {{ form.as_p }}
-                {% if redirect_field_value %}
-                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-                {% endif %}
+                <form  method="POST" action="{% url 'account_login' %}">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    {% if redirect_field_value %}
+                    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                    {% endif %}
+                    <button class="form-passport-options" type="submit">{% trans "Sign In" %}</button>
+                </form>
             </div>
-                <button class="btn btn-signup right passport-options" type="submit">{% trans "Sign In" %}</button>
-            
-            </form>
         </div>
     </div>
 </div>
+
 {% endblock %}

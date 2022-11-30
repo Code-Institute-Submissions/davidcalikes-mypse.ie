@@ -5,20 +5,26 @@
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
 {% block content %}
+
+    <!-- Sign out page logo and Heading text-->
+
 <div class="container form-container">
     <div class="row form-row">
         <div>
             <img class="auth-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667574694/Screen_Shot_2022-11-04_at_14.47.38_abnb4u.png" alt="MyPSE.ie Logo">
         </div>
+
         <div class="col-md-8 mt-3 offset-md-2">
             <h2 class="passport-title" >{% trans "Sign Out" %}</h2>
         </div>
+
         <div class="row passport-text-row">
             <p class="list-text" >{% trans 'Are you sure you want to sign out?' %}</p>
         </div>  
-        
-        
     </div>
+    
+    <!-- Sign out form -->
+
     <div class="row form-row">
         <div class="col-md-8 mt-3 offset-md-2">
             <form method="post" action="{% url 'account_logout' %}">
@@ -31,4 +37,5 @@
         </div>
     </div>
 </div>
+
 {% endblock %}

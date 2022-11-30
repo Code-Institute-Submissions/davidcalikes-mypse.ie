@@ -5,14 +5,19 @@
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
 {% block content %}
+
+    <!-- Registration form heading logo and text container-->
+
 <div class="container form-container">
     <div class="row form-row">
         <div>
             <img class="auth-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667574694/Screen_Shot_2022-11-04_at_14.47.38_abnb4u.png" alt="MyPSE.ie Logo">
         </div>
+
         <div class="col-md-8 mt-3 offset-md-2">
             <h2 class="passport-title">{% trans "Sign Up" %}</h2>
         </div>
+
         <div class="row form-text-row">
             <p class="list-text">{% blocktrans %}Welcome to MyPSE.ie. 
                 <br> 
@@ -24,21 +29,23 @@
                 <p class="list-text">Visit the <a href="{% url 'about' %}">ABOUT</a> page for more information</p>
         </div>         
     </div>
+
+    <!-- Custom Registration form ** user can choose between four user roles -->
+
     <div class="row form-row">
         <div class="form-center">
             <div class="login">
-            <form id="signup_form" method="post" action="{% url 'account_signup' %}">
-                {% csrf_token %}
-                {{ form.as_p }}
-                {% if redirect_field_value %}
-                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-                {% endif %}
+                <form id="signup_form" method="post" action="{% url 'account_signup' %}">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    {% if redirect_field_value %}
+                    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                    {% endif %}
+                    <button class="form-passport-options" type="submit">{% trans "Sign Up" %} &raquo;</button>
+                </form>
             </div>
         </div>
-        <div class="signup-button">
-            <button class="btn btn-signup right passport-options form-center" type="submit">{% trans "Sign Up" %} &raquo;</button>
-            </form>
-        </div>
     </div>
+</div>
 
 {% endblock %}

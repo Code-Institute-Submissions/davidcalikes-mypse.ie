@@ -2,15 +2,23 @@
 {% load static %}
 {% block content %}
 
+<!-- Ensures page has not been accessed directly by URL -->
+
 {% if "mypse" in request.META.HTTP_REFERER %}
+
+    <!-- Pupil record delete page warning logo and text content -->
+
 <div class="container-fluid list-heading">
     <div>&nbsp;
         <div class="row">
             <div>
                 <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
             </div>
+
+            <!-- Pupil record delete form -->
+            
             <div class="col-12">
-                <section class="warning-heading">
+                <div class="warning-heading">
                     <h1 class="list-text">***WARNING***</h1>
                     <form method="POST" action="#">
                         {% csrf_token %}
@@ -19,23 +27,32 @@
                         <input type="submit" value="Delete" class="btn btn-lg btn-danger">
                         <a href="{{request.META.HTTP_REFERER}}" class="btn btn-lg btn-success">Go Back</a>
                     </form>
-                </section>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+<!-- If the page has been accessed via direct URL input show this instead! -->
+
 {% else %}
-        <section class="warning-heading">
-            <div>
-                <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
-            </div>
-            <h1 class="list-text">***WARNING***</h1>
-                <p>Warning! 
-                    You are unauthorised to view this page! 
-                    You have navigated to this page from an unauthorised url or your user role is unauthorised to view this page.
-                    <br>
-                    Please visit the <a href="{% url 'about' %}">about page</a>  for more information about how to use this site.</p>
-                <a href="{% url 'home' %}" class="btn btn-lg btn-success">Click Here to visit the MyPSE.ie Home page</a>
-        </section>
-        {% endif %} 
+
+<!-- Unauthorised access warning logo and text content -->
+
+<div class="warning-heading">
+    <div>
+        <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
+    </div>
+
+    <h1 class="list-text">***WARNING***</h1>
+        <p>Warning! 
+            You are unauthorised to view this page! 
+            You have navigated to this page from an unauthorised url or your user role is unauthorised to view this page.
+            <br>
+            Please visit the <a href="{% url 'about' %}">about page</a>  for more information about how to use this site.</p>
+
+        <a href="{% url 'home' %}" class="btn btn-lg btn-success">Click Here to visit the MyPSE.ie Home page</a>
+</div>
+
+{% endif %} 
 {% endblock %}

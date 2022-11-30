@@ -2,6 +2,7 @@
 {% load static %}
 {% block content %}
 
+<!-- Authorisation page heading text, custom image and authorisation conditions -->
 
 {% if user.is_authenticated and user.role == "teacher" %}
 <div class="container-fluid">
@@ -20,10 +21,13 @@
                     </div>
                 </div>
                 <div>
+
+                    <!-- Teacher users must confirm pupil ID numbers before they can access pupil passports -->
                     <form class="list-form" method='GET'>
                         <input pattern="[0-9]{8}" title="Eight Digit Pupil ID Number" type='text' name='pupil_id' value='{{ request.GET.pupil_id}}'>
                         <input class="button" type='submit' value="Verify Pupil ID">
                       </form>
+
                 </div>
                 {% for passport in passport_list %}
                 <div class="record-bg-dark">
@@ -39,19 +43,25 @@
 
 <hr class="list-separator-rule">
 
+<!-- If user not authorised show this instead! -->
 
-        {% else %}
-        <section class="warning-heading">
-            <div>
-                <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
-            </div>
-            <h1 class="list-text">***WARNING***</h1>
-                <p>Warning! 
-                    You are unauthorised to view this page! 
-                    You have navigated to this page from an unauthorised url or your user role is unauthorised to view this page.
-                    <br>
-                    Please visit the <a href="{% url 'about' %}">about page</a>  for more information about how to use this site.</p>
-                <a href="{% url 'home' %}" class="btn btn-lg btn-success">Click Here to visit the MyPSE.ie Home page</a>
-        </section>
-        {% endif %}
- {% endblock %}
+{% else %}
+
+<!-- Unauthorised access warning logo and text content -->
+
+<div class="warning-heading">
+    <div>
+        <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
+    </div>
+
+    <h1 class="list-text">***WARNING***</h1>
+    <p>Warning! 
+        You are unauthorised to view this page! 
+        You have navigated to this page from an unauthorised url or your user role is unauthorised to view this page.
+        <br>
+        Please visit the <a href="{% url 'about' %}">about page</a>  for more information about how to use this site.</p>
+    <a href="{% url 'home' %}" class="btn btn-lg btn-success">Click Here to visit the MyPSE.ie Home page</a>
+</div>
+
+{% endif %}
+{% endblock %}

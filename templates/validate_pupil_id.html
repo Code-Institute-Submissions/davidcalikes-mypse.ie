@@ -2,6 +2,8 @@
 {% load static %}
 {% block content %}
 
+<!-- Authorisation page heading text, custom image and authorisation conditions -->
+
 {% if "/pupil_check" or "/validate_pupil_id" in request.META.HTTP_REFERER %}
     {% if user.is_authenticated and user.role == "parent" or "pupil" %}
 
@@ -41,33 +43,47 @@
 </div> 
 <hr class="list-separator-rule">
 
-            {% else %}
-            <section class="passport-heading">
-                <div>
-                    <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
-                </div>
-                <h1 class="list-text">***WARNING***</h1>
-                    <p>Warning! 
-                        You are unauthorised to view this page! 
-                        You have navigated to this page from an unauthorised url or your user role is unauthorised to view this page.
-                        <br>
-                        Please visit the <a href="{% url 'about' %}">about page</a>  for more information about how to use this site.</p>
-                    <a href="{% url 'home' %}" class="btn btn-lg btn-success">Click Here to visit the MyPSE.ie Home page</a>
-            </section>
-            {% endif %}
+<!-- If user not authorised show this instead! -->
 
-        {% else %}
-        <section class="warning-heading">
-            <div>
-                <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
-            </div>
-            <h1 class="list-text">***WARNING***</h1>
-                <p>Warning! 
-                    You are unauthorised to view this page! 
-                    You have navigated to this page from an unauthorised url or your user role is unauthorised to view this page.
-                    <br>
-                    Please visit the <a href="{% url 'about' %}">about page</a>  for more information about how to use this site.</p>
-                <a href="{% url 'home' %}" class="btn btn-lg btn-success">Click Here to visit the MyPSE.ie Home page</a>
-        </section>
-        {% endif %}
- {% endblock %}
+{% else %}
+
+<!-- Unauthorised access warning logo and text content -->
+
+<div class="warning-heading">
+    <div>
+        <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
+    </div>
+
+    <h1 class="list-text">***WARNING***</h1>
+    <p>Warning! 
+        You are unauthorised to view this page! 
+        You have navigated to this page from an unauthorised url or your user role is unauthorised to view this page.
+        <br>
+        Please visit the <a href="{% url 'about' %}">about page</a>  for more information about how to use this site.</p>
+    <a href="{% url 'home' %}" class="btn btn-lg btn-success">Click Here to visit the MyPSE.ie Home page</a>
+</div>
+
+{% endif %}
+
+<!-- If user not authorised show this instead! -->
+
+{% else %}
+
+<!-- Unauthorised access warning logo and text content -->
+
+<div class="warning-heading">
+    <div>
+        <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
+    </div>
+
+    <h1 class="list-text">***WARNING***</h1>
+    <p>Warning! 
+        You are unauthorised to view this page! 
+        You have navigated to this page from an unauthorised url or your user role is unauthorised to view this page.
+        <br>
+        Please visit the <a href="{% url 'about' %}">about page</a>  for more information about how to use this site.</p>
+    <a href="{% url 'home' %}" class="btn btn-lg btn-success">Click Here to visit the MyPSE.ie Home page</a>
+</div>
+
+{% endif %}
+{% endblock %}

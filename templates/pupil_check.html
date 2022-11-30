@@ -2,6 +2,8 @@
 {% load static %}
 {% block content %}
 
+<!-- Pupil check list page heading text and custom image -->
+
 <div class="container-fluid">
     <div class="row">
         <div class="list-heading">
@@ -24,58 +26,69 @@
     </div>
 </div>
 
+<!-- Paginated Passport cards list with access and authorisation conditions -->
+
 {% if user.is_authenticated and user.role == "pupil" %}
 
-    <!-- Created Passports Column -->
-    <div class="col-md-12 left">
-        <div class="row passport-row">
-            {% for passport in pupil_check %} 
-                <div class="col-md-4">
-                    <div class="card card-item">
-                        <div class="card-img-container">
-                            {% if "placeholder" in passport.my_family_image.url %}
-                            <img class="card-img-top"
-                                src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667583583/placeholders/Screen_Shot_2022-11-04_at_17.38.53_jy9cjm.png">
-                            {% else %}
-                                <img class="card-img-top" src="{{ passport.my_passport_image.url }}" alt="Card image cap">  
-                            {% endif %}
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">{{ passport.my_full_name }}</h3>
-                            <h4 class="pupil-id-text card-subtitle mb-2 text-muted">{{ passport.pupil_id}}</h4>
-                            <p class="card-text"> Read, and update your passport! </p>
-                        </div>
-                                    
-                        <div class="col-md-12 vert-center">
-                            <a class="passport-options"  href="{% url 'passport_detail' passport.slug %}">View Passport</a>
-                        </div>
+<!-- Created Passports Column -->
+<div class="col-md-12 left">
+    <div class="row passport-row">
+        {% for passport in pupil_check %} 
+            <div class="col-md-4">
+                <div class="card card-item">
+                    <div class="card-img-container">
+                        {% if "placeholder" in passport.my_family_image.url %}
+                        <img class="card-img-top"
+                            src="https://res.cloudinary.com/djck2eqxo/image/upload/v1667583583/placeholders/Screen_Shot_2022-11-04_at_17.38.53_jy9cjm.png">
+                        {% else %}
+                            <img class="card-img-top" src="{{ passport.my_passport_image.url }}" alt="Card image cap">  
+                        {% endif %}
                     </div>
-                </div>
-                
-            {% empty %}
-            <div class="footer-container">
-                <div class="col-md-12 vert-center">
-                    <div class="row">
-                        <a  href="{% url 'validate_pupil_id' %}" class="passport-options">Create Your Passport +</a>
+
+                    <div class="card-body">
+                        <h3 class="card-title">{{ passport.my_full_name }}</h3>
+                        <h4 class="pupil-id-text card-subtitle mb-2 text-muted">{{ passport.pupil_id}}</h4>
+                        <p class="card-text"> Read, and update your passport! </p>
+                    </div>
+                                
+                    <div class="col-md-12 vert-center">
+                        <a class="passport-options"  href="{% url 'passport_detail' passport.slug %}">View Passport</a>
                     </div>
                 </div>
             </div>
-            {% endfor %} 
+            
+        {% empty %}
+        <div class="footer-container">
+            <div class="col-md-12 vert-center">
+                <div class="row">
+                    <a  href="{% url 'validate_pupil_id' %}" class="passport-options">Create Your Passport +</a>
+                </div>
+            </div>
         </div>
-        <hr class="list-separator-rule">
+        {% endfor %} 
     </div>
-    {% else %}
-    <section class="warning-heading">
-        <div>
-            <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
-        </div>
-        <h1 class="list-text">***WARNING***</h1>
-            <p>Warning! 
-                You are unauthorised to view this page! 
-                You have navigated to this page from an unauthorised url or your user role is unauthorised to view this page.
-                <br>
-                Please visit the <a href="{% url 'about' %}">about page</a>  for more information about how to use this site.</p>
-            <a href="{% url 'home' %}" class="btn btn-lg btn-success">Click Here to visit the MyPSE.ie Home page</a>
-    </section>
-    {% endif %}
+    <hr class="list-separator-rule">
+</div>
+
+<!-- If user not authorised show this instead! -->
+
+{% else %}
+
+<!-- Unauthorised access warning logo and text content -->
+
+<div class="warning-heading">
+    <div>
+        <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
+    </div>
+
+    <h1 class="list-text">***WARNING***</h1>
+    <p>Warning! 
+        You are unauthorised to view this page! 
+        You have navigated to this page from an unauthorised url or your user role is unauthorised to view this page.
+        <br>
+        Please visit the <a href="{% url 'about' %}">about page</a>  for more information about how to use this site.</p>
+    <a href="{% url 'home' %}" class="btn btn-lg btn-success">Click Here to visit the MyPSE.ie Home page</a>
+</div>
+    
+{% endif %}
 {% endblock %}

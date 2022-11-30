@@ -332,6 +332,7 @@ Sprint 4 focused on the tiertiary features of the application and contained the 
 
 * [User Story: Pagination of lists #49](https://github.com/davidcalikes/mypse.ie/issues/50)
 
+<br>
 
 ### User Stories Not Completed
 
@@ -341,7 +342,7 @@ The following issues were marked as 'wont have' and moved to the 'Future Feature
 
 * [User Story: Automatically delete passports for pupils no longer in school #15](https://github.com/davidcalikes/mypse.ie/issues/50)
 
-<img src="../docs/agile_images/agile_us2.png">_Agile Issues_
+<img src="../docs/agile_images/agile_us3.png">_Agile Issues_
 
 <br>
 

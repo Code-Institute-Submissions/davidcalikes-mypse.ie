@@ -593,10 +593,13 @@ _4 Schools Planner Passport_
 
 The relationships between the data tables are designed in order to solve the problem regarding the transfer of teacher access to pupil passports. To conform to privacy policy, only one teacher can be assigned access to a pupils transition document at any given time. To solve this issue, MyPSE.ie puts the pupils and parents in command of who can view their passports and when. They can even revoke access altogether if they choose. When pupils become enrolled in the MyPSE.ie Enrolled Pupil List data table they are given a Physical Document by their school adminitistration staff containing the Teacher ID number of their assigned teacher. This ensures they will have complete control over who views their passport and also that they can transfer teacher privileges instantly upon future educational transitions.
 
+<br>
+
 # Agile
 
 MyPSE.ie was developed using the Agile Development Methodology. A detailed overview of the Agile process is availiable [here.](../docs/AGILE.md)
 
+<br>
 
 # Visual Design
 
@@ -1080,16 +1083,45 @@ _MyPSE.ie Admin Panel_
 
 <br>
 
-## Added Security Features
+## Added URL Security Feature
 
 MyPSE.ie has addes security features that prevent unauthorised user access and form submission.
-
-* URL referer feature. 
 
 This feature ensures that users who are authenticated, but not authorised to view pages ouside the scope of their own user role cannot access pupil record and passport forms by navigating to the page directly via URL input. 
 
 <img src="../docs/readme_images/feat_security_urls.png"><br>
 _MyPSE.ie Invalid URL Referer Message_
+
+<br>
+
+## Future Features
+
+There are a number of features that will be integrated into the MyPSE.ie application in future releases.
+
+These include:
+
+* One-click authorisation for teacher users. To improve the user experience of teachers, the app will provide a feature that allows teachers to remember the pupil ID numbers of all pupils after each number is initially provided. This will allow teacher users to access passports more efficiently and encourage repeat visits to the app while maintaining the security of the pupil's data. 
+
+* Print physical passports. In MyPSE.ie v2.0 I hope to include the ability for users to print physical documents that contain only certain elements of the passports page and do not include sensitive information, such as pupil or teacher ID nummbers.
+
+* Email authentication and automated messaging. Utilising an API, the site would be greatly improved by adding email aithentication and could alert users to activity on the site. Alert messages via email could be used for the following:
+
+    * When a pupil has been enrolled on or removed from the system.
+    
+    * When a pupil has created a passport.
+
+    * When a teacher has been assigned to or removed from a passport.
+
+    * When a teacher views a passport.
+
+* Supporting videos. A series of instructional videos that help explain the value of SEN passports and MyPSE.ie would provide extra assistance to all users and would improve accessibility for some users. 
+
+<br>
+
+# Testing
+
+The app was conscientiously tested during and post development.
+The testing results for MyPSE.ie are availiable [here.](https://github.com/davidcalikes/mypse.ie/blob/main/docs/TESTING.md)
 
 <br>
 
@@ -1267,7 +1299,203 @@ _Cloning the repo_
 
 * Press enter and the repo will be cloned locally to your machine.
 
-### Security Key.
+# Technologies
 
-Whilst setting up the development environment for this project I made the error of accidentally pushing to Github (ergo exposing) the SECURITY_KEY variable within the settings.py file. This variable was part of the code institute's student project template which I used in order to expidiate the initial setup phase of project. I imediately changed this variable and concealed it within the env.py file which was then subsequently added to .gitignore. The CI's variable was never at any point used as a functioning key during the development or deployment of the app.  
+MyPSE.ie was developed using the following languages, frameworks and dependencies.
+
+* Python (Version 3.8.11) The requirements.txt file contains all of the projects Python packages.
+
+* Django was the main python framework used while developing MYPSE.ie.
+
+* Django AllAuth was used for user account management/authentication.
+
+* Bootstrap (Version 5.01) was used to rapidly develop the layout, responsivity and core frontend elements of MyPSE.ie.
+
+* ElephantSQL was implemented as the postgres, database management system for MyPSE.ie
+
+* HTML was used in developing the templates for MyPSE.ie.
+
+* CSS was used to add custom styling to the site, overiding many of Bootstrap's core style rules.
+
+* JavaScript was used to implement interactivity and minipulate the DOM from the front end.
+
+* Font Awesome Instructive icons were used to provide visual feedback in many areas. 
+
+* Heroku. MyPSE.ie was deployed to the cloud-based hosting service Heroku.
+
+<br>
+
+## Software
+
+<br>
+
+### Gitpod
+
+Gitpod was used as the primary development environment for this application. As the scope of this project was considerable from the beginning of development, I thought it would be wise to have a system in place that supporting devs could access remotely.
+
+
+### Git & GitHub
+
+The version control and storage system used for MyPSE.ie is Git and GitHub respectively. 
+
+Whilst setting up the development environment for this project I made the error of accidentally pushing to Github (ergo exposing) the SECURITY_KEY variable within the settings.py file. This variable was part of the code institute's student project template which I used in order to expidiate the initial setup phase of project. I imediately changed this variable and concealed it within the env.py file which was then subsequently added to .gitignore. The CI's variable was never at any point used as a functioning key during the development or deployment of the app.
+
+### Lucidchart
+
+I created a flowchart during the planning of MyPSE.ie using Lucidchart.
+
+<br>
+
+### DrawSQL
+
+I used DrawSQL to create the database schema during the planning stages of the project.
+
+<br>
+
+### Adobe Photoshop CS6
+
+I am moderately skilled at using Photoshop and created many of the graphics, page-heading images and logo's on display throughout the site.
+
+<br>
+
+### Balsamiq
+
+I used Balsamiq to create wireframes for the project.
+
+<br>
+
+### Sejda HTML to PDF Converter
+
+I created the sample passport PDF files using the Sejda software available [here.](https://www.sejda.com/html-to-pdf)
+
+<br>
+
+### Other Notable Resources
+
+* Diffchecker -- To compare code in a web browser when searching for bugs and subtle changes.
+
+* Grammarly -- To check the spelling and grammar of the text content of MyPSE.ie and its documentation.
+
+* Apple Pages -- To create PDF User Guides.
+
+<br>
+
+# Media
+
+The following images, of which I personally hold the copyright, were taken at my current place of work, with permission. 
+
+<img src="../docs/readme_images/credits_1.png"><br>
+
+<br>
+
+<img src="../docs/readme_images/credits_2.png"><br>
+
+I used the Lamh image on the sample passport from the Lamh organisations [Facebook page.](https://www.facebook.com/centralremedialclinic/photos/today-is-the-first-ever-l%C3%A1mhday2020-l%C3%A1mh-is-a-manual-sign-system-used-by-childre/1648213428680495/)
+
+The transparent textures used as backgrounds were from https://www.transparenttextures.com/
+
+The warning logo used was downloaded from: https://www.subpng.com/png-v5sg3x/download.html
+
+All other images used throughout the development of this site were downloaded from [Pexels.com](https://www.pexels.com/photo/photo-of-woman-teaching-935943/) and are free to use.
+
+<br>
+
+# Credits
+
+### Bootstrap
+
+The Bootstrap template from which MyPSE.ie is loosely base was from this [StartBootstrap](https://github.com/StartBootstrap/startbootstrap-small-business/blob/master/dist/index.html) repo.
+
+<br>
+
+### Custom User Tutorials & Articles
+
+The following video tutorial and articles were referenced when creating my custom user authorisation feature. 
+
+* https://www.youtube.com/watch?v=Z6QMPAcS6E8
+
+* https://stackoverflow.com/questions/29803608/add-users-to-groups-in-django
+
+* https://testdriven.io/blog/django-custom-user-model/
+
+
+* https://stackoverflow.com/questions/42006246/django-all-auth-role-based-signup
+
+* https://www.youtube.com/watch?v=8jyyuBaZwVU&list=PLOLrQ9Pn6cayYycbeBdxHUFrzTqrNE7Pe&index=14
+
+<br>
+
+### Django AllAuth Adapter
+
+When adapting Django AllAuth to accept user roles I referenced the following article on [Stack Overflow](https://stackoverflow.com/questions/66735981/django-allauth-custom-signup-form-doesnt-save-all-of-the-fields)
+
+<br>
+
+### Choices
+
+In users.models.py the 'choices' code created was based on code found within this article.
+
+https://medium.com/djangotube/django-roles-groups-and-permissions-introduction-a54d1070544
+
+<br>
+
+### Dynamic Page Titles
+
+When creating page titles for the project I referenced the following:
+<br>
+
+ [Article 1](https://iheanyi.com/journal/2020/04/04/dynamic-page-titles-in-django/)
+
+ [Article 2](https://www.forgepackages.com/guides/page-titles/)
+
+ <br>
+
+ ### Summernote
+
+ I consulted the summernote [documentation](https://summernote.org/deep-dive/) when customising the editor toolbar
+
+ <br> 
+ 
+ ### Head Code
+
+ I used parts of the head element code of this [repository](https://github.com/MattBCoding/pp4-the-pantry#Epics) as placeholder code at the beginning of development.
+
+ <br>
+
+ ### Restricting page views
+
+ I referenced the following when restricting access.
+
+ * https://stackoverflow.com/questions/69027744/django-admin-add-entry-to-specific-groups
+
+ * https://stackoverflow.com/questions/59408167/list-of-current-user-objects-in-django-listview
+
+ <br>
+
+ ### Pagination
+
+ This video helped me with my paginated lists.
+
+ https://www.youtube.com/watch?v=Is4hHfHDN-k
+
+ <br>
+
+ ### REGEX
+
+ This Article on w3schools helped me find the correct REGEX validator expressions for my field inputs.
+
+ https://www.w3schools.com/tags/att_input_pattern.asp
+
+ ### Agile
+
+ The general structure and approach to the creation of Epics, User Stories and Boards etc was inspired by [favoureats](https://github.com/siobhanlgorman/favoureats) by @siobhanlgorman
+
+
+
+
+
+ 
+
+
+
 

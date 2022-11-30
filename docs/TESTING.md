@@ -1,5 +1,7 @@
 # Testing
 
+<img src="../docs/testing_images/testing_header.png"><br>
+
 ## Tests during development
 
 ### User Story Tests

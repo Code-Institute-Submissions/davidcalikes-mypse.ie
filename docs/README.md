@@ -8,21 +8,96 @@ MyPSE.ie is a full stack web application, designed to support pupils with Specia
 
 <br>
 
-For SEN pupils, parents and school staff, periods of transition between learning environments can be extremely challenging.
+For SEN pupils, parents and school staff, periods that involve the transitioning of pupils between learning environments can be extremely challenging.
 
 It is common practice during transitions within the Irish education system, that SEN pupils provide their new place of education with a document that will allow new teachers and support workers access to vital information about their care needs, learning supports, communication difficulties and more.  
 
 Commonly referred to as 'passports', these documents can make an immeasurable difference into understanding and providing care for SEN pupils during periods of transition.
 
-MyPSE.ie allows authenticated and authorised pupils and parents to design, view and update passports reflecting not only each individual pupil's special educational needs, but also a nuanced overview of their personality and style. Teachers can then view the passports that have been assigned to them by entering their unique registration number issued by the Irish Teaching Council.
+MyPSE.ie allows authenticated and authorised pupils and parents to design, view and update passports that reflect not only each individual pupil's special educational needs, but also a nuanced overview of their personality and style. Teachers can then view the passports that have been assigned to them by entering their unique registration number issued by the Irish Teaching Council.
 
 To protect pupils against data breaches and identity theft, MyPSE.ie will only allow passports to be created for pupils or by pupils who have been added to a separate database table by their school administration.
 
-Utilising the power of coding frameworks like Django and Bootstrap, MyPSE.ie has been rapidly and thoughtfully designed to provide users with an enjoyable and meaningful experience as they securely access, create and organise SEN passports.
+Utilising the power of coding frameworks like Django and Bootstrap, MyPSE.ie has been rapidly, yet thoughtfully designed to provide users with an enjoyable and meaningful experience as they securely access, create and organise SEN passports.
 
 <br>
 
 [Live project:](https://mypse.herokuapp.com/)
+
+<br>
+
+# Contents
+
+* [Planning & Research](https://github.com/davidcalikes/mypse.ie#planning--research)
+    * [Research](https://github.com/davidcalikes/mypse.ie#research)
+    * [Research Summary](https://github.com/davidcalikes/mypse.ie#research-summary)
+    * [User Experience Design](https://github.com/davidcalikes/mypse.ie#user-experience-design)
+    * [Target Audience](https://github.com/davidcalikes/mypse.ie#target-audience)
+    * [User Stories](https://github.com/davidcalikes/mypse.ie#user-stories)
+    * [Objectives](https://github.com/davidcalikes/mypse.ie#objectives-of-mypseie)
+    * [Approach](https://github.com/davidcalikes/mypse.ie#approach)
+    * [Data Flow](https://github.com/davidcalikes/mypse.ie#data-flow)
+    * [Database Schema](https://github.com/davidcalikes/mypse.ie#database-schema)
+    
+    <br>
+
+* [Agile](https://github.com/davidcalikes/mypse.ie#agile)
+* [Visual Design](https://github.com/davidcalikes/mypse.ie#visual-design)
+    * [Wireframes](https://github.com/davidcalikes/mypse.ie#wireframes)
+    * [Color Scheme](https://github.com/davidcalikes/mypse.ie#color-scheme)
+    * [Nav & Footer Gradient](https://github.com/davidcalikes/mypse.ie#nav-and-footer-gradient)
+    * [Background Gradient](https://github.com/davidcalikes/mypse.ie#background-gradient)
+    * [Typography](https://github.com/davidcalikes/mypse.ie#typography)
+    * [Nameing The App](https://github.com/davidcalikes/mypse.ie#naming-the-app)
+
+    <br>
+
+* [Features](https://github.com/davidcalikes/mypse.ie#features)
+    * [Existing Features](https://github.com/davidcalikes/mypse.ie#existing-features)
+        * [Features present across all pages](https://github.com/davidcalikes/mypse.ie#features-present-across-all-pages)
+            * [The Navbar](https://github.com/davidcalikes/mypse.ie#the-navbar)
+            * [Nav Logo](https://github.com/davidcalikes/mypse.ie#nav-logo)
+            * [Menu Links](https://github.com/davidcalikes/mypse.ie#menu-links)
+            * [Animated Buttons](https://github.com/davidcalikes/mypse.ie#animated-buttons)
+            * [User Status Indicator](https://github.com/davidcalikes/mypse.ie#user-status-indicator)
+            * [Collapsed Menu](https://github.com/davidcalikes/mypse.ie#collapsed-menu)
+            * [Footer](https://github.com/davidcalikes/mypse.ie#the-footer)
+        * [Individual Pages](https://github.com/davidcalikes/mypse.ie#individual-pages)
+            * [Home Page](https://github.com/davidcalikes/mypse.ie#home-page)
+            * [About Page](https://github.com/davidcalikes/mypse.ie#about-page)
+            * [Learn More](https://github.com/davidcalikes/mypse.ie#learn-more-page)
+        * [User Guides](https://github.com/davidcalikes/mypse.ie#user-guides)
+        * [Sample Passports](https://github.com/davidcalikes/mypse.ie#sample-passports)
+        * [Feedback Messages](https://github.com/davidcalikes/mypse.ie#feedback-messages)
+        * [User Authentication](https://github.com/davidcalikes/mypse.ie#registration-page)
+        * [Pupil Enrollment System](https://github.com/davidcalikes/mypse.ie#pupil-list-page)
+        * [Passport Creation System](https://github.com/davidcalikes/mypse.ie#passport-list-page)
+        * [Loading Modal](https://github.com/davidcalikes/mypse.ie#loading-modal)
+        * [Teacher Passport Access](https://github.com/davidcalikes/mypse.ie#teacher-pupil-list-page)
+        * [Admin Panel](https://github.com/davidcalikes/mypse.ie#admin-panel)
+        * [Security](https://github.com/davidcalikes/mypse.ie#added-url-security-feature)
+
+    * [Future Features](https://github.com/davidcalikes/mypse.ie#future-features)
+
+    <Br>
+
+* [Testing](https://github.com/davidcalikes/mypse.ie#testing)
+* [Deployment](https://github.com/davidcalikes/mypse.ie#deployment)
+    * [Database](https://github.com/davidcalikes/mypse.ie#database)
+    * [Deploying to Heroku](https://github.com/davidcalikes/mypse.ie#deploying-to-heroku)
+    * [Forking MyPSE.ie](https://github.com/davidcalikes/mypse.ie#forking-the-github-repository)
+    * [Cloning MyPSE.ie](https://github.com/davidcalikes/mypse.ie#forking-the-github-repository)
+
+    <br>
+
+* [Technologies](https://github.com/davidcalikes/mypse.ie#technologies)
+    * [Software](https://github.com/davidcalikes/mypse.ie#software)
+
+* [Media](https://github.com/davidcalikes/mypse.ie#media)
+
+* [Credits](https://github.com/davidcalikes/mypse.ie#credits)
+
+* Thanks
 
 <br>
 
@@ -379,7 +454,6 @@ The following problem statement was created as a result of developing this perso
 <br>
 
 ## Research Summary
-<br>
 
 * A digital 'passports' web app has both a real-world, practical use case and real-world business use case.
 
@@ -409,9 +483,10 @@ The following problem statement was created as a result of developing this perso
 
 <br>
 
-# User Experience Design
+## User Experience Design
+<br>
 
-## Target Audience
+### Target Audience
 
 MyPSE.ie aims to provide its service to all Irish based SEN School Pupils and their representitives. The application also benefits teachers and schools within the Irish education system.
 <br>
@@ -432,7 +507,6 @@ MyPSE.ie aims to provide its service to all Irish based SEN School Pupils and th
 <br>
 
 #### __General User Stories__
-<br>
 
 * As a User, I would like the app to be intuitive and easy to navigate in order to access information efficiently.
 
@@ -447,7 +521,6 @@ MyPSE.ie aims to provide its service to all Irish based SEN School Pupils and th
 <br>
 
 #### __User Stories__: *Site Owner*
-<br>
 
 
 * As a Site Owner, I would like to prevent the ability to create a passport unless a pupils details have been registered by their school in order to prevent misuse of the site.
@@ -465,7 +538,6 @@ MyPSE.ie aims to provide its service to all Irish based SEN School Pupils and th
 <br>
 
 #### __User Stories__: *Role -- School Admin*
-<br>
 
 * As a School Administrator, I would like to create pupil records in order to facilitate the use of myPSE.ie  passports.
 
@@ -478,7 +550,6 @@ MyPSE.ie aims to provide its service to all Irish based SEN School Pupils and th
 <br>
 
 #### __User Stories__: *Role -- Parent*
-<br>
 
 * As a Parent, I would like to create a ‘passport’ for my SEN child to support them during educational transitions.
 
@@ -497,7 +568,6 @@ MyPSE.ie aims to provide its service to all Irish based SEN School Pupils and th
 <br>
 
 #### __User Stories__: *Role -- SEN Pupil*
-<br>
 
 * As an SEN Pupil I would like to create a passport to help others understand my needs, personality, tastes and abilities so they are better informed and equipped to assist me as I transition between Special Educational environments.
 
@@ -516,10 +586,8 @@ MyPSE.ie aims to provide its service to all Irish based SEN School Pupils and th
 <br>
 
 #### __User Stories__: *Role -- Teacher*
-<br>
 
-
-* As an Teacher, I would like to securely login and out of the application in order to prevent unauthorised access to pupil data.
+* As a Teacher, I would like to securely login and out of the application in order to prevent unauthorised access to pupil data.
 
 * As a Teacher, I would like to view a list of all passports assigned to my Teacher ID number in order to 
 conveniently access their passports.
@@ -1498,8 +1566,40 @@ https://stackoverflow.com/questions/13416502/django-search-form-in-class-based-l
 
  The general structure and approach to the creation of Epics, User Stories and Boards etc was inspired by [favoureats](https://github.com/siobhanlgorman/favoureats) by @siobhanlgorman
 
+<br>
 
+# Thanks
 
+* Caroline McKeown
+
+    I'd like to thank Caroline for her response to the enquiries I made to the NCSE. 
+
+* Christina Meade.
+
+    Having a teacher to consult outside of my personal network was invaluable during the course of this project. Christina was thoughtful and positive about the app from the beginning and her feedback was much appreciated.
+
+* Mr Declan McCoy: Vice Principal, St Mary's Special School.
+
+    I'd like to thank Declan who is always supportive when I approach him for advice. This is the second project he has advised me on and his knowledge of the Irish Education System was of massive benefit whilst planning and througout the duration of the development.
+
+* Susan Hynes
+
+    Always keen to help on the school administrative end, Susan helped me understand the software used when welcoming transitioning pupils.
+
+* Natasha Kane
+
+    My sounding board on a daily basis during this project. Thanks Tash.
+
+* Michelle Calikes
+    I am hugely thankful for the time my wife has afforded me to work on this project. Thank you Michelle (Yet again!) from the bottom of my heart. 
+
+* Kasia Boguka: Code Institute Cohort Facilitator.
+
+    I'd like to thank Kasia for all of her guidance through the course so far.
+
+* Richard Wells: Code Institute Mentor.
+
+    This project could not have been completed without the mentorship and guidance of Richard. Twice he came to the rescue during the development of MyPSE.ie and for that I wil be forever grateful.
 
 
  

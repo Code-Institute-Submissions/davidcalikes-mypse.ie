@@ -97,7 +97,7 @@ Utilising the power of coding frameworks like Django and Bootstrap, MyPSE.ie has
 
 * [Credits](https://github.com/davidcalikes/mypse.ie#credits)
 
-* Thanks
+* [Thanks](https://github.com/davidcalikes/mypse.ie#thanks)
 
 <br>
 
@@ -1428,6 +1428,18 @@ I am moderately skilled at using Photoshop and created many of the graphics, pag
 
 <br>
 
+### Tiny PNG
+
+For resizing larger image files
+
+<br>
+
+### WebP Converter
+
+For converting images to nextgen web formats.
+
+<br>
+
 ### Balsamiq
 
 I used Balsamiq to create wireframes for the project.
@@ -1570,36 +1582,51 @@ https://stackoverflow.com/questions/13416502/django-search-form-in-class-based-l
 
 # Thanks
 
-* Caroline McKeown
+### Caroline McKeown
 
-    I'd like to thank Caroline for her response to the enquiries I made to the NCSE. 
+I'd like to thank Caroline for her response to the enquiries I made to the NCSE.
 
-* Christina Meade.
+<br>
 
-    Having a teacher to consult outside of my personal network was invaluable during the course of this project. Christina was thoughtful and positive about the app from the beginning and her feedback was much appreciated.
+### Christina Meade.
 
-* Mr Declan McCoy: Vice Principal, St Mary's Special School.
+Having a teacher to consult outside of my personal network was invaluable during the course of this project. Christina was thoughtful and positive about the app from the beginning and her feedback was much appreciated.
 
-    I'd like to thank Declan who is always supportive when I approach him for advice. This is the second project he has advised me on and his knowledge of the Irish Education System was of massive benefit whilst planning and througout the duration of the development.
+<br>
 
-* Susan Hynes
+### Mr Declan McCoy: Vice Principal, St Mary's Special School.
 
-    Always keen to help on the school administrative end, Susan helped me understand the software used when welcoming transitioning pupils.
+I'd like to thank Declan who is always supportive when I approach him for advice. This is the second project he has advised me on and his knowledge of the Irish Education System was of massive benefit whilst planning and througout the duration of the development.
 
-* Natasha Kane
+<br>
 
-    My sounding board on a daily basis during this project. Thanks Tash.
+### Susan Hynes
 
-* Michelle Calikes
-    I am hugely thankful for the time my wife has afforded me to work on this project. Thank you Michelle (Yet again!) from the bottom of my heart. 
+Always keen to help on the school administrative end, Susan helped me understand the software used when welcoming transitioning pupils.
 
-* Kasia Boguka: Code Institute Cohort Facilitator.
+<br>
 
-    I'd like to thank Kasia for all of her guidance through the course so far.
+### Natasha Kane
 
-* Richard Wells: Code Institute Mentor.
+My sounding board on a daily basis during this project. Thanks Tash.
 
-    This project could not have been completed without the mentorship and guidance of Richard. Twice he came to the rescue during the development of MyPSE.ie and for that I wil be forever grateful.
+<br>
+
+### Michelle Calikes
+
+I am hugely thankful for the time my wife has afforded me to work on this project. Thank you Michelle (Yet again!) from the bottom of my heart.
+
+<br>
+
+### Kasia Boguka: Code Institute Cohort Facilitator.
+
+I'd like to thank Kasia for all of her guidance through the course so far.
+
+<br>
+
+### Richard Wells: Code Institute Mentor.
+
+This project could not have been completed without the mentorship and guidance of Richard. Twice he came to the rescue during the development of MyPSE.ie and for that I wil be forever grateful.
 
 
  

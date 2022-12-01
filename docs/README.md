@@ -38,8 +38,6 @@ Utilising the power of coding frameworks like Django and Bootstrap, MyPSE.ie has
     * [Approach](https://github.com/davidcalikes/mypse.ie#approach)
     * [Data Flow](https://github.com/davidcalikes/mypse.ie#data-flow)
     * [Database Schema](https://github.com/davidcalikes/mypse.ie#database-schema)
-    
-    <br>
 
 * [Agile](https://github.com/davidcalikes/mypse.ie#agile)
 * [Visual Design](https://github.com/davidcalikes/mypse.ie#visual-design)
@@ -49,8 +47,6 @@ Utilising the power of coding frameworks like Django and Bootstrap, MyPSE.ie has
     * [Background Gradient](https://github.com/davidcalikes/mypse.ie#background-gradient)
     * [Typography](https://github.com/davidcalikes/mypse.ie#typography)
     * [Nameing The App](https://github.com/davidcalikes/mypse.ie#naming-the-app)
-
-    <br>
 
 * [Features](https://github.com/davidcalikes/mypse.ie#features)
     * [Existing Features](https://github.com/davidcalikes/mypse.ie#existing-features)
@@ -70,7 +66,7 @@ Utilising the power of coding frameworks like Django and Bootstrap, MyPSE.ie has
         * [Sample Passports](https://github.com/davidcalikes/mypse.ie#sample-passports)
         * [Feedback Messages](https://github.com/davidcalikes/mypse.ie#feedback-messages)
         * [User Authentication](https://github.com/davidcalikes/mypse.ie#registration-page)
-        * [Pupil Enrollment System](https://github.com/davidcalikes/mypse.ie#pupil-list-page)
+        * [Pupil Enrolment System](https://github.com/davidcalikes/mypse.ie#pupil-list-page)
         * [Passport Creation System](https://github.com/davidcalikes/mypse.ie#passport-list-page)
         * [Loading Modal](https://github.com/davidcalikes/mypse.ie#loading-modal)
         * [Teacher Passport Access](https://github.com/davidcalikes/mypse.ie#teacher-pupil-list-page)
@@ -79,16 +75,12 @@ Utilising the power of coding frameworks like Django and Bootstrap, MyPSE.ie has
 
     * [Future Features](https://github.com/davidcalikes/mypse.ie#future-features)
 
-    <Br>
-
 * [Testing](https://github.com/davidcalikes/mypse.ie#testing)
 * [Deployment](https://github.com/davidcalikes/mypse.ie#deployment)
     * [Database](https://github.com/davidcalikes/mypse.ie#database)
     * [Deploying to Heroku](https://github.com/davidcalikes/mypse.ie#deploying-to-heroku)
     * [Forking MyPSE.ie](https://github.com/davidcalikes/mypse.ie#forking-the-github-repository)
     * [Cloning MyPSE.ie](https://github.com/davidcalikes/mypse.ie#forking-the-github-repository)
-
-    <br>
 
 * [Technologies](https://github.com/davidcalikes/mypse.ie#technologies)
     * [Software](https://github.com/davidcalikes/mypse.ie#software)
@@ -455,6 +447,8 @@ The following problem statement was created as a result of developing this perso
 
 ## Research Summary
 
+* The descision to utilise software in Irish schools is at the discretion of each individual school administration.
+
 * A digital 'passports' web app has both a real-world, practical use case and real-world business use case.
 
 * The primary goal of the app should be to create a viable solution to the problem contained in the problem statement created during the planning stages of development. 
@@ -484,7 +478,6 @@ The following problem statement was created as a result of developing this perso
 <br>
 
 ## User Experience Design
-<br>
 
 ### Target Audience
 
@@ -504,7 +497,6 @@ MyPSE.ie aims to provide its service to all Irish based SEN School Pupils and th
 <br>
 
 ## User Stories
-<br>
 
 #### __General User Stories__
 
@@ -613,7 +605,6 @@ conveniently access their passports.
 <br>
 
 ## Approach
-<br>
 
 * The information will be displayed to the user logically and informed by planning and research.
 
@@ -640,7 +631,6 @@ In order for MyPSE.ie to function as a stand alone application, I had to conside
 
 <img src="../docs/readme_images/data_flow_chart.png"><br>
 _Flow Chart_
-
 
 ## Database Schema
 
@@ -1170,7 +1160,9 @@ These include:
 
 * Deploy to the MyPSE.ie domain. This application was deveoped as my fourth Portfolio Project Submission (Full Stack Frameworks) for the Code Institute's Full Stack Software Development with eCommerce Diploma course. After the project has been assessed I will consider deploying the site to the MyPSE.ie domain based on the feedback of the CI assesment team.
 
-* One-click authorisation for teacher users. To improve the user experience of teachers, the app will provide a feature that allows teachers to remember the pupil ID numbers of all pupils after each number is initially provided. This will allow teacher users to access passports more efficiently and encourage repeat visits to the app while maintaining the security of the pupil's data. 
+* The security of the school enrolment procedure could be significantly improved by linking to an existing real-world database or creating another data table containing the roll number of every school in the state. 
+
+* One-click authorisation for teacher users by extending user model. To improve the user experience of teachers, the app will provide a feature that allows teachers to remember the pupil ID numbers of all pupils after each number is initially provided. This will allow teacher users to access passports more efficiently and encourage repeat visits to the app while maintaining the security of the pupil's data.
 
 * Print physical passports. In MyPSE.ie v2.0 I hope to include the ability for users to print physical documents that contain only certain elements of the passports page and do not include sensitive information, such as pupil or teacher ID nummbers.
 
@@ -1397,8 +1389,6 @@ MyPSE.ie was developed using the following languages, frameworks and dependencie
 
 ## Software
 
-<br>
-
 ### Gitpod
 
 Gitpod was used as the primary development environment for this application. As the scope of this project was considerable from the beginning of development, I thought it would be wise to have a system in place that supporting devs could access remotely.
@@ -1414,43 +1404,36 @@ Whilst setting up the development environment for this project I made the error 
 
 I created a flowchart during the planning of MyPSE.ie using Lucidchart.
 
-<br>
 
 ### DrawSQL
 
 I used DrawSQL to create the database schema during the planning stages of the project.
 
-<br>
 
 ### Adobe Photoshop CS6
 
 I am moderately skilled at using Photoshop and created many of the graphics, page-heading images and logo's on display throughout the site.
 
-<br>
 
 ### Tiny PNG
 
 For resizing larger image files
 
-<br>
 
 ### WebP Converter
 
 For converting images to nextgen web formats.
 
-<br>
 
 ### Balsamiq
 
 I used Balsamiq to create wireframes for the project.
 
-<br>
 
 ### Sejda HTML to PDF Converter
 
 I created the sample passport PDF files using the Sejda software available [here.](https://www.sejda.com/html-to-pdf)
 
-<br>
 
 ### Other Notable Resources
 
@@ -1468,7 +1451,6 @@ The following images, of which I personally hold the copyright, were taken at my
 
 <img src="../docs/readme_images/credits_1.png"><br>
 
-<br>
 
 <img src="../docs/readme_images/credits_2.png"><br>
 
@@ -1488,7 +1470,6 @@ All other images used throughout the development of this site were downloaded fr
 
 The Bootstrap template from which MyPSE.ie is loosely base was from this [StartBootstrap](https://github.com/StartBootstrap/startbootstrap-small-business/blob/master/dist/index.html) repo.
 
-<br>
 
 ### Custom User Tutorials & Articles
 
@@ -1500,18 +1481,15 @@ The following video tutorial and articles were referenced when creating my custo
 
 * https://testdriven.io/blog/django-custom-user-model/
 
-
 * https://stackoverflow.com/questions/42006246/django-all-auth-role-based-signup
 
 * https://www.youtube.com/watch?v=8jyyuBaZwVU&list=PLOLrQ9Pn6cayYycbeBdxHUFrzTqrNE7Pe&index=14
 
-<br>
 
 ### Django AllAuth Adapter
 
 When adapting Django AllAuth to accept user roles I referenced the following article on [Stack Overflow](https://stackoverflow.com/questions/66735981/django-allauth-custom-signup-form-doesnt-save-all-of-the-fields)
 
-<br>
 
 ### Choices
 
@@ -1519,7 +1497,6 @@ In users.models.py the 'choices' code created was based on code found within thi
 
 https://medium.com/djangotube/django-roles-groups-and-permissions-introduction-a54d1070544
 
-<br>
 
 ### Dynamic Page Titles
 
@@ -1536,19 +1513,22 @@ When creating page titles for the project I referenced the following:
 
  I consulted the summernote [documentation](https://summernote.org/deep-dive/) when customising the editor toolbar
 
- <br>
  
  ### Search Function
 
  I implemented the code in this article when searching through lists of objects.
 
 https://stackoverflow.com/questions/13416502/django-search-form-in-class-based-listview
+
+ ### Nav Button Styling
+
+ I used part of this code when creating the button animations.
+
+ https://uiverse.io/cssbuttons-io/stale-rattlesnake-87
  
  ### Head Code
 
  I used parts of the head element code of this [repository](https://github.com/MattBCoding/pp4-the-pantry#Epics) as placeholder code at the beginning of development.
-
- <br>
 
  ### Restricting page views
 
@@ -1558,7 +1538,6 @@ https://stackoverflow.com/questions/13416502/django-search-form-in-class-based-l
 
  * https://stackoverflow.com/questions/59408167/list-of-current-user-objects-in-django-listview
 
- <br>
 
  ### Pagination
 
@@ -1566,7 +1545,6 @@ https://stackoverflow.com/questions/13416502/django-search-form-in-class-based-l
 
  https://www.youtube.com/watch?v=Is4hHfHDN-k
 
- <br>
 
  ### REGEX
 

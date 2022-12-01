@@ -129,6 +129,13 @@ _404 Passport Bug Screenshot_
 
 I fixed this by adding the missing symbol.
 
+### Other Bugs and Logic issues.
+
+* Due to poor planning I discovered a logic error where upon I realised that pupil or parent users may be able to use issued teacher ID numbers to authorise created teacher accounts and view the records of other pupils. This was addressed by requiring teacher users must also provide the pupil ID number in order to view a passport.
+I think this is a sufficient fix for this MVP version of MyPSE.ie but I will find a more elegat solution to teacher user access in forthcoming releases.
+
+* I realised that by typing the address of the pupil passport form page into the url, any registered user could add multiple passports by simply creating generic pupil ID numbers. I added multiple conditional statements to form templates to prevent non-authorised users from submitting passports and records to the database. I aslo added custom JavaScript code to prevent users from using a valid ID to gain access to the form page and then change their pupil ID before submission.
+
 ## Outstanding/Unfixed Bugs
 
 There is currently a bug that occurs when submitting a passport via the passport form page. 
@@ -142,8 +149,6 @@ The bug occurs when the user selects an image for upload and then sumbits a form
 _Bug Form Submission Error_
 
 I have eleborated on this issue and the short term measures I have taken to address it in the practical testing section later in this document. 
-
-
 
 Apart from this bug there are no other known bugs at present.
 
@@ -1882,16 +1887,16 @@ It is clear that the user experience of teacher users of MyPSE.ie is less than o
 
 All objects created during practical testing were successfully deleted.
 
-<img src="../docs/testing_images/testing_bug_images_error2.png"><br>
+<img src="../docs/testing_images/testing_delete.png"><br>
 _Deleting Test Objects_
 
 <br>
 
-## Form Testing & Error Handling
-
-<br>
+# Form Testing & Error Handling
 
 ## Authorisation forms
+
+### Registration Form
 
 All inputs were tested using the following sequence.
 
@@ -1915,7 +1920,7 @@ _Contrast Error Fix_
 
 <br>
 
-## Add Pupil Record form
+### Add Pupil Record form
 
 All inputs were tested using the following sequence.
 
@@ -1934,7 +1939,7 @@ All error handling and REGEX validation messages function correctly.
 
 <br>
 
-## Add Passport form
+### Add Passport form
 
 All inputs were tested using the following sequence.
 

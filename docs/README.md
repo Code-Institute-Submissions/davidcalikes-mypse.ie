@@ -46,7 +46,7 @@ Utilising the power of coding frameworks like Django and Bootstrap, MyPSE.ie has
     * [Nav & Footer Gradient](https://github.com/davidcalikes/mypse.ie#nav-and-footer-gradient)
     * [Background Gradient](https://github.com/davidcalikes/mypse.ie#background-gradient)
     * [Typography](https://github.com/davidcalikes/mypse.ie#typography)
-    * [Nameing The App](https://github.com/davidcalikes/mypse.ie#naming-the-app)
+    * [Naming The App](https://github.com/davidcalikes/mypse.ie#naming-the-app)
 
 * [Features](https://github.com/davidcalikes/mypse.ie#features)
     * [Existing Features](https://github.com/davidcalikes/mypse.ie#existing-features)
@@ -301,7 +301,7 @@ Further into my research, I discovered other applications that heavily influence
 
 Working in a special education environment when developing an app for SEN pupils has it's advantages as evidenced earlier in this document by Susan Hynes and in [other projects](https://github.com/davidcalikes/Marvelous-Matching) I have developed. 
 
-I was concious however, that working on a project with feedback coming from the teachers and pupils of just one school would be sub-optimal to say the least. I was determined not to let any bias (positive or negative), influence the design of the application. I didn't want the research for MyPSE.ie to be based on people that might just be telling me what I wanted to hear or those who might base their responses to questions on what they thought of me as an individual.
+I was conscious however, that working on a project with feedback coming from the teachers and pupils of just one school would be sub-optimal to say the least. I was determined not to let any bias (positive or negative), influence the design of the application. I didn't want the research for MyPSE.ie to be based on people that might just be telling me what I wanted to hear or those who might base their responses to questions on what they thought of me as an individual.
     
 So I reached out (via telephone) to a local school in my area: St Josephs National School, Kingscourt, and arranged with Christina Meade, a teacher from 'Cairde' (St Joseph's ASD Unit) to arrange a quick telephone survey about MyPSE.ie.
 
@@ -447,7 +447,7 @@ The following problem statement was created as a result of developing this perso
 
 ## Research Summary
 
-* The descision to utilise software in Irish schools is at the discretion of each individual school administration.
+* The decision to utilise software in Irish schools is at the discretion of each individual school administration.
 
 * A digital 'passports' web app has both a real-world, practical use case and real-world business use case.
 
@@ -457,7 +457,7 @@ The following problem statement was created as a result of developing this perso
 
 * Authentication should be required for CRUD interactions.
 
-* The site admin panel should be used sparingly for sit maintenence by vetted personel and should not be required to submit pupil records or passports. 
+* The site admin panel should be used sparingly for sit maintenance by vetted personnel and should not be required to submit pupil records or passports. 
 
 * Users should be instructed to select their user 'role' at registration.
 
@@ -481,7 +481,7 @@ The following problem statement was created as a result of developing this perso
 
 ### Target Audience
 
-MyPSE.ie aims to provide its service to all Irish based SEN School Pupils and their representitives. The application also benefits teachers and schools within the Irish education system.
+MyPSE.ie aims to provide its service to all Irish based SEN School Pupils and their representatives. The application also benefits teachers and schools within the Irish education system.
 <br>
 
 ### Target Audience summary
@@ -555,7 +555,7 @@ MyPSE.ie aims to provide its service to all Irish based SEN School Pupils and th
 
 * As a Parent, I would like to customise my child’s passport to reflect their personality and tastes in order to provide a more accurate profile of my child. 
 
-* As a Parent, I would like the option to print a ‘printer friendly’ version of my child’s passport in order to provide people outwith the education system with information that will help during a non-educational transition. (Respite facilities, youth clubs, sports teams etc.)
+* As a Parent, I would like the option to print a ‘printer-friendly’ version of my child’s passport in order to provide people outwith the education system with information that will help during a non-educational transition. (Respite facilities, youth clubs, sports teams etc.)
 
 <br>
 
@@ -618,7 +618,7 @@ conveniently access their passports.
 
 * The app will allow SEN pupils and their representatives to create personal, stylised passport documents.
 
-* The app will follow strict data privacy guidlines
+* The app will follow strict data privacy guidelines
 
 <br>
 
@@ -627,7 +627,7 @@ _Basic App Structure_
 
 ## Data Flow
 
-In order for MyPSE.ie to function as a stand alone application, I had to consider how to verify the identity of the SEN pupils who benefit from it. I wanted to do this for two reasons. Firstly to protect against identity theft and data breaches. Secondly, to make sure that anyone who creates a passport using MyPSE.ie is doing so for all of the correct reasons. I became hyper consious of how simple it might be to create a 'fake' passport using images found online as I was creating the sample passports for reference purposes. Should an individual be able to create a passport without verification, hypothetically they could misuse it in order to gain access or influence in other areas of special education, the health service or other areas of public life.
+In order for MyPSE.ie to function as a stand alone application, I had to consider how to verify the identity of the SEN pupils who benefit from it. I wanted to do this for two reasons. Firstly to protect against identity theft and data breaches. Secondly, to make sure that anyone who creates a passport using MyPSE.ie is doing so for all of the correct reasons. I became hyper-conscious of how simple it might be to create a 'fake' passport using images found online as I was creating the sample passports for reference purposes. Should an individual be able to create a passport without verification, hypothetically they could misuse it in order to gain access or influence in other areas of special education, the health service or other areas of public life.
 
 <img src="../docs/readme_images/data_flow_chart.png"><br>
 _Flow Chart_
@@ -649,7 +649,7 @@ The Passport custom data model was created using the fields from the 4 schools "
 <img src="../docs/readme_images/data_4schools_planner.png"><br>
 _4 Schools Planner Passport_
 
-The relationships between the data tables are designed in order to solve the problem regarding the transfer of teacher access to pupil passports. To conform to privacy policy, only one teacher can be assigned access to a pupils transition document at any given time. To solve this issue, MyPSE.ie puts the pupils and parents in command of who can view their passports and when. They can even revoke access altogether if they choose. When pupils become enrolled in the MyPSE.ie Enrolled Pupil List data table they are given a Physical Document by their school adminitistration staff containing the Teacher ID number of their assigned teacher. This ensures they will have complete control over who views their passport and also that they can transfer teacher privileges instantly upon future educational transitions.
+The relationships between the data tables are designed in order to solve the problem regarding the transfer of teacher access to pupil passports. To conform to privacy policy, only one teacher can be assigned access to a pupils transition document at any given time. To solve this issue, MyPSE.ie puts the pupils and parents in command of who can view their passports and when. They can even revoke access altogether if they choose. When pupils become enrolled in the MyPSE.ie Enrolled Pupil List data table they are given a Physical Document by their school administration staff containing the Teacher ID number of their assigned teacher. This ensures they will have complete control over who views their passport and also that they can transfer teacher privileges instantly upon future educational transitions.
 
 <br>
 
@@ -724,7 +724,7 @@ The background gradient of MyPSE.ie features a subtle vertical waves pattern. Th
 <img src="../docs/readme_images/visual_waves_example.png"><br>
 _Watermarked paper example_
 
-The reasoning behind this was to project a sense of fun and adventure into the transition process as well as being suggestive of beurocratic competence and security.
+The reasoning behind this was to project a sense of fun and adventure into the transition process as well as being suggestive of bureaucratic competence and security.
 
 <br>
 
@@ -850,7 +850,7 @@ The user status indicator informs the user of their login status, role and usern
 At smaller screen widths, the nav bar collapses into a burger style dropdown menu to enhance user experience on mobile and tablet devices.
 
 <img src="../docs/readme_images/feat_nav_menu_collapse.png"><br>
-_MyPSE.ie Collapsable Menu_
+_MyPSE.ie Collapsible Menu_
 
 <br>
 
@@ -958,7 +958,7 @@ _MyPSE.ie Sign out Form on tablet device_
 
 ## Feedback Messages
 
-MyPSE.ie provides consistent visual feedback via stylish alert messages to all authenticated users who manipulate data using the application. The messages are programmed to appear for successful authentication actions as well as successful data submissions and submission errors then dissapear after a few seconds.
+MyPSE.ie provides consistent visual feedback via stylish alert messages to all authenticated users who manipulate data using the application. The messages are programmed to appear for successful authentication actions as well as successful data submissions and submission errors then disappear after a few seconds.
 
 <img src="../docs/readme_images/feat_feedback_messages_logged_out.png"><br>
 _MyPSE.ie Sign out Form on tablet device_
@@ -990,7 +990,7 @@ _MyPSE.ie Lower Pupil List Page_
 
 ## Pupil Record Form Page
 
-The Pupil Record Form page contains a standard form for the enrolment of pupils on the MyPSE.ie Pupil List Data Sheet. This is so the identity of a pupil can be confirmed before a passport can be created by them or for them. The list contains heading text that contains instructions on how to successfully complete the form. A genuine school administrator will have access to pupil ID numbers and School Roll numbers so will know the format that is required. If someone who is not a school administrator tries to submit a form they are unlikley to know the formats of pupils identification let alone their actual ID numbers. This security measure lessens the likelyhood that bad actors can misuse the site.
+The Pupil Record Form page contains a standard form for the enrolment of pupils on the MyPSE.ie Pupil List Data Sheet. This is so the identity of a pupil can be confirmed before a passport can be created by them or for them. The list contains heading text that contains instructions on how to successfully complete the form. A genuine school administrator will have access to pupil ID numbers and School Roll numbers so will know the format that is required. If someone who is not a school administrator tries to submit a form they are unlikely to know the formats of pupils identification let alone their actual ID numbers. This security measure lessens the likelyhood that bad actors can misuse the site.
 
 This page is also used to edit existing records via a link in the Pupil Record Page.
 
@@ -1020,7 +1020,7 @@ The delete pupil record page contains buttons to delete pupil information and is
 <img src="../docs/readme_images/feat_pages_delete_record.png"><br>
 _MyPSE.ie Delete Pupil Record Page_
 
-*** NB Deleting a pupil record removes a users ability to create a new passport. It does not delete a pupil's passport if one exists but should a pupil decide to delete thier own passport after their enrolment file has been removed they will require re-enrolment via a new school administration. ***
+*** NB Deleting a pupil record removes a users ability to create a new passport. It does not delete a pupil's passport if one exists but should a pupil decide to delete their own passport after their enrolment file has been removed they will require re-enrolment via a new school administration. ***
 
 An almost identical page is used via the Passport Page to delete pupil passports.
 
@@ -1028,12 +1028,12 @@ An almost identical page is used via the Passport Page to delete pupil passports
 
 The Passport List Page is only available to users with the user role of 'Parent/Pupil', (or admin). Parent users are redirected to this page immediately upon login and can return to the page via the 'Pupil List' Link in the Nav Bar should they visit another page while logged in. Pupil users are redirected to this page after they successfully create or edit their passports. 
 
-The Upper Section of the Pupil List page contains a heading image and header text as well and is consitent in style with the rest of the site.
+The Upper Section of the Pupil List page contains a heading image and header text as well and is consistent in style with the rest of the site.
 
 <img src="../docs/readme_images/feat_pages_upper_passport_list.png"><br>
 _MyPSE.ie Upper Passport List Page_
 
-The Lower Passport List Page contains 'card' style passport holders that link to any number of passports that parent users have created and any single passports that pupil users have created. The cards, which contain the name and image of the passport holder are displayed from left to right to the user and paginate if the list contains more than three objects. There is a link at the bottom of each card for users to access each document. For parennt users there is a button above the footer that allows access to add new passports. For pupil users, this disappears after they have created one passport.
+The Lower Passport List Page contains 'card' style passport holders that link to any number of passports that parent users have created and any single passports that pupil users have created. The cards, which contain the name and image of the passport holder are displayed from left to right to the user and paginate if the list contains more than three objects. There is a link at the bottom of each card for users to access each document. For parent users there is a button above the footer that allows access to add new passports. For pupil users, this disappears after they have created one passport.
 
 <img src="../docs/readme_images/feat_pages_lower_passport_list.png"><br>
 _MyPSE.ie Lower Passport List Page_
@@ -1042,7 +1042,7 @@ _MyPSE.ie Lower Passport List Page_
 
 ## Pupil ID Check Page
 
-The Pupil ID check is the key security feature of the MyPSE.ie application. The page presents the users an input field that queries the Pupil Records Data table. If a matching Pupil ID is found to the one submitted users can click on the link provided to begin creating a pupil passport. The pupil ID chack page is available to both pupil and parent users via the add passport link in the passport list page. The page features a heading image and text that informs the user they cannot create a passport without a valid ID.
+The Pupil ID check is the key security feature of the MyPSE.ie application. The page presents the users an input field that queries the Pupil Records Data table. If a matching Pupil ID is found to the one submitted users can click on the link provided to begin creating a pupil passport. The pupil ID check page is available to both pupil and parent users via the add passport link in the passport list page. The page features a heading image and text that informs the user they cannot create a passport without a valid ID.
 
 <img src="../docs/readme_images/feat_pages_pupil_id_check.png"><br>
 _MyPSE.ie Pupil ID Check page_
@@ -1069,7 +1069,7 @@ Image Fields
 <img src="../docs/readme_images/feat_pages_passport_form_images.png"><br>
 _MyPSE.ie JavaScript ID Check Function_
 
-* Summernote text editors on every passport text field allowing users greater freedom of self expression when creating text content. Summernote fields hav no character limit to allow users the maximum scope availiable to accurately communicate a pupils transitional needs.
+* Summernote text editors on every passport text field allowing users greater freedom of self expression when creating text content. Summernote fields hav no character limit to allow users the maximum scope available to accurately communicate a pupils transitional needs.
 
 <img src="../docs/readme_images/feat_pages_passport_form_summernote.png"><br>
 _MyPSE.ie Summernote_
@@ -1081,7 +1081,7 @@ A pre-populated instance of the form is also used form is used to edit passport 
 
 ## Passport Page
 
-The Passport Page is availiable to Pupil, Parent and Teacher Users.
+The Passport Page is available to Pupil, Parent and Teacher Users.
 
 Pupils and Parent users can access passports via the passport list page and authorised Teacher users can access passports via the Teacher pupil list page after they confirm the pupil's ID number.
 
@@ -1132,7 +1132,7 @@ Clicking an individual link will bring the teacher user to the Teacher Pupil ID 
 
 ## Admin Panel
 
-MyPSE.ie's Admin Panel Utilises Django's Built in Admin functionality. The Admin panel has been designed to be used by Garda vetted site administrators for database and record maintenence only and is not required to create user records or passports. Admin Users can access and edit all data on the application's database. Summernote form fields are also included in the Admin Passports Form page to maintain a consistency of use across the site.
+MyPSE.ie's Admin Panel Utilises Django's Built in Admin functionality. The Admin panel has been designed to be used by Garda vetted site administrators for database and record maintenance only and is not required to create user records or passports. Admin Users can access and edit all data on the application's database. Summernote form fields are also included in the Admin Passports Form page to maintain a consistency of use across the site.
 
 The Admin panel was not used to create user groups and permissions as I didn't want school admin, parents and pupils users to have access to and the ability to alter the records and passports that did not belong to them.
 
@@ -1143,7 +1143,7 @@ _MyPSE.ie Admin Panel_
 
 ## Added URL Security Feature
 
-MyPSE.ie has addes security features that prevent unauthorised user access and form submission.
+MyPSE.ie has an added security feature that prevents unauthorised user access and form submission.
 
 This feature ensures that users who are authenticated, but not authorised to view pages ouside the scope of their own user role cannot access pupil record and passport forms by navigating to the page directly via URL input. 
 
@@ -1158,15 +1158,15 @@ There are a number of features that will be integrated into the MyPSE.ie applica
 
 These include:
 
-* Deploy to the MyPSE.ie domain. This application was deveoped as my fourth Portfolio Project Submission (Full Stack Frameworks) for the Code Institute's Full Stack Software Development with eCommerce Diploma course. After the project has been assessed I will consider deploying the site to the MyPSE.ie domain based on the feedback of the CI assesment team.
+* Deploy to the MyPSE.ie domain. This application was developed as my fourth Portfolio Project Submission (Full Stack Frameworks) for the Code Institute's Full Stack Software Development with eCommerce Diploma course. After the project has been assessed I will consider deploying the site to the MyPSE.ie domain based on the feedback of the CI assessment team.
 
 * The security of the school enrolment procedure could be significantly improved by linking to an existing real-world database or creating another data table containing the roll number of every school in the state. 
 
 * One-click authorisation for teacher users by extending user model. To improve the user experience of teachers, the app will provide a feature that allows teachers to remember the pupil ID numbers of all pupils after each number is initially provided. This will allow teacher users to access passports more efficiently and encourage repeat visits to the app while maintaining the security of the pupil's data.
 
-* Print physical passports. In MyPSE.ie v2.0 I hope to include the ability for users to print physical documents that contain only certain elements of the passports page and do not include sensitive information, such as pupil or teacher ID nummbers.
+* Print physical passports. In MyPSE.ie v2.0 I hope to include the ability for users to print physical documents that contain only certain elements of the passports page and do not include sensitive information, such as pupil or teacher ID numbers.
 
-* Email authentication and automated messaging. Utilising an API, the site would be greatly improved by adding email aithentication and could alert users to activity on the site. Alert messages via email could be used for the following:
+* Email authentication and automated messaging. Utilising an API, the site would be greatly improved by adding email authentication and could alert users to activity on the site. Alert messages via email could be used for the following:
 
     * When a pupil has been enrolled on or removed from the system.
     
@@ -1183,7 +1183,7 @@ These include:
 # Testing
 
 The app was conscientiously tested during and post development.
-The testing results for MyPSE.ie are availiable [here.](https://github.com/davidcalikes/mypse.ie/blob/main/docs/TESTING.md)
+The testing results for MyPSE.ie are available [here.](https://github.com/davidcalikes/mypse.ie/blob/main/docs/TESTING.md)
 
 <br>
 
@@ -1313,7 +1313,7 @@ _TEMPLATES Setting in settings.py
 
 * Deploy via the 'Deploy Main Branch' button in the Deployment page of HEROKU.
 
-* If you recieve an success message, you can click the link provided to view the app in the web browser.
+* If you receive an success message, you can click the link provided to view the app in the web browser.
 
 <br>
 
@@ -1346,7 +1346,7 @@ If you want to contribute to the MyPSE.ie project, You can clone the MyPSE.ie re
 
 * Click on the <> Code button near the top-right of the page.
 
-* Access the 'Code' menu from above the main directory window and choose a preffered cloning option by selecting either HTTPS or GitHub CLI. An SSH key is required should you prefer that option. 
+* Access the 'Code' menu from above the main directory window and choose a preferred cloning option by selecting either HTTPS or GitHub CLI. An SSH key is required should you prefer that option. 
 
 * Press the overlapping squares icon to copy the link to the repository.
 
@@ -1360,6 +1360,20 @@ _Cloning the repo_
 * Use the 'git clone command and paste in the copied link.
 
 * Press enter and the repo will be cloned locally to your machine.
+
+* Setup and activate your local development environment.
+
+* Install the project requirements using the command -- pip3 install -r requirements.txt
+
+* Create a Heroku app for your Clone and add the appropriate Config Vars using the [aforementioned instructions](https://github.com/davidcalikes/mypse.ie#deploying-to-heroku).
+
+* Create an env.py file that includes the appropriate DATABSE_URL, SECRET_KEY and CLOUDINARY_URL settings.
+
+* Add 'localhost' to ALLOWED_HOSTS in settings.py
+
+* Use the command -- python3 manage.py makemigrations followed by -- python3 manage.py migrate to setup a local copy of the project database.
+
+* Use the command python3 manage.py runserver to run the app on a development server.
 
 # Technologies
 
@@ -1377,9 +1391,9 @@ MyPSE.ie was developed using the following languages, frameworks and dependencie
 
 * HTML was used in developing the templates for MyPSE.ie.
 
-* CSS was used to add custom styling to the site, overiding many of Bootstrap's core style rules.
+* CSS was used to add custom styling to the site, overriding many of Bootstrap's core style rules.
 
-* JavaScript was used to implement interactivity and minipulate the DOM from the front end.
+* JavaScript was used to implement interactivity and manipulatethe DOM from the front end.
 
 * Font Awesome Instructive icons were used to provide visual feedback in many areas. 
 
@@ -1397,8 +1411,6 @@ Gitpod was used as the primary development environment for this application. As 
 ### Git & GitHub
 
 The version control and storage system used for MyPSE.ie is Git and GitHub respectively. 
-
-Whilst setting up the development environment for this project I made the error of accidentally pushing to Github (ergo exposing) the SECURITY_KEY variable within the settings.py file. This variable was part of the code institute's student project template which I used in order to expidiate the initial setup phase of project. I imediately changed this variable and concealed it within the env.py file which was then subsequently added to .gitignore. The CI's variable was never at any point used as a functioning key during the development or deployment of the app.
 
 ### Lucidchart
 
@@ -1562,7 +1574,7 @@ https://stackoverflow.com/questions/13416502/django-search-form-in-class-based-l
 
 ### Caroline McKeown
 
-I'd like to thank Caroline for her response to the enquiries I made to the NCSE.
+I'd like to thank Caroline for her response to the inquiries I made to the NCSE.
 
 <br>
 
@@ -1604,7 +1616,7 @@ I'd like to thank Kasia for all of her guidance through the course so far.
 
 ### Richard Wells: Code Institute Mentor.
 
-This project could not have been completed without the mentorship and guidance of Richard. Twice he came to the rescue during the development of MyPSE.ie and for that I wil be forever grateful.
+This project could not have been completed without the mentorship and guidance of Richard. Twice he came to the rescue during the development of MyPSE.ie and for that I will be forever grateful.
 
 
  

@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Agile planning methodology was used during the development of MyPSE.ie. GitHub Projects, Boards, Milestones and Issues were utilised to Organise the development into Sprints, Kanban Boards, Epics and User Stories respectively.
+The Agile planning methodology was used during the development of MyPSE.ie. GitHub Projects, Boards, Milestones and Issues were utilised to Organise the development into Sprints, Kanban Boards, Epics, and User Stories respectively.
 
 <img src="../docs/agile_images/agile_placeholder.png">
 
@@ -16,13 +16,13 @@ Before this project, I had successfully developed other applications using the t
 
 Initially, I struggled to adapt to the new methodology and found utilising what is fundamentally considered a collaborative, cyclical, approach confusing, as I tried to organise and plan as an individual developer.
 
-As a result of this confusion I made a lot of planning errors while developing my KANBAN boards, Epics, and Issue Cards. 
+As a result of this confusion, I made a lot of planning errors while developing my KANBAN boards, Epics, and Issue Cards. 
 
 For example, when I began creating my KANBAN boards, I had already organised most of the development environment and installed some of the project dependencies before I realised I should have included that work as part of the Agile process, breaking down each developer task into individual increments of work. 
 
-It is however, one of the priciples of Agile to "respond to change rather than stick to a plan" so I resolved the issues and adapted my approach by reorganising the layout of my boards and cards accordingly.
+It is, however one of the principles of Agile to "respond to change rather than stick to a plan" so I resolved the issues and adapted my approach by reorganising the layout of my boards and cards accordingly.
 
-I also initially felt that my Epics could have been better organised and that I had too may user stories per Epic, but in retrospect the project was completed successfully and they served their purpose in providing me an overview of the relationships between smaller units of work.
+I also initially felt that my Epics could have been better organised and that I had too many user stories per Epic, but in retrospect, the project was completed successfully and they served their purpose in providing me an overview of the relationships between smaller units of work.
 
 <br>
 
@@ -43,7 +43,7 @@ As I moved through the initial stages of the project, I began to recognise the r
 
 An example of this is in the image presented above. In the 'In Progress' section of the Sprint 1 board, user story #35 is concerned with styling at the front end of the project while other user stories and developer tasks are focused on the back end.
 
-It is easy to imagine how multiple developers pulling, branching and working on these issues at the same time can rapidly produce impressive and satisfying results and how being able to view such progress would be good for team morale.
+It is easy to imagine how multiple developers pulling, branching, and working on these issues at the same time can rapidly produce impressive and satisfying results and how being able to view such progress would be good for team morale.
 
 Even though I was working through the project alone, I felt like I was making progress through the project at the end of each cycle. 
 
@@ -55,13 +55,13 @@ Using agile also helped me focus on one task at a time and I genuinely believe t
 
 <img src="../docs/agile_images/agile_3_moscow.png">
 
-When utilising MoSCow prioritisation I felt I had a good mix of 'Would Have', 'Could Have', 'Should Have' and 'Wont Have This Time' cards. I realise now however that I had far too many must have labels and it is something I will be wary of when prioritising work units in future projects.
+When utilising MoSCow prioritisation I felt I had a good mix of 'Must Have', 'Could Have', 'Should Have' and 'Wont Have This Time' cards. I realise now however that I had far too many "Must Have" labels and it is something I will be wary of when prioritising work units in future projects.
 
 <br>
 
 ## Epics
 
-Six Epics in total were created for referance during the agile process and used GitHub 'Milestones' to link the 'User Stories' derived from each Epic.
+Six Epics in total were created for reference during the agile process and used GitHub 'Milestones' to link the 'User Stories' derived from each Epic.
 
 <img src="../docs/agile_images/agile_epics.png">
 
@@ -71,7 +71,7 @@ The six Epics were:
 
 1. [Add Landing page and general site structure](https://github.com/davidcalikes/mypse.ie/milestone/1?closed=1)
 
-Developer tasks include setting up dev environment, installing packages setting up skeleton project and Early deployment to heroku.
+Developer tasks include setting up dev environment, installing packages, setting up the skeleton project, and Early deployment to Heroku.
 
 User stories include: "Create Base.html including common site elements" and "Create index.html for user landing page"
 
@@ -93,7 +93,7 @@ User stories include: "Create Superuser", "Implement Allauth Adapter" and "Login
 
 For security purposes, in order for passports to be created, pupils must have a pupil record that contains their unique Pupil ID.
 
-User stories include: "View List of Pupil Records", "Create Enrolled Pupil Record view and template" and "Style and format the delete pupil record conformation page"
+User stories include: "View List of Pupil Records", "Create Enrolled Pupil Record view and template" and "Style and format the delete pupil record confirmation page"
 
 <img src="../docs/agile_images/agile_epic3.png">
 
@@ -135,7 +135,7 @@ User stories include: "Style and format base template to improve user experience
 
 <br>
 
-The User Stories created for referance within the Agile framework were derived from both the Epics created and also the empathetic User Stories I created as a result of planning research during the 'User Experience Design' phase of the project. I used GitHub Issues to create cards for Agile User Stories, Development Tasks and Bugs.
+The User Stories created for reference within the Agile framework were derived from both the Epics created and also the empathetic User Stories I created as a result of planning research during the 'User Experience Design' phase of the project. I used GitHub Issues to create cards for Agile User Stories, Development Tasks, and Bugs.
 
 The structure of a MyPSE.ie Agile User Story can be seen below.
 
@@ -175,7 +175,7 @@ The full list of issues for the project is available [here](https://github.com/d
 
 ### Sprints Duration
 
-Due to my inexperience with the Agile methodology and Django as a framework, I had few referance points that could inform my decision making when it came to allowing sufficient time for each sprint, whilst setting a realistic, achievable deadlines. 
+Due to my inexperience with the Agile methodology and Django as a framework, I had few reference points that could inform my decision making when it came to allowing sufficient time for each sprint, whilst setting a realistic, achievable deadlines. 
 
 ### [MyPSE.ie Sprint 1 -- Overview](https://github.com/users/davidcalikes/projects/7)
 
@@ -240,7 +240,7 @@ I used the time it took to complete the issues from sprint one to make a general
 
 ### [MyPSE.ie Sprint 2 -- Overview](https://github.com/users/davidcalikes/projects/8/views/1)
 
-Sprint 2 focused on the creation of the passport functionality. Each user story explicitly laid out tasks and assessment critera. The Second sprint benefitted from the newly set time parameters inherited from Sprint 1.  I also felt more confident moving the items across the columns of the Kanban board and could feel the benefits of the methodology as my understanding grew.  
+Sprint 2 focused on the creation of the passport functionality. Each user story explicitly laid out tasks and assessment criteria. The Second sprint benefitted from the newly set time parameters inherited from Sprint 1.  I also felt more confident moving the items across the columns of the Kanban board and could feel the benefits of the methodology as my understanding grew.  
 
 <br>
 
@@ -277,7 +277,7 @@ The Second sprint was completed ahead of schedule and I found that following eac
 
 ### [MyPSE.ie Sprint 3 -- Overview](https://github.com/users/davidcalikes/projects/9/views/1)
 
-Sprint 3 focused on providing teacher access to created passports. Each user story explicitly laid out tasks and assessment critera. Similar to sprint 2, the third sprint benefitted from the newly set time parameters inherited from Sprint 1.  
+Sprint 3 focused on providing teacher access to created passports. Each user story explicitly laid out tasks and assessment criteria. Similar to sprint 2, the third sprint benefitted from the newly set time parameters inherited from Sprint 1.  
 
 <br>
 
@@ -300,13 +300,13 @@ Sprint 3 focused on providing teacher access to created passports. Each user sto
 
 Development time -- 6 days.
 
-The third sprint was completed on schedule and again I found following each issue in turn to be extremely productive. This sprint focused on restricting aspects of passport functionality to certain user types. The first bugs started to appear at this point during the project and I began to add the errors and issues to the Kanban board that took more than a few hours to correct. What was helpful using the Agile methodology here was the habit of refering to the end user at the beginning of every unit of work. This allowed for a much more robust program and caught logic errors such as in issue 42. I think that the solving the logic error during this sprint proved my sprint time estimations to be close to optimal. 
+The third sprint was completed on schedule and again I found following each issue in turn to be extremely productive. This sprint focused on restricting aspects of passport functionality to certain user types. The first bugs started to appear at this point during the project and I began to add the errors and issues to the Kanban board that took more than a few hours to correct. What was helpful using the Agile methodology here was the habit of referring to the end user at the beginning of every unit of work. This allowed for a much more robust program and caught logic errors such as in issue 42. I think that the solving the logic error during this sprint proved my sprint time estimations to be close to optimal. 
 
 <br>
 
 ### [MyPSE.ie Sprint 4 -- Overview](https://github.com/users/davidcalikes/projects/10/views/1)
 
-Sprint 4 focused on the tiertiary features of the application and contained the most 'should have' and 'could have' priority issues. Multiple bugs and errors were also added to this sprint during development.
+Sprint 4 focused on the tertiary features of the application and contained the most 'should have' and 'could have' priority issues. Multiple bugs and errors were also added to this sprint during development.
 
 <br>
 
@@ -351,7 +351,7 @@ The following issues were marked as 'wont have' and moved to the 'Future Feature
 
 Development time -- 11 days.
 
-The final sprint of the Agile process was far less organised and ran far beyond the week-long time-frame I had originally set.  I allowed myself some flexibilty during this Sprint as this was my first attempt at using the methodology and I had made excellent progress during the initial three cycles. I feel the problem with sprint three was that some of the user story's were not fully defined and left too much to the subjectivity of the developer. For example the two 'must have' user stories 21 and 43 were not specific enough with repect to user tasks. This is something I will be conscious of moving forward when utilising the Agile approach in future projects. 
+The final sprint of the Agile process was far less organised and ran far beyond the week-long time-frame I had originally set.  I allowed myself some flexibilty during this Sprint as this was my first attempt at using the methodology and I had made excellent progress during the initial three cycles. I feel the problem with sprint three was that some of the user story's were not fully defined and left too much to the subjectivity of the developer. For example the two 'must have' user stories 21 and 43 were not specific enough with respect to unit tasks. This is something I will be conscious of moving forward when utilising the Agile approach in future projects. 
 
 
 ## Agile Summary

@@ -24,7 +24,7 @@ All of the user story acceptance criteria can be inspected via the four KANBAN b
 
 ### Errors found during development
 
-After I imported django allauth I recieved the following error.
+After I imported django allauth I received the following error.
 
 <img src="../docs/testing_images/testing_error_1_allauth.png"><br>
 _ProgrammingError Screenshot_
@@ -93,7 +93,7 @@ I then used the Admin panel to remove any instances that began with zero.
 
 <br>
 
-I recieved this NameError when developing the MVT relationships to access passports.
+I received this NameError when developing the MVT relationships to access passports.
 
 <img src="../docs/testing_images/testing_bug4.png"><br>
 _NameError Passport Bug Screenshot_
@@ -120,7 +120,7 @@ _Typo Bugfix Screenshot_
 The next 404 error was trying returned when I tried to access a pupil passport.
 
 <img src="../docs/testing_images/testing_bug3.png"><br>
-_404 Passpory Bug Screenshot_ 
+_404 Passport Bug Screenshot_ 
 
 This error was caused by a missing curly brace.
 
@@ -129,10 +129,10 @@ _404 Passport Bug Screenshot_
 
 I fixed this by adding the missing symbol.
 
-### Other Bugs and Logic issues.
+### Other Errors and Logic issues.
 
 * Due to poor planning I discovered a logic error where upon I realised that pupil or parent users may be able to use issued teacher ID numbers to authorise created teacher accounts and view the records of other pupils. This was addressed by requiring teacher users must also provide the pupil ID number in order to view a passport.
-I think this is a sufficient fix for this MVP version of MyPSE.ie but I will find a more elegat solution to teacher user access in forthcoming releases.
+I think this is a sufficient fix for this MVP version of MyPSE.ie but I will find a more elegant solution to teacher user access in forthcoming releases.
 
 * I realised that by typing the address of the pupil passport form page into the url, any registered user could add multiple passports by simply creating generic pupil ID numbers. I added multiple conditional statements to form templates to prevent non-authorised users from submitting passports and records to the database. I aslo added custom JavaScript code to prevent users from using a valid ID to gain access to the form page and then change their pupil ID before submission.
 
@@ -148,7 +148,7 @@ The bug occurs when the user selects an image for upload and then sumbits a form
 <img src="../docs/testing_images/testing_bug_images_error1.png"><br>
 _Bug Form Submission Error_
 
-I have eleborated on this issue and the short term measures I have taken to address it in the practical testing section later in this document. 
+I have elaborated on this issue and the short term measures I have taken to address it in the practical testing section later in this document. 
 
 Apart from this bug there are no other known bugs at present.
 
@@ -354,7 +354,7 @@ _Mobile Lighthouse Performance Testing Screenshot_
 <summary>
 Login Page Testing</summary><br>
 
-Each link of the Login Page was tested and was marked 'pass' when the following expected behaviour was produced. A created user from every user type was logged in succesfully.
+Each link of the Login Page was tested and was marked 'pass' when the following expected behaviour was produced. A created user from every user type was logged in successfully.
 <br>
 
 * Can Access Home Page -- The user can access the home page from the login page.
@@ -415,7 +415,7 @@ _Mobile Lighthouse Performance Testing Screenshot_
 <summary>
 Logout Page Testing</summary><br>
 
-Each link of the Logout Page was tested and was marked 'pass' when the following expected behaviour was produced. A created user from every user type was logged out succesfully.
+Each link of the Logout Page was tested and was marked 'pass' when the following expected behaviour was produced. A created user from every user type was logged out successfully.
 <br>
 
 * Can Access Home Page -- The user can access the home page from the logout page.
@@ -484,7 +484,7 @@ _Mobile Lighthouse Performance Testing Screenshot_
 <summary>
 Registration Page Testing</summary><br>
 
-Each link of the Registration Page was tested and was marked 'pass' when the following expected behaviour was produced. A user of every user type was registered succesfully.
+Each link of the Registration Page was tested and was marked 'pass' when the following expected behaviour was produced. A user of every user type was registered successfully.
 <br>
 
 * Can Access Home Page -- The user can access the home page from the registration page.
@@ -1205,7 +1205,7 @@ _W3C HTML Validator Testing Screenshot_
 
 The CSS file for the Pupil Check page (and all other pages of the site) passes W3C Jigsaw validation with no errors.
 
-<img src="../docs/testing_images/testing_val_82.png"><br>
+<img src="../docs/testing_images/testing_val_77.png"><br>
 _W3C Jigsaw CSS Validator Testing Screenshot_
 
 The Pupil Check page was passed through the WCAG Color contrast checker and returned no contrast errors.
@@ -1490,7 +1490,7 @@ I used the console in google development tools to test my custom JavaScript code
 <img src="../docs/testing_images/testing_js_alert.png"><br>
 _Alert raised to signify JS function is working_ 
 
-A particularly challenging bug was found when I recieved an element not found error in the console.
+A particularly challenging bug was found when I received an element not found error in the console.
 
 <img src="../docs/testing_images/testing_js_missing_element.png"><br>
 _Using console logs to squash a bug_ 
@@ -1672,7 +1672,7 @@ _Teacher Passport on Mobile_
 ### Tablet Testing -- iPad Mini 5:
 
 <img src="../docs/testing_images/testing_tablet.png"><br>
-_MyPse.ie on iPad Mini_
+_MyPSE.ie on iPad Mini_
 
 <br>
 
@@ -1879,7 +1879,7 @@ During testing, Christina offered the following feedback.
 
 "The website is brilliant but if I didn't have the childs ID at hand or if I have to look it up every time I have to use it I can see it getting a bit frustrating."
 
-It is clear that the user experience of teacher users of MyPSE.ie is less than optimal. This is something that future iterations of the app will remedy, but for this first, MVP version, the protection of pupil data must take precident.
+It is clear that the user experience of teacher users of MyPSE.ie is less than optimal. This is something that future iterations of the app will remedy, but for this first, MVP version, the protection of pupil data must take precedent.
 
 <br>
 
@@ -2060,5 +2060,7 @@ _MyPSE.ie Floating Button Error_
 I resolved this by using google dev tools to modify the CSS style rules that would center the button maintaining a consistent design style.
 
 <br>
+
+Return to main [README](https://github.com/davidcalikes/mypse.ie#testing) document.
 
 

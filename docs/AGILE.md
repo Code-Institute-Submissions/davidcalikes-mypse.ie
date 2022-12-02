@@ -365,3 +365,5 @@ From the perspective of a junior developer there are key aspects of Agile I will
 * Given how much I have learned about creating Kanban boards, Issues etc, I think I will be more confident in my ability moving forward to predict the time it will take to complete each unit of work. This is especially applicable for future Django projects as my skill with the framework has grown significantly.
 
 * Prioritisation is another area I feel I have a much better understanding of. With an app like MyPSE.ie it was very difficult to prioritise say accessibility features over security features. If pupil's could not use the app to create a passport in the first place then the security features would be redundant yet to create an app where a vulnerable users information is insecure would make the app unsafe for use. I aim to improve my ability prioritising issues in these cases as I continue my coding journey.
+
+Return to main [README](https://github.com/davidcalikes/mypse.ie#agile) document.
